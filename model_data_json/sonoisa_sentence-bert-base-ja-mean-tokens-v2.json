@@ -1,0 +1,20 @@
+{
+    "model_id": "sonoisa/sentence-bert-base-ja-mean-tokens-v2",
+    "downloads": 91589,
+    "tags": [
+        "sentence-transformers",
+        "pytorch",
+        "safetensors",
+        "bert",
+        "sentence-bert",
+        "feature-extraction",
+        "sentence-similarity",
+        "ja",
+        "license:cc-by-sa-4.0",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: ja license: cc-by-sa-4.0 tags: - sentence-transformers - sentence-bert - feature-extraction - sentence-similarity --- This is a Japanese sentence-BERT model. 日本語用Sentence-BERTモデル（バージョン2）です。 バージョン1よりも良いロス関数であるMultipleNegativesRankingLossを用いて学習した改良版です。 手元の非公開データセットでは、バージョン1よりも1.5〜2ポイントほど精度が高い結果が得られました。 事前学習済みモデルとしてcl-tohoku/bert-base-japanese-whole-word-maskingを利用しました。 従って、推論の実行にはfugashiとipadicが必要です（pip install fugashi ipadic）。 # 旧バージョンの解説 モデル名を\"sonoisa/sentence-bert-base-ja-mean-tokens-v2\"に書き換えれば、本モデルを利用した挙動になります。 # 使い方",
+    "model_explanation_gemini": "Generates sentence embeddings in Japanese for tasks like similarity comparison, using an improved BERT-based model trained with MultipleNegativesRankingLoss for better accuracy."
+}

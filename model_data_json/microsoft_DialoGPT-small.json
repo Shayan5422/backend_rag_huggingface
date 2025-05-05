@@ -1,0 +1,22 @@
+{
+    "model_id": "microsoft/DialoGPT-small",
+    "downloads": 189485,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "tf",
+        "jax",
+        "safetensors",
+        "gpt2",
+        "text-generation",
+        "conversational",
+        "arxiv:1911.00536",
+        "license:mit",
+        "autotrain_compatible",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- thumbnail: tags: - conversational license: mit --- ## A State-of-the-Art Large-scale Pretrained Response generation model (DialoGPT) DialoGPT is a SOTA large-scale pretrained dialogue response generation model for multiturn conversations. The human evaluation results indicate that the response generated from DialoGPT is comparable to human response quality under a single-turn conversation Turing test. The model is trained on 147M multi-turn dialogue from Reddit discussion thread. * Multi-turn generation examples from an interactive environment: |Role | Response | |---------|--------| |User | Does money buy happiness? | | Bot | Depends how much money you spend on it .| |User | What is the best way to buy happiness ? | | Bot | You just have to be a millionaire by your early 20s, then you can be happy . | |User |This is so difficult ! | | Bot | You have no idea how hard it is to be a millionaire and happy . There is a reason the rich have a lot of money | Please find the information about preprocessing, training and full details of the DialoGPT in the original DialoGPT repository ArXiv paper: ### How to use Now we are ready to try out how the model works as a chatting partner! # Open LLM Leaderboard Evaluation Results Detailed results can be found here | Metric | Value | |-----------------------|---------------------------| | Avg. | 25.02 | | ARC (25-shot) | 25.77 | | HellaSwag (10-shot) | 25.79 | | MMLU (5-shot) | 25.81 | | TruthfulQA (0-shot) | 47.49 | | Winogrande (5-shot) | 50.28 | | GSM8K (5-shot) | 0.0 | | DROP (3-shot) | 0.0 |",
+    "model_explanation_gemini": "Generates human-like conversational responses for multiturn dialogues, trained on Reddit discussion threads."
+}

@@ -1,0 +1,18 @@
+{
+    "model_id": "nateraw/vit-age-classifier",
+    "downloads": 1405434,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "safetensors",
+        "vit",
+        "image-classification",
+        "dataset:nateraw/fairface",
+        "doi:10.57967/hf/1259",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- tags: - image-classification - pytorch datasets: - nateraw/fairface --- A vision transformer finetuned to classify the age of a given person's face.",
+    "model_explanation_gemini": "Classifies a person's age from their face image using a vision transformer."
+}

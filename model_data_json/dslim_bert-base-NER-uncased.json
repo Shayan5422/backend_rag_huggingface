@@ -1,0 +1,19 @@
+{
+    "model_id": "dslim/bert-base-NER-uncased",
+    "downloads": 258934,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "tf",
+        "jax",
+        "safetensors",
+        "bert",
+        "token-classification",
+        "license:mit",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: mit ---",
+    "model_explanation_gemini": "Identifies and classifies named entities like persons, organizations, and locations in uncased English text."
+}

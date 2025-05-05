@@ -1,0 +1,16 @@
+{
+    "model_id": "Xenova/bge-base-en-v1.5",
+    "downloads": 797029,
+    "tags": [
+        "transformers.js",
+        "onnx",
+        "bert",
+        "feature-extraction",
+        "base_model:BAAI/bge-base-en-v1.5",
+        "base_model:quantized:BAAI/bge-base-en-v1.5",
+        "license:mit",
+        "region:us"
+    ],
+    "description": "--- base_model: BAAI/bge-base-en-v1.5 library_name: transformers.js license: mit --- with ONNX weights to be compatible with Transformers.js. ## Usage (Transformers.js) If you haven't already, you can install the Transformers.js JavaScript library from NPM using: You can then use the model to compute embeddings, as follows: You can also use the model for retrieval. For example: --- Note: Having a separate repo for ONNX weights is intended to be a temporary solution until WebML gains more traction. If you would like to make your models web-ready, we recommend converting to ONNX using 🤗 Optimum and structuring your repo like this one (with ONNX weights located in a subfolder named ).",
+    "model_explanation_gemini": "Generates embeddings and supports retrieval tasks using ONNX weights for web compatibility."
+}

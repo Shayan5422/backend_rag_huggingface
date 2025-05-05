@@ -1,0 +1,16 @@
+{
+    "model_id": "calcuis/hidream-gguf",
+    "downloads": 37294,
+    "tags": [
+        "gguf",
+        "gguf-node",
+        "text-to-image",
+        "en",
+        "base_model:HiDream-ai/HiDream-I1-Full",
+        "base_model:quantized:HiDream-ai/HiDream-I1-Full",
+        "license:mit",
+        "region:us"
+    ],
+    "description": "--- license: mit language: - en base_model: - HiDream-ai/HiDream-I1-Full pipeline_tag: text-to-image tags: - gguf-node widget: - text: >- cute anime girl with massive fluffy fennec ears and a big fluffy tail blonde messy long hair blue eyes wearing a maid outfit with a long black gold leaf pattern dress and a white apron mouth open holding a fancy black forest cake with candles on top in the kitchen of an old dark Victorian mansion lit by candlelight with a bright window to the foggy forest and very expensive stuff everywhere parameters: negative_prompt: >- full (info only, don't copy this) output: url: samples\\ComfyUI_00004_.png - text: fast (same prompt as full) output: url: samples\\ComfyUI_00005_.png - text: dev (same prompt as full) output: url: samples\\ComfyUI_00006_.png - text: 1-clip (llama only) output: url: samples\\ComfyUI_00001_.png - text: 2-clip (llama + t5xxl) output: url: samples\\ComfyUI_00002_.png --- ## gguf quantized version of HiDream-i1-Full (incl. full + dev + fast) - full set gguf works right away (all gguf: model + encoder + vae) - upgrade your node(pypi|repo|pack) for model support !screenshot ### setup - drag **hidream** to > - drag **encoder**: g, l, t5xxl and llama to > - drag **pig** to > ### workflow - drag the json file or demo picture below for example workflow <Gallery /> ### reference - base model from hidream-ai - get safetensors from comfy-org - get more t5xxl-encoder gguf here - get more lama3.1-8b-encoder gguf here",
+    "model_explanation_gemini": "Generates anime-style images from text descriptions using a quantized version of the HiDream-I1-Full model."
+}

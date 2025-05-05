@@ -1,0 +1,15 @@
+{
+    "model_id": "vikp/layout_segmenter",
+    "downloads": 459950,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "layoutlmv3",
+        "token-classification",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "Segments pdf page layout into blocks. Based on layoutlmv3. Used in marker.",
+    "model_explanation_gemini": "Segments PDF page layouts into blocks using LayoutLMv3."
+}

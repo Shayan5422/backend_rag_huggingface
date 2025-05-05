@@ -1,0 +1,15 @@
+{
+    "model_id": "argmaxinc/whisperkit-coreml",
+    "downloads": 344968,
+    "tags": [
+        "whisperkit",
+        "coreml",
+        "whisper",
+        "asr",
+        "quantized",
+        "automatic-speech-recognition",
+        "region:us"
+    ],
+    "description": "--- pretty_name: \"WhisperKit\" viewer: false library_name: whisperkit tags: - whisper - whisperkit - coreml - asr - quantized - automatic-speech-recognition --- # WhisperKit WhisperKit is an on-device speech recognition framework for Apple Silicon: For performance and accuracy benchmarks on real devices, please see: WhisperKit Pro is the commercial upgraded version of WhisperKit. If you would like to learn more about upgrading to Pro, please reach out to whisperkitpro@argmaxinc.com or fill the form here.",
+    "model_explanation_gemini": "An on-device speech recognition framework for Apple Silicon optimized for automatic speech recognition (ASR) using CoreML and quantization."
+}

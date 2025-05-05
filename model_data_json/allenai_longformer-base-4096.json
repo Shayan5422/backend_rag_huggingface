@@ -1,0 +1,18 @@
+{
+    "model_id": "allenai/longformer-base-4096",
+    "downloads": 1745400,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "tf",
+        "rust",
+        "longformer",
+        "en",
+        "arxiv:2004.05150",
+        "license:apache-2.0",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: en license: apache-2.0 --- # longformer-base-4096 Longformer is a transformer model for long documents. is a BERT-like model started from the RoBERTa checkpoint and pretrained for MLM on long documents. It supports sequences of length up to 4,096. Longformer uses a combination of a sliding window (local) attention and global attention. Global attention is user-configured based on the task to allow the model to learn task-specific representations. Please refer to the examples in and the paper for more details on how to set global attention. ### Citing If you use in your research, please cite Longformer: The Long-Document Transformer. is an open-source project developed by the Allen Institute for Artificial Intelligence (AI2). AI2 is a non-profit institute with the mission to contribute to humanity through high-impact AI research and engineering.",
+    "model_explanation_gemini": "Longformer-base-4096 is a BERT-like transformer model optimized for processing long documents up to 4,096 tokens, combining sliding window and configurable global attention for task-specific representations."
+}

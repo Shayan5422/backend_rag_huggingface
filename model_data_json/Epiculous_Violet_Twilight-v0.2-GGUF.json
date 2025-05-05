@@ -1,0 +1,32 @@
+{
+    "model_id": "Epiculous/Violet_Twilight-v0.2-GGUF",
+    "downloads": 88807,
+    "tags": [
+        "gguf",
+        "merge",
+        "text-generation",
+        "en",
+        "fr",
+        "de",
+        "es",
+        "it",
+        "pt",
+        "ru",
+        "zh",
+        "ja",
+        "dataset:Epiculous/SynthRP-Gens-v1.1-Filtered-n-Cleaned",
+        "dataset:anthracite-org/stheno-filtered-v1.1",
+        "dataset:PJMixers/hieunguyenminh_roleplay-deduped-ShareGPT",
+        "dataset:Gryphe/Sonnet3.5-Charcard-Roleplay",
+        "dataset:Epiculous/Synthstruct-Gens-v1.1-Filtered-n-Cleaned",
+        "dataset:anthracite-org/kalo-opus-instruct-22k-no-refusal",
+        "dataset:anthracite-org/nopm_claude_writing_fixed",
+        "dataset:anthracite-org/kalo_opus_misc_240827",
+        "license:apache-2.0",
+        "endpoints_compatible",
+        "region:us",
+        "conversational"
+    ],
+    "description": "--- license: apache-2.0 datasets: - Epiculous/SynthRP-Gens-v1.1-Filtered-n-Cleaned - anthracite-org/stheno-filtered-v1.1 - PJMixers/hieunguyenminh_roleplay-deduped-ShareGPT - Gryphe/Sonnet3.5-Charcard-Roleplay - Epiculous/Synthstruct-Gens-v1.1-Filtered-n-Cleaned - anthracite-org/kalo-opus-instruct-22k-no-refusal - anthracite-org/nopm_claude_writing_fixed - anthracite-org/kalo_opus_misc_240827 language: - en - fr - de - es - it - pt - ru - zh - ja pipeline_tag: text-generation tags: - merge --- !image/png Now for something a bit different, Violet_Twilight-v0.2! This model is a SLERP merge of Azure_Dusk-v0.2 and Crimson_Dawn-v0.2! # Quants! full / exl2 / <strong>gguf</strong> ## Prompting The v0.2 models are trained on ChatML, the prompting structure goes a little something like this: ### Context and Instruct The v0.2 models are trained on ChatML, please use that Context and Instruct template. ### Current Top Sampler Settings Smooth Creativity: Credit to Juelsman for researching this one!<br/> Variant Chimera: Credit to Numbra!<br/> Spicy_Temp <br/> Violet_Twilight-Nitral-Special <br/> ## Merging The following config was used to merge Azure Dusk and Crimson Dawn",
+    "model_explanation_gemini": "A SLERP-merged text-generation model trained on ChatML for multilingual conversational tasks using optimized sampler settings."
+}

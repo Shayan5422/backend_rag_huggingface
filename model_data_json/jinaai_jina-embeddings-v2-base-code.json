@@ -1,0 +1,28 @@
+{
+    "model_id": "jinaai/jina-embeddings-v2-base-code",
+    "downloads": 115524,
+    "tags": [
+        "sentence-transformers",
+        "pytorch",
+        "onnx",
+        "safetensors",
+        "bert",
+        "fill-mask",
+        "feature-extraction",
+        "sentence-similarity",
+        "mteb",
+        "transformers",
+        "transformers.js",
+        "custom_code",
+        "en",
+        "dataset:allenai/c4",
+        "arxiv:2108.12409",
+        "arxiv:2310.19923",
+        "license:apache-2.0",
+        "autotrain_compatible",
+        "text-embeddings-inference",
+        "region:eu"
+    ],
+    "description": "--- tags: - sentence-transformers - feature-extraction - sentence-similarity - mteb - transformers - transformers.js datasets: - allenai/c4 language: en inference: false license: apache-2.0 --- <!-- TODO: add evaluation results here --> <br><br> <p align=\"center\"> <img src=\" alt=\"Jina AI: Your Search Foundation, Supercharged!\" width=\"150px\"> </p> <p align=\"center\"> <b>The text embedding set trained by <a href=\" AI</b></a>.</b> </p> ## Quick Start The easiest way to starting using is to use Jina AI's Embedding API. ## Intended Usage & Model Info is an multilingual **embedding model** speaks **English and 30 widely used programming languages**. Same as other jina-embeddings-v2 series, it supports **8192** sequence length. is based on a Bert architecture (JinaBert) that supports the symmetric bidirectional variant of ALiBi to allow longer sequence length. The backbone is pretrained on the github-code dataset. The model is further trained on Jina AI's collection of more than 150 millions of coding question answer and docstring source code pairs. These pairs were obtained from various domains and were carefully selected through a thorough cleaning process. The embedding model was trained using 512 sequence length, but extrapolates to 8k sequence length (or even longer) thanks to ALiBi. This makes our model useful for a range of use cases, especially when processing long documents is needed, including technical question answering and code search. This model has 161 million parameters, which enables fast and memory efficient inference, while delivering impressive performance. Additionally, we provide the following embedding models: - []( 33 million parameters. - []( 137 million parameters. - []( Chinese-English Bilingual embeddings. - []( German-English Bilingual embeddings. - []( Spanish-English Bilingual embeddings (soon). - []( 161 million parameters code embeddings. **<details><summary>Supported (Programming) Languages</summary>** <p> - English - Assembly - Batchfile - C - C# - C++ - CMake - CSS - Dockerfile - FORTRAN - GO - Haskell - HTML - Java - JavaScript - Julia - Lua - Makefile - Markdown - PHP - Perl - PowerShell - Python - Ruby - Rust - SQL - Scala - Shell - TypeScript - TeX - Visual Basic </p> </details> ## Data & Parameters Jina Embeddings V2 technical report ## Usage **<details><summary>Please apply mean pooling when integrating the model.</summary>** <p> ### Why mean pooling? takes all token embeddings from model output and averaging them at sentence/paragraph level. It has been proved to be the most effective way to produce high-quality sentence embeddings. We offer an function to deal with this. However, if you would like to do it without using the default function: </p> </details> You can use Jina Embedding models directly from transformers package: If you only want to handle shorter sequence, such as 2k, pass the parameter to the function: Using the its latest release (v2.3.0) sentence-transformers also supports Jina embeddings (Please make sure that you are logged into huggingface as well): You can also use the Transformers.js library to compute embeddings in JavaScript. ## Plans 1. Bilingual embedding models supporting more European & Asian languages, including Spanish, French, Italian and Japanese. 2. Multimodal embedding models enable Multimodal RAG applications. 3. High-performt rerankers. ## Contact Join our Discord community and chat with other community members about ideas.",
+    "model_explanation_gemini": "Generates multilingual embeddings for English and 30 programming languages, optimized for long sequences up to 8192 tokens, primarily for code search and technical question answering."
+}

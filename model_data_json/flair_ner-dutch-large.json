@@ -1,0 +1,16 @@
+{
+    "model_id": "flair/ner-dutch-large",
+    "downloads": 155515,
+    "tags": [
+        "flair",
+        "pytorch",
+        "token-classification",
+        "sequence-tagger-model",
+        "nl",
+        "dataset:conll2003",
+        "arxiv:2011.06993",
+        "region:us"
+    ],
+    "description": "--- tags: - flair - token-classification - sequence-tagger-model language: nl datasets: - conll2003 widget: - text: \"George Washington ging naar Washington\" --- ## Dutch NER in Flair (large model) This is the large 4-class NER model for Dutch that ships with Flair. F1-Score: **95,25** (CoNLL-03 Dutch) Predicts 4 tags: | **tag** | **meaning** | |---------------------------------|-----------| | PER | person name | | LOC | location name | | ORG | organization name | | MISC | other name | Based on document-level XLM-R embeddings and FLERT. --- ### Demo: How to use in Flair Requires: **Flair** () This yields the following output: So, the entities \"*George Washington*\" (labeled as a **person**) and \"*Washington*\" (labeled as a **location**) are found in the sentence \"*George Washington ging naar Washington*\". --- ### Training: Script to train this model The following Flair script was used to train this model: --- ### Cite Please cite the following paper when using this model. --- ### Issues? The Flair issue tracker is available here.",
+    "model_explanation_gemini": "Identifies and classifies named entities in Dutch text into four categories (person, location, organization, and miscellaneous) using document-level XLM-R embeddings and FLERT."
+}

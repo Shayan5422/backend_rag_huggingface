@@ -1,0 +1,15 @@
+{
+    "model_id": "unslothai/repeat",
+    "downloads": 1865537,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "llama",
+        "feature-extraction",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- library_name: transformers tags: [] ---",
+    "model_explanation_gemini": "The description provided does not contain any information about the model's functionality, purpose, or task."
+}

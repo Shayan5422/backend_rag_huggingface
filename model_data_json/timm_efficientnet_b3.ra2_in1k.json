@@ -1,0 +1,18 @@
+{
+    "model_id": "timm/efficientnet_b3.ra2_in1k",
+    "downloads": 2644882,
+    "tags": [
+        "timm",
+        "pytorch",
+        "safetensors",
+        "image-classification",
+        "transformers",
+        "dataset:imagenet-1k",
+        "arxiv:2110.00476",
+        "arxiv:1905.11946",
+        "license:apache-2.0",
+        "region:us"
+    ],
+    "description": "--- tags: - image-classification - timm - transformers library_name: timm license: apache-2.0 datasets: - imagenet-1k --- # Model card for efficientnet_b3.ra2_in1k A EfficientNet image classification model. Trained on ImageNet-1k in using recipe template described below. Recipe details: * RandAugment recipe. Inspired by and evolved from EfficientNet RandAugment recipes. Published as recipe in ResNet Strikes Back. * RMSProp (TF 1.0 behaviour) optimizer, EMA weight averaging * Step (exponential decay w/ staircase) LR schedule with warmup ## Model Details - **Model Type:** Image classification / feature backbone - **Model Stats:** - Params (M): 12.2 - GMACs: 1.6 - Activations (M): 21.5 - Image size: train = 288 x 288, test = 320 x 320 - **Papers:** - EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks: - ResNet strikes back: An improved training procedure in timm: - **Dataset:** ImageNet-1k - **Original:** ## Model Usage ### Image Classification ### Feature Map Extraction ### Image Embeddings ## Model Comparison Explore the dataset and runtime metrics of this model in timm model results. ## Citation",
+    "model_explanation_gemini": "An EfficientNet-based model for image classification and feature extraction, trained on ImageNet-1k with RandAugment and RMSProp optimization."
+}

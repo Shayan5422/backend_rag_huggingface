@@ -1,0 +1,23 @@
+{
+    "model_id": "Lykon/dreamshaper-8",
+    "downloads": 156532,
+    "tags": [
+        "diffusers",
+        "safetensors",
+        "stable-diffusion",
+        "stable-diffusion-diffusers",
+        "text-to-image",
+        "art",
+        "artistic",
+        "anime",
+        "dreamshaper",
+        "en",
+        "license:creativeml-openrail-m",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "diffusers:StableDiffusionPipeline",
+        "region:us"
+    ],
+    "description": "--- language: - en license: creativeml-openrail-m tags: - stable-diffusion - stable-diffusion-diffusers - text-to-image - art - artistic - diffusers - anime - dreamshaper duplicated_from: lykon/dreamshaper-8 pipeline_tag: text-to-image --- # Dreamshaper 8 is a Stable Diffusion model that has been fine-tuned on runwayml/stable-diffusion-v1-5. Please consider supporting me: - on Patreon - or buy me a coffee ## Diffusers For more general information on how to run text-to-image models with 🧨 Diffusers, see the docs. 1. Installation 2. Run ## Notes - **Version 8** focuses on improving what V7 started. Might be harder to do photorealism compared to realism focused models, as it might be hard to do anime compared to anime focused models, but it can do both pretty well if you're skilled enough. Check the examples! - **Version 7** improves lora support, NSFW and realism. If you're interested in \"absolute\" realism, try AbsoluteReality. - **Version 6** adds more lora support and more style in general. It should also be better at generating directly at 1024 height (but be careful with it). 6.x are all improvements. - **Version 5** is the best at photorealism and has noise offset. - **Version 4** is much better with anime (can do them with no LoRA) and booru tags. It might be harder to control if you're used to caption style, so you might still want to use version 3.31. V4 is also better with eyes at lower resolutions. Overall is like a \"fix\" of V3 and shouldn't be too much different.",
+    "model_explanation_gemini": "Dreamshaper-8 is a fine-tuned Stable Diffusion text-to-image model capable of generating artistic, anime, and realistic images, balancing multiple styles with improved versatility over previous versions."
+}

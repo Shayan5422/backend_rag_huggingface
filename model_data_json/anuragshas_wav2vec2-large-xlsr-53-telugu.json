@@ -1,0 +1,22 @@
+{
+    "model_id": "anuragshas/wav2vec2-large-xlsr-53-telugu",
+    "downloads": 96078,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "jax",
+        "wav2vec2",
+        "automatic-speech-recognition",
+        "audio",
+        "speech",
+        "xlsr-fine-tuning-week",
+        "te",
+        "dataset:openslr",
+        "license:apache-2.0",
+        "model-index",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: te datasets: - openslr metrics: - wer tags: - audio - automatic-speech-recognition - speech - xlsr-fine-tuning-week license: apache-2.0 model-index: - name: Anurag Singh XLSR Wav2Vec2 Large 53 Telugu results: - task: name: Speech Recognition type: automatic-speech-recognition dataset: name: OpenSLR te type: openslr args: te metrics: - name: Test WER type: wer value: 44.98 --- # Wav2Vec2-Large-XLSR-53-Telugu Fine-tuned facebook/wav2vec2-large-xlsr-53 on Telugu using the OpenSLR SLR66 dataset. When using this model, make sure that your speech input is sampled at 16kHz. ## Usage The model can be used directly (without a language model) as follows: ## Evaluation **Test Result**: 44.98% ## Training 70% of the OpenSLR Telugu dataset was used for training. Train Split of annotations is here Test Split of annotations is here Training Data Preparation notebook can be found here Training notebook can be foundhere Evaluation notebook is here",
+    "model_explanation_gemini": "Fine-tuned for Telugu speech recognition using the OpenSLR dataset, achieving a 44.98% word error rate on test data."
+}

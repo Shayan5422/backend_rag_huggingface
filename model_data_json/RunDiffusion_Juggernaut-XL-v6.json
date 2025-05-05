@@ -1,0 +1,28 @@
+{
+    "model_id": "RunDiffusion/Juggernaut-XL-v6",
+    "downloads": 155619,
+    "tags": [
+        "diffusers",
+        "art",
+        "people",
+        "diffusion",
+        "Cinematic",
+        "Photography",
+        "Landscape",
+        "Interior",
+        "Food",
+        "Car",
+        "Wildlife",
+        "Architecture",
+        "en",
+        "base_model:stabilityai/stable-diffusion-xl-base-1.0",
+        "base_model:finetune:stabilityai/stable-diffusion-xl-base-1.0",
+        "license:creativeml-openrail-m",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "diffusers:StableDiffusionXLPipeline",
+        "region:us"
+    ],
+    "description": "--- language: - en license: creativeml-openrail-m library_name: diffusers tags: - art - people - diffusion - Cinematic - Photography - Landscape - Interior - Food - Car - Wildlife - Architecture thumbnail: base_model: stabilityai/stable-diffusion-xl-base-1.0 --- # Juggernaut XL v6 + RunDiffusion Photo v1 Official !juggernaut XL photo previews !RunDiffusion Logo ## Juggernaut v9 is here! Juggernaut v9 + RunDiffusion Photo v2 This model is not permitted to be used behind API services. Please contact juggernaut@rundiffusion.com for business inquires, commercial licensing, custom models, and consultation. Juggernaut is available on the new Auto1111 Forge on RunDiffusion A big thanks for Version 6 goes to RunDiffusion (Photo Model) and Adam, who diligently helped me test :) (Leave some love for them ;) ) For business inquires, commercial licensing, custom models, and consultation contact me under juggernaut@rundiffusion.com",
+    "model_explanation_gemini": "Generates high-quality, photorealistic images across diverse categories like art, people, and landscapes using Stable Diffusion XL."
+}

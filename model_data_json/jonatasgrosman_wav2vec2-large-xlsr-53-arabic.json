@@ -1,0 +1,24 @@
+{
+    "model_id": "jonatasgrosman/wav2vec2-large-xlsr-53-arabic",
+    "downloads": 1359424,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "jax",
+        "wav2vec2",
+        "automatic-speech-recognition",
+        "audio",
+        "speech",
+        "xlsr-fine-tuning-week",
+        "ar",
+        "dataset:common_voice",
+        "dataset:arabic_speech_corpus",
+        "doi:10.57967/hf/3573",
+        "license:apache-2.0",
+        "model-index",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: ar datasets: - common_voice - arabic_speech_corpus metrics: - wer - cer tags: - audio - automatic-speech-recognition - speech - xlsr-fine-tuning-week license: apache-2.0 model-index: - name: XLSR Wav2Vec2 Arabic by Jonatas Grosman results: - task: name: Speech Recognition type: automatic-speech-recognition dataset: name: Common Voice ar type: common_voice args: ar metrics: - name: Test WER type: wer value: 39.59 - name: Test CER type: cer value: 18.18 --- # Fine-tuned XLSR-53 large model for speech recognition in Arabic Fine-tuned facebook/wav2vec2-large-xlsr-53 on Arabic using the train and validation splits of Common Voice 6.1 and Arabic Speech Corpus. When using this model, make sure that your speech input is sampled at 16kHz. This model has been fine-tuned thanks to the GPU credits generously given by the OVHcloud :) The script used for training can be found here: ## Usage The model can be used directly (without a language model) as follows... Using the HuggingSound library: Writing your own inference script: | Reference | Prediction | | ------------- | ------------- | | ألديك قلم ؟ | ألديك قلم | | ليست هناك مسافة على هذه الأرض أبعد من يوم أمس. | ليست نالك مسافة على هذه الأرض أبعد من يوم الأمس م | | إنك تكبر المشكلة. | إنك تكبر المشكلة | | يرغب أن يلتقي بك. | يرغب أن يلتقي بك | | إنهم لا يعرفون لماذا حتى. | إنهم لا يعرفون لماذا حتى | | سيسعدني مساعدتك أي وقت تحب. | سيسئدنيمساعدتك أي وقد تحب | | أَحَبُّ نظريّة علمية إليّ هي أن حلقات زحل مكونة بالكامل من الأمتعة المفقودة. | أحب نظرية علمية إلي هي أن حل قتزح المكوينا بالكامل من الأمت عن المفقودة | | سأشتري له قلماً. | سأشتري له قلما | | أين المشكلة ؟ | أين المشكل | | وَلِلَّهِ يَسْجُدُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ مِنْ دَابَّةٍ وَالْمَلَائِكَةُ وَهُمْ لَا يَسْتَكْبِرُونَ | ولله يسجد ما في السماوات وما في الأرض من دابة والملائكة وهم لا يستكبرون | ## Evaluation The model can be evaluated as follows on the Arabic test data of Common Voice. **Test Result**: In the table below I report the Word Error Rate (WER) and the Character Error Rate (CER) of the model. I ran the evaluation script described above on other models as well (on 2021-05-14). Note that the table below may show different results from those already reported, this may have been caused due to some specificity of the other evaluation scripts used. | Model | WER | CER | | ------------- | ------------- | ------------- | | jonatasgrosman/wav2vec2-large-xlsr-53-arabic | **39.59%** | **18.18%** | | bakrianoo/sinai-voice-ar-stt | 45.30% | 21.84% | | othrif/wav2vec2-large-xlsr-arabic | 45.93% | 20.51% | | kmfoda/wav2vec2-large-xlsr-arabic | 54.14% | 26.07% | | mohammed/wav2vec2-large-xlsr-arabic | 56.11% | 26.79% | | anas/wav2vec2-large-xlsr-arabic | 62.02% | 27.09% | | elgeish/wav2vec2-large-xlsr-53-arabic | 100.00% | 100.56% | ## Citation If you want to cite this model you can use this:",
+    "model_explanation_gemini": "Fine-tuned for Arabic speech recognition, converting spoken Arabic audio at 16kHz into text with a 39.59% word error rate."
+}

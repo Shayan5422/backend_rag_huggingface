@@ -1,0 +1,23 @@
+{
+    "model_id": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "downloads": 86478,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "mistral",
+        "text-generation",
+        "4-bit",
+        "AWQ",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "conversational",
+        "base_model:mistralai/Mistral-7B-Instruct-v0.3",
+        "base_model:quantized:mistralai/Mistral-7B-Instruct-v0.3",
+        "license:apache-2.0",
+        "text-generation-inference",
+        "awq",
+        "region:us"
+    ],
+    "description": "--- base_model: mistralai/Mistral-7B-Instruct-v0.3 inference: false library_name: transformers license: apache-2.0 pipeline_tag: text-generation quantized_by: Suparious tags: - 4-bit - AWQ - text-generation - autotrain_compatible - endpoints_compatible --- # mistralai/Mistral-7B-Instruct-v0.3 AWQ - Model creator: mistralai - Original model: Mistral-7B-Instruct-v0.3 ## Model Summary The Mistral-7B-Instruct-v0.3 Large Language Model (LLM) is an instruct fine-tuned version of the Mistral-7B-v0.3. Mistral-7B-v0.3 has the following changes compared to Mistral-7B-v0.2 - Extended vocabulary to 32768 - Supports v3 Tokenizer - Supports function calling ## How to use ### Install the necessary packages ### Example Python code ### About AWQ AWQ is an efficient, accurate and blazing-fast low-bit weight quantization method, currently supporting 4-bit quantization. Compared to GPTQ, it offers faster Transformers-based inference with equivalent or better quality compared to the most commonly used GPTQ settings. AWQ models are currently supported on Linux and Windows, with NVidia GPUs only. macOS users: please use GGUF models instead. It is supported by: - Text Generation Webui - using Loader: AutoAWQ - vLLM - version 0.2.2 or later for support for all model types. - Hugging Face Text Generation Inference (TGI) - Transformers version 4.35.0 and later, from any code or client that supports Transformers - AutoAWQ - for use from Python code",
+    "model_explanation_gemini": "A 4-bit quantized version of Mistral-7B-Instruct-v0.3 optimized for efficient text generation with AWQ, supporting function calling and extended vocabulary."
+}

@@ -1,0 +1,21 @@
+{
+    "model_id": "vennify/t5-base-grammar-correction",
+    "downloads": 87330,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "t5",
+        "text2text-generation",
+        "grammar",
+        "en",
+        "dataset:jfleg",
+        "arxiv:1702.04066",
+        "license:cc-by-nc-sa-4.0",
+        "autotrain_compatible",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: en tags: - grammar - text2text-generation license: cc-by-nc-sa-4.0 datasets: - jfleg --- # T5 Grammar Correction This model generates a revised version of inputted text with the goal of containing fewer grammatical errors. It was trained with Happy Transformer using a dataset called JFLEG. Here's a full article on how to train a similar model. ## Usage",
+    "model_explanation_gemini": "Generates grammatically corrected versions of input text to reduce errors."
+}

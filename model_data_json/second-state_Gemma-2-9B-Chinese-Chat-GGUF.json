@@ -1,0 +1,20 @@
+{
+    "model_id": "second-state/Gemma-2-9B-Chinese-Chat-GGUF",
+    "downloads": 94448,
+    "tags": [
+        "transformers",
+        "gguf",
+        "gemma2",
+        "text-generation",
+        "en",
+        "zh",
+        "base_model:shenzhi-wang/Gemma-2-9B-Chinese-Chat",
+        "base_model:quantized:shenzhi-wang/Gemma-2-9B-Chinese-Chat",
+        "license:gemma",
+        "autotrain_compatible",
+        "region:us",
+        "conversational"
+    ],
+    "description": "--- license: gemma library_name: transformers pipeline_tag: text-generation base_model: shenzhi-wang/Gemma-2-9B-Chinese-Chat inference: false model_creator: shenzhi-wang model_name: Gemma-2-9B-Chinese-Chat quantized_by: Second State Inc. language: - en - zh --- <!-- header start --> <!-- 200823 --> <div style=\"width: auto; margin-left: auto; margin-right: auto\"> <img src=\" style=\"width: 100%; min-width: 400px; display: block; margin: auto;\"> </div> <hr style=\"margin-top: 1.0em; margin-bottom: 1.0em;\"> <!-- header end --> # Gemma-2-9B-Chinese-Chat-GGUF ## Original Model shenzhi-wang/Gemma-2-9B-Chinese-Chat ## Run with LlamaEdge - LlamaEdge version: v0.12.1 and above - Prompt template - Prompt type: - Prompt string - Context size: - Run as LlamaEdge service - Run as LlamaEdge command app ## Quantized GGUF Models | Name | Quant method | Bits | Size | Use case | | ---- | ---- | ---- | ---- | ----- | | Gemma-2-9B-Chinese-Chat-Q2_K.gguf | Q2_K | 2 | 3.81 GB| smallest, significant quality loss - not recommended for most purposes | | Gemma-2-9B-Chinese-Chat-Q3_K_L.gguf | Q3_K_L | 3 | 5.13 GB| small, substantial quality loss | | Gemma-2-9B-Chinese-Chat-Q3_K_M.gguf | Q3_K_M | 3 | 4.76 GB| very small, high quality loss | | Gemma-2-9B-Chinese-Chat-Q3_K_S.gguf | Q3_K_S | 3 | 4.34 GB| very small, high quality loss | | Gemma-2-9B-Chinese-Chat-Q4_0.gguf | Q4_0 | 4 | 5.44 GB| legacy; small, very high quality loss - prefer using Q3_K_M | | Gemma-2-9B-Chinese-Chat-Q4_K_M.gguf | Q4_K_M | 4 | 5.76 GB| medium, balanced quality - recommended | | Gemma-2-9B-Chinese-Chat-Q4_K_S.gguf | Q4_K_S | 4 | 5.48 GB| small, greater quality loss | | Gemma-2-9B-Chinese-Chat-Q5_0.gguf | Q5_0 | 5 | 6.48 GB| legacy; medium, balanced quality - prefer using Q4_K_M | | Gemma-2-9B-Chinese-Chat-Q5_K_M.gguf | Q5_K_M | 5 | 6.65 GB| large, very low quality loss - recommended | | Gemma-2-9B-Chinese-Chat-Q5_K_S.gguf | Q5_K_S | 5 | 6.48 GB| large, low quality loss - recommended | | Gemma-2-9B-Chinese-Chat-Q6_K.gguf | Q6_K | 6 | 7.59 GB| very large, extremely low quality loss | | Gemma-2-9B-Chinese-Chat-Q8_0.gguf | Q8_0 | 8 | 9.83 GB| very large, extremely low quality loss - not recommended | | Gemma-2-9B-Chinese-Chat-f16.gguf | f16 | 16 | 18.5 GB| | *Quantized with llama.cpp b3259*",
+    "model_explanation_gemini": "A quantized version of the Gemma-2-9B-Chinese-Chat model optimized for text generation in English and Chinese, available in various sizes and quality levels for different use cases."
+}

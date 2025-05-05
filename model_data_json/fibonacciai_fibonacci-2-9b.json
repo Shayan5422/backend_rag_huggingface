@@ -1,0 +1,23 @@
+{
+    "model_id": "fibonacciai/fibonacci-2-9b",
+    "downloads": 524354,
+    "tags": [
+        "gguf",
+        "fibonacci",
+        "text-generation-inference",
+        "text generation",
+        "text2text generation",
+        "text-generation",
+        "fa",
+        "en",
+        "ar",
+        "dataset:fibonacciai/fibonacci-2025",
+        "base_model:fibonacciai/fibonacci-1-EN-8b-chat.P1_5",
+        "base_model:quantized:fibonacciai/fibonacci-1-EN-8b-chat.P1_5",
+        "license:mit",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: mit datasets: - fibonacciai/fibonacci-2025 language: - fa - en - ar base_model: - fibonacciai/fibonacci-1-EN-8b-chat.P1_5 pipeline_tag: text-generation new_version: fibonacciai/fibonacci-2-9b tags: - text-generation-inference - text generation - text2text generation --- # مدل Fibonacci-2-9b !لوگوی مدل ## معرفی مدل **Fibonacci-2-9b** یک مدل زبانی بزرگ (LLM) مبتنی بر معماری Gemma2 است که با ۹٫۲۴ میلیارد پارامتر طراحی شده است. این مدل برای انجام وظایف مرتبط با پردازش زبان طبیعی (NLP) و مکالمات متنی بهینه‌سازی شده است. ## ویژگی‌ها - **معماری:** Gemma2 - **تعداد پارامترها:** ۹٫۲۴ میلیارد - **فرمت‌ها:** GGUF با پشتیبانی از 4-bit (Q4_K_M)، 5-bit (Q5_K_M)، 8-bit (Q8_0)، و 16-bit (F16) - **مجوز استفاده:** MIT ## کاربردها - **تولید متن:** ایجاد متون خلاقانه و متنوع - **پاسخ به سؤالات:** ارائه پاسخ‌های دقیق به پرسش‌های کاربران - **ترجمه ماشینی:** ترجمه متون بین زبان‌های مختلف - **تحلیل احساسات:** شناسایی احساسات موجود در متون ## نحوه استفاده برای استفاده از این مدل، می‌توانید از کتابخانه‌های مختلفی مانند هاگینگ فیس استفاده کنید. در زیر یک نمونه کد برای بارگذاری و استفاده از مدل آورده شده است: python from transformers import AutoModelForCausalLM, AutoTokenizer tokenizer = AutoTokenizer.from_pretrained(\"fibonacciai/fibonacci-2-9b\") model = AutoModelForCausalLM.from_pretrained(\"fibonacciai/fibonacci-2-9b\") input_text = \"Hello! How can I assist you today?\" inputs = tokenizer(input_text, return_tensors=\"pt\") outputs = model.generate(**inputs) response = tokenizer.decode(outputs[0], skip_special_tokens=True) print(response) Resources Model Page on Hugging Face Hugging Face Documentation Contribution We welcome your contributions! If you have suggestions for improving the model or have identified any bugs, please share them with us through the Issues section. License This model is released under the MIT License. For more information, see the LICENSE file. # نموذج Fibonacci-2-9b !شعار النموذج ## المقدمة نموذج **Fibonacci-2-9b** هو نموذج لغة كبير (LLM) يعتمد على بنية Gemma2، تم تصميمه بـ 9.24 مليار معلمة. هذا النموذج مُحسّن لمهام معالجة اللغة الطبيعية (NLP) والمحادثات النصية. ## الميزات - **البنية:** Gemma2 - **عدد المعلمات:** 9.24 مليار - **التنسيقات:** GGUF تدعم 4-بت (Q4_K_M)، 5-بت (Q5_K_M)، 8-بت (Q8_0)، و16-بت (F16) - **الترخيص:** MIT ## التطبيقات - **توليد النصوص:** إنشاء نصوص إبداعية ومتنوعة - **الإجابة على الأسئلة:** تقديم إجابات دقيقة لاستفسارات المستخدمين - **الترجمة الآلية:** ترجمة النصوص بين لغات مختلفة - **تحليل المشاعر:** تحديد المشاعر الموجودة في النصوص ## كيفية الاستخدام لاستخدام هذا النموذج، يمكنك الاستفادة من مكتبات مختلفة مثل من Hugging Face. فيما يلي مثال لتحميل واستخدام النموذج: ```python from transformers import AutoModelForCausalLM, AutoTokenizer tokenizer = AutoTokenizer.from_pretrained(\"fibonacciai/fibonacci-2-9b\") model = AutoModelForCausalLM.from_pretrained(\"fibonacciai/fibonacci-2-9b\") input_text = \"مرحبًا! كيف يمكنني مساعدتك اليوم؟\" inputs = tokenizer(input_text, return_tensors=\"pt\") outputs ::contentReference[oaicite:0]{index=0}",
+    "model_explanation_gemini": "A 9.24-billion-parameter Gemma2-based multilingual language model optimized for text generation, question answering, machine translation, and sentiment analysis across Persian, English, and Arabic."
+}

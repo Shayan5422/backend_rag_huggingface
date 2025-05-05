@@ -1,0 +1,20 @@
+{
+    "model_id": "cecibas/Midnight-Miqu-70B-v1.5-4bit",
+    "downloads": 200277,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "llama",
+        "text-generation",
+        "conversational",
+        "license:unknown",
+        "autotrain_compatible",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "4-bit",
+        "awq",
+        "region:us"
+    ],
+    "description": "--- license: unknown --- awq quant made with lmdeploy v0.4.2:",
+    "model_explanation_gemini": "An AWQ-quantized version of the Midnight-Miqu-70B-v1.5 model created using lmdeploy v0.4.2."
+}

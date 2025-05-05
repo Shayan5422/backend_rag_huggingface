@@ -1,0 +1,29 @@
+{
+    "model_id": "LongSafari/evo-1-8k-transposon",
+    "downloads": 328292,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "safetensors",
+        "stripedhyena",
+        "text-generation",
+        "long context",
+        "deep signal processing",
+        "hybrid",
+        "biology",
+        "genomics",
+        "custom_code",
+        "arxiv:2302.10866",
+        "arxiv:2203.14343",
+        "arxiv:2310.18780",
+        "arxiv:2206.11893",
+        "arxiv:2303.06349",
+        "arxiv:2102.02611",
+        "arxiv:2210.09298",
+        "license:apache-2.0",
+        "autotrain_compatible",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 tags: - stripedhyena - long context - deep signal processing - hybrid - biology - genomics --- ## Evo-1 (Transposon) <p align=\"center\"> <img src=\" width=\"70%\" /> </p> ### News We identified and fixed an issue related to a wrong permutation of some projections, which affects generation quality. To use the new model revision, please load as follows: ### About Evo is a biological foundation model capable of long-context modeling and design. Evo uses the StripedHyena architecture to enable modeling of sequences at a single-nucleotide, byte-level resolution with near-linear scaling of compute and memory relative to context length. Evo has 7 billion parameters and is trained on OpenGenome, a prokaryotic whole-genome dataset containing ~300 billion tokens. Technical details about Evo can be found in our preprint and our accompanying blog posts. Evo was collaboratively developed by the Arc Institute and TogetherAI. As part of our commitment to open science, we release **weights of 15 intermediate pretraining checkpoints** for phase 1 and phase 2 of pretraining. The checkpoints are available as branches of the corresponding HuggingFace repository. **Evo-1 (Transposon)** is our fine-tuned model used to generate IS200/605, trained at a context length of 8k. | Checkpoint Name | Description | |----------------------------------------|-------------| | | A model pretrained with 8,192 context. We use this model as the base model for molecular-scale finetuning tasks. | | | A model pretrained with 131,072 context using as the initialization. We use this model to reason about and generate sequences at the genome scale. | | | A model fine-tuned on specifically on CRISPR-Cas systems. We use this model to generate Cas9/12/13 systems. | | | A model fine-tuned on specifically on transposons. We use this to generate IS200/IS605. | ### Model Architecture StripedHyena is a deep signal processing, hybrid architecture composed of multi-head attention and gated convolutions arranged in Hyena blocks, improving over decoder-only Transformers. StripedHyena is designed to leverage the specialization of each of its layer classes, with Hyena layers implementing the bulk of the computation required for sequence processing and attention layers supplementing the ability to perform targeted pattern recall. Some highlights of the architecture: - **Efficient autoregressive generation** via a recurrent mode (>500k generation with a single 80GB GPU) - **Significantly faster training and finetuning** at long context (>3x at 131k) - **Improved scaling laws over state-of-the-art architectures** (e.g., Transformer++) on both natural language and biological sequences. - **Robust to training beyond the compute-optimal frontier** e.g., training way beyond Chinchilla-optimal token amounts (see preprint for details -- more details to come) ### How to use Evo Example usage is provided in the standalone repo. #### Parametrization for Inference and Finetuning One of the advantages of deep signal processing models is their flexibility. Different parametrizations of convolutions can be used depending on the memory, expressivity and causality requirements of pretraining, finetuning or inference workloads. The main classes are: - Modal canonical: unconstrained poles (reference, reference), or constrained poles (reference, reference). - Companion canonical / rational: TBA. - Hypernetworks: hypernetwork (reference), modulated hypernetwork (reference). - Explicit: modulated explicit (reference). StripedHyena is a mixed precision model. Make sure to keep your and in precision, especially for longer prompts or training. ### Disclaimer To use StripedHyena outside of the playground, you will need to install custom kernels. Please follow the instructions from the standalone repository. ## Cite",
+    "model_explanation_gemini": "Generates IS200/605 transposon sequences using a fine-tuned biological foundation model with long-context capabilities."
+}

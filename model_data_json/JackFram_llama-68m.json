@@ -1,0 +1,20 @@
+{
+    "model_id": "JackFram/llama-68m",
+    "downloads": 527726,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "llama",
+        "text-generation",
+        "en",
+        "dataset:wikipedia",
+        "arxiv:2305.09781",
+        "license:apache-2.0",
+        "autotrain_compatible",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 language: - en datasets: - wikipedia pipeline_tag: text-generation --- ## Model description This is a LLaMA-like model with only 68M parameters trained on Wikipedia and part of the C4-en and C4-realnewslike datasets. No evaluation has been conducted yet, so use it with care. The model is mainly developed as a base Small Speculative Model in the SpecInfer paper. ## Citation To cite the model, please use",
+    "model_explanation_gemini": "A 68M-parameter LLaMA-like text-generation model trained on Wikipedia and C4 datasets, primarily serving as a base small speculative model for the SpecInfer paper."
+}

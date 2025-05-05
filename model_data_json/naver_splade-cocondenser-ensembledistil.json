@@ -1,0 +1,25 @@
+{
+    "model_id": "naver/splade-cocondenser-ensembledistil",
+    "downloads": 575595,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "bert",
+        "fill-mask",
+        "splade",
+        "query-expansion",
+        "document-expansion",
+        "bag-of-words",
+        "passage-retrieval",
+        "knowledge-distillation",
+        "en",
+        "dataset:ms_marco",
+        "arxiv:2205.04733",
+        "license:cc-by-nc-sa-4.0",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: cc-by-nc-sa-4.0 language: \"en\" tags: - splade - query-expansion - document-expansion - bag-of-words - passage-retrieval - knowledge-distillation datasets: - ms_marco --- ## SPLADE CoCondenser EnsembleDistil SPLADE model for passage retrieval. For additional details, please visit: * paper: * code: | | MRR@10 (MS MARCO dev) | R@1000 (MS MARCO dev) | | --- | --- | --- | | | 38.3 | 98.3 | ## Citation If you use our checkpoint, please cite our work:",
+    "model_explanation_gemini": "An ensemble-distilled SPLADE model designed for passage retrieval, optimized for query and document expansion using a bag-of-words approach."
+}

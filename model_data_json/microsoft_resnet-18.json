@@ -1,0 +1,21 @@
+{
+    "model_id": "microsoft/resnet-18",
+    "downloads": 125286,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "tf",
+        "safetensors",
+        "resnet",
+        "image-classification",
+        "vision",
+        "dataset:imagenet-1k",
+        "arxiv:1512.03385",
+        "license:apache-2.0",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 tags: - vision - image-classification datasets: - imagenet-1k widget: - src: example_title: Tiger - src: example_title: Teapot - src: example_title: Palace --- # ResNet ResNet model trained on imagenet-1k. It was introduced in the paper Deep Residual Learning for Image Recognition and first released in this repository. Disclaimer: The team releasing ResNet did not write a model card for this model so this model card has been written by the Hugging Face team. ## Model description ResNet introduced residual connections, they allow to train networks with an unseen number of layers (up to 1000). ResNet won the 2015 ILSVRC & COCO competition, one important milestone in deep computer vision. !model image ## Intended uses & limitations You can use the raw model for image classification. See the model hub to look for fine-tuned versions on a task that interests you. ### How to use Here is how to use this model: For more code examples, we refer to the documentation.",
+    "model_explanation_gemini": "Classifies images into categories using residual connections trained on ImageNet-1k."
+}

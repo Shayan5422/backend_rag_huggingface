@@ -1,0 +1,17 @@
+{
+    "model_id": "MIT/ast-finetuned-audioset-14-14-0.443",
+    "downloads": 189117,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "safetensors",
+        "audio-spectrogram-transformer",
+        "audio-classification",
+        "arxiv:2104.01778",
+        "license:bsd-3-clause",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: bsd-3-clause tags: - audio-classification --- # Audio Spectrogram Transformer (fine-tuned on AudioSet) Audio Spectrogram Transformer (AST) model fine-tuned on AudioSet. It was introduced in the paper AST: Audio Spectrogram Transformer by Gong et al. and first released in this repository. Disclaimer: The team releasing Audio Spectrogram Transformer did not write a model card for this model so this model card has been written by the Hugging Face team. ## Model description The Audio Spectrogram Transformer is equivalent to ViT, but applied on audio. Audio is first turned into an image (as a spectrogram), after which a Vision Transformer is applied. The model gets state-of-the-art results on several audio classification benchmarks. ## Usage You can use the raw model for classifying audio into one of the AudioSet classes. See the documentation for more info.",
+    "model_explanation_gemini": "Classifies audio into predefined AudioSet categories using a spectrogram-based vision transformer approach."
+}

@@ -1,0 +1,18 @@
+{
+    "model_id": "google/mobilebert-uncased",
+    "downloads": 172098,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "tf",
+        "rust",
+        "mobilebert",
+        "pretraining",
+        "en",
+        "license:apache-2.0",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: en thumbnail: license: apache-2.0 --- ## MobileBERT: a Compact Task-Agnostic BERT for Resource-Limited Devices MobileBERT is a thin version of BERT_LARGE, while equipped with bottleneck structures and a carefully designed balance between self-attentions and feed-forward networks. This checkpoint is the original MobileBert Optimized Uncased English: uncased_L-24_H-128_B-512_A-4_F-4_OPT checkpoint. ## How to use MobileBERT in",
+    "model_explanation_gemini": "MobileBERT is a compact, task-agnostic version of BERT_LARGE designed for resource-limited devices, featuring bottleneck structures and optimized self-attention-to-feed-forward network balance."
+}

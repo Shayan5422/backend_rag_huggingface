@@ -1,0 +1,12 @@
+{
+    "model_id": "myshell-ai/MeloTTS-English-v3",
+    "downloads": 143083,
+    "tags": [
+        "transformers",
+        "license:mit",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: mit --- # MeloTTS MeloTTS is a **high-quality multi-lingual** text-to-speech library by MyShell.ai. Supported languages include: | Model card | Example | | --- | --- | | English (American) | Link | | English (British) | Link | | English (Indian) | Link | | English (Australian) | Link | | English (Default) | Link | | Spanish | Link | | French | Link | | Chinese (mix EN) | Link | | Japanese | Link | | Korean | Link | Some other features include: - The Chinese speaker supports . - Fast enough for . ## Usage ### Without Installation An unofficial live demo is hosted on Hugging Face Spaces. #### Use it on MyShell There are hundreds of TTS models on MyShell, much more than MeloTTS. See examples here. More can be found at the widget center of MyShell.ai. ### Install and Use Locally Follow the installation steps here before using the following snippet: ## Join the Community **Open Source AI Grant** We are actively sponsoring open-source AI projects. The sponsorship includes GPU resources, fundings and intellectual support (collaboration with top research labs). We welcome both reseach and engineering projects, as long as the open-source community needs them. Please contact Zengyi Qin if you are interested. **Contributing** If you find this work useful, please consider contributing to the GitHub repo. - Many thanks to @fakerybakery for adding the Web UI and CLI part. ## License This library is under MIT License, which means it is free for both commercial and non-commercial use. ## Acknowledgements This implementation is based on TTS, VITS, VITS2 and Bert-VITS2. We appreciate their awesome work.",
+    "model_explanation_gemini": "Generates high-quality, multilingual speech from text with support for multiple English accents and other languages."
+}

@@ -1,0 +1,17 @@
+{
+    "model_id": "timm/tinynet_e.in1k",
+    "downloads": 628817,
+    "tags": [
+        "timm",
+        "pytorch",
+        "safetensors",
+        "image-classification",
+        "transformers",
+        "dataset:imagenet-1k",
+        "arxiv:2010.14819",
+        "license:apache-2.0",
+        "region:us"
+    ],
+    "description": "--- tags: - image-classification - timm - transformers library_name: timm license: apache-2.0 datasets: - imagenet-1k --- # Model card for tinynet_e.in1k A TinyNet image classification model. Trained on ImageNet-1k by paper authors. ## Model Details - **Model Type:** Image classification / feature backbone - **Model Stats:** - Params (M): 2.0 - GMACs: 0.0 - Activations (M): 0.7 - Image size: 106 x 106 - **Papers:** - Model rubik's cube: Twisting resolution, depth and width for tinynets: - **Dataset:** ImageNet-1k ## Model Usage ### Image Classification ### Feature Map Extraction ### Image Embeddings ## Model Comparison Explore the dataset and runtime metrics of this model in timm model results. ## Citation",
+    "model_explanation_gemini": "Classifies images using a lightweight TinyNet architecture trained on ImageNet-1k."
+}

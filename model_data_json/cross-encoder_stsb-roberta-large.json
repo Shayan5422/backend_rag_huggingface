@@ -1,0 +1,24 @@
+{
+    "model_id": "cross-encoder/stsb-roberta-large",
+    "downloads": 109164,
+    "tags": [
+        "sentence-transformers",
+        "pytorch",
+        "jax",
+        "onnx",
+        "safetensors",
+        "openvino",
+        "roberta",
+        "text-classification",
+        "transformers",
+        "text-ranking",
+        "en",
+        "dataset:sentence-transformers/stsb",
+        "base_model:FacebookAI/roberta-large",
+        "base_model:quantized:FacebookAI/roberta-large",
+        "license:apache-2.0",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 datasets: - sentence-transformers/stsb language: - en base_model: - FacebookAI/roberta-large pipeline_tag: text-ranking library_name: sentence-transformers tags: - transformers --- # Cross-Encoder for Semantic Textual Similarity This model was trained using SentenceTransformers Cross-Encoder class. ## Training Data This model was trained on the STS benchmark dataset. The model will predict a score between 0 and 1 how for the semantic similarity of two sentences. ## Usage and Performance Pre-trained models can be used like this: The model will predict scores for the pairs and . You can use this model also without sentence_transformers and by just using Transformers `` class",
+    "model_explanation_gemini": "Predicts semantic similarity scores between two sentences on a scale from 0 to 1, trained on the STS benchmark dataset."
+}

@@ -1,0 +1,16 @@
+{
+    "model_id": "state-spaces/mamba-130m-hf",
+    "downloads": 36755,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "mamba",
+        "text-generation",
+        "autotrain_compatible",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- library_name: transformers tags: [] --- # Mamba <!-- Provide a quick summary of what the model is/does. --> This repository contains the compatible . The checkpoints are untouched, but the full and tokenizer are pushed to this repo. # Usage You need to install from until is released. We also recommend you to install both and using: If any of these two is not installed, the \"eager\" implementation will be used. Otherwise the more optimised kernels will be used. ## Generation You can use the classic API: ## PEFT finetuning example In order to finetune using the library, we recommend keeping the model in float32!",
+    "model_explanation_gemini": "The model supports sequence generation and PEFT finetuning with optimized kernels when dependencies are installed, using untouched checkpoints and a compatible tokenizer."
+}

@@ -1,0 +1,15 @@
+{
+    "model_id": "allenai/scibert_scivocab_uncased",
+    "downloads": 262076,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "jax",
+        "bert",
+        "en",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: en --- # SciBERT This is the pretrained model presented in SciBERT: A Pretrained Language Model for Scientific Text, which is a BERT model trained on scientific text. The training corpus was papers taken from Semantic Scholar. Corpus size is 1.14M papers, 3.1B tokens. We use the full text of the papers in training, not just abstracts. SciBERT has its own wordpiece vocabulary (scivocab) that's built to best match the training corpus. We trained cased and uncased versions. Available models include: * * The original repo can be found here. If using these models, please cite the following paper:",
+    "model_explanation_gemini": "Pretrained BERT model specialized for scientific text, trained on 1.14M papers with a custom vocabulary (scivocab), available in cased and uncased versions."
+}

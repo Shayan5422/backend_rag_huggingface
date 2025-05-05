@@ -1,0 +1,19 @@
+{
+    "model_id": "bionlp/bluebert_pubmed_mimic_uncased_L-12_H-768_A-12",
+    "downloads": 189235,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "jax",
+        "bert",
+        "bluebert",
+        "en",
+        "dataset:PubMed",
+        "dataset:MIMIC-III",
+        "license:cc0-1.0",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: - en tags: - bert - bluebert license: cc0-1.0 datasets: - PubMed - MIMIC-III --- # BlueBert-Base, Uncased, PubMed and MIMIC-III ## Model description A BERT model pre-trained on PubMed abstracts and clinical notes (MIMIC-III). ## Intended uses & limitations #### How to use Please see ## Training data We provide preprocessed PubMed texts that were used to pre-train the BlueBERT models. The corpus contains ~4000M words extracted from the PubMed ASCII code version. Pre-trained model: ## Training procedure * lowercasing the text * removing speical chars - * tokenizing the text using the NLTK Treebank tokenizer Below is a code snippet for more details. ### BibTeX entry and citation info ### Acknowledgments This work was supported by the Intramural Research Programs of the National Institutes of Health, National Library of Medicine and Clinical Center. This work was supported by the National Library of Medicine of the National Institutes of Health under award number 4R00LM013001-01. We are also grateful to the authors of BERT and ELMo to make the data and codes publicly available. We would like to thank Dr Sun Kim for processing the PubMed texts. ### Disclaimer This tool shows the results of research conducted in the Computational Biology Branch, NCBI. The information produced on this website is not intended for direct diagnostic use or medical decision-making without review and oversight by a clinical professional. Individuals should not change their health behavior solely on the basis of information produced on this website. NIH does not independently verify the validity or utility of the information produced by this tool. If you have questions about the information produced on this website, please see a health care professional. More information about NCBI's disclaimer policy is available.",
+    "model_explanation_gemini": "A BERT model pre-trained on PubMed abstracts and clinical notes (MIMIC-III) for biomedical and clinical text processing."
+}

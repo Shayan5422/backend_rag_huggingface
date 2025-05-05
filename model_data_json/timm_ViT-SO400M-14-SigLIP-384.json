@@ -1,0 +1,17 @@
+{
+    "model_id": "timm/ViT-SO400M-14-SigLIP-384",
+    "downloads": 105542,
+    "tags": [
+        "open_clip",
+        "safetensors",
+        "clip",
+        "siglip",
+        "zero-shot-image-classification",
+        "dataset:webli",
+        "arxiv:2303.15343",
+        "license:apache-2.0",
+        "region:us"
+    ],
+    "description": "--- tags: - clip - siglip library_name: open_clip pipeline_tag: zero-shot-image-classification license: apache-2.0 datasets: - webli --- # Model card for ViT-SO400M-14-SigLIP-384 A SigLIP (Sigmoid loss for Language-Image Pre-training) model trained on WebLI. This model has been converted to PyTorch from the original JAX checkpoints in Big Vision. These weights are usable in both OpenCLIP (image + text) and timm (image only). ## Model Details - **Model Type:** Contrastive Image-Text, Zero-Shot Image Classification. - **Original:** - **Dataset:** WebLI - **Papers:** - Sigmoid loss for language image pre-training: ## Model Usage ### With OpenCLIP ### With (for image embeddings) ## Citation",
+    "model_explanation_gemini": "A SigLIP model trained on WebLI for zero-shot image classification and contrastive image-text tasks, usable in OpenCLIP and timm for generating image and text embeddings."
+}

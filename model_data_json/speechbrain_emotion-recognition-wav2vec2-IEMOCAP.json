@@ -1,0 +1,19 @@
+{
+    "model_id": "speechbrain/emotion-recognition-wav2vec2-IEMOCAP",
+    "downloads": 308097,
+    "tags": [
+        "speechbrain",
+        "audio-classification",
+        "Emotion",
+        "Recognition",
+        "wav2vec2",
+        "pytorch",
+        "en",
+        "dataset:iemocap",
+        "arxiv:2106.04624",
+        "license:apache-2.0",
+        "region:us"
+    ],
+    "description": "--- language: \"en\" thumbnail: tags: - audio-classification - speechbrain - Emotion - Recognition - wav2vec2 - pytorch license: \"apache-2.0\" datasets: - iemocap metrics: - Accuracy inference: false --- <iframe src=\" frameborder=\"0\" scrolling=\"0\" width=\"170\" height=\"30\" title=\"GitHub\"></iframe> <br/><br/> # Emotion Recognition with wav2vec2 base on IEMOCAP This repository provides all the necessary tools to perform emotion recognition with a fine-tuned wav2vec2 (base) model using SpeechBrain. It is trained on IEMOCAP training data. For a better experience, we encourage you to learn more about SpeechBrain. The model performance on IEMOCAP test set is: | Release | Accuracy(%) | |:-------------:|:--------------:| | 19-10-21 | 78.7 (Avg: 75.3) | ## Pipeline description This system is composed of an wav2vec2 model. It is a combination of convolutional and residual blocks. The embeddings are extracted using attentive statistical pooling. The system is trained with Additive Margin Softmax Loss. Speaker Verification is performed using cosine distance between speaker embeddings. The system is trained with recordings sampled at 16kHz (single channel). The code will automatically normalize your audio (i.e., resampling + mono channel selection) when calling *classify_file* if needed. ## Install SpeechBrain First of all, please install the **development** version of SpeechBrain with the following command: Please notice that we encourage you to read our tutorials and learn more about SpeechBrain. ### Perform Emotion recognition An external is used as an external Predictor class into this HF repos. We use function from that allow you to load you custom model. The prediction tensor will contain a tuple of (embedding, id_class, label_name). ### Inference on GPU To perform inference on the GPU, add when calling the method. ### Training The model was trained with SpeechBrain (aa018540). To train it from scratch follows these steps: 1. Clone SpeechBrain: 2. Install it: 3. Run Training: You can find our training results (models, logs, etc) here. ### Limitations The SpeechBrain team does not provide any warranty on the performance achieved by this model when used on other datasets. # **Citing SpeechBrain** Please, cite SpeechBrain if you use it for your research or business. # **About SpeechBrain** - Website: - Code: - HuggingFace:",
+    "model_explanation_gemini": "Recognizes emotions from speech audio using a fine-tuned wav2vec2 model trained on the IEMOCAP dataset."
+}

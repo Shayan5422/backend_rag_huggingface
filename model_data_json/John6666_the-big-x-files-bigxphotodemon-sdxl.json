@@ -1,0 +1,22 @@
+{
+    "model_id": "John6666/the-big-x-files-bigxphotodemon-sdxl",
+    "downloads": 131824,
+    "tags": [
+        "diffusers",
+        "safetensors",
+        "text-to-image",
+        "stable-diffusion",
+        "stable-diffusion-xl",
+        "realistic",
+        "photorealistic",
+        "bigasp",
+        "en",
+        "license:creativeml-openrail-m",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "diffusers:StableDiffusionXLPipeline",
+        "region:us"
+    ],
+    "description": "--- license: creativeml-openrail-m language: - en library_name: diffusers pipeline_tag: text-to-image tags: - text-to-image - stable-diffusion - stable-diffusion-xl - realistic - photorealistic - bigasp --- Original model is here. This model created by qnt_iler.",
+    "model_explanation_gemini": "Generates photorealistic images from text prompts using Stable Diffusion XL."
+}

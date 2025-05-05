@@ -1,0 +1,18 @@
+{
+    "model_id": "gilf/french-camembert-postag-model",
+    "downloads": 887228,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "tf",
+        "safetensors",
+        "camembert",
+        "token-classification",
+        "fr",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: fr widget: - text: \"Face à un choc inédit, les mesures mises en place par le gouvernement ont permis une protection forte et efficace des ménages\" --- ## About The *french-camembert-postag-model* is a part of speech tagging model for French that was trained on the *free-french-treebank* dataset available on github. The base tokenizer and model used for training is *'camembert-base'*. ## Supported Tags It uses the following tags: | Tag | Category | Extra Info | |----------|:------------------------------:|------------:| | ADJ | adjectif | | | ADJWH | adjectif | | | ADV | adverbe | | | ADVWH | adverbe | | | CC | conjonction de coordination | | | CLO | pronom | obj | | CLR | pronom | refl | | CLS | pronom | suj | | CS | conjonction de subordination | | | DET | déterminant | | | DETWH | déterminant | | | ET | mot étranger | | | I | interjection | | | NC | nom commun | | | NPP | nom propre | | | P | préposition | | | P+D | préposition + déterminant | | | PONCT | signe de ponctuation | | | PREF | préfixe | | | PRO | autres pronoms | | | PROREL | autres pronoms | rel | | PROWH | autres pronoms | int | | U | ? | | | V | verbe | | | VIMP | verbe imperatif | | | VINF | verbe infinitif | | | VPP | participe passé | | | VPR | participe présent | | | VS | subjonctif | | More information on the tags can be found here: ## Usage The usage of this model follows the common transformers patterns. Here is a short example of its usage: The lines above would display something like this on a Jupyter notebook:",
+    "model_explanation_gemini": "A French part-of-speech tagging model trained on the free-french-treebank dataset using camembert-base to classify words into specific grammatical categories."
+}

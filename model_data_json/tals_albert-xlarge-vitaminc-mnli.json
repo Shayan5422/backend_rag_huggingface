@@ -1,0 +1,20 @@
+{
+    "model_id": "tals/albert-xlarge-vitaminc-mnli",
+    "downloads": 859985,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "tf",
+        "safetensors",
+        "albert",
+        "text-classification",
+        "dataset:glue",
+        "dataset:multi_nli",
+        "dataset:tals/vitaminc",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- datasets: - glue - multi_nli - tals/vitaminc --- # Details Model used in Get Your Vitamin C! Robust Fact Verification with Contrastive Evidence (Schuster et al., NAACL 21`). For more details see: When using this model, please cite the paper. # BibTeX entry and citation info",
+    "model_explanation_gemini": "Classifies or verifies facts by leveraging contrastive evidence, trained on datasets including GLUE, MultiNLI, and VitaminC."
+}

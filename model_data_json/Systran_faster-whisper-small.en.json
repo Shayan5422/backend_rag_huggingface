@@ -1,0 +1,14 @@
+{
+    "model_id": "Systran/faster-whisper-small.en",
+    "downloads": 136878,
+    "tags": [
+        "ctranslate2",
+        "audio",
+        "automatic-speech-recognition",
+        "en",
+        "license:mit",
+        "region:us"
+    ],
+    "description": "--- language: - en tags: - audio - automatic-speech-recognition license: mit library_name: ctranslate2 --- # Whisper small.en model for CTranslate2 This repository contains the conversion of openai/whisper-small.en to the CTranslate2 model format. This model can be used in CTranslate2 or projects based on CTranslate2 such as faster-whisper. ## Example ## Conversion details The original model was converted with the following command: Note that the model weights are saved in FP16. This type can be changed when the model is loaded using the option in CTranslate2. ## More information **For more information about the original model, see its model card.**",
+    "model_explanation_gemini": "Converts OpenAI's Whisper-small.en model to the CTranslate2 format for efficient automatic speech recognition in English."
+}

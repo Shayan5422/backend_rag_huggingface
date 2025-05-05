@@ -1,0 +1,22 @@
+{
+    "model_id": "bespin-global/klue-sroberta-base-continue-learning-by-mnr",
+    "downloads": 84806,
+    "tags": [
+        "sentence-transformers",
+        "pytorch",
+        "safetensors",
+        "roberta",
+        "feature-extraction",
+        "sentence-similarity",
+        "transformers",
+        "ko",
+        "dataset:klue",
+        "license:cc-by-4.0",
+        "autotrain_compatible",
+        "text-embeddings-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- pipeline_tag: sentence-similarity tags: - sentence-transformers - feature-extraction - sentence-similarity - transformers datasets: - klue language: - ko license: cc-by-4.0 --- # bespin-global/klue-sroberta-base-continue-learning-by-mnr 해당 모델은 KLUE/NLI, KLUE/STS 데이터셋을 활용하였으며, sentence-transformers의 공식 문서 내 소개된 continue-learning 방법을 통해 아래와 같이 학습되었습니다. 1. NLI 데이터셋을 통해 nagative sampling 후, MultipleNegativeRankingLoss를 활용하여 1차 NLI training 수행 2. 1에서 학습완료 된 모델에 STS 데이터셋을 통해, CosineSimilarityLoss를 활용하여 2차 STS training 수행 학습에 관한 자세한 내용은 Blog와 Colab 실습 코드를 참고해주세요. --- This is a sentence-transformers model: It maps sentences & paragraphs to a 768 dimensional dense vector space and can be used for tasks like clustering or semantic search. <!--- Describe your model here --> ## Usage (Sentence-Transformers) Using this model becomes easy when you have sentence-transformers installed: Then you can use the model like this: ## Usage (HuggingFace Transformers) Without sentence-transformers, you can use the model like this: First, you pass your input through the transformer model, then you have to apply the right pooling-operation on-top of the contextualized word embeddings. ## Evaluation Results <!--- Describe how your model was evaluated --> **EmbeddingSimilarityEvaluator: Evaluating the model on sts-test dataset:** - Cosine-Similarity : - Pearson: 0.8901 Spearman: 0.8893 - Manhattan-Distance: - Pearson: 0.8867 Spearman: 0.8818 - Euclidean-Distance: - Pearson: 0.8875 Spearman: 0.8827 - Dot-Product-Similarity: - Pearson: 0.8786 Spearman: 0.8735 - Average : 0.8892573547643868 ## Training The model was trained with the parameters: **DataLoader**: of length 329 with parameters: **Loss**: Parameters of the fit()-Method: ## Full Model Architecture ## Citing & Authors <!--- Describe where people can find more information --> JaeHyeong AN at Bespin Global",
+    "model_explanation_gemini": "Generates 768-dimensional sentence embeddings optimized for semantic similarity tasks in Korean using NLI and STS training with MultipleNegativeRankingLoss and CosineSimilarityLoss."
+}

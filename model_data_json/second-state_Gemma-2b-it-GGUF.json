@@ -1,0 +1,18 @@
+{
+    "model_id": "second-state/Gemma-2b-it-GGUF",
+    "downloads": 213525,
+    "tags": [
+        "transformers",
+        "gguf",
+        "gemma",
+        "text-generation",
+        "base_model:google/gemma-2b-it",
+        "base_model:quantized:google/gemma-2b-it",
+        "license:other",
+        "autotrain_compatible",
+        "region:us",
+        "conversational"
+    ],
+    "description": "--- base_model: google/gemma-2b-it inference: false library_name: transformers license: other license_name: gemma-terms-of-use license_link: model_creator: Google model_name: gemma 2b it quantized_by: Second State Inc. --- <!-- header start --> <!-- 200823 --> <div style=\"width: auto; margin-left: auto; margin-right: auto\"> <img src=\" style=\"width: 100%; min-width: 400px; display: block; margin: auto;\"> </div> <hr style=\"margin-top: 1.0em; margin-bottom: 1.0em;\"> <!-- header end --> # Gemma-2b-it ## Original Model google/gemma-2b-it ## Run with LlamaEdge - LlamaEdge version: v0.3.2 - Prompt template - Prompt type: - Prompt string - Context size: - Run as LlamaEdge service - Run as LlamaEdge command app ## Quantized GGUF Models | Name | Quant method | Bits | Size | Use case | | ---- | ---- | ---- | ---- | ----- | | gemma-2b-it-Q2_K.gguf | Q2_K | 2 | 900 MB| smallest, significant quality loss - not recommended for most purposes | | gemma-2b-it-Q3_K_L.gguf | Q3_K_L | 3 | 1.26 GB| small, substantial quality loss | | gemma-2b-it-Q3_K_M.gguf | Q3_K_M | 3 | 1.18 GB| very small, high quality loss | | gemma-2b-it-Q3_K_S.gguf | Q3_K_S | 3 | 1.08 GB| very small, high quality loss | | gemma-2b-it-Q4_0.gguf | Q4_0 | 4 | 1.42 GB| legacy; small, very high quality loss - prefer using Q3_K_M | | gemma-2b-it-Q4_K_M.gguf | Q4_K_M | 4 | 1.5 GB| medium, balanced quality - recommended | | gemma-2b-it-Q4_K_S.gguf | Q4_K_S | 4 | 1.42 GB| small, greater quality loss | | gemma-2b-it-Q5_0.gguf | Q5_0 | 5 | 1.73 GB| legacy; medium, balanced quality - prefer using Q4_K_M | | gemma-2b-it-Q5_K_M.gguf | Q5_K_M | 5 | 1.77 GB| large, very low quality loss - recommended | | gemma-2b-it-Q5_K_S.gguf | Q5_K_S | 5 | 1.73 GB| large, low quality loss - recommended | | gemma-2b-it-Q6_K.gguf | Q6_K | 6 | 2.06 GB| very large, extremely low quality loss | | gemma-2b-it-Q8_0.gguf | Q8_0 | 8 | 2.67 GB| very large, extremely low quality loss - not recommended | *Quantized with llama.cpp b2230*",
+    "model_explanation_gemini": "A quantized version of Google's Gemma-2b-it model optimized for efficient inference with varying size-quality tradeoffs in GGUF format."
+}

@@ -1,0 +1,16 @@
+{
+    "model_id": "M-FAC/bert-mini-finetuned-mnli",
+    "downloads": 199827,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "bert",
+        "text-classification",
+        "arxiv:2107.03356",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "# BERT-mini model finetuned with M-FAC This model is finetuned on MNLI dataset with state-of-the-art second-order optimizer M-FAC. Check NeurIPS 2021 paper for more details on M-FAC: ## Finetuning setup For fair comparison against default Adam baseline, we finetune the model in the same framework as described here and just swap Adam optimizer with M-FAC. Hyperparameters used by M-FAC optimizer: ## Results We share the best model out of 5 runs with the following score on MNLI validation set: Mean and standard deviation for 5 runs on MNLI validation set: | | Matched Accuracy | Mismatched Accuracy | |:-----:|:----------------:|:-------------------:| | Adam | 73.30 ± 0.20 | 74.85 ± 0.09 | | M-FAC | 74.59 ± 0.41 | 75.95 ± 0.14 | Results can be reproduced by adding M-FAC optimizer code in and running the following bash script: We believe these results could be improved with modest tuning of hyperparameters: , , , and . For the sake of fair comparison and a robust default setup we use the same hyperparameters across all models (, ) and all datasets (SQuAD version 2 and GLUE). Our code for M-FAC can be found here: A step-by-step tutorial on how to integrate and use M-FAC with any repository can be found here: ## BibTeX entry and citation info",
+    "model_explanation_gemini": "Finetuned on the MNLI dataset using the M-FAC optimizer, this BERT-mini model performs natural language inference tasks with improved accuracy over Adam-optimized baselines."
+}

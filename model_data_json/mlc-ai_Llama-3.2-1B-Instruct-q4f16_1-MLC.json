@@ -1,0 +1,13 @@
+{
+    "model_id": "mlc-ai/Llama-3.2-1B-Instruct-q4f16_1-MLC",
+    "downloads": 237402,
+    "tags": [
+        "mlc-llm",
+        "web-llm",
+        "base_model:meta-llama/Llama-3.2-1B-Instruct",
+        "base_model:quantized:meta-llama/Llama-3.2-1B-Instruct",
+        "region:us"
+    ],
+    "description": "--- library_name: mlc-llm base_model: meta-llama/Llama-3.2-1B-Instruct tags: - mlc-llm - web-llm --- # Llama-3.2-1B-Instruct-q4f16_1-MLC This is the Llama-3.2-1B-Instruct model in MLC format . The model can be used for projects MLC-LLM and WebLLM. ## Example Usage Here are some examples of using this model in MLC LLM. Before running the examples, please install MLC LLM by following the installation documentation. ### Chat In command line, run ### REST Server In command line, run ### Python API ## Documentation For more information on MLC LLM project, please visit our documentation and GitHub repo.",
+    "model_explanation_gemini": "A quantized version of the Llama-3.2-1B-Instruct model optimized for MLC-LLM and WebLLM projects, enabling local deployment and web-based language model applications."
+}

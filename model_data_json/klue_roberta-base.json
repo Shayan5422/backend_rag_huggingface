@@ -1,0 +1,20 @@
+{
+    "model_id": "klue/roberta-base",
+    "downloads": 828132,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "safetensors",
+        "roberta",
+        "fill-mask",
+        "korean",
+        "klue",
+        "ko",
+        "arxiv:2105.09680",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: ko tags: - korean - klue mask_token: \"[MASK]\" widget: - text: 대한민국의 수도는 [MASK] 입니다. --- # KLUE RoBERTa base Pretrained RoBERTa Model on Korean Language. See Github and Paper for more details. ## How to use _NOTE:_ Use instead of RobertaTokenizer. ( will load ) ## BibTeX entry and citation info",
+    "model_explanation_gemini": "Pretrained RoBERTa model for Korean language tasks, optimized for masked language modeling and compatible with a specific tokenizer."
+}

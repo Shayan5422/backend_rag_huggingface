@@ -1,0 +1,14 @@
+{
+    "model_id": "hubertsiuzdak/snac_24khz",
+    "downloads": 501679,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "audio",
+        "license:mit",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: mit tags: - audio --- # SNAC 🍿 Multi-**S**cale **N**eural **A**udio **C**odec (SNAC) compressess audio into discrete codes at a low bitrate. 👉 This model was primarily trained on speech data, and its recommended use case is speech synthesis. See below for other pretrained models. 🔗 GitHub repository: ## Overview SNAC encodes audio into hierarchical tokens similarly to SoundStream, EnCodec, and DAC. However, SNAC introduces a simple change where coarse tokens are sampled less frequently, covering a broader time span. This model compresses 24 kHz audio into discrete codes at a 0.98 kbps bitrate. It uses 3 RVQ levels with token rates of 12, 23, and 47 Hz. ## Pretrained models Currently, all models support only single audio channel (mono). | Model | Bitrate | Sample Rate | Params | Recommended use case | |-----------------------------------------------------------------------------|-----------|-------------|--------|--------------------------| | hubertsiuzdak/snac_24khz (this model) | 0.98 kbps | 24 kHz | 19.8 M | 🗣️ Speech | | hubertsiuzdak/snac_32khz | 1.9 kbps | 32 kHz | 54.5 M | 🎸 Music / Sound Effects | | hubertsiuzdak/snac_44khz | 2.6 kbps | 44 kHz | 54.5 M | 🎸 Music / Sound Effects | ## Usage Install it using: To encode (and decode) audio with SNAC in Python, use the following code: You can also encode and reconstruct in a single call: ⚠️ Note that is a list of token sequences of variable lengths, each corresponding to a different temporal resolution. ## Acknowledgements Module definitions are adapted from the Descript Audio Codec.",
+    "model_explanation_gemini": "Compresses 24 kHz speech audio into discrete codes at 0.98 kbps for efficient synthesis using hierarchical tokens with multi-scale rates."
+}

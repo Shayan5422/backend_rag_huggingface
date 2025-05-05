@@ -1,0 +1,25 @@
+{
+    "model_id": "Nitral-AI/Captain-Eris_Violet-V0.420-12B",
+    "downloads": 325400,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "mistral",
+        "text-generation",
+        "mergekit",
+        "merge",
+        "conversational",
+        "en",
+        "base_model:Epiculous/Violet_Twilight-v0.2",
+        "base_model:merge:Epiculous/Violet_Twilight-v0.2",
+        "base_model:Nitral-AI/Captain_BMO-12B",
+        "base_model:merge:Nitral-AI/Captain_BMO-12B",
+        "license:other",
+        "autotrain_compatible",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- base_model: - Epiculous/Violet_Twilight-v0.2 - Nitral-AI/Captain_BMO-12B library_name: transformers tags: - mergekit - merge license: other language: - en --- !image/png !image/png # Instruct/Context import + Textgen preset combined available: Here ## Quants: 4bpw-exl2 Thanks to Mradermaacher for: GGUF Lewdiculus: Arm Compatible GGUF's<3 ## Original Models used in the merge: Epiculous/Violet_Twilight-v0.2 Nitral-AI/Captain_BMO-12B ### The following YAML configuration was used to produce this model:",
+    "model_explanation_gemini": "Generates text and instructions by merging 'Epiculous/Violet_Twilight-v0.2' and 'Nitral-AI/Captain_BMO-12B' models for enhanced context-aware responses."
+}

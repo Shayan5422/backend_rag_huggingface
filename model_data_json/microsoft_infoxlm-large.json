@@ -1,0 +1,16 @@
+{
+    "model_id": "microsoft/infoxlm-large",
+    "downloads": 1036792,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "xlm-roberta",
+        "fill-mask",
+        "arxiv:2007.07834",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "# InfoXLM **InfoXLM** (NAACL 2021, paper, repo, model) InfoXLM: An Information-Theoretic Framework for Cross-Lingual Language Model Pre-Training. **MD5** **BibTeX**",
+    "model_explanation_gemini": "InfoXLM is a cross-lingual language model pre-trained using an information-theoretic framework for multilingual tasks."
+}

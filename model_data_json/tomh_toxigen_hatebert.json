@@ -1,0 +1,17 @@
+{
+    "model_id": "tomh/toxigen_hatebert",
+    "downloads": 557506,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "bert",
+        "text-classification",
+        "en",
+        "arxiv:2203.09509",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: - en tags: - text-classification --- Thomas Hartvigsen, Saadia Gabriel, Hamid Palangi, Maarten Sap, Dipankar Ray, Ece Kamar. This model comes from the paper ToxiGen: A Large-Scale Machine-Generated Dataset for Adversarial and Implicit Hate Speech Detection and can be used to detect implicit hate speech. Please visit the Github Repository for the training dataset and further details.",
+    "model_explanation_gemini": "Detects implicit hate speech in text using a large-scale machine-generated dataset."
+}

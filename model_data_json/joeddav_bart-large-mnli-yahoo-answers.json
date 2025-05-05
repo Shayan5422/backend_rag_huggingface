@@ -1,0 +1,20 @@
+{
+    "model_id": "joeddav/bart-large-mnli-yahoo-answers",
+    "downloads": 179031,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "jax",
+        "bart",
+        "text-classification",
+        "zero-shot-classification",
+        "en",
+        "dataset:yahoo-answers",
+        "arxiv:1909.00161",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: en tags: - text-classification - pytorch datasets: - yahoo-answers pipeline_tag: zero-shot-classification --- # bart-lage-mnli-yahoo-answers ## Model Description This model takes facebook/bart-large-mnli and fine-tunes it on Yahoo Answers topic classification. It can be used to predict whether a topic label can be assigned to a given sequence, whether or not the label has been seen before. You can play with an interactive demo of this zero-shot technique with this model, as well as the non-finetuned facebook/bart-large-mnli, here. ## Intended Usage This model was fine-tuned on topic classification and will perform best at zero-shot topic classification. Use as this is the template used during fine-tuning. For settings other than topic classification, you can use any model pre-trained on MNLI such as facebook/bart-large-mnli or roberta-large-mnli with the same code as written below. #### With the zero-shot classification pipeline The model can be used with the pipeline like so: #### With manual PyTorch ## Training The model is a pre-trained MNLI classifier further fine-tuned on Yahoo Answers topic classification in the manner originally described in Yin et al. 2019 and this blog post. That is, each sequence is fed to the pre-trained NLI model in place of the premise and each candidate label as the hypothesis, formatted like so: For each example in the training set, a true and a randomly-selected false label hypothesis are fed to the model which must predict which labels are valid and which are false. Since this method studies the ability to classify unseen labels after being trained on a different set of labels, the model is only trained on 5 out of the 10 labels in Yahoo Answers. These are \"Society & Culture\", \"Health\", \"Computers & Internet\", \"Business & Finance\", and \"Family & Relationships\". ## Evaluation Results This model was evaluated with the label-weighted F1 of the _seen_ and _unseen_ labels. That is, for each example the model must predict from one of the 10 corpus labels. The F1 is reported for the labels seen during training as well as the labels unseen during training. We found an F1 score of and for the unseen and seen labels, respectively. In order to adjust for the in-vs-out of distribution labels, we subtract a fixed amount of 30% from the normalized probabilities of the _seen_ labels, as described in Yin et al. 2019 and our blog post.",
+    "model_explanation_gemini": "Fine-tuned for zero-shot topic classification on Yahoo Answers, this model predicts relevant topic labels for text sequences, including unseen labels."
+}

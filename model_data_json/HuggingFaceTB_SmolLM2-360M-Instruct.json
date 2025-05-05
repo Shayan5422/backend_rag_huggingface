@@ -1,0 +1,23 @@
+{
+    "model_id": "HuggingFaceTB/SmolLM2-360M-Instruct",
+    "downloads": 840700,
+    "tags": [
+        "transformers",
+        "tensorboard",
+        "onnx",
+        "safetensors",
+        "llama",
+        "text-generation",
+        "transformers.js",
+        "conversational",
+        "en",
+        "arxiv:2502.02737",
+        "license:apache-2.0",
+        "autotrain_compatible",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- library_name: transformers license: apache-2.0 language: - en pipeline_tag: text-generation tags: - safetensors - onnx - transformers.js --- # SmolLM2 !image/png ## Table of Contents 1. Model Summary 2. Limitations 3. Training 4. License 5. Citation ## Model Summary SmolLM2 is a family of compact language models available in three size: 135M, 360M, and 1.7B parameters. They are capable of solving a wide range of tasks while being lightweight enough to run on-device. More details in our paper: SmolLM2 demonstrates significant advances over its predecessor SmolLM1, particularly in instruction following, knowledge, reasoning. The 360M model was trained on 4 trillion tokens using a diverse dataset combination: FineWeb-Edu, DCLM, The Stack, along with new filtered datasets we curated and will release soon. We developed the instruct version through supervised fine-tuning (SFT) using a combination of public datasets and our own curated datasets. We then applied Direct Preference Optimization (DPO) using UltraFeedback. The instruct model additionally supports tasks such as text rewriting, summarization and function calling (for the 1.7B) thanks to datasets developed by Argilla such as Synth-APIGen-v0.1. You can find the SFT dataset here: and finetuning code in the alignement handbook For more details refer to: You will find pre-training, post-training, evaluation and local inference code. ### How to use ### Transformers ### Chat in TRL You can also use the TRL CLI to chat with the model from the terminal: ## Evaluation In this section, we report the evaluation results of SmolLM2. All evaluations are zero-shot unless stated otherwise, and we use lighteval to run them. ## Base Pre-Trained Model | Metrics | SmolLM2-360M | Qwen2.5-0.5B | SmolLM-360M | |:-------------------|:------------:|:------------:|:------------:| | HellaSwag | **54.5** | 51.2 | 51.8 | | ARC (Average) | **53.0** | 45.4 | 50.1 | | PIQA | **71.7** | 69.9 | 71.6 | | MMLU (cloze) | **35.8** | 33.7 | 34.4 | | CommonsenseQA | **38.0** | 31.6 | 35.3 | | TriviaQA | **16.9** | 4.3 | 9.1 | | Winogrande | 52.5 | **54.1** | 52.8 | | OpenBookQA | **37.4** | **37.4** | 37.2 | | GSM8K (5-shot) | 3.2 | **33.4** | 1.6 | ## Instruction Model | Metric | SmolLM2-360M-Instruct | Qwen2.5-0.5B-Instruct | SmolLM-360M-Instruct | |:-----------------------------|:---------------------:|:---------------------:|:---------------------:| | IFEval (Average prompt/inst) | **41.0** | 31.6 | 19.8 | | MT-Bench | 3.66 | **4.16** | 3.37 | | HellaSwag | **52.1** | 48.0 | 47.9 | | ARC (Average) | **43.7** | 37.3 | 38.8 | | PIQA | **70.8** | 67.2 | 69.4 | | MMLU (cloze) | **32.8** | 31.7 | 30.6 | | BBH (3-shot) | 27.3 | **30.7** | 24.4 | | GSM8K (5-shot) | 7.43 | **26.8** | 1.36 | ## Limitations SmolLM2 models primarily understand and generate content in English. They can produce text on a variety of topics, but the generated content may not always be factually accurate, logically consistent, or free from biases present in the training data. These models should be used as assistive tools rather than definitive sources of information. Users should always verify important information and critically evaluate any generated content. ## Training ### Model - **Architecture:** Transformer decoder - **Pretraining tokens:** 4T - **Precision:** bfloat16 ### Hardware - **GPUs:** 64 H100 ### Software - **Training Framework:** nanotron ## License Apache 2.0 ## Citation",
+    "model_explanation_gemini": "A compact 360M-parameter language model fine-tuned for instruction-following tasks like text rewriting and summarization, optimized for on-device use with enhanced reasoning and knowledge capabilities."
+}

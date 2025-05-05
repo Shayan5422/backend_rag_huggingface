@@ -1,0 +1,16 @@
+{
+    "model_id": "plasmo/vox2",
+    "downloads": 128519,
+    "tags": [
+        "diffusers",
+        "text-to-image",
+        "stable-diffusion",
+        "license:creativeml-openrail-m",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "diffusers:StableDiffusionPipeline",
+        "region:us"
+    ],
+    "description": "--- license: creativeml-openrail-m tags: - text-to-image - stable-diffusion widget: - text: \"voxel-ish \" --- ### Jak's Voxel-ish Image Pack v.1.2 for Stable Diffusion VERSION 1.2 of Voxel-ish Image Pack brought to you by 184 training images through 8000 training steps, 20% Training text crafted by Jak_TheAI_Artist version history: v1.2 - Fine tuned for better faces. Include Prompt trigger: \"voxel-ish\" to activate. Tip: add \"intricate detail\" in prompt to make a semi-realistic image. Sample pictures of this concept: voxel-ish !voxel-ish 0 !voxel-ish 1 !voxel-ish 2 !voxel-ish 3 !voxel-ish 4 !voxel-ish 4 !voxel-ish 4 !voxel-ish 4 !voxel-ish 4 !voxel-ish 4 !voxel-ish 4 !voxel-ish 4",
+    "model_explanation_gemini": "Generates voxel-style images from text prompts using Stable Diffusion, activated by the trigger phrase \"voxel-ish\"."
+}

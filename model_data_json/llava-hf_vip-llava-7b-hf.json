@@ -1,0 +1,18 @@
+{
+    "model_id": "llava-hf/vip-llava-7b-hf",
+    "downloads": 12287,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "vipllava",
+        "image-text-to-text",
+        "vision",
+        "conversational",
+        "en",
+        "arxiv:2312.00784",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: - en pipeline_tag: image-text-to-text arxiv: 2312.00784 tags: - vision - image-text-to-text --- # VipLLaVA Model Card !image/png Below is the model card of VipLlava model 7b, which is copied from the original Llava model card that you can find here. Check out also the Google Colab demo to run Llava on a free-tier Google Colab instance (the model works similarly as Llava): Meta Platforms, Inc. All Rights Reserved. ## Citation To cite this work please use",
+    "model_explanation_gemini": "Generates text outputs from image-text inputs for vision-language tasks."
+}

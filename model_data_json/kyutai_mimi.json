@@ -1,0 +1,16 @@
+{
+    "model_id": "kyutai/mimi",
+    "downloads": 414620,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "mimi",
+        "feature-extraction",
+        "audio",
+        "license:cc-by-4.0",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: cc-by-4.0 library_name: transformers tags: - mimi - audio --- !image/png # Model Card for Mimi Mimi codec is a state-of-the-art audio neural codec, developped by Kyutai, that combines semantic and acoustic information into audio tokens running at 12Hz and a bitrate of 1.1kbps. ## Model Details ### Model Description Mimi is a high-fidelity audio codec leveraging neural networks. It introduces a streaming encoder-decoder architecture with quantized latent space, trained in an end-to-end fashion. It was trained on speech data, which makes it particularly adapted to train speech language models or text-to-speech systems. - **Developed by:** Kyutai - **Model type:** Audio codec - **Audio types:** Speech - **License:** CC-BY ### Model Sources - **Repository:** repo - **Paper:** paper - **Demo:** demo ## Uses ## How to Get Started with the Model ### Usage with Use the following code to get started with the Mimi model using a dummy example from the LibriSpeech dataset (~9MB). First, install the required Python packages: Then load an audio sample, and run a forward pass of the model: ### Usage with Moshi See the main README file. ### Direct Use Mimi can be used directly as an audio codec for real-time compression and decompression of speech signals. It provides high-quality audio compression and efficient decoding. ### Out-of-Scope Use The model is not intended to be used to impersonate other people or any malicious use of any kind. ## Bias, Risks, and Limitations The model has been trained with a few safeguards to try to limit potential toxic usages, however our toxicity analysis shows that it behaves in the middle of existing models with respect to textual generation. It has some bias towards certain domains and topics that are over-represented in the training data. Its capabilities are relatively limited so far and it is trained to produce only one voice to avoid impersonation. Yet, we need the perspective in time to establish the sociotechnical limitations. ## Training Details ### Training Data The training data is detailled in the paper. ### Training procedure and hyper-parameters The different stages of the training procedure are detailled in the paper along with the hyper-parameters. ## Citation ## Model Card Authors Alexandre Défossez, Laurent Mazaré, Manu Orsini, Amélie Royer, Patrick Pérez, Hervé Jégou, Edouard Grave, Neil Zeghidour, Yoach Lacombe",
+    "model_explanation_gemini": "Kyutai's Mimi is a neural audio codec designed for high-fidelity speech compression and decompression at 12Hz with 1.1kbps bitrate, optimized for training speech language models and text-to-speech systems."
+}

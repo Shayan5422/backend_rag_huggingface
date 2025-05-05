@@ -1,0 +1,18 @@
+{
+    "model_id": "Qdrant/Splade_PP_en_v1",
+    "downloads": 295034,
+    "tags": [
+        "transformers",
+        "onnx",
+        "bert",
+        "fill-mask",
+        "sentence-similarity",
+        "license:apache-2.0",
+        "autotrain_compatible",
+        "text-embeddings-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 pipeline_tag: sentence-similarity --- ONNX port of prithivida/Splade_PP_en_v1 for text classification and similarity searches. ### Usage Here's an example of performing inference using the model with FastEmbed.",
+    "model_explanation_gemini": "An ONNX-ported model for text classification and similarity searches, optimized for inference with FastEmbed."
+}

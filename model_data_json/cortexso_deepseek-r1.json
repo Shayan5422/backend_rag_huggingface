@@ -1,0 +1,16 @@
+{
+    "model_id": "cortexso/deepseek-r1",
+    "downloads": 84381,
+    "tags": [
+        "gguf",
+        "cortexp.cpp",
+        "featured",
+        "text-generation",
+        "license:mit",
+        "endpoints_compatible",
+        "region:us",
+        "conversational"
+    ],
+    "description": "--- license: mit pipeline_tag: text-generation tags: - cortexp.cpp - featured --- ## Overview **DeepSeek** developed and released the **DeepSeek-R1** series, featuring multiple model sizes fine-tuned for high-performance text generation. These models are optimized for dialogue, reasoning, and information-seeking tasks, providing a balance of efficiency and accuracy while maintaining a smaller footprint compared to their original counterparts. The DeepSeek-R1 models include distilled and full-scale variants of both **Qwen** and **Llama** architectures, catering to various applications such as customer support, conversational AI, research, and enterprise automation. ## Variants ### DeepSeek-R1 | No | Variant | Branch | Cortex CLI command | | -- | ---------------------------------------------------------------------------------------------- | ------- | ------------------------------------------ | | 1 | DeepSeek-R1-Distill-Qwen-1.5B | 1.5b | | | 2 | DeepSeek-R1-Distill-Qwen-7B | 7b | | | 3 | DeepSeek-R1-Distill-Llama-8B | 8b | | | 4 | DeepSeek-R1-Distill-Qwen-14B | 14b | | | 5 | DeepSeek-R1-Distill-Qwen-32B | 32b | | | 6 | DeepSeek-R1-Distill-Llama-70B | 70b | | Each branch contains a default quantized version: - **Qwen-1.5B:** q4-km - **Qwen-7B:** q4-km - **Llama-8B:** q4-km - **Qwen-14B:** q4-km - **Qwen-32B:** q4-km - **Llama-70B:** q4-km ## Use it with Jan (UI) 1. Install **Jan** using Quickstart 2. Use in Jan model Hub: ## Use it with Cortex (CLI) 1. Install **Cortex** using Quickstart 2. Run the model with command: ## Credits - **Author:** DeepSeek - **Converter:** Homebrew - **Original License:** License - **Papers:** DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
+    "model_explanation_gemini": "Optimized for high-performance text generation in dialogue, reasoning, and information-seeking tasks, balancing efficiency and accuracy across various model sizes."
+}

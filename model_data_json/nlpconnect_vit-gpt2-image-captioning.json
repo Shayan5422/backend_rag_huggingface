@@ -1,0 +1,18 @@
+{
+    "model_id": "nlpconnect/vit-gpt2-image-captioning",
+    "downloads": 891943,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "vision-encoder-decoder",
+        "image-text-to-text",
+        "image-to-text",
+        "image-captioning",
+        "doi:10.57967/hf/0222",
+        "license:apache-2.0",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- tags: - image-to-text - image-captioning license: apache-2.0 widget: - src: example_title: Savanna - src: example_title: Football Match - src: example_title: Airport --- # nlpconnect/vit-gpt2-image-captioning This is an image captioning model trained by @ydshieh in flax this is pytorch version of this. # The Illustrated Image Captioning using transformers ![]( * # Sample running code # Sample running code using transformers pipeline # Contact for any help * * * *",
+    "model_explanation_gemini": "Generates descriptive text captions for input images using a combination of vision and language transformers."
+}

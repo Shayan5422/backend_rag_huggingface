@@ -1,0 +1,14 @@
+{
+    "model_id": "SWivid/F5-TTS",
+    "downloads": 717685,
+    "tags": [
+        "f5-tts",
+        "text-to-speech",
+        "dataset:amphion/Emilia-Dataset",
+        "arxiv:2410.06885",
+        "license:cc-by-nc-4.0",
+        "region:us"
+    ],
+    "description": "--- license: cc-by-nc-4.0 pipeline_tag: text-to-speech library_name: f5-tts datasets: - amphion/Emilia-Dataset --- Download F5-TTS or E2 TTS and place under ckpts/ Github: Paper: F5-TTS: A Fairytaler that Fakes Fluent and Faithful Speech with Flow Matching",
+    "model_explanation_gemini": "Generates fluent and faithful speech from text using flow matching for text-to-speech synthesis."
+}

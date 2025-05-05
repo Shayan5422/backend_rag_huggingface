@@ -1,0 +1,18 @@
+{
+    "model_id": "csebuetnlp/banglat5_banglaparaphrase",
+    "downloads": 685311,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "t5",
+        "text2text-generation",
+        "bn",
+        "arxiv:2210.05109",
+        "autotrain_compatible",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: - bn licenses: - cc-by-nc-sa-4.0 --- # banglat5_banglaparaphrase This repository contains the pretrained checkpoint of the model **BanglaT5** finetuned on BanglaParaphrase dataset. This is a sequence to sequence transformer model pretrained with the [\"Span Corruption\"]() objective. Finetuned models using this checkpoint achieve competitive results on the dataset. For finetuning and inference, refer to the scripts in the official GitHub repository of BanglaNLG. **Note**: This model was pretrained using a specific normalization pipeline available here. All finetuning scripts in the official GitHub repository use this normalization by default. If you need to adapt the pretrained model for a different task make sure the text units are normalized using this pipeline before tokenizing to get best results. A basic example is given below: ## Using this model in ## Benchmarks * Supervised fine-tuning | Test Set | Model | sacreBLEU | ROUGE-L | PINC | BERTScore | BERT-iBLEU | | -------- | ----- | --------- | ------- | ---- | --------- | ---------- | | BanglaParaphrase | BanglaT5<br>IndicBART<br>IndicBARTSS| 32.8<br>5.60<br>4.90 | 63.58<br>35.61<br>33.66 | 74.40<br>80.26<br>82.10 | 94.80<br>91.50<br>91.10 | 92.18<br>91.16<br>90.95 | | IndicParaphrase |BanglaT5<br>IndicBART<br>IndicBARTSS| 11.0<br>12.0<br>10.7| 19.99<br>21.58<br>20.59| 74.50<br>76.83<br>77.60| 94.80<br>93.30<br>93.10 | 87.738<br>90.65<br>90.54| The dataset can be found in the link below: * **BanglaParaphrase** ## Citation If you use this model, please cite the following paper:",
+    "model_explanation_gemini": "Finetuned on BanglaParaphrase, this sequence-to-sequence transformer model generates competitive Bangla paraphrases using the Span Corruption objective."
+}

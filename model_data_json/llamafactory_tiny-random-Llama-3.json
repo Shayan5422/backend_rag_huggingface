@@ -1,0 +1,17 @@
+{
+    "model_id": "llamafactory/tiny-random-Llama-3",
+    "downloads": 206181,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "llama",
+        "text-generation",
+        "conversational",
+        "license:apache-2.0",
+        "autotrain_compatible",
+        "text-generation-inference",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 library_name: transformers inference: false --- A tiny version of",
+    "model_explanation_gemini": "A tiny version of a model with unspecified core functionality, licensed under Apache-2.0 and part of the transformers library."
+}

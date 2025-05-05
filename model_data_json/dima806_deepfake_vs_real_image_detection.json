@@ -1,0 +1,19 @@
+{
+    "model_id": "dima806/deepfake_vs_real_image_detection",
+    "downloads": 128314,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "safetensors",
+        "vit",
+        "image-classification",
+        "base_model:google/vit-base-patch16-224-in21k",
+        "base_model:finetune:google/vit-base-patch16-224-in21k",
+        "license:apache-2.0",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 metrics: - accuracy - f1 base_model: - google/vit-base-patch16-224-in21k --- Checks whether an image is real or fake (AI-generated). **Note to users who want to use this model in production** Beware that this model is trained on a dataset collected about 3 years ago. Since then, there is a remarkable progress in generating deepfake images with common AI tools, resulting in a significant concept drift. To mitigate that, I urge you to retrain the model using the latest available labeled data. As a quick-fix approach, simple reducing the threshold (say from default 0.5 to 0.1 or even 0.01) of labelling image as a fake may suffice. However, you will do that at your own risk, and retraining the model is the better way of handling the concept drift. See for more details.",
+    "model_explanation_gemini": "Detects whether an image is real or AI-generated, though users should retrain it with newer data for better accuracy due to advancements in deepfake technology."
+}

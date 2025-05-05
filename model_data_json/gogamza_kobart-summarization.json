@@ -1,0 +1,18 @@
+{
+    "model_id": "gogamza/kobart-summarization",
+    "downloads": 111730,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "safetensors",
+        "bart",
+        "text2text-generation",
+        "ko",
+        "license:mit",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: ko tags: - bart license: mit --- # Korean News Summarization Model ## Demo ## How to use",
+    "model_explanation_gemini": "Generates summaries of Korean news articles."
+}

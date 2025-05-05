@@ -1,0 +1,27 @@
+{
+    "model_id": "jonatasgrosman/wav2vec2-large-xlsr-53-polish",
+    "downloads": 489434,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "jax",
+        "wav2vec2",
+        "automatic-speech-recognition",
+        "audio",
+        "hf-asr-leaderboard",
+        "mozilla-foundation/common_voice_6_0",
+        "pl",
+        "robust-speech-event",
+        "speech",
+        "xlsr-fine-tuning-week",
+        "dataset:common_voice",
+        "dataset:mozilla-foundation/common_voice_6_0",
+        "doi:10.57967/hf/3574",
+        "license:apache-2.0",
+        "model-index",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: pl license: apache-2.0 datasets: - common_voice - mozilla-foundation/common_voice_6_0 metrics: - wer - cer tags: - audio - automatic-speech-recognition - hf-asr-leaderboard - mozilla-foundation/common_voice_6_0 - pl - robust-speech-event - speech - xlsr-fine-tuning-week model-index: - name: XLSR Wav2Vec2 Polish by Jonatas Grosman results: - task: name: Automatic Speech Recognition type: automatic-speech-recognition dataset: name: Common Voice pl type: common_voice args: pl metrics: - name: Test WER type: wer value: 14.21 - name: Test CER type: cer value: 3.49 - name: Test WER (+LM) type: wer value: 10.98 - name: Test CER (+LM) type: cer value: 2.93 - task: name: Automatic Speech Recognition type: automatic-speech-recognition dataset: name: Robust Speech Event - Dev Data type: speech-recognition-community-v2/dev_data args: pl metrics: - name: Dev WER type: wer value: 33.18 - name: Dev CER type: cer value: 15.92 - name: Dev WER (+LM) type: wer value: 29.31 - name: Dev CER (+LM) type: cer value: 15.17 --- # Fine-tuned XLSR-53 large model for speech recognition in Polish Fine-tuned facebook/wav2vec2-large-xlsr-53 on Polish using the train and validation splits of Common Voice 6.1. When using this model, make sure that your speech input is sampled at 16kHz. This model has been fine-tuned thanks to the GPU credits generously given by the OVHcloud :) The script used for training can be found here: ## Usage The model can be used directly (without a language model) as follows... Using the HuggingSound library: Writing your own inference script: | Reference | Prediction | | ------------- | ------------- | | \"\"\"CZY DRZWI BYŁY ZAMKNIĘTE?\"\"\" | PRZY DRZWI BYŁY ZAMKNIĘTE | | GDZIEŻ TU POWÓD DO WYRZUTÓW? | WGDZIEŻ TO POM DO WYRYDÓ | | \"\"\"O TEM JEDNAK NIE BYŁO MOWY.\"\"\" | O TEM JEDNAK NIE BYŁO MOWY | | LUBIĘ GO. | LUBIĄ GO | | — TO MI NIE POMAGA. | TO MNIE NIE POMAGA | | WCIĄŻ LUDZIE WYSIADAJĄ PRZED ZAMKIEM, Z MIASTA, Z PRAGI. | WCIĄŻ LUDZIE WYSIADAJĄ PRZED ZAMKIEM Z MIASTA Z PRAGI | | ALE ON WCALE INACZEJ NIE MYŚLAŁ. | ONY MONITCENIE PONACZUŁA NA MASU | | A WY, CO TAK STOICIE? | A WY CO TAK STOICIE | | A TEN PRZYRZĄD DO CZEGO SŁUŻY? | A TEN PRZYRZĄD DO CZEGO SŁUŻY | | NA JUTRZEJSZYM KOLOKWIUM BĘDZIE PIĘĆ PYTAŃ OTWARTYCH I TEST WIELOKROTNEGO WYBORU. | NAJUTRZEJSZYM KOLOKWIUM BĘDZIE PIĘĆ PYTAŃ OTWARTYCH I TEST WIELOKROTNEGO WYBORU | ## Evaluation 1. To evaluate on with split 2. To evaluate on ## Citation If you want to cite this model you can use this:",
+    "model_explanation_gemini": "Fine-tuned for Polish speech recognition, converting 16kHz audio input to text with improved accuracy using the XLSR-53 large model."
+}

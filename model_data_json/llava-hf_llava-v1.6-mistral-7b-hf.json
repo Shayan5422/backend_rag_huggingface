@@ -1,0 +1,20 @@
+{
+    "model_id": "llava-hf/llava-v1.6-mistral-7b-hf",
+    "downloads": 219702,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "llava_next",
+        "image-text-to-text",
+        "vision",
+        "conversational",
+        "en",
+        "arxiv:2310.03744",
+        "license:apache-2.0",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 tags: - vision - image-text-to-text language: - en pipeline_tag: image-text-to-text inference: true --- # LLaVa-Next, leveraging mistralai/Mistral-7B-Instruct-v0.2 as LLM The LLaVA-NeXT model was proposed in LLaVA-NeXT: Improved reasoning, OCR, and world knowledge by Haotian Liu, Chunyuan Li, Yuheng Li, Bo Li, Yuanhan Zhang, Sheng Shen, Yong Jae Lee. LLaVa-NeXT (also called LLaVa-1.6) improves upon LLaVa-1.5 by increasing the input image resolution and training on an improved visual instruction tuning dataset to improve OCR and common sense reasoning. Disclaimer: The team releasing LLaVa-NeXT did not write a model card for this model so this model card has been written by the Hugging Face team. ## Model description LLaVa combines a pre-trained large language model with a pre-trained vision encoder for multimodal chatbot use cases. LLaVA 1.6 improves on LLaVA 1.5 BY: - Using Mistral-7B (for this checkpoint) and Nous-Hermes-2-Yi-34B which has better commercial licenses, and bilingual support - More diverse and high quality data mixture - Dynamic high resolution !image/png ## Intended uses & limitations You can use the raw model for tasks like image captioning, visual question answering, multimodal chatbot use cases. See the model hub to look for other versions on a task that interests you. ### How to use Here's the prompt template for this model but we recomment to use the chat templates to format the prompt with . That will apply the correct template for a given checkpoint for you. To run the model with the , see the below example: You can also load and use the model like following: ----------- From transformers>=v4.48, you can also pass image url or local path to the conversation history, and let the chat template handle the rest. Chat template will load the image for you and return inputs in which you can pass directly to ### Model optimization #### 4-bit quantization through library First make sure to install , and make sure to have access to a CUDA compatible GPU device. Simply change the snippet above with: #### Use Flash-Attention 2 to further speed-up generation First make sure to install . Refer to the original repository of Flash Attention regarding that package installation. Simply change the snippet above with: ### BibTeX entry and citation info",
+    "model_explanation_gemini": "LLaVa-NeXT (LLaVa-1.6) combines Mistral-7B's language capabilities with a vision encoder for multimodal tasks like image captioning, visual question answering, and chatbot interactions, featuring improved OCR, reasoning, and higher-resolution image processing."
+}

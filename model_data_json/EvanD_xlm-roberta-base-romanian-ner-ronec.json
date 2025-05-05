@@ -1,0 +1,18 @@
+{
+    "model_id": "EvanD/xlm-roberta-base-romanian-ner-ronec",
+    "downloads": 230839,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "xlm-roberta",
+        "token-classification",
+        "named-entity-recognition",
+        "sequence-tagger-model",
+        "ro",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- pipeline_tag: token-classification tags: - named-entity-recognition - sequence-tagger-model widget: - text: Numele meu este Amadeus Wolfgang și locuiesc în Berlin inference: parameters: aggregation_strategy: simple grouped_entities: true language: - ro --- xlm-roberta model trained on ronec dataset, performing 95 f1-Macro on test set. | Test metric | Results | |------------------------|--------------------------| | test_f1_mac_ronec | 0.9547659158706665 | | test_loss_ronec | 0.16371206939220428 | | test_prec_mac_ronec | 0.8663718700408936 | | test_rec_mac_ronec | 0.8695588111877441 |",
+    "model_explanation_gemini": "Performs Romanian named-entity recognition using xlm-roberta trained on the ronec dataset with 95 F1-Macro score."
+}

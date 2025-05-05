@@ -1,0 +1,28 @@
+{
+    "model_id": "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+    "downloads": 362897,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "onnx",
+        "safetensors",
+        "deberta-v2",
+        "text-classification",
+        "zero-shot-classification",
+        "en",
+        "dataset:multi_nli",
+        "dataset:facebook/anli",
+        "dataset:fever",
+        "dataset:lingnli",
+        "dataset:alisawuffles/WANLI",
+        "arxiv:2104.07179",
+        "arxiv:2111.09543",
+        "license:mit",
+        "model-index",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: - en license: mit tags: - text-classification - zero-shot-classification datasets: - multi_nli - facebook/anli - fever - lingnli - alisawuffles/WANLI metrics: - accuracy pipeline_tag: zero-shot-classification model-index: - name: DeBERTa-v3-large-mnli-fever-anli-ling-wanli results: - task: type: text-classification name: Natural Language Inference dataset: name: MultiNLI-matched type: multi_nli split: validation_matched metrics: - type: accuracy value: 0,912 verified: false - task: type: text-classification name: Natural Language Inference dataset: name: MultiNLI-mismatched type: multi_nli split: validation_mismatched metrics: - type: accuracy value: 0,908 verified: false - task: type: text-classification name: Natural Language Inference dataset: name: ANLI-all type: anli split: test_r1+test_r2+test_r3 metrics: - type: accuracy value: 0,702 verified: false - task: type: text-classification name: Natural Language Inference dataset: name: ANLI-r3 type: anli split: test_r3 metrics: - type: accuracy value: 0,64 verified: false - task: type: text-classification name: Natural Language Inference dataset: name: WANLI type: alisawuffles/WANLI split: test metrics: - type: accuracy value: 0,77 verified: false - task: type: text-classification name: Natural Language Inference dataset: name: LingNLI type: lingnli split: test metrics: - type: accuracy value: 0,87 verified: false --- # DeBERTa-v3-large-mnli-fever-anli-ling-wanli ## Model description This model was fine-tuned on the MultiNLI, Fever-NLI, Adversarial-NLI (ANLI), LingNLI and WANLI datasets, which comprise 885 242 NLI hypothesis-premise pairs. This model is the best performing NLI model on the Hugging Face Hub as of 06.06.22 and can be used for zero-shot classification. It significantly outperforms all other large models on the ANLI benchmark. The foundation model is DeBERTa-v3-large from Microsoft. DeBERTa-v3 combines several recent innovations compared to classical Masked Language Models like BERT, RoBERTa etc., see the paper ### How to use the model #### Simple zero-shot classification pipeline #### NLI use-case ### Training data DeBERTa-v3-large-mnli-fever-anli-ling-wanli was trained on the MultiNLI, Fever-NLI, Adversarial-NLI (ANLI), LingNLI and WANLI datasets, which comprise 885 242 NLI hypothesis-premise pairs. Note that SNLI was explicitly excluded due to quality issues with the dataset. More data does not necessarily make for better NLI models. ### Training procedure DeBERTa-v3-large-mnli-fever-anli-ling-wanli was trained using the Hugging Face trainer with the following hyperparameters. Note that longer training with more epochs hurt performance in my tests (overfitting). ### Eval results The model was evaluated using the test sets for MultiNLI, ANLI, LingNLI, WANLI and the dev set for Fever-NLI. The metric used is accuracy. The model achieves state-of-the-art performance on each dataset. Surprisingly, it outperforms the previous state-of-the-art on ANLI (ALBERT-XXL) by 8,3%. I assume that this is because ANLI was created to fool masked language models like RoBERTa (or ALBERT), while DeBERTa-v3 uses a better pre-training objective (RTD), disentangled attention and I fine-tuned it on higher quality NLI data. |Datasets|mnli_test_m|mnli_test_mm|anli_test|anli_test_r3|ling_test|wanli_test| | :---: | :---: | :---: | :---: | :---: | :---: | :---: | |Accuracy|0.912|0.908|0.702|0.64|0.87|0.77| |Speed (text/sec, A100 GPU)|696.0|697.0|488.0|425.0|828.0|980.0| ## Limitations and bias Please consult the original DeBERTa-v3 paper and literature on different NLI datasets for more information on the training data and potential biases. The model will reproduce statistical patterns in the training data. ## Citation If you use this model, please cite: Laurer, Moritz, Wouter van Atteveldt, Andreu Salleras Casas, and Kasper Welbers. 2022. ‘Less Annotating, More Classifying – Addressing the Data Scarcity Issue of Supervised Machine Learning with Deep Transfer Learning and BERT - NLI’. Preprint, June. Open Science Framework. ### Ideas for cooperation or questions? If you have questions or ideas for cooperation, contact me at m{dot}laurer{at}vu{dot}nl or LinkedIn ### Debugging and issues Note that DeBERTa-v3 was released on 06.12.21 and older versions of HF Transformers seem to have issues running the model (e.g. resulting in an issue with the tokenizer). Using Transformers>=4.13 might solve some issues.",
+    "model_explanation_gemini": "A zero-shot text classification model fine-tuned for natural language inference tasks, achieving state-of-the-art performance on multiple NLI benchmarks."
+}

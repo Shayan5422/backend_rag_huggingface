@@ -1,0 +1,18 @@
+{
+    "model_id": "trl-internal-testing/tiny-Qwen2ForCausalLM-2.5",
+    "downloads": 1255809,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "qwen2",
+        "text-generation",
+        "trl",
+        "conversational",
+        "autotrain_compatible",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- library_name: transformers tags: - trl --- # Tiny Qwen2ForCausalLM This is a minimal model built for unit tests in the TRL library.",
+    "model_explanation_gemini": "A minimal Qwen2ForCausalLM model designed for unit testing within the TRL library."
+}

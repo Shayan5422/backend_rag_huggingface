@@ -1,0 +1,25 @@
+{
+    "model_id": "sentence-transformers/clip-ViT-B-32-multilingual-v1",
+    "downloads": 169603,
+    "tags": [
+        "sentence-transformers",
+        "pytorch",
+        "tf",
+        "onnx",
+        "safetensors",
+        "openvino",
+        "distilbert",
+        "feature-extraction",
+        "sentence-similarity",
+        "multilingual",
+        "arxiv:2004.09813",
+        "arxiv:1908.10084",
+        "license:apache-2.0",
+        "autotrain_compatible",
+        "text-embeddings-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: multilingual license: apache-2.0 library_name: sentence-transformers tags: - sentence-transformers - feature-extraction - sentence-similarity pipeline_tag: sentence-similarity --- # sentence-transformers/clip-ViT-B-32-multilingual-v1 This is a multi-lingual version of the OpenAI CLIP-ViT-B32 model. You can map text (in 50+ languages) and images to a common dense vector space such that images and the matching texts are close. This model can be used for **image search** (users search through a large collection of images) and for **multi-lingual zero-shot image classification** (image labels are defined as text). ## Usage (Sentence-Transformers) Using this model becomes easy when you have sentence-transformers installed: Then you can use the model like this: ## Multilingual Image Search - Demo For a demo of multilingual image search, have a look at: Image_Search-multilingual.ipynb ( Colab version ) For more details on image search and zero-shot image classification, have a look at the documentation on SBERT.net. ## Training This model has been created using Multilingual Knowledge Distillation. As teacher model, we used the original and then trained a multilingual DistilBERT model as student model. Using parallel data, the multilingual student model learns to align the teachers vector space across many languages. As a result, you get an text embedding model that works for 50+ languages. The image encoder from CLIP is unchanged, i.e. you can use the original CLIP image encoder to encode images. Have a look at the SBERT.net - Multilingual-Models documentation on more details and for **training code**. We used the following 50+ languages to align the vector spaces: ar, bg, ca, cs, da, de, el, es, et, fa, fi, fr, fr-ca, gl, gu, he, hi, hr, hu, hy, id, it, ja, ka, ko, ku, lt, lv, mk, mn, mr, ms, my, nb, nl, pl, pt, pt, pt-br, ro, ru, sk, sl, sq, sr, sv, th, tr, uk, ur, vi, zh-cn, zh-tw. The original multilingual DistilBERT supports 100+ lanugages. The model also work for these languages, but might not yield the best results. ## Full Model Architecture ## Citing & Authors This model was trained by sentence-transformers. If you find this model helpful, feel free to cite our publication Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks:",
+    "model_explanation_gemini": "Maps text in 50+ languages and images to a shared vector space for multilingual image search and zero-shot image classification."
+}

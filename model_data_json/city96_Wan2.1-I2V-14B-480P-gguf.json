@@ -1,0 +1,18 @@
+{
+    "model_id": "city96/Wan2.1-I2V-14B-480P-gguf",
+    "downloads": 122466,
+    "tags": [
+        "gguf",
+        "video",
+        "video-generation",
+        "image-to-video",
+        "en",
+        "zh",
+        "base_model:Wan-AI/Wan2.1-I2V-14B-480P",
+        "base_model:quantized:Wan-AI/Wan2.1-I2V-14B-480P",
+        "license:apache-2.0",
+        "region:us"
+    ],
+    "description": "--- base_model: Wan-AI/Wan2.1-I2V-14B-480P library_name: gguf quantized_by: city96 tags: - video - video-generation license: apache-2.0 pipeline_tag: image-to-video language: - en - zh --- This is a direct GGUF conversion of Wan-AI/Wan2.1-I2V-14B-480P All quants are created from the FP32 base file, though I only uploaded FP16 due to it exceeding the 50GB max file limit and gguf-split loading not currently being supported in ComfyUI-GGUF. The model files can be used with the ComfyUI-GGUF custom node. Place model files in - see the GitHub readme for further install instructions. The other files required can be downloaded from this repository by Comfy-Org Please refer to this chart for a basic overview of quantization types.",
+    "model_explanation_gemini": "Generates videos from images using GGUF quantization for compatibility with ComfyUI-GGUF."
+}

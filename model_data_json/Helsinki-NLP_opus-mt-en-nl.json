@@ -1,0 +1,21 @@
+{
+    "model_id": "Helsinki-NLP/opus-mt-en-nl",
+    "downloads": 102879,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "tf",
+        "rust",
+        "marian",
+        "text2text-generation",
+        "translation",
+        "en",
+        "nl",
+        "license:apache-2.0",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- tags: - translation license: apache-2.0 --- ### opus-mt-en-nl * source languages: en * target languages: nl * OPUS readme: en-nl * dataset: opus * model: transformer-align * pre-processing: normalization + SentencePiece * download original weights: opus-2019-12-04.zip * test set translations: opus-2019-12-04.test.txt * test set scores: opus-2019-12-04.eval.txt ## Benchmarks | testset | BLEU | chr-F | |-----------------------|-------|-------| | Tatoeba.en.nl | 57.1 | 0.730 |",
+    "model_explanation_gemini": "Translates text from English (en) to Dutch (nl) using a transformer-based model trained on OPUS data with SentencePiece pre-processing."
+}

@@ -1,0 +1,12 @@
+{
+    "model_id": "hkust-nlp/Qwen-2.5-7B-SimpleRL-Zoo",
+    "downloads": 401875,
+    "tags": [
+        "safetensors",
+        "qwen2",
+        "license:apache-2.0",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 ---",
+    "model_explanation_gemini": "Qwen-2.5-7B-SimpleRL-Zoo is a 7-billion-parameter model fine-tuned with simple reinforcement learning for enhanced performance in natural language processing tasks."
+}

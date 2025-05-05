@@ -1,0 +1,18 @@
+{
+    "model_id": "ggml-org/stories15M_MOE",
+    "downloads": 234427,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "gguf",
+        "mixtral",
+        "text-generation",
+        "license:mit",
+        "autotrain_compatible",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: mit --- # stories15M_MOE This model is ModelCloud/tinyllama-15M-stories repeated 4 times to make 4 experts. The model is used for testing, not intended to be used in production (unless your product is some kind of bedtime story teller) Weight of router is initialized randomly ## shakespeare LoRA adapter A LoRA adapter trained on first 100 paragraphs of shakespeare can be found inside With input: - Original model generates: - LoRA adapter generates:",
+    "model_explanation_gemini": "A 15M-parameter mixture-of-experts model for generating stories, primarily for testing, with an optional Shakespeare-themed LoRA adapter for stylistic variation."
+}

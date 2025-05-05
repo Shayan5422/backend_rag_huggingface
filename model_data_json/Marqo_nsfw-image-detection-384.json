@@ -1,0 +1,13 @@
+{
+    "model_id": "Marqo/nsfw-image-detection-384",
+    "downloads": 127764,
+    "tags": [
+        "timm",
+        "safetensors",
+        "image-classification",
+        "license:apache-2.0",
+        "region:us"
+    ],
+    "description": "--- tags: - image-classification - timm library_name: timm license: apache-2.0 --- # Model card for nsfw-image-detection-384 __NOTE: Like all models, this one can make mistakes. NSFW content can be subjective and contextual, this model is intended to help identify this content, use at your own risk.__ is a lightweight image classification model designed to identify NSFW images. The model is approximately 18–20x smaller than other open-source models and achieves a superior accuracy of 98.56% on our dataset. This model uses 384x384 pixel images for the input with 16x16 pixel patches. This model was trained on a proprietary dataset of 220,000 images. The training set includes 100,000 NSFW examples and 100,000 SFW examples, while the test set contains 10,000 NSFW examples and 10,000 SFW examples. This dataset features a diverse range of content, including: real photos, drawings, Rule 34 material, memes, and AI-generated images. The definition of NSFW can vary and is sometimes contextual, our dataset was constructed to contain challenging examples however this definition may not be 100% aligned with every use case, as such we recommend experimenting and trying different thresholds to determine if this model is suitable for your needs. ## Model Usage ### Image Classification with timm ## Evaluation This model outperforms existing NSFW detectors on our dataset, here we provide an evaluation against AdamCodd/vit-base-nsfw-detector and Falconsai/nsfw_image_detection: !Evaluation against other models ### Thresholds and Precision vs Recall Adjusting the threshold for the NSFW probability can let you trade off precision, recall, and accuracy. This maybe be useful in different applications where different degrees of confidence are required. !Thresholded Evaluation !Precision and Recall Curves ## Training Details This model is a finetune of the timm/vit_tiny_patch16_384.augreg_in21k_ft_in1k model. ### Args ## Citation",
+    "model_explanation_gemini": "Detects NSFW content in images with high accuracy using a lightweight, efficient model trained on diverse datasets."
+}

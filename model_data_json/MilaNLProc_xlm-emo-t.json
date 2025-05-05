@@ -1,0 +1,18 @@
+{
+    "model_id": "MilaNLProc/xlm-emo-t",
+    "downloads": 627921,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "xlm-roberta",
+        "text-classification",
+        "emotion",
+        "emotion-analysis",
+        "multilingual",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: multilingual tags: - emotion - emotion-analysis - multilingual widget: - text: \"Guarda! ci sono dei bellissimi capibara!\" example_title: \"Emotion Classification 1\" - text: \"Sei una testa di cazzo!!\" example_title: \"Emotion Classification 2\" - text: \"Quelle bonne nouvelle!\" example_title: \"Emotion Classification 3\" arxiv: \"\" --- # Federico Bianchi • Debora Nozza • Dirk Hovy ## Abstract Detecting emotion in text allows social and computational scientists to study how people behave and react to online events. However, developing these tools for different languages requires data that is not always available. This paper collects the available emotion detection datasets across 19 languages. We train a multilingual emotion prediction model for social media data, XLM-EMO. The model shows competitive performance in a zero-shot setting, suggesting it is helpful in the context of low-resource languages. We release our model to the community so that interested researchers can directly use it. ## Model This model is the fine-tuned version of the XLM-T model. ### Intended Use The model is intended as a research output for research communities. #### Primary intended uses The primary intended users of these models are AI researchers. ## Results This model had an F1 of 0.85 on the test set. ## License For models, restrictions may apply to the data (which are derived from existing datasets) or Twitter (main data source). We refer users to the original licenses accompanying each dataset and Twitter regulations. THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. ## Citation Please use the following BibTeX entry if you use this model in your project:",
+    "model_explanation_gemini": "Detects emotions in multilingual social media text, trained for research purposes with competitive zero-shot performance across 19 languages."
+}

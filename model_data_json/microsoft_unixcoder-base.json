@@ -1,0 +1,17 @@
+{
+    "model_id": "microsoft/unixcoder-base",
+    "downloads": 341798,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "roberta",
+        "feature-extraction",
+        "en",
+        "arxiv:2203.03850",
+        "license:apache-2.0",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: - en license: apache-2.0 --- # Model Card for UniXcoder-base # Model Details ## Model Description UniXcoder is a unified cross-modal pre-trained model that leverages multimodal data (i.e. code comment and AST) to pretrain code representation. - **Developed by:** Microsoft Team - **Shared by [Optional]:** Hugging Face - **Model type:** Feature Engineering - **Language(s) (NLP):** en - **License:** Apache-2.0 - **Related Models:** - **Parent Model:** RoBERTa - **Resources for more information:** - Associated Paper # Uses ## 1. Dependency - pip install torch - pip install transformers ## 2. Quick Tour We implement a class to use UniXcoder and you can follow the code to build UniXcoder. You can download the class by In the following, we will give zero-shot examples for several tasks under different mode, including **code search (encoder-only)**, **code completion (decoder-only)**, **function name prediction (encoder-decoder)** , **API recommendation (encoder-decoder)**, **code summarization (encoder-decoder)**. ## 3. Encoder-only Mode For encoder-only mode, we give an example of **code search**. ### 1) Code and NL Embeddings Here, we give an example to obtain code fragment embedding from CodeBERT. ### 2) Similarity between code and NL Now, we calculate cosine similarity between NL and two functions. Although the difference of two functions is only a operator ( and ), UniXcoder can distinguish them. ## 3. Decoder-only Mode For decoder-only mode, we give an example of **code completion**. ## 4. Encoder-Decoder Mode For encoder-decoder mode, we give two examples including: **function name prediction**, **API recommendation**, **code summarization**. ### 1) **Function Name Prediction** ### 2) API Recommendation ### 3) Code Summarization # Reference If you use this code or UniXcoder, please consider citing us. <pre><code>@article{guo2022unixcoder, title={UniXcoder: Unified Cross-Modal Pre-training for Code Representation}, author={Guo, Daya and Lu, Shuai and Duan, Nan and Wang, Yanlin and Zhou, Ming and Yin, Jian}, journal={arXiv preprint arXiv:2203.03850}, year={2022} }</code></pre>",
+    "model_explanation_gemini": "UniXcoder is a unified cross-modal pre-trained model for code representation that supports tasks like code search, completion, function prediction, API recommendation, and code summarization using multimodal data (code comments and AST)."
+}

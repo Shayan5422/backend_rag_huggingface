@@ -1,0 +1,17 @@
+{
+    "model_id": "kuelumbus/polyBERT",
+    "downloads": 988721,
+    "tags": [
+        "sentence-transformers",
+        "pytorch",
+        "deberta-v2",
+        "feature-extraction",
+        "sentence-similarity",
+        "transformers",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- pipeline_tag: sentence-similarity tags: - sentence-transformers - feature-extraction - sentence-similarity - transformers widget: - source_sentence: \"[*]CC[*]\" sentences: - \"[*]COC[*]\" - \"[*]CC(C)C[*]\" --- # kuelumbus/polyBERT This is polyBERT: A chemical language model to enable fully machine-driven ultrafast polymer informatics. polyBERT maps PSMILES strings to 600 dimensional dense fingerprints. The fingerprints numerically represent polymer chemical structures. Please see the license agreement in the LICENSE file. <!--- Describe your model here --> ## Usage (Sentence-Transformers) Using this model becomes easy when you have sentence-transformers installed: Then you can use the model like this: ## Usage (HuggingFace Transformers) Without sentence-transformers, you can use the model like this: First, you pass your input through the transformer model, then you have to apply the right pooling-operation on-top of the contextualized word embeddings. ## Evaluation Results See and paper on arXiv. ## Full Model Architecture ## Citing & Authors Kuenneth, C., Ramprasad, R. polyBERT: a chemical language model to enable fully machine-driven ultrafast polymer informatics. Nat Commun 14, 4099 (2023).",
+    "model_explanation_gemini": "Generates 600-dimensional chemical structure fingerprints from PSMILES strings for ultrafast polymer informatics."
+}

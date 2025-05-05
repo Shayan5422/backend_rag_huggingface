@@ -1,0 +1,11 @@
+{
+    "model_id": "ggml-org/models",
+    "downloads": 2058119,
+    "tags": [
+        "gguf",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "Various models to be used in llama.cpp CI workflow. Do not use it in production.",
+    "model_explanation_gemini": "Various models for testing llama.cpp CI workflows, not intended for production use."
+}

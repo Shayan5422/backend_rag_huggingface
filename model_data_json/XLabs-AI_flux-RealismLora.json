@@ -1,0 +1,19 @@
+{
+    "model_id": "XLabs-AI/flux-RealismLora",
+    "downloads": 110815,
+    "tags": [
+        "diffusers",
+        "lora",
+        "Stable Diffusion",
+        "image-generation",
+        "Flux",
+        "text-to-image",
+        "en",
+        "base_model:black-forest-labs/FLUX.1-dev",
+        "base_model:adapter:black-forest-labs/FLUX.1-dev",
+        "license:other",
+        "region:us"
+    ],
+    "description": "--- license: other license_name: flux-1-dev-non-commercial-license license_link: language: - en pipeline_tag: text-to-image tags: - lora - Stable Diffusion - image-generation - Flux - diffusers base_model: black-forest-labs/FLUX.1-dev --- !Lora Photorealism for Flux <img src=\" This repository provides a checkpoint with trained LoRA photorealism for FLUX.1-dev model by Black Forest Labs !Example Picture 1 # ComfyUI See our github for comfy ui workflows. !Example Picture 1 # Training details XLabs AI team is happy to publish fine-tuning Flux scripts, including: - **LoRA** 🔥 - **ControlNet** 🔥 See our github for train script and train configs. # Training Dataset Dataset has the following format for the training process: A .json file contains \"caption\" field with a text prompt. # Inference !Example Picture 1 # License lora.safetensors falls under the [FLUX.1 [dev]]( Non-Commercial License<br/>",
+    "model_explanation_gemini": "Enhances FLUX.1-dev's Stable Diffusion capabilities with photorealistic image generation using LoRA fine-tuning for non-commercial use."
+}

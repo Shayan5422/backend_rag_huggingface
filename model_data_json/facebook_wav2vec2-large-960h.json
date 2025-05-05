@@ -1,0 +1,19 @@
+{
+    "model_id": "facebook/wav2vec2-large-960h",
+    "downloads": 105948,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "wav2vec2",
+        "automatic-speech-recognition",
+        "speech",
+        "en",
+        "dataset:librispeech_asr",
+        "arxiv:2006.11477",
+        "license:apache-2.0",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: en datasets: - librispeech_asr tags: - speech license: apache-2.0 --- # Wav2Vec2-Large-960h Facebook's Wav2Vec2 The large model pretrained and fine-tuned on 960 hours of Librispeech on 16kHz sampled speech audio. When using the model make sure that your speech input is also sampled at 16Khz. Paper Authors: Alexei Baevski, Henry Zhou, Abdelrahman Mohamed, Michael Auli **Abstract** We show for the first time that learning powerful representations from speech audio alone followed by fine-tuning on transcribed speech can outperform the best semi-supervised methods while being conceptually simpler. wav2vec 2.0 masks the speech input in the latent space and solves a contrastive task defined over a quantization of the latent representations which are jointly learned. Experiments using all labeled data of Librispeech achieve 1.8/3.3 WER on the clean/other test sets. When lowering the amount of labeled data to one hour, wav2vec 2.0 outperforms the previous state of the art on the 100 hour subset while using 100 times less labeled data. Using just ten minutes of labeled data and pre-training on 53k hours of unlabeled data still achieves 4.8/8.2 WER. This demonstrates the feasibility of speech recognition with limited amounts of labeled data. The original model can be found under # Usage To transcribe audio files the model can be used as a standalone acoustic model as follows: ## Evaluation This code snippet shows how to evaluate **facebook/wav2vec2-large-960h** on LibriSpeech's \"clean\" and \"other\" test data. *Result (WER)*: | \"clean\" | \"other\" | |---|---| | 2.8 | 6.3 |",
+    "model_explanation_gemini": "Transcribes 16kHz speech audio into text, pretrained and fine-tuned on 960 hours of Librispeech data for high-accuracy speech recognition."
+}

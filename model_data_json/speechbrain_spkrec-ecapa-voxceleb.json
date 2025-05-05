@@ -1,0 +1,21 @@
+{
+    "model_id": "speechbrain/spkrec-ecapa-voxceleb",
+    "downloads": 1410815,
+    "tags": [
+        "speechbrain",
+        "embeddings",
+        "Speaker",
+        "Verification",
+        "Identification",
+        "pytorch",
+        "ECAPA",
+        "TDNN",
+        "en",
+        "dataset:voxceleb",
+        "arxiv:2106.04624",
+        "license:apache-2.0",
+        "region:us"
+    ],
+    "description": "--- language: \"en\" thumbnail: tags: - speechbrain - embeddings - Speaker - Verification - Identification - pytorch - ECAPA - TDNN license: \"apache-2.0\" datasets: - voxceleb metrics: - EER widget: - example_title: VoxCeleb Speaker id10003 src: - example_title: VoxCeleb Speaker id10004 src: --- <iframe src=\" frameborder=\"0\" scrolling=\"0\" width=\"170\" height=\"30\" title=\"GitHub\"></iframe> <br/><br/> # Speaker Verification with ECAPA-TDNN embeddings on Voxceleb This repository provides all the necessary tools to perform speaker verification with a pretrained ECAPA-TDNN model using SpeechBrain. The system can be used to extract speaker embeddings as well. It is trained on Voxceleb 1+ Voxceleb2 training data. For a better experience, we encourage you to learn more about SpeechBrain. The model performance on Voxceleb1-test set(Cleaned) is: | Release | EER(%) |:-------------:|:--------------:| | 05-03-21 | 0.80 | ## Pipeline description This system is composed of an ECAPA-TDNN model. It is a combination of convolutional and residual blocks. The embeddings are extracted using attentive statistical pooling. The system is trained with Additive Margin Softmax Loss. Speaker Verification is performed using cosine distance between speaker embeddings. ## Install SpeechBrain First of all, please install SpeechBrain with the following command: Please notice that we encourage you to read our tutorials and learn more about SpeechBrain. ### Compute your speaker embeddings The system is trained with recordings sampled at 16kHz (single channel). The code will automatically normalize your audio (i.e., resampling + mono channel selection) when calling *classify_file* if needed. Make sure your input tensor is compliant with the expected sampling rate if you use *encode_batch* and *classify_batch*. ### Perform Speaker Verification The prediction is 1 if the two signals in input are from the same speaker and 0 otherwise. ### Inference on GPU To perform inference on the GPU, add when calling the method. ### Training The model was trained with SpeechBrain (aa018540). To train it from scratch follows these steps: 1. Clone SpeechBrain: 2. Install it: 3. Run Training: You can find our training results (models, logs, etc) here. ### Limitations The SpeechBrain team does not provide any warranty on the performance achieved by this model when used on other datasets. #### Referencing ECAPA-TDNN # **Citing SpeechBrain** Please, cite SpeechBrain if you use it for your research or business. # **About SpeechBrain** - Website: - Code: - HuggingFace:",
+    "model_explanation_gemini": "Generates speaker embeddings and performs speaker verification using an ECAPA-TDNN model trained on VoxCeleb data."
+}

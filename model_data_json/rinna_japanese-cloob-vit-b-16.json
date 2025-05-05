@@ -1,0 +1,20 @@
+{
+    "model_id": "rinna/japanese-cloob-vit-b-16",
+    "downloads": 244828,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "safetensors",
+        "cloob",
+        "feature-extraction",
+        "clip",
+        "vision",
+        "ja",
+        "arxiv:2110.11316",
+        "arxiv:2404.01657",
+        "license:apache-2.0",
+        "region:us"
+    ],
+    "description": "--- language: ja thumbnail: license: apache-2.0 tags: - feature-extraction - clip - cloob - vision inference: false --- # rinna/japanese-cloob-vit-b-16 !rinna-icon This is a Japanese CLOOB (Contrastive Leave One Out Boost) model trained by rinna Co., Ltd.. Please see japanese-clip for the other available models. # How to use the model 1. Install package 2. Run # Model architecture The model was trained a ViT-B/16 Transformer architecture as an image encoder and uses a 12-layer BERT as a text encoder. The image encoder was initialized from the AugReg model. # Training The model was trained on CC12M translated the captions to Japanese. # Release date May 12, 2022 # How to cite # License The Apache 2.0 license",
+    "model_explanation_gemini": "Japanese CLOOB model for feature extraction, combining a ViT-B/16 image encoder and 12-layer BERT text encoder to align Japanese text and visual representations."
+}

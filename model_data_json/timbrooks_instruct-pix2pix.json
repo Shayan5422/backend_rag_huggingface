@@ -1,0 +1,14 @@
+{
+    "model_id": "timbrooks/instruct-pix2pix",
+    "downloads": 285360,
+    "tags": [
+        "diffusers",
+        "safetensors",
+        "image-to-image",
+        "license:mit",
+        "diffusers:StableDiffusionInstructPix2PixPipeline",
+        "region:us"
+    ],
+    "description": "--- license: mit tags: - image-to-image --- # InstructPix2Pix: Learning to Follow Image Editing Instructions GitHub: <img src=' ## Example To use , install using for now. The pipeline will be available in the next release",
+    "model_explanation_gemini": "Enables image editing by following textual instructions for image-to-image transformations."
+}

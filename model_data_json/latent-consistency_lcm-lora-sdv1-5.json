@@ -1,0 +1,16 @@
+{
+    "model_id": "latent-consistency/lcm-lora-sdv1-5",
+    "downloads": 106777,
+    "tags": [
+        "diffusers",
+        "lora",
+        "text-to-image",
+        "arxiv:2311.05556",
+        "base_model:runwayml/stable-diffusion-v1-5",
+        "base_model:adapter:runwayml/stable-diffusion-v1-5",
+        "license:openrail++",
+        "region:us"
+    ],
+    "description": "--- library_name: diffusers base_model: runwayml/stable-diffusion-v1-5 tags: - lora - text-to-image license: openrail++ inference: false --- # Latent Consistency Model (LCM) LoRA: SDv1-5 Latent Consistency Model (LCM) LoRA was proposed in LCM-LoRA: A universal Stable-Diffusion Acceleration Module by *Simian Luo, Yiqin Tan, Suraj Patil, Daniel Gu et al.* It is a distilled consistency adapter for []( that allows to reduce the number of inference steps to only between **2 - 8 steps**. | Model | Params / M | |----------------------------------------------------------------------------|------------| | **lcm-lora-sdv1-5** | **67.5** | | lcm-lora-ssd-1b | 105 | | lcm-lora-sdxl | 197M | ## Usage LCM-LoRA is supported in 🤗 Hugging Face Diffusers library from version v0.23.0 onwards. To run the model, first install the latest version of the Diffusers library as well as , and . audio dataset from the Hugging Face Hub: ***Note: For detailed usage examples we recommend you to check out our official LCM-LoRA docs*** ### Text-to-Image The adapter can be loaded with SDv1-5 or deviratives. Here we use []( Next, the scheduler needs to be changed to []( and we can reduce the number of inference steps to just 2 to 8 steps. Please make sure to either disable or use values between 1.0 and 2.0. ### Image-to-Image LCM-LoRA can be applied to image-to-image tasks too. Let's look at how we can perform image-to-image generation with LCMs. For this example we'll use the dreamshaper-7 model and the LCM-LoRA for . ![]( ### Inpainting LCM-LoRA can be used for inpainting as well. ![]( ### ControlNet For this example, we'll use the SD-v1-5 model and the LCM-LoRA for SD-v1-5 with canny ControlNet. ![]( ## Speed Benchmark TODO ## Training TODO",
+    "model_explanation_gemini": "Accelerates Stable Diffusion v1.5 text-to-image generation by reducing required inference steps to 2-8 using a distilled consistency adapter (LoRA)."
+}

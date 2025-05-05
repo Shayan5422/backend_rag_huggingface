@@ -1,0 +1,21 @@
+{
+    "model_id": "afrideva/Tiny-Vicuna-1B-GGUF",
+    "downloads": 266149,
+    "tags": [
+        "gguf",
+        "ggml",
+        "quantized",
+        "q2_k",
+        "q3_k_m",
+        "q4_k_m",
+        "q5_k_m",
+        "q6_k",
+        "q8_0",
+        "text-generation",
+        "base_model:Jiayi-Pan/Tiny-Vicuna-1B",
+        "base_model:quantized:Jiayi-Pan/Tiny-Vicuna-1B",
+        "region:us"
+    ],
+    "description": "--- base_model: Jiayi-Pan/Tiny-Vicuna-1B inference: false model_creator: Jiayi-Pan model_name: Tiny-Vicuna-1B pipeline_tag: text-generation quantized_by: afrideva tags: - gguf - ggml - quantized - q2_k - q3_k_m - q4_k_m - q5_k_m - q6_k - q8_0 --- # Jiayi-Pan/Tiny-Vicuna-1B-GGUF Quantized GGUF model files for Tiny-Vicuna-1B from Jiayi-Pan | Name | Quant method | Size | | ---- | ---- | ---- | | tiny-vicuna-1b.q2_k.gguf | q2_k | 482.14 MB | | tiny-vicuna-1b.q3_k_m.gguf | q3_k_m | 549.85 MB | | tiny-vicuna-1b.q4_k_m.gguf | q4_k_m | 667.81 MB | | tiny-vicuna-1b.q5_k_m.gguf | q5_k_m | 782.04 MB | | tiny-vicuna-1b.q6_k.gguf | q6_k | 903.41 MB | | tiny-vicuna-1b.q8_0.gguf | q8_0 | 1.17 GB | ## Original Model Card: # Tiny Vicuna 1B TinyLLama 1.1B finetuned with WizardVicuna dataset. Easy to iterate on for early experiments!",
+    "model_explanation_gemini": "A quantized GGUF version of Tiny-Vicuna-1B, a 1.1B parameter model fine-tuned for text generation using the WizardVicuna dataset, designed for efficient experimentation."
+}

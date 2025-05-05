@@ -1,0 +1,16 @@
+{
+    "model_id": "microsoft/layoutlmv2-base-uncased",
+    "downloads": 522175,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "layoutlmv2",
+        "en",
+        "arxiv:2012.14740",
+        "license:cc-by-nc-sa-4.0",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: en license: cc-by-nc-sa-4.0 --- # LayoutLMv2 **Multimodal (text + layout/format + image) pre-training for document AI** The documentation of this model in the Transformers library can be found here. Microsoft Document AI | GitHub ## Introduction LayoutLMv2 is an improved version of LayoutLM with new pre-training tasks to model the interaction among text, layout, and image in a single multi-modal framework. It outperforms strong baselines and achieves new state-of-the-art results on a wide variety of downstream visually-rich document understanding tasks, including , including FUNSD (0.7895 → 0.8420), CORD (0.9493 → 0.9601), SROIE (0.9524 → 0.9781), Kleister-NDA (0.834 → 0.852), RVL-CDIP (0.9443 → 0.9564), and DocVQA (0.7295 → 0.8672). LayoutLMv2: Multi-modal Pre-training for Visually-Rich Document Understanding Yang Xu, Yiheng Xu, Tengchao Lv, Lei Cui, Furu Wei, Guoxin Wang, Yijuan Lu, Dinei Florencio, Cha Zhang, Wanxiang Che, Min Zhang, Lidong Zhou, ACL 2021",
+    "model_explanation_gemini": "LayoutLMv2 is a multimodal model combining text, layout, and image data for document understanding tasks, achieving state-of-the-art performance on various benchmarks."
+}

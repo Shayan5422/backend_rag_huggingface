@@ -1,0 +1,18 @@
+{
+    "model_id": "kha-white/manga-ocr-base",
+    "downloads": 128903,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "vision-encoder-decoder",
+        "image-text-to-text",
+        "image-to-text",
+        "ja",
+        "dataset:manga109s",
+        "license:apache-2.0",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: ja tags: - image-to-text license: apache-2.0 datasets: - manga109s --- # Manga OCR Optical character recognition for Japanese text, with the main focus being Japanese manga. It uses Vision Encoder Decoder framework. Manga OCR can be used as a general purpose printed Japanese OCR, but its main goal was to provide a high quality text recognition, robust against various scenarios specific to manga: - both vertical and horizontal text - text with furigana - text overlaid on images - wide variety of fonts and font styles - low quality images Code is available here.",
+    "model_explanation_gemini": "Performs optical character recognition (OCR) on Japanese manga text, handling vertical/horizontal text, furigana, image overlays, diverse fonts, and low-quality images."
+}

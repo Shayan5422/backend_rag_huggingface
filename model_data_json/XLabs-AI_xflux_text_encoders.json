@@ -1,0 +1,18 @@
+{
+    "model_id": "XLabs-AI/xflux_text_encoders",
+    "downloads": 510191,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "t5",
+        "pytorch",
+        "text2text-generation",
+        "en",
+        "license:apache-2.0",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 language: - en pipeline_tag: text2text-generation tags: - pytorch - transformers --- # Description Text encoder weights from Google's T5 model",
+    "model_explanation_gemini": "Encodes text using Google's T5 model weights for text-to-text generation tasks."
+}

@@ -1,0 +1,22 @@
+{
+    "model_id": "KBlueLeaf/DanTagGen-delta-rev2",
+    "downloads": 122822,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "gguf",
+        "llama",
+        "text-generation",
+        "not-for-all-audiences",
+        "art",
+        "en",
+        "dataset:KBlueLeaf/danbooru2023-sqlite",
+        "license:cc-by-sa-4.0",
+        "autotrain_compatible",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: cc-by-sa-4.0 datasets: - KBlueLeaf/danbooru2023-sqlite language: - en library_name: transformers pipeline_tag: text-generation tags: - not-for-all-audiences - art widget: - text: \"quality: masterpiece\\nrating: safe\\nartist: <|empty|>\\ncharacters: <|empty|>\\ncopyrights: <|empty|>\\naspect ratio: 1.0\\ntarget: <|short|>\\ngeneral: 1girl, solo, dragon girl, dragon horns, dragon tail<|input_end|>\" --- # DanTagGen - delta (rev2) DanTagGen(Danbooru Tag Generator) is inspired from p1atdev's dart project. But with different arch, dataset, format and different training strategy. ## Difference between versions - alpha: pretrain on 2M dataset, smaller batch size. Limited ability - beta: pretrain on 5.3M dataset, larger batch size. More stable, better ability with only a few information provided. - delta: pretrain on 7.2M dataset, larger batch size. Slightly underfit but better diversity. quality tag introduced. - rev2: resumed from delta, same dataset, 2 more epoch. ## Model arch This version of DTG is trained from scratch with 400M param LLaMA arch.(In my personal preference I will call it NanoLLaMA) Since it is llama arch. Theoritically it should be able to be used in any LLaMA inference interface. This repo also provided converted FP16 gguf model and quantized 8bit/6bit gguf models. Basically it is recommended to use llama.cpp or llama-cpp-python to run this model. Which will be very fast. ## Format for example: And you may get something like: ## Dataset and Training I use the trainer I implemented in HakuPhi to run the training. with Total 12epoch on 7.2M data. This model have roughly 10~15B token seen. The dataset is exported by HakuBooru with my danbooru sqlite database. Use the percentile of fav_count on each rating to filter the data. (2M = top 25%, 5.3M = top 75%) ## Utilities - HF space: - Demo for DTG + Kohaku XL Epsilon: - SD-WebUI Extension: - ComfyUI Node:",
+    "model_explanation_gemini": "Generates Danbooru-style image tags for character attributes, quality, and artistic details based on structured input prompts."
+}

@@ -1,0 +1,19 @@
+{
+    "model_id": "deepseek-ai/Janus-Pro-7B",
+    "downloads": 85842,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "multi_modality",
+        "muiltimodal",
+        "text-to-image",
+        "unified-model",
+        "any-to-any",
+        "arxiv:2501.17811",
+        "license:mit",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: mit license_name: deepseek license_link: LICENSE pipeline_tag: any-to-any library_name: transformers tags: - muiltimodal - text-to-image - unified-model --- ## 1. Introduction Janus-Pro is a novel autoregressive framework that unifies multimodal understanding and generation. It addresses the limitations of previous approaches by decoupling visual encoding into separate pathways, while still utilizing a single, unified transformer architecture for processing. The decoupling not only alleviates the conflict between the visual encoder’s roles in understanding and generation, but also enhances the framework’s flexibility. Janus-Pro surpasses previous unified model and matches or exceeds the performance of task-specific models. The simplicity, high flexibility, and effectiveness of Janus-Pro make it a strong candidate for next-generation unified multimodal models. **Github Repository** <div align=\"center\"> <img alt=\"image\" src=\"janus_pro_teaser1.png\" style=\"width:90%;\"> </div> <div align=\"center\"> <img alt=\"image\" src=\"janus_pro_teaser2.png\" style=\"width:90%;\"> </div> ### 2. Model Summary Janus-Pro is a unified understanding and generation MLLM, which decouples visual encoding for multimodal understanding and generation. Janus-Pro is constructed based on the DeepSeek-LLM-1.5b-base/DeepSeek-LLM-7b-base. For multimodal understanding, it uses the SigLIP-L as the vision encoder, which supports 384 x 384 image input. For image generation, Janus-Pro uses the tokenizer from here with a downsample rate of 16. ## 3. Quick Start Please refer to **Github Repository** ## 4. License This code repository is licensed under the MIT License. The use of Janus-Pro models is subject to DeepSeek Model License. ## 5. Citation ## 6. Contact If you have any questions, please raise an issue or contact us at service@deepseek.com.",
+    "model_explanation_gemini": "Janus-Pro is a unified multimodal model that decouples visual encoding for enhanced understanding and generation tasks, surpassing previous unified models and matching task-specific performance."
+}

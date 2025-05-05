@@ -1,0 +1,17 @@
+{
+    "model_id": "fxmarty/tiny-random-GemmaForCausalLM",
+    "downloads": 97907,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "gemma",
+        "text-generation",
+        "license:mit",
+        "autotrain_compatible",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: mit --- This one with a custom as allowed by the architecture (see 7b model).",
+    "model_explanation_gemini": "Randomly initialized tiny Gemma model for causal language modeling, licensed under MIT."
+}

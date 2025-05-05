@@ -1,0 +1,20 @@
+{
+    "model_id": "cardiffnlp/twitter-roberta-base-irony",
+    "downloads": 332146,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "tf",
+        "jax",
+        "roberta",
+        "text-classification",
+        "en",
+        "dataset:tweet_eval",
+        "arxiv:2010.12421",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- datasets: - tweet_eval language: - en --- # Twitter-roBERTa-base for Irony Detection This is a roBERTa-base model trained on ~58M tweets and finetuned for irony detection with the TweetEval benchmark. This model has integrated into the TweetNLP Python library. - Paper: _TweetEval_ benchmark (Findings of EMNLP 2020). - Git Repo: Tweeteval official repository. ## Example of classification Output: ### Reference Please cite the reference paper if you use this model.",
+    "model_explanation_gemini": "Detects irony in English tweets using a roBERTa-base model trained on ~58M tweets and fine-tuned on the TweetEval benchmark."
+}

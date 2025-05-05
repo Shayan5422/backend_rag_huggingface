@@ -1,0 +1,18 @@
+{
+    "model_id": "lmsys/vicuna-7b-v1.5",
+    "downloads": 229378,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "llama",
+        "text-generation",
+        "arxiv:2307.09288",
+        "arxiv:2306.05685",
+        "license:llama2",
+        "autotrain_compatible",
+        "text-generation-inference",
+        "region:us"
+    ],
+    "description": "--- inference: false license: llama2 --- # Vicuna Model Card ## Model Details Vicuna is a chat assistant trained by fine-tuning Llama 2 on user-shared conversations collected from ShareGPT. - **Developed by:** LMSYS - **Model type:** An auto-regressive language model based on the transformer architecture - **License:** Llama 2 Community License Agreement - **Finetuned from model:** Llama 2 ### Model Sources - **Repository:** - **Blog:** - **Paper:** - **Demo:** ## Uses The primary use of Vicuna is research on large language models and chatbots. The primary intended users of the model are researchers and hobbyists in natural language processing, machine learning, and artificial intelligence. ## How to Get Started with the Model - Command line interface: - APIs (OpenAI API, Huggingface API): ## Training Details Vicuna v1.5 is fine-tuned from Llama 2 with supervised instruction fine-tuning. The training data is around 125K conversations collected from ShareGPT.com. See more details in the \"Training Details of Vicuna Models\" section in the appendix of this paper. ## Evaluation !Evaluation Results Vicuna is evaluated with standard benchmarks, human preference, and LLM-as-a-judge. See more details in this paper and leaderboard. ## Difference between different versions of Vicuna See vicuna_weights_version.md",
+    "model_explanation_gemini": "Vicuna is a fine-tuned Llama 2-based chat assistant designed for research on large language models and chatbots, trained on user-shared conversations from ShareGPT."
+}

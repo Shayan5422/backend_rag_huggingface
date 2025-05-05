@@ -1,0 +1,16 @@
+{
+    "model_id": "flair/ner-english-ontonotes-large",
+    "downloads": 170979,
+    "tags": [
+        "flair",
+        "pytorch",
+        "token-classification",
+        "sequence-tagger-model",
+        "en",
+        "dataset:ontonotes",
+        "arxiv:2011.06993",
+        "region:us"
+    ],
+    "description": "--- tags: - flair - token-classification - sequence-tagger-model language: en datasets: - ontonotes widget: - text: \"On September 1st George won 1 dollar while watching Game of Thrones.\" --- ## English NER in Flair (Ontonotes large model) This is the large 18-class NER model for English that ships with Flair. F1-Score: **90.93** (Ontonotes) Predicts 18 tags: | **tag** | **meaning** | |---------------------------------|-----------| | CARDINAL | cardinal value | | DATE | date value | | EVENT | event name | | FAC | building name | | GPE | geo-political entity | | LANGUAGE | language name | | LAW | law name | | LOC | location name | | MONEY | money name | | NORP | affiliation | | ORDINAL | ordinal value | | ORG | organization name | | PERCENT | percent value | | PERSON | person name | | PRODUCT | product name | | QUANTITY | quantity value | | TIME | time value | | WORK_OF_ART | name of work of art | Based on document-level XLM-R embeddings and FLERT. --- ### Demo: How to use in Flair Requires: **Flair** () This yields the following output: So, the entities \"*September 1st*\" (labeled as a **date**), \"*George*\" (labeled as a **person**), \"*1 dollar*\" (labeled as a **money**) and \"Game of Thrones\" (labeled as a **work of art**) are found in the sentence \"*On September 1st George Washington won 1 dollar while watching Game of Thrones*\". --- ### Training: Script to train this model The following Flair script was used to train this model: --- ### Cite Please cite the following paper when using this model. --- ### Issues? The Flair issue tracker is available here.",
+    "model_explanation_gemini": "Identifies and classifies 18 types of named entities in English text, including dates, people, organizations, and works of art, using document-level XLM-R embeddings and FLERT."
+}

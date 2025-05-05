@@ -1,0 +1,19 @@
+{
+    "model_id": "neuralmind/bert-large-portuguese-cased",
+    "downloads": 258807,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "jax",
+        "bert",
+        "fill-mask",
+        "pt",
+        "dataset:brWaC",
+        "license:mit",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: pt license: mit tags: - bert - pytorch datasets: - brWaC --- # BERTimbau Large (aka \"bert-large-portuguese-cased\") !Bert holding a berimbau ## Introduction BERTimbau Large is a pretrained BERT model for Brazilian Portuguese that achieves state-of-the-art performances on three downstream NLP tasks: Named Entity Recognition, Sentence Textual Similarity and Recognizing Textual Entailment. It is available in two sizes: Base and Large. For further information or requests, please go to BERTimbau repository. ## Available models | Model | Arch. | #Layers | #Params | | ---------------------------------------- | ---------- | ------- | ------- | | | BERT-Base | 12 | 110M | | | BERT-Large | 24 | 335M | ## Usage ### Masked language modeling prediction example ### For BERT embeddings ## Citation If you use our work, please cite:",
+    "model_explanation_gemini": "Pretrained BERT model for Brazilian Portuguese optimized for Named Entity Recognition, Sentence Textual Similarity, and Recognizing Textual Entailment tasks."
+}

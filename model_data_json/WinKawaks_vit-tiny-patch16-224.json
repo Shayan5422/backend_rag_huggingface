@@ -1,0 +1,19 @@
+{
+    "model_id": "WinKawaks/vit-tiny-patch16-224",
+    "downloads": 711314,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "safetensors",
+        "vit",
+        "image-classification",
+        "vision",
+        "dataset:imagenet",
+        "license:apache-2.0",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 tags: - vision - image-classification datasets: - imagenet widget: - src: example_title: Tiger - src: example_title: Teapot - src: example_title: Palace --- Google didn't publish vit-tiny and vit-small model checkpoints in Hugging Face. I converted the weights from the timm repository. This model is used in the same way as ViT-base. Note that [safetensors] model requires torch 2.0 environment.",
+    "model_explanation_gemini": "Converts timm repository weights for a tiny Vision Transformer (ViT) model to perform image classification tasks similarly to ViT-base."
+}

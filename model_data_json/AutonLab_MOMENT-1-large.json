@@ -1,0 +1,25 @@
+{
+    "model_id": "AutonLab/MOMENT-1-large",
+    "downloads": 147972,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "safetensors",
+        "time series",
+        "forecasting",
+        "classification",
+        "anomaly detection",
+        "imputation",
+        "pretrained models",
+        "foundation models",
+        "time-series",
+        "time-series-forecasting",
+        "dataset:AutonLab/Timeseries-PILE",
+        "arxiv:2402.03885",
+        "license:mit",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: mit datasets: - AutonLab/Timeseries-PILE metrics: - accuracy - mse - mae - f1 tags: - time series - forecasting - classification - anomaly detection - imputation - transformers - pretrained models - foundation models - time-series pipeline_tag: time-series-forecasting --- # MOMENT-Large MOMENT is a family of foundation models for general-purpose time-series analysis. The models in this family (1) serve as a building block for diverse **time-series analysis tasks** (e.g., forecasting, classification, anomaly detection, and imputation, etc.), (2) are effective **out-of-the-box**, i.e., with no (or few) task-specific exemplars (enabling e.g., zero-shot forecasting, few-shot classification, etc.), and (3) are **tunable** using in-distribution and task-specific data to improve performance. For details on MOMENT models, training data, and experimental results, please refer to the paper MOMENT: A Family of Open Time-series Foundation Models. MOMENT-1 comes in 3 sizes: Small, Base, and Large. # Usage **Recommended Python Version:** Python 3.11 (support for additional versions is expected soon). You can install the package using pip: Alternatively, to install the latest version directly from the GitHub repository: To load the pre-trained model for one of the tasks, use one of the following code snippets: **Forecasting** **Classification** **Anomaly Detection, Imputation, and Pre-training** **Representation Learning** ### Tutorials Here is the list of tutorials and reproducibile experiments to get started with MOMENT for various tasks: - Forecasting - Classification - Anomaly Detection - Imputation - Representation Learning - Real-world Electrocardiogram (ECG) Case Study -- This tutorial also shows how to fine-tune MOMENT for a real-world ECG classification problem, performing training and inference on multiple GPUs and parameter efficient fine-tuning (PEFT). ## Model Details ### Model Description - **Developed by:** Auton Lab, Carnegie Mellon University - **Model type:** Time-series Foundation Model - **License:** MIT License ### Model Sources <!-- Provide the basic links for the model. --> - **Repository:** (Pre-training and research code coming out soon!) - **Paper:** - **Demo:** ## Environmental Impact <!-- Total emissions (in grams of CO2eq) and additional considerations, such as electricity usage, go here. Edit the suggested text below accordingly --> We train multiple models over many days resulting in significant energy usage and a sizeable carbon footprint. However, we hope that releasing our models will ensure that future time-series modeling efforts are quicker and more efficient, resulting in lower carbon emissions. We use the Total Graphics Power (TGP) to calculate the total power consumed for training MOMENT models, although the total power consumed by the GPU will likely vary a little based on the GPU utilization while training our model. Our calculations do not account for power demands from other sources of our compute. We use 336.566 Kg C02/MWH as the standard value of CO2 emission per megawatt hour of energy consumed for Pittsburgh. - **Hardware Type:** NVIDIA RTX A6000 GPU - **GPU Hours:** 404 - **Compute Region:** Pittsburgh, USA - **Carbon Emission (tCO2eq):** #### Hardware All models were trained and evaluated on a computing cluster consisting of 128 AMD EPYC 7502 CPUs, 503 GB of RAM, and 8 NVIDIA RTX A6000 GPUs each with 49 GiB RAM. All MOMENT variants were trained on a single A6000 GPU (with any data or model parallelism). ## Citation <!-- If there is a paper or blog post introducing the model, the APA and Bibtex information for that should go in this section. --> **BibTeX:** If you use MOMENT please cite our paper: **APA:** Goswami, M., Szafer, K., Choudhry, A., Cai, Y., Li, S., & Dubrawski, A. (2024). MOMENT: A Family of Open Time-series Foundation Models. In International Conference on Machine Learning. PMLR.",
+    "model_explanation_gemini": "A foundation model for general-purpose time-series analysis, handling tasks like forecasting, classification, anomaly detection, and imputation with out-of-the-box effectiveness and tunability."
+}

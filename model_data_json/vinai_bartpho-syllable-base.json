@@ -1,0 +1,16 @@
+{
+    "model_id": "vinai/bartpho-syllable-base",
+    "downloads": 1302818,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "mbart",
+        "feature-extraction",
+        "arxiv:2109.09701",
+        "license:mit",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: mit --- # <a name=\"introduction\"></a> BARTpho: Pre-trained Sequence-to-Sequence Models for Vietnamese The pre-trained model is the \"base\" variant of , which uses the \"base\" architecture and pre-training scheme of the sequence-to-sequence denoising model BART. The general architecture and experimental results of BARTpho can be found in our paper: @article{bartpho, title = {{BARTpho: Pre-trained Sequence-to-Sequence Models for Vietnamese}}, author = {Nguyen Luong Tran and Duong Minh Le and Dat Quoc Nguyen}, journal = {arXiv preprint}, volume = {arXiv:2109.09701}, year = {2021} } **Please CITE** our paper when BARTpho is used to help produce published results or incorporated into other software. For further information or requests, please go to BARTpho's homepage!",
+    "model_explanation_gemini": "BARTpho is a pre-trained sequence-to-sequence model for Vietnamese, based on BART's base architecture, designed for denoising tasks."
+}

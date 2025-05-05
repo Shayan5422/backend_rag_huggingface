@@ -1,0 +1,14 @@
+{
+    "model_id": "h94/IP-Adapter-FaceID",
+    "downloads": 272845,
+    "tags": [
+        "diffusers",
+        "text-to-image",
+        "stable-diffusion",
+        "en",
+        "arxiv:2308.06721",
+        "region:us"
+    ],
+    "description": "--- tags: - text-to-image - stable-diffusion language: - en library_name: diffusers --- # IP-Adapter-FaceID Model Card <div align=\"center\"> **Project Page** **|** **Paper (ArXiv)** **|** **Code** </div> --- ## Introduction An experimental version of IP-Adapter-FaceID: we use face ID embedding from a face recognition model instead of CLIP image embedding, additionally, we use LoRA to improve ID consistency. IP-Adapter-FaceID can generate various style images conditioned on a face with only text prompts. !results **Update 2023/12/27**: IP-Adapter-FaceID-Plus: face ID embedding (for face ID) + CLIP image embedding (for face structure) <div align=\"center\"> !results </div> **Update 2023/12/28**: IP-Adapter-FaceID-PlusV2: face ID embedding (for face ID) + controllable CLIP image embedding (for face structure) You can adjust the weight of the face structure to get different generation! <div align=\"center\"> !results </div> **Update 2024/01/04**: IP-Adapter-FaceID-SDXL: An experimental SDXL version of IP-Adapter-FaceID <div align=\"center\"> !results </div> **Update 2024/01/17**: IP-Adapter-FaceID-PlusV2-SDXL: An experimental SDXL version of IP-Adapter-FaceID-PlusV2 **Update 2024/01/19**: IP-Adapter-FaceID-Portrait: same with IP-Adapter-FaceID but for portrait generation (no lora! no controlnet!). Specifically, it accepts multiple facial images to enhance similarity (the default is 5). <div align=\"center\"> !results </div> ## Usage ### IP-Adapter-FaceID Firstly, you should use insightface to extract face ID embedding: Then, you can generate images conditioned on the face embeddings: you can also use a normal IP-Adapter and a normal LoRA to load model: ### IP-Adapter-FaceID-SDXL Firstly, you should use insightface to extract face ID embedding: Then, you can generate images conditioned on the face embeddings: ### IP-Adapter-FaceID-Plus Firstly, you should use insightface to extract face ID embedding and face image: Then, you can generate images conditioned on the face embeddings: ### IP-Adapter-FaceID-Portrait ## Limitations and Bias - The models do not achieve perfect photorealism and ID consistency. - The generalization of the models is limited due to limitations of the training data, base model and face recognition model. ## Non-commercial use **AS InsightFace pretrained models are available for non-commercial research purposes, IP-Adapter-FaceID models are released exclusively for research purposes and is not intended for commercial use.**",
+    "model_explanation_gemini": "Generates diverse style images from text prompts while maintaining facial identity consistency using face recognition embeddings and LoRA enhancements."
+}

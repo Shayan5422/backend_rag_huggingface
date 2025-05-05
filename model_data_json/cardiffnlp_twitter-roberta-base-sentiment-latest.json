@@ -1,0 +1,19 @@
+{
+    "model_id": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+    "downloads": 2053333,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "tf",
+        "roberta",
+        "text-classification",
+        "en",
+        "dataset:tweet_eval",
+        "arxiv:2202.03829",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: en widget: - text: Covid cases are increasing fast! datasets: - tweet_eval --- # Twitter-roBERTa-base for Sentiment Analysis - UPDATED (2022) This is a RoBERTa-base model trained on ~124M tweets from January 2018 to December 2021, and finetuned for sentiment analysis with the TweetEval benchmark. The original Twitter-based RoBERTa model can be found here and the original reference paper is TweetEval. This model is suitable for English. - Reference Paper: TimeLMs paper. - Git Repo: TimeLMs official repository. <b>Labels</b>: 0 -> Negative; 1 -> Neutral; 2 -> Positive This sentiment analysis model has been integrated into TweetNLP. You can access the demo here. ## Example Pipeline ## Full classification example Output: ### References",
+    "model_explanation_gemini": "Classifies English tweets into negative, neutral, or positive sentiment using a RoBERTa-base model trained on 124M tweets."
+}

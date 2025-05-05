@@ -1,0 +1,24 @@
+{
+    "model_id": "NbAiLab/nb-wav2vec2-1b-nynorsk",
+    "downloads": 101142,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "tensorboard",
+        "safetensors",
+        "wav2vec2",
+        "automatic-speech-recognition",
+        "NbAiLab/NPSC",
+        "no",
+        "nn",
+        "nb-NN",
+        "dataset:NbAiLab/NPSC",
+        "arxiv:2307.01672",
+        "license:apache-2.0",
+        "model-index",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 tags: - automatic-speech-recognition - NbAiLab/NPSC - no - nn - nb-NN datasets: - NbAiLab/NPSC language: - nn - no model-index: - name: nb-wav2vec2-1b-nynorsk results: - task: name: Automatic Speech Recognition type: automatic-speech-recognition dataset: name: NPSC type: NbAiLab/NPSC args: 16K_mp3_nynorsk metrics: - name: Test (Nynorsk) WER type: wer value: 0.11319692134409612 - name: Test (Nynorsk) CER type: cer value: 0.040263696587740365 --- # Norwegian Wav2Vec2 Model - 1B Nynorsk This model is finetuned on top of feature extractor XLS-R from Facebook/Meta. The finetuned model achieves the following results on the test set with a 5-gram KenLM. The numbers in parentheses are the results without the language model: - **WER: 0.1132** (0.1364) - **CER: 0.0402** (---) ## Model description This is one of several Wav2Vec-models our team created during the 🤗 hosted Robust Speech Event. This is the complete list of our models and their final scores: | Model | Final WER | | |:--------------|:------------|:------------:| | NbAiLab/nb-wav2vec2-1b-bokmaal | 6.33 | | | NbAiLab/nb-wav2vec2-300m-bokmaal | 7.03 | | | NbAiLab/nb-wav2vec2-1b-nynorsk (this model) | 11.32 | | | NbAiLab/nb-wav2vec2-300m-nynorsk | 12.22 | | ## Dataset In parallel with the event, the team also converted the Norwegian Parliamentary Speech Corpus (NPSC) to the NbAiLab/NPSC in 🤗 Dataset format and used that as the main source for training. ## Code We have released all the code developed during the event so that the Norwegian NLP community can build upon it when developing even better Norwegian ASR models. The finetuning of these models is not very computationally demanding. After following the instructions here, you should be able to train your own automatic speech recognition system in less than a day with an average GPU. ## Team The following people contributed to building this model: Rolv-Arild Braaten, Javier de la Rosa, and Freddy Wetjen. ## Training procedure To reproduce these results, we strongly recommend that you follow the instructions from 🤗 to train a simple Swedish model. When you have verified that you are able to do this, create a fresh new repo. You can then start by copying the files and from our repo. Running these will create all the other necessary files, and should let you reproduce our results. With some tweaks to the hyperparameters, you might even be able to build an even better ASR. Good luck! ### Language Model As the scores indicate, adding even a simple 5-gram language will improve the results. 🤗 has provided another very nice blog explaining how to add a 5-gram language model to improve the ASR model. You can build this from your own corpus, for instance by extracting some suitable text from the Norwegian Colossal Corpus. You can also skip some of the steps in the guide, and copy the 5-gram model from this repo. ### Parameters The final model was run using these parameters: Using these settings, the training might take 3-4 days on an average GPU. You can, however, get a decent model and faster results by tweaking these parameters. | Parameter| Comment | |:-------------|:-----| | per_device_train_batch_size | Adjust this to the maximum of available memory. 16 or 24 might be good settings depending on your system | |gradient_accumulation_steps |Can be adjusted even further up to increase batch size and speed up training without running into memory issues | | learning_rate|Can be increased, maybe as high as 1e-4. Speeds up training but might add instability | | epochs| Can be decreased significantly. This is a huge dataset and you might get a decent result already after a couple of epochs| ## Citation See",
+    "model_explanation_gemini": "Finetuned for automatic speech recognition in Nynorsk Norwegian, achieving a 11.32% word error rate on the NPSC dataset."
+}

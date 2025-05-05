@@ -1,0 +1,23 @@
+{
+    "model_id": "google/t5-v1_1-base",
+    "downloads": 184213,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "tf",
+        "jax",
+        "t5",
+        "text2text-generation",
+        "en",
+        "dataset:c4",
+        "arxiv:2002.05202",
+        "arxiv:1910.10683",
+        "license:apache-2.0",
+        "autotrain_compatible",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: en datasets: - c4 license: apache-2.0 --- Google's T5 Version 1.1 ## Version 1.1 T5 Version 1.1 includes the following improvements compared to the original T5 model- GEGLU activation in feed-forward hidden layer, rather than ReLU - see here. - Dropout was turned off in pre-training (quality win). Dropout should be re-enabled during fine-tuning. - Pre-trained on C4 only without mixing in the downstream tasks. - no parameter sharing between embedding and classifier layer - \"xl\" and \"xxl\" replace \"3B\" and \"11B\". The model shapes are a bit different - larger and smaller and . **Note**: T5 Version 1.1 was only pre-trained on C4 excluding any supervised training. Therefore, this model has to be fine-tuned before it is useable on a downstream task. Pretraining Dataset: C4 Other Community Checkpoints: here Paper: Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer Authors: *Colin Raffel, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael Matena, Yanqi Zhou, Wei Li, Peter J. Liu* ## Abstract Transfer learning, where a model is first pre-trained on a data-rich task before being fine-tuned on a downstream task, has emerged as a powerful technique in natural language processing (NLP). The effectiveness of transfer learning has given rise to a diversity of approaches, methodology, and practice. In this paper, we explore the landscape of transfer learning techniques for NLP by introducing a unified framework that converts every language problem into a text-to-text format. Our systematic study compares pre-training objectives, architectures, unlabeled datasets, transfer approaches, and other factors on dozens of language understanding tasks. By combining the insights from our exploration with scale and our new “Colossal Clean Crawled Corpus”, we achieve state-of-the-art results on many benchmarks covering summarization, question answering, text classification, and more. To facilitate future work on transfer learning for NLP, we release our dataset, pre-trained models, and code. !model image",
+    "model_explanation_gemini": "A text-to-text transformer model pre-trained on C4 data that requires fine-tuning for downstream NLP tasks like summarization, question answering, and text classification."
+}

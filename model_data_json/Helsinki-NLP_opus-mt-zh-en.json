@@ -1,0 +1,21 @@
+{
+    "model_id": "Helsinki-NLP/opus-mt-zh-en",
+    "downloads": 423093,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "tf",
+        "rust",
+        "marian",
+        "text2text-generation",
+        "translation",
+        "zh",
+        "en",
+        "license:cc-by-4.0",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: - zh - en tags: - translation license: cc-by-4.0 --- ### zho-eng ## Table of Contents - Model Details - Uses - Risks, Limitations and Biases - Training - Evaluation - Citation Information - How to Get Started With the Model ## Model Details - **Model Description:** - **Developed by:** Language Technology Research Group at the University of Helsinki - **Model Type:** Translation - **Language(s):** - Source Language: Chinese - Target Language: English - **License:** CC-BY-4.0 - **Resources for more information:** - GitHub Repo ## Uses #### Direct Use This model can be used for translation and text-to-text generation. ## Risks, Limitations and Biases **CONTENT WARNING: Readers should be aware this section contains content that is disturbing, offensive, and can propagate historical and current stereotypes.** Significant research has explored bias and fairness issues with language models (see, e.g., Sheng et al. (2021) and Bender et al. (2021)). Further details about the dataset for this model can be found in the OPUS readme: zho-eng ## Training #### System Information * helsinki_git_sha: 480fcbe0ee1bf4774bcbe6226ad9f58e63f6c535 * transformers_git_sha: 2207e5d8cb224e954a7cba69fa4ac2309e9ff30b * port_machine: brutasse * port_time: 2020-08-21-14:41 * src_multilingual: False * tgt_multilingual: False #### Training Data ##### Preprocessing * pre-processing: normalization + SentencePiece (spm32k,spm32k) * ref_len: 82826.0 * dataset: opus * download original weights: opus-2020-07-17.zip * test set translations: opus-2020-07-17.test.txt ## Evaluation #### Results * test set scores: opus-2020-07-17.eval.txt * brevity_penalty: 0.948 ## Benchmarks | testset | BLEU | chr-F | |-----------------------|-------|-------| | Tatoeba-test.zho.eng | 36.1 | 0.548 | ## Citation Information ## How to Get Started With the Model",
+    "model_explanation_gemini": "Translates text from Chinese to English for general-purpose translation tasks."
+}

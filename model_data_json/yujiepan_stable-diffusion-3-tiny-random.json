@@ -1,0 +1,12 @@
+{
+    "model_id": "yujiepan/stable-diffusion-3-tiny-random",
+    "downloads": 142215,
+    "tags": [
+        "diffusers",
+        "safetensors",
+        "diffusers:StableDiffusion3Pipeline",
+        "region:us"
+    ],
+    "description": "--- library_name: diffusers --- # yujiepan/stable-diffusion-3-tiny-random This pipeline is intended for debugging. It is adapted from stabilityai/stable-diffusion-3-medium-diffusers with smaller size and randomly initialized parameters. ## Usage ## Codes",
+    "model_explanation_gemini": "Intended for debugging, this randomly initialized, smaller-sized model is adapted from Stable Diffusion 3 for testing purposes."
+}

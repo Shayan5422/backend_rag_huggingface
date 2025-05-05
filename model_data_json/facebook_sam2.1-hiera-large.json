@@ -1,0 +1,13 @@
+{
+    "model_id": "facebook/sam2.1-hiera-large",
+    "downloads": 139643,
+    "tags": [
+        "sam2",
+        "mask-generation",
+        "arxiv:2408.00714",
+        "license:apache-2.0",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 pipeline_tag: mask-generation library_name: sam2 --- Repository for SAM 2: Segment Anything in Images and Videos, a foundation model towards solving promptable visual segmentation in images and videos from FAIR. See the SAM 2 paper for more information. The official code is publicly release in this repo. ## Usage For image prediction: For video prediction: Refer to the demo notebooks for more details. ### Citation To cite the paper, model, or software, please use the below:",
+    "model_explanation_gemini": "Segment Anything in Images and Videos is a foundation model designed for promptable visual segmentation tasks in both images and videos."
+}

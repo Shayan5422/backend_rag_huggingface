@@ -1,0 +1,27 @@
+{
+    "model_id": "pyannote/brouhaha",
+    "downloads": 84524,
+    "tags": [
+        "pyannote-audio",
+        "pytorch",
+        "pyannote",
+        "pyannote-audio-model",
+        "audio",
+        "voice",
+        "speech",
+        "voice-activity-detection",
+        "speech-to-noise ratio",
+        "snr",
+        "room acoustics",
+        "c50",
+        "dataset:LibriSpeech",
+        "dataset:AudioSet",
+        "dataset:EchoThief",
+        "dataset:MIT-Acoustical-Reverberation-Scene",
+        "arxiv:2210.13248",
+        "license:openrail",
+        "region:us"
+    ],
+    "description": "--- tags: - pyannote - pyannote-audio - pyannote-audio-model - audio - voice - speech - voice-activity-detection - speech-to-noise ratio - snr - room acoustics - c50 datasets: - LibriSpeech - AudioSet - EchoThief - MIT-Acoustical-Reverberation-Scene license: openrail extra_gated_prompt: \"The collected information will help acquire a better knowledge of this model userbase and help its maintainers apply for grants to improve it further. \" extra_gated_fields: Company/university: text Website: text I plan to use this model for (task, type of audio data, etc): text --- # 🎙️🥁🚨🔊 Brouhaha !Sample Brouhaha predictions **Joint voice activity detection, speech-to-noise ratio, and C50 room acoustics estimation** TL;DR | Paper | Code | And Now for Something Completely Different ## Installation This model relies on pyannote.audio and brouhaha-vad. ## Usage ## Citation bibtex @inproceedings{Bredin2020, Title = {{pyannote.audio: neural building blocks for speaker diarization}}, Author = {{Bredin}, Herv{\\'e} and {Yin}, Ruiqing and {Coria}, Juan Manuel and {Gelly}, Gregory and {Korshunov}, Pavel and {Lavechin}, Marvin and {Fustes}, Diego and {Titeux}, Hadrien and {Bouaziz}, Wassim and {Gill}, Marie-Philippe}, Booktitle = {ICASSP 2020, IEEE International Conference on Acoustics, Speech, and Signal Processing}, Address = {Barcelona, Spain}, Month = {May}, Year = {2020}, } ```",
+    "model_explanation_gemini": "Performs joint voice activity detection, speech-to-noise ratio estimation, and C50 room acoustics analysis from audio signals."
+}

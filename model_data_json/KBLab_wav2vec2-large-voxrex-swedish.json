@@ -1,0 +1,25 @@
+{
+    "model_id": "KBLab/wav2vec2-large-voxrex-swedish",
+    "downloads": 88141,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "safetensors",
+        "wav2vec2",
+        "automatic-speech-recognition",
+        "audio",
+        "speech",
+        "hf-asr-leaderboard",
+        "sv",
+        "dataset:common_voice",
+        "dataset:NST_Swedish_ASR_Database",
+        "dataset:P4",
+        "arxiv:2205.03026",
+        "license:cc0-1.0",
+        "model-index",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: sv arxiv: datasets: - common_voice - NST_Swedish_ASR_Database - P4 metrics: - wer tags: - audio - automatic-speech-recognition - speech - hf-asr-leaderboard license: cc0-1.0 model-index: - name: Wav2vec 2.0 large VoxRex Swedish results: - task: name: Speech Recognition type: automatic-speech-recognition dataset: name: Common Voice type: common_voice args: sv-SE metrics: - name: Test WER type: wer value: 8.49 --- # Wav2vec 2.0 large VoxRex Swedish (C) Finetuned version of KBs VoxRex large model using Swedish radio broadcasts, NST and Common Voice data. Evalutation without a language model gives the following: WER for NST + Common Voice test set (2% of total sentences) is **2.5%**. WER for Common Voice test set is **8.49%** directly and **7.37%** with a 4-gram language model. When using this model, make sure that your speech input is sampled at 16kHz. **Update 2022-01-10:** Updated to VoxRex-C version. **Update 2022-05-16:** Paper is is here. # Performance\\* !Comparison <center><del>*<i>Chart shows performance without the additional 20k steps of Common Voice fine-tuning</i></del></center> ## Training This model has been fine-tuned for 120000 updates on NST + CommonVoice<del> and then for an additional 20000 updates on CommonVoice only. The additional fine-tuning on CommonVoice hurts performance on the NST+CommonVoice test set somewhat and, unsurprisingly, improves it on the CommonVoice test set. It seems to perform generally better though [citation needed]</del>. !WER during training ## Usage The model can be used directly (without a language model) as follows: ## Citation",
+    "model_explanation_gemini": "Finetuned for Swedish speech recognition, achieving low word error rates on datasets like Common Voice and NST without requiring a language model."
+}

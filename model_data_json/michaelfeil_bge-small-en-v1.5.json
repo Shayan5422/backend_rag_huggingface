@@ -1,0 +1,22 @@
+{
+    "model_id": "michaelfeil/bge-small-en-v1.5",
+    "downloads": 85839,
+    "tags": [
+        "sentence-transformers",
+        "pytorch",
+        "onnx",
+        "safetensors",
+        "bert",
+        "feature-extraction",
+        "sentence-similarity",
+        "transformers",
+        "en",
+        "license:mit",
+        "autotrain_compatible",
+        "text-embeddings-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- tags: - sentence-transformers - feature-extraction - sentence-similarity - transformers license: mit language: - en --- <h1 align=\"center\">Infinity Embedding Model</h1> This is the stable default model for infinity. More details about the infinity inference project please refer to the Github: Infinity. ## Usage for Embedding Model via infinity in Python To deploy files with the infinity_emb pip package. Recommended is with flash attention on gpu, and for onnx inference. ## CLI interface The same args ## Contact If you have any question or suggestion related to this project, feel free to open an issue or pull request. You also can email Michael Feil (infinity at michaelfeil.eu). ## Citation If you find this repository useful, please consider giving a star :star: and citation ## License Infinity is licensed under the MIT License.",
+    "model_explanation_gemini": "Generates sentence embeddings for English text to measure similarity and extract features."
+}

@@ -1,0 +1,16 @@
+{
+    "model_id": "hooman650/bge-m3-onnx-o4",
+    "downloads": 267051,
+    "tags": [
+        "transformers",
+        "onnx",
+        "xlm-roberta",
+        "feature-extraction",
+        "license:mit",
+        "text-embeddings-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: mit pipeline_tag: feature-extraction --- # bge-m3-onnx-o4 This is weights of the original []( Why is this model cool? - [x] Multi-Functionality: It can simultaneously perform the three common retrieval functionalities of embedding model: dense retrieval, multi-vector retrieval, and sparse retrieval. - [x] Multi-Linguality: It can support more than **100** working languages. - [x] Multi-Granularity: It is able to process inputs of different granularities, spanning from short sentences to long documents of up to **8192** tokens. ## Usage ### IMPORTANT - DOWNLOAD MODEL WEIGHTS Please see the instructions below. 1. **Download** the checkpoint: For some reason you cannot directly load from this online version (you will get an exception). Please download this repo as below: ### Dense Retrieval ### Multi-Vector (ColBERT)",
+    "model_explanation_gemini": "Performs dense, multi-vector, and sparse retrieval across 100+ languages while handling inputs from short sentences to long documents up to 8192 tokens."
+}

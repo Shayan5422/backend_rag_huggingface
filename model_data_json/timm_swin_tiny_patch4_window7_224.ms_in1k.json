@@ -1,0 +1,17 @@
+{
+    "model_id": "timm/swin_tiny_patch4_window7_224.ms_in1k",
+    "downloads": 143950,
+    "tags": [
+        "timm",
+        "pytorch",
+        "safetensors",
+        "image-classification",
+        "transformers",
+        "dataset:imagenet-1k",
+        "arxiv:2103.14030",
+        "license:mit",
+        "region:us"
+    ],
+    "description": "--- license: mit library_name: timm tags: - image-classification - timm - transformers datasets: - imagenet-1k --- # Model card for swin_tiny_patch4_window7_224.ms_in1k A Swin Transformer image classification model. Pretrained on ImageNet-1k by paper authors. ## Model Details - **Model Type:** Image classification / feature backbone - **Model Stats:** - Params (M): 28.3 - GMACs: 4.5 - Activations (M): 17.1 - Image size: 224 x 224 - **Papers:** - Swin Transformer: Hierarchical Vision Transformer using Shifted Windows: - **Original:** - **Dataset:** ImageNet-1k ## Model Usage ### Image Classification ### Feature Map Extraction ### Image Embeddings ## Model Comparison Explore the dataset and runtime metrics of this model in timm model results. ## Citation",
+    "model_explanation_gemini": "A Swin Transformer model pretrained on ImageNet-1k for image classification and feature extraction tasks."
+}

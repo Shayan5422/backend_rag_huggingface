@@ -1,0 +1,19 @@
+{
+    "model_id": "depth-anything/Depth-Anything-V2-Small-hf",
+    "downloads": 292617,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "depth_anything",
+        "depth-estimation",
+        "depth",
+        "relative depth",
+        "arxiv:2406.09414",
+        "arxiv:2401.10891",
+        "license:apache-2.0",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 tags: - depth - relative depth pipeline_tag: depth-estimation library: transformers widget: - inference: false --- # Depth Anything V2 Small – Transformers Version Depth Anything V2 is trained from 595K synthetic labeled images and 62M+ real unlabeled images, providing the most capable monocular depth estimation (MDE) model with the following features: - more fine-grained details than Depth Anything V1 - more robust than Depth Anything V1 and SD-based models (e.g., Marigold, Geowizard) - more efficient (10x faster) and more lightweight than SD-based models - impressive fine-tuned performance with our pre-trained models This model checkpoint is compatible with the transformers library. Depth Anything V2 was introduced in the paper of the same name by Lihe Yang et al. It uses the same architecture as the original Depth Anything release, but uses synthetic data and a larger capacity teacher model to achieve much finer and robust depth predictions. The original Depth Anything model was introduced in the paper Depth Anything: Unleashing the Power of Large-Scale Unlabeled Data by Lihe Yang et al., and was first released in this repository. Online demo. ## Model description Depth Anything V2 leverages the DPT architecture with a DINOv2 backbone. The model is trained on ~600K synthetic labeled images and ~62 million real unlabeled images, obtaining state-of-the-art results for both relative and absolute depth estimation. <img src=\" alt=\"drawing\" width=\"600\"/> <small> Depth Anything overview. Taken from the <a href=\" paper</a>.</small> ## Intended uses & limitations You can use the raw model for tasks like zero-shot depth estimation. See the model hub to look for other versions on a task that interests you. ### How to use Here is how to use this model to perform zero-shot depth estimation: Alternatively, you can use the model and processor classes: For more code examples, please refer to the documentation. ### Citation",
+    "model_explanation_gemini": "Estimates monocular depth from images with fine-grained detail and robustness using a DPT architecture and DINOv2 backbone."
+}

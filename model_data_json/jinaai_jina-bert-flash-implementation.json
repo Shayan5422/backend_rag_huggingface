@@ -1,0 +1,13 @@
+{
+    "model_id": "jinaai/jina-bert-flash-implementation",
+    "downloads": 453028,
+    "tags": [
+        "transformers",
+        "bert",
+        "custom_code",
+        "endpoints_compatible",
+        "region:eu"
+    ],
+    "description": "# BERT with Flash-Attention ### Installing dependencies To run the model on GPU, you need to install Flash Attention. You may either install from pypi (which may not work with fused-dense), or from source. To install from source, clone the GitHub repository: The code provided here should work with commit . Change to the cloned repo and install: This will compile the flash-attention kernel, which will take some time. If you would like to use fused MLPs (e.g. to use activation checkpointing), you may install fused-dense also from source: ### Configuration The config adds some new parameters: - : If , always use flash attention. If , use flash attention when GPU is available. If , never use flash attention (works on CPU). - : Size (left and right) of the local attention window. If , use global attention - : If true, we only need to pass the hidden states for the masked out token (around 15%) to the classifier heads. I set this to true for pretraining. - : Whether to use fused-dense. Useful to reduce VRAM in combination with activation checkpointing - : One of . Increasing this increases the amount of activation checkpointing within the MLP. Keep this at 0 for pretraining and use gradient accumulation instead. For embedding training, increase this as much as needed. - : If true, we only need the compute the last layer for a subset of tokens. I left this to false. - : Whether or not to use QK-normalization - : Number of LoRAs to use when initializing a model. Has no effect on other models.",
+    "model_explanation_gemini": "Implements BERT with Flash-Attention for efficient GPU processing, featuring configurable attention mechanisms, fused MLPs, and optional LoRAs."
+}

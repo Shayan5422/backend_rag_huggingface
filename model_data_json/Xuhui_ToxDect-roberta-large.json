@@ -1,0 +1,16 @@
+{
+    "model_id": "Xuhui/ToxDect-roberta-large",
+    "downloads": 555445,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "roberta",
+        "text-classification",
+        "arxiv:2102.00086",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: - - thumbnail: tags: - - - license: datasets: - - metrics: - - --- # Toxic language detection ## Model description A toxic language detection model trained on tweets. The base model is Roberta-large. For more information, including the **training data**, **limitations and bias**, please refer to the paper and Github repo for more details. #### How to use Note that LABEL_1 means toxic and LABEL_0 means non-toxic in the output. ## Training procedure The random seed for this model is 22. For other details, please refer to the Github repo for more details. ### BibTeX entry and citation info",
+    "model_explanation_gemini": "Detects toxic language in tweets, classifying text as toxic (LABEL_1) or non-toxic (LABEL_0) using a Roberta-large base model."
+}

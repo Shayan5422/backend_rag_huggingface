@@ -1,0 +1,22 @@
+{
+    "model_id": "Qwen/Qwen2-0.5B-Instruct",
+    "downloads": 224521,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "qwen2",
+        "text-generation",
+        "chat",
+        "conversational",
+        "en",
+        "base_model:Qwen/Qwen2-0.5B",
+        "base_model:finetune:Qwen/Qwen2-0.5B",
+        "license:apache-2.0",
+        "autotrain_compatible",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 language: - en pipeline_tag: text-generation tags: - chat base_model: Qwen/Qwen2-0.5B --- # Qwen2-0.5B-Instruct ## Introduction Qwen2 is the new series of Qwen large language models. For Qwen2, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters, including a Mixture-of-Experts model. This repo contains the instruction-tuned 0.5B Qwen2 model. Compared with the state-of-the-art opensource language models, including the previous released Qwen1.5, Qwen2 has generally surpassed most opensource models and demonstrated competitiveness against proprietary models across a series of benchmarks targeting for language understanding, language generation, multilingual capability, coding, mathematics, reasoning, etc. For more details, please refer to our blog, GitHub, and Documentation. <br> ## Model Details Qwen2 is a language model series including decoder language models of different model sizes. For each size, we release the base language model and the aligned chat model. It is based on the Transformer architecture with SwiGLU activation, attention QKV bias, group query attention, etc. Additionally, we have an improved tokenizer adaptive to multiple natural languages and codes. ## Training details We pretrained the models with a large amount of data, and we post-trained the models with both supervised finetuning and direct preference optimization. ## Requirements The code of Qwen2 has been in the latest Hugging face transformers and we advise you to install , or you might encounter the following error: ## Quickstart Here provides a code snippet with to show you how to load the tokenizer and model and how to generate contents. ## Evaluation We briefly compare Qwen2-0.5B-Instruct with Qwen1.5-0.5B-Chat. The results are as follows: | Datasets | Qwen1.5-0.5B-Chat | **Qwen2-0.5B-Instruct** | Qwen1.5-1.8B-Chat | **Qwen2-1.5B-Instruct** | | :--- | :---: | :---: | :---: | :---: | | MMLU | 35.0 | **37.9** | 43.7 | **52.4** | | HumanEval | 9.1 | **17.1** | 25.0 | **37.8** | | GSM8K | 11.3 | **40.1** | 35.3 | **61.6** | | C-Eval | 37.2 | **45.2** | 55.3 | **63.8** | | IFEval (Prompt Strict-Acc.) | 14.6 | **20.0** | 16.8 | **29.0** | ## Citation If you find our work helpful, feel free to give us a cite.",
+    "model_explanation_gemini": "A 0.5 billion parameter instruction-tuned language model for text generation, excelling in language understanding, generation, multilingual tasks, coding, math, and reasoning."
+}

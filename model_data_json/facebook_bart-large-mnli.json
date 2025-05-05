@@ -1,0 +1,23 @@
+{
+    "model_id": "facebook/bart-large-mnli",
+    "downloads": 3454228,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "jax",
+        "rust",
+        "safetensors",
+        "bart",
+        "text-classification",
+        "zero-shot-classification",
+        "dataset:multi_nli",
+        "arxiv:1910.13461",
+        "arxiv:1909.00161",
+        "license:mit",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: mit thumbnail: pipeline_tag: zero-shot-classification datasets: - multi_nli --- # bart-large-mnli This is the checkpoint for bart-large after being trained on the MultiNLI (MNLI) dataset. Additional information about this model: - The bart-large model page - BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension - BART fairseq implementation ## NLI-based Zero Shot Text Classification Yin et al. proposed a method for using pre-trained NLI models as a ready-made zero-shot sequence classifiers. The method works by posing the sequence to be classified as the NLI premise and to construct a hypothesis from each candidate label. For example, if we want to evaluate whether a sequence belongs to the class \"politics\", we could construct a hypothesis of . The probabilities for entailment and contradiction are then converted to label probabilities. This method is surprisingly effective in many cases, particularly when used with larger pre-trained models like BART and Roberta. See this blog post for a more expansive introduction to this and other zero shot methods, and see the code snippets below for examples of using this model for zero-shot classification both with Hugging Face's built-in pipeline and with native Transformers/PyTorch code. #### With the zero-shot classification pipeline The model can be loaded with the pipeline like so: You can then use this pipeline to classify sequences into any of the class names you specify. If more than one candidate label can be correct, pass to calculate each class independently: #### With manual PyTorch",
+    "model_explanation_gemini": "Classifies text into user-defined categories without task-specific training by leveraging natural language inference (NLI) and hypothesis formulation."
+}

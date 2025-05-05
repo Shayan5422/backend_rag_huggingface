@@ -1,0 +1,24 @@
+{
+    "model_id": "sentence-transformers/stsb-roberta-base",
+    "downloads": 678783,
+    "tags": [
+        "sentence-transformers",
+        "pytorch",
+        "tf",
+        "onnx",
+        "safetensors",
+        "openvino",
+        "roberta",
+        "feature-extraction",
+        "sentence-similarity",
+        "transformers",
+        "arxiv:1908.10084",
+        "license:apache-2.0",
+        "autotrain_compatible",
+        "text-embeddings-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 library_name: sentence-transformers tags: - sentence-transformers - feature-extraction - sentence-similarity - transformers pipeline_tag: sentence-similarity --- **⚠️ This model is deprecated. Please don't use it as it produces sentence embeddings of low quality. You can find recommended sentence embedding models here: SBERT.net - Pretrained Models** # sentence-transformers/stsb-roberta-base This is a sentence-transformers model: It maps sentences & paragraphs to a 768 dimensional dense vector space and can be used for tasks like clustering or semantic search. ## Usage (Sentence-Transformers) Using this model becomes easy when you have sentence-transformers installed: Then you can use the model like this: ## Usage (HuggingFace Transformers) Without sentence-transformers, you can use the model like this: First, you pass your input through the transformer model, then you have to apply the right pooling-operation on-top of the contextualized word embeddings. ## Full Model Architecture ## Citing & Authors This model was trained by sentence-transformers. If you find this model helpful, feel free to cite our publication Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks:",
+    "model_explanation_gemini": "Maps sentences and paragraphs to 768-dimensional vectors for tasks like clustering and semantic search."
+}

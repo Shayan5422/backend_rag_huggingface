@@ -1,0 +1,21 @@
+{
+    "model_id": "timm/vit_base_patch32_clip_224.laion2b_ft_in12k_in1k",
+    "downloads": 255023,
+    "tags": [
+        "timm",
+        "pytorch",
+        "safetensors",
+        "image-classification",
+        "transformers",
+        "dataset:imagenet-1k",
+        "dataset:laion-2b",
+        "dataset:imagenet-12k",
+        "arxiv:2212.07143",
+        "arxiv:2210.08402",
+        "arxiv:2010.11929",
+        "license:apache-2.0",
+        "region:us"
+    ],
+    "description": "--- tags: - image-classification - timm - transformers library_name: timm license: apache-2.0 datasets: - imagenet-1k - laion-2b - imagenet-12k --- # Model card for vit_base_patch32_clip_224.laion2b_ft_in12k_in1k A Vision Transformer (ViT) image classification model. Pretrained on LAION-2B image-text pairs using OpenCLIP. Fine-tuned on ImageNet-12k and then ImageNet-1k in . See recipes in Reproducible scaling laws. ## Model Details - **Model Type:** Image classification / feature backbone - **Model Stats:** - Params (M): 88.2 - GMACs: 4.4 - Activations (M): 4.2 - Image size: 224 x 224 - **Papers:** - OpenCLIP: - Reproducible scaling laws for contrastive language-image learning: - LAION-5B: An open large-scale dataset for training next generation image-text models: - An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale: - **Dataset:** ImageNet-1k - **Pretrain Dataset:** - LAION-2B - ImageNet-12k ## Model Usage ### Image Classification ### Image Embeddings ## Model Comparison Explore the dataset and runtime metrics of this model in timm model results. ## Citation",
+    "model_explanation_gemini": "Performs image classification using a Vision Transformer pretrained on LAION-2B and fine-tuned on ImageNet datasets."
+}

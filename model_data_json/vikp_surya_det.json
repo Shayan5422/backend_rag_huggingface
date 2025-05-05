@@ -1,0 +1,14 @@
+{
+    "model_id": "vikp/surya_det",
+    "downloads": 109242,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "segformer",
+        "license:cc-by-nc-sa-4.0",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: cc-by-nc-sa-4.0 --- Line detection model for surya. See repo for details.",
+    "model_explanation_gemini": "Detects lines in documents for the 'surya' project."
+}

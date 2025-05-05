@@ -1,0 +1,22 @@
+{
+    "model_id": "cointegrated/LaBSE-en-ru",
+    "downloads": 106499,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "tf",
+        "safetensors",
+        "bert",
+        "pretraining",
+        "feature-extraction",
+        "embeddings",
+        "sentence-similarity",
+        "ru",
+        "en",
+        "arxiv:2007.01852",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: [\"ru\", \"en\"] tags: - feature-extraction - embeddings - sentence-similarity --- # LaBSE for English and Russian This is a truncated version of sentence-transformers/LaBSE, which is, in turn, a port of LaBSE by Google. The current model has only English and Russian tokens left in the vocabulary. Thus, the vocabulary is 10% of the original, and number of parameters in the whole model is 27% of the original, without any loss in the quality of English and Russian embeddings. To get the sentence embeddings, you can use the following code: The model has been truncated in this notebook. You can adapt it for other languages (like EIStakovskii/LaBSE-fr-de), models or datasets. ## Reference: Fangxiaoyu Feng, Yinfei Yang, Daniel Cer, Narveen Ari, Wei Wang. Language-agnostic BERT Sentence Embedding. July 2020 License:",
+    "model_explanation_gemini": "Generates high-quality sentence embeddings for English and Russian text while maintaining original performance with a reduced vocabulary size."
+}

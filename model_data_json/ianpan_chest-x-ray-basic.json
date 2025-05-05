@@ -1,0 +1,25 @@
+{
+    "model_id": "ianpan/chest-x-ray-basic",
+    "downloads": 174093,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "cxr_basic",
+        "feature-extraction",
+        "chest_x_ray",
+        "x_ray",
+        "medical_imaging",
+        "radiology",
+        "segmentation",
+        "classification",
+        "lungs",
+        "heart",
+        "image-segmentation",
+        "custom_code",
+        "base_model:timm/tf_efficientnetv2_s.in21k_ft_in1k",
+        "base_model:finetune:timm/tf_efficientnetv2_s.in21k_ft_in1k",
+        "region:us"
+    ],
+    "description": "--- library_name: transformers tags: - chest_x_ray - x_ray - medical_imaging - radiology - segmentation - classification - lungs - heart base_model: - timm/tf_efficientnetv2_s.in21k_ft_in1k pipeline_tag: image-segmentation --- This model performs both segmentation and classification on chest radiographs (X-rays). The model uses a backbone with a U-Net decoder for segmentation and linear layer for classification. For frontal radiographs, the model segments the: 1) right lung, 2) left lung, and 3) heart. The model also predicts the chest X-ray view (AP, PA, lateral), patient age, and patient sex. The CheXpert (small version) and NIH Chest X-ray datasets were used to train the model. Segmentation masks were obtained from the CheXmask dataset (paper). The final dataset comprised 335,516 images from 96,385 patients and was split into 80% training/20% validation. A holdout test set was not used since minimal tuning was performed. The view classifier was trained only on CheXpert images (NIH images excluded from loss function), given that lateral radiographs are only present in CheXpert. This is to avoid unwanted bias in the model, which can occur if one class originates only from a single dataset. Validation performance as follows: To use the model: The output is a dictionary which contains 4 keys: * has 3 channels containing the segmentation masks. Take the argmax over the channel dimension to create a single image mask (i.e., ): 1 = right lung, 2 = left lung, 3 = heart. * , in years. * , with 3 classes for each possible view. Take the argmax to select the predicted view (i.e., ): 0 = AP, 1 = PA, 2 = lateral. * , binarize with . You can use the segmentation mask to crop the region containing the lungs from the rest of the X-ray. You can also calculate the cardiothoracic ratio (CTR) using this function: If you have installed, you can also load a DICOM image directly: This model is for demonstration and research purposes only and has NOT been approved by any regulatory agency for clinical use. The user assumes any and all responsibility regarding their own use of this model and its outputs.",
+    "model_explanation_gemini": "Performs segmentation of lungs and heart along with classification of chest X-ray view, patient age, and sex on frontal radiographs using a U-Net decoder and linear layer."
+}

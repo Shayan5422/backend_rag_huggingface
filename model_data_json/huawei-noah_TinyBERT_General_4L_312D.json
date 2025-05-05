@@ -1,0 +1,15 @@
+{
+    "model_id": "huawei-noah/TinyBERT_General_4L_312D",
+    "downloads": 155267,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "jax",
+        "bert",
+        "arxiv:1909.10351",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "TinyBERT: Distilling BERT for Natural Language Understanding ======== TinyBERT is 7.5x smaller and 9.4x faster on inference than BERT-base and achieves competitive performances in the tasks of natural language understanding. It performs a novel transformer distillation at both the pre-training and task-specific learning stages. In general distillation, we use the original BERT-base without fine-tuning as the teacher and a large-scale text corpus as the learning data. By performing the Transformer distillation on the text from general domain, we obtain a general TinyBERT which provides a good initialization for the task-specific distillation. We here provide the general TinyBERT for your tasks at hand. For more details about the techniques of TinyBERT, refer to our paper: TinyBERT: Distilling BERT for Natural Language Understanding Citation ======== If you find TinyBERT useful in your research, please cite the following paper:",
+    "model_explanation_gemini": "TinyBERT is a distilled version of BERT-base, designed for efficient natural language understanding with competitive performance while being significantly smaller and faster."
+}

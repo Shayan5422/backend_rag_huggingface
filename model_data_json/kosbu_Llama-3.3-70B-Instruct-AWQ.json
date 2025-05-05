@@ -1,0 +1,33 @@
+{
+    "model_id": "kosbu/Llama-3.3-70B-Instruct-AWQ",
+    "downloads": 335536,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "llama",
+        "text-generation",
+        "facebook",
+        "meta",
+        "llama-3",
+        "awq",
+        "conversational",
+        "en",
+        "fr",
+        "it",
+        "pt",
+        "hi",
+        "es",
+        "th",
+        "de",
+        "base_model:meta-llama/Llama-3.3-70B-Instruct",
+        "base_model:quantized:meta-llama/Llama-3.3-70B-Instruct",
+        "license:llama3.3",
+        "autotrain_compatible",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "4-bit",
+        "region:us"
+    ],
+    "description": "--- license: llama3.3 base_model: - meta-llama/Llama-3.3-70B-Instruct language: - en - fr - it - pt - hi - es - th - de tags: - facebook - meta - llama - llama-3 - awq pipeline_tag: text-generation library_name: transformers --- # Llama-3.3-70B-Instruct AWQ 4-Bit Quantized Version This repository provides the AWQ 4-bit quantized version of []( originally developed by Meta AI.",
+    "model_explanation_gemini": "An AWQ 4-bit quantized version of Meta's Llama-3.3-70B-Instruct model optimized for efficient text generation in multiple languages."
+}

@@ -1,0 +1,21 @@
+{
+    "model_id": "sociocom/MedNER-CR-JA",
+    "downloads": 117872,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "safetensors",
+        "bert",
+        "token-classification",
+        "NER",
+        "medical documents",
+        "ja",
+        "dataset:MedTxt-CR-JA-training-v2.xml",
+        "license:cc-by-4.0",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: - ja license: - cc-by-4.0 tags: - NER - medical documents datasets: - MedTxt-CR-JA-training-v2.xml metrics: - NTCIR-16 Real-MedNLP subtask 1 --- This is a model for named entity recognition of Japanese medical documents. ### How to use Download the following five files and put into the same folder. - id_to_tags.pkl - key_attr.pkl - NER_medNLP.py - predict.py - text.txt (This is an input file which should be predicted, which could be changed.) You can use this model by running predict.py. ### Input Example ### Output Example ### Publication Tomohiro Nishiyama, Aki Ando, Mihiro Nishidani, Shuntaro Yada, Shoko Wakamiya, Eiji Aramaki: NAISTSOC at the NTCIR-16 Real-MedNLP Task, In Proceedings of the 16th NTCIR Conference on Evaluation of Information Access Technologies (NTCIR-16), pp. 330-333, 2022",
+    "model_explanation_gemini": "Recognizes named entities in Japanese medical documents for information extraction."
+}

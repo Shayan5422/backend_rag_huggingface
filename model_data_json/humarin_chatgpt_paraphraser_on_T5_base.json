@@ -1,0 +1,19 @@
+{
+    "model_id": "humarin/chatgpt_paraphraser_on_T5_base",
+    "downloads": 133639,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "t5",
+        "text2text-generation",
+        "en",
+        "dataset:humarin/chatgpt-paraphrases",
+        "license:openrail",
+        "autotrain_compatible",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: openrail datasets: - humarin/chatgpt-paraphrases language: - en library_name: transformers inference: parameters: num_beams: 5 num_beam_groups: 5 num_return_sequences: 5 repetition_penalty: 10.01 diversity_penalty: 3.01 no_repeat_ngram_size: 2 temperature: 0.7 max_length: 128 widget: - text: What are the best places to see in New York? example_title: New York tourist attractions - text: When should I go to the doctor? example_title: Doctor's time - text: >- Rammstein's album Mutter was recorded in the south of France in May and June 2000, and mixed in Stockholm in October of that year. example_title: Rammstein's album Mutter pipeline_tag: text2text-generation --- This model was trained on our ChatGPT paraphrase dataset. This dataset is based on the Quora paraphrase question, texts from the SQUAD 2.0 and the CNN news dataset. This model is based on the T5-base model. We used \"transfer learning\" to get our model to generate paraphrases as well as ChatGPT. Now we can say that this is one of the best paraphrases of the Hugging Face. Kaggle link Author's 1 LinkedIn link Author's 2 LinkedIn link ## Deploying example ## Usage examples **Input:** **Output:** **Input:** **Output:** ## Train parameters ### BibTeX entry and citation info",
+    "model_explanation_gemini": "Generates diverse paraphrases of input text using a T5-base model trained on ChatGPT-style paraphrasing data."
+}

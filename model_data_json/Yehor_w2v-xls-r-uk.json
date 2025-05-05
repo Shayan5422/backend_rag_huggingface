@@ -1,0 +1,21 @@
+{
+    "model_id": "Yehor/w2v-xls-r-uk",
+    "downloads": 245477,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "wav2vec2",
+        "automatic-speech-recognition",
+        "uk",
+        "dataset:mozilla-foundation/common_voice_10_0",
+        "base_model:facebook/wav2vec2-xls-r-300m",
+        "base_model:finetune:facebook/wav2vec2-xls-r-300m",
+        "doi:10.57967/hf/4556",
+        "license:apache-2.0",
+        "model-index",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- base_model: facebook/wav2vec2-xls-r-300m language: - uk license: \"apache-2.0\" tags: - automatic-speech-recognition datasets: - mozilla-foundation/common_voice_10_0 metrics: - wer model-index: - name: w2v-xls-r-uk results: - task: name: Automatic Speech Recognition type: automatic-speech-recognition dataset: name: common_voice_10_0 type: common_voice_10_0 config: uk split: test args: uk metrics: - name: WER type: wer value: 20.24 - name: CER type: cer value: 3.64 --- 🚨🚨🚨 **ATTENTION!** 🚨🚨🚨 **Use an updated model**: --- ## Community - Discord: - Speech Recognition: - Speech Synthesis: See other Ukrainian models: ## Evaluation results Metrics (float16) using library with : - WER: 0.2024 metric, 20.24% - CER: 0.0364 metric, 3.64% - Accuracy on words: 79.76% - Accuracy on chars: 96.36% - Inference time: 63.4848 seconds - Audio duration: 16665.5212 seconds - RTF: 0.0038 ## Cite this work",
+    "model_explanation_gemini": "A Ukrainian automatic speech recognition model based on Facebook's wav2vec2-xls-r-300m, fine-tuned on Common Voice 10.0 to transcribe speech into text with 20.24% WER and 3.64% CER."
+}

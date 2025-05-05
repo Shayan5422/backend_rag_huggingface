@@ -1,0 +1,16 @@
+{
+    "model_id": "mradermacher/DeepSeek-V2-Lite-GGUF",
+    "downloads": 184913,
+    "tags": [
+        "transformers",
+        "gguf",
+        "en",
+        "base_model:ZZichen/DeepSeek-V2-Lite",
+        "base_model:quantized:ZZichen/DeepSeek-V2-Lite",
+        "endpoints_compatible",
+        "region:us",
+        "conversational"
+    ],
+    "description": "--- base_model: ZZichen/DeepSeek-V2-Lite language: - en library_name: transformers no_imatrix: 'GGML_ASSERT: llama.cpp/ggml-cuda/concat.cu:107: ggml_is_contiguous(src0)' quantized_by: mradermacher --- ## About <!-- ### quantize_version: 2 --> <!-- ### output_tensor_quantised: 1 --> <!-- ### convert_type: hf --> <!-- ### vocab_type: --> <!-- ### tags: --> static quants of <!-- provided-files --> ## Usage If you are unsure how to use GGUF files, refer to one of TheBloke's READMEs for more details, including on how to concatenate multi-part files. ## Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants) | Link | Type | Size/GB | Notes | |:-----|:-----|--------:|:------| | GGUF | Q2_K | 6.5 | | | GGUF | IQ3_XS | 7.2 | | | GGUF | IQ3_S | 7.6 | beats Q3_K* | | GGUF | Q3_K_S | 7.6 | | | GGUF | IQ3_M | 7.7 | | | GGUF | Q3_K_M | 8.2 | lower quality | | GGUF | Q3_K_L | 8.6 | | | GGUF | IQ4_XS | 8.7 | | | GGUF | Q4_K_S | 9.6 | fast, recommended | | GGUF | Q4_K_M | 10.5 | fast, recommended | | GGUF | Q5_K_S | 11.2 | | | GGUF | Q5_K_M | 12.0 | | | GGUF | Q6_K | 14.2 | very good quality | | GGUF | Q8_0 | 16.8 | fast, best quality | Here is a handy graph by ikawrakow comparing some lower-quality quant types (lower is better): !image.png And here are Artefact2's thoughts on the matter: ## FAQ / Model Request See for some answers to questions you might have and/or if you want some other model quantized. ## Thanks I thank my company, nethype GmbH, for letting me use its servers and providing upgrades to my workstation to enable this work in my free time. <!-- end -->",
+    "model_explanation_gemini": "Quantized versions of the DeepSeek-V2-Lite model in GGUF format for efficient inference with various size-quality tradeoffs."
+}

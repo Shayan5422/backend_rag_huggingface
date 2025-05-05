@@ -1,0 +1,16 @@
+{
+    "model_id": "zhihan1996/DNABERT-2-117M",
+    "downloads": 105986,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "biology",
+        "medical",
+        "custom_code",
+        "arxiv:2306.15006",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- metrics: - matthews_correlation - f1 tags: - biology - medical --- This is the official pre-trained model introduced in DNABERT-2: Efficient Foundation Model and Benchmark For Multi-Species Genome . We sincerely appreciate the MosaicML team for the MosaicBERT implementation, which serves as the base of DNABERT-2 development. DNABERT-2 is a transformer-based genome foundation model trained on multi-species genome. To load the model from huggingface: To calculate the embedding of a dna sequence",
+    "model_explanation_gemini": "Pre-trained transformer model for generating embeddings and analyzing multi-species genome sequences in biology and medical applications."
+}

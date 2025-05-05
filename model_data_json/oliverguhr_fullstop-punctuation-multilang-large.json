@@ -1,0 +1,27 @@
+{
+    "model_id": "oliverguhr/fullstop-punctuation-multilang-large",
+    "downloads": 353828,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "tf",
+        "onnx",
+        "safetensors",
+        "xlm-roberta",
+        "token-classification",
+        "punctuation prediction",
+        "punctuation",
+        "en",
+        "de",
+        "fr",
+        "it",
+        "multilingual",
+        "dataset:wmt/europarl",
+        "license:mit",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: - en - de - fr - it - multilingual tags: - punctuation prediction - punctuation datasets: wmt/europarl license: mit widget: - text: \"Ho sentito che ti sei laureata il che mi fa molto piacere\" example_title: \"Italian\" - text: \"Tous les matins vers quatre heures mon père ouvrait la porte de ma chambre\" example_title: \"French\" - text: \"Ist das eine Frage Frau Müller\" example_title: \"German\" - text: \"Yet she blushed as if with guilt when Cynthia reading her thoughts said to her one day Molly you're very glad to get rid of us are not you\" example_title: \"English\" metrics: - f1 --- This model predicts the punctuation of English, Italian, French and German texts. We developed it to restore the punctuation of transcribed spoken language. This multilanguage model was trained on the Europarl Dataset provided by the SEPP-NLG Shared Task. *Please note that this dataset consists of political speeches. Therefore the model might perform differently on texts from other domains.* The model restores the following punctuation markers: **\".\" \",\" \"?\" \"-\" \":\"** ## Sample Code We provide a simple python package that allows you to process text of any length. ## Install To get started install the package from pypi: ### Restore Punctuation **output** > My name is Clara and I live in Berkeley, California. Ist das eine Frage, Frau Müller? ### Predict Labels **output** > [['My', '0', 0.9999887], ['name', '0', 0.99998665], ['is', '0', 0.9998579], ['Clara', '0', 0.6752215], ['and', '0', 0.99990904], ['I', '0', 0.9999877], ['live', '0', 0.9999839], ['in', '0', 0.9999515], ['Berkeley', ',', 0.99800044], ['California', '.', 0.99534047], ['Ist', '0', 0.99998784], ['das', '0', 0.99999154], ['eine', '0', 0.9999918], ['Frage', ',', 0.99622655], ['Frau', '0', 0.9999889], ['Müller', '?', 0.99863917]] ## Results The performance differs for the single punctuation markers as hyphens and colons, in many cases, are optional and can be substituted by either a comma or a full stop. The model achieves the following F1 scores for the different languages: | Label | EN | DE | FR | IT | | ------------- | ----- | ----- | ----- | ----- | | 0 | 0.991 | 0.997 | 0.992 | 0.989 | | . | 0.948 | 0.961 | 0.945 | 0.942 | | ? | 0.890 | 0.893 | 0.871 | 0.832 | | , | 0.819 | 0.945 | 0.831 | 0.798 | | : | 0.575 | 0.652 | 0.620 | 0.588 | | - | 0.425 | 0.435 | 0.431 | 0.421 | | macro average | 0.775 | 0.814 | 0.782 | 0.762 | ## Languages ### Models | Languages | Model | | ------------------------------------------ | ------------------------------------------------------------ | | English, Italian, French and German | oliverguhr/fullstop-punctuation-multilang-large | | English, Italian, French, German and Dutch | oliverguhr/fullstop-punctuation-multilingual-sonar-base | | Dutch | oliverguhr/fullstop-dutch-sonar-punctuation-prediction | ### Community Models | Languages | Model | | ------------------------------------------ | ------------------------------------------------------------ | |English, German, French, Spanish, Bulgarian, Italian, Polish, Dutch, Czech, Portugese, Slovak, Slovenian| kredor/punctuate-all | | Catalan | softcatala/fullstop-catalan-punctuation-prediction | | Welsh | techiaith/fullstop-welsh-punctuation-prediction | You can use different models by setting the model parameter: ## Where do I find the code and can I train my own model? Yes you can! For complete code of the reareach project take a look at this repository. There is also an guide on how to fine tune this model for you data / language. ## References",
+    "model_explanation_gemini": "Predicts and restores punctuation (.,?-) in English, German, French, and Italian texts, primarily for transcribed spoken language."
+}

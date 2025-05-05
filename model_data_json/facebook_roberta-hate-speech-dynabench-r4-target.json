@@ -1,0 +1,18 @@
+{
+    "model_id": "facebook/roberta-hate-speech-dynabench-r4-target",
+    "downloads": 1885385,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "safetensors",
+        "roberta",
+        "text-classification",
+        "en",
+        "arxiv:2012.15761",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: en --- # LFTW R4 Target The R4 Target model from Learning from the Worst: Dynamically Generated Datasets to Improve Online Hate Detection ## Citation Information Thanks to Kushal Tirumala and Adina Williams for helping the authors put the model on the hub!",
+    "model_explanation_gemini": "Detects online hate speech using dynamically generated datasets to improve accuracy."
+}

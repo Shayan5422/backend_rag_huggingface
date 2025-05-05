@@ -1,0 +1,22 @@
+{
+    "model_id": "indobenchmark/indobert-base-p1",
+    "downloads": 254744,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "tf",
+        "jax",
+        "bert",
+        "feature-extraction",
+        "indobert",
+        "indobenchmark",
+        "indonlu",
+        "id",
+        "dataset:Indo4B",
+        "arxiv:2009.05387",
+        "license:mit",
+        "region:us"
+    ],
+    "description": "--- language: id tags: - indobert - indobenchmark - indonlu license: mit inference: false datasets: - Indo4B --- # IndoBERT Base Model (phase1 - uncased) IndoBERT is a state-of-the-art language model for Indonesian based on the BERT model. The pretrained model is trained using a masked language modeling (MLM) objective and next sentence prediction (NSP) objective. ## All Pre-trained Models | Model | #params | Arch. | Training data | |--------------------------------|--------------------------------|-------|-----------------------------------| | | 124.5M | Base | Indo4B (23.43 GB of text) | | | 124.5M | Base | Indo4B (23.43 GB of text) | | | 335.2M | Large | Indo4B (23.43 GB of text) | | | 335.2M | Large | Indo4B (23.43 GB of text) | | | 11.7M | Base | Indo4B (23.43 GB of text) | | | 11.7M | Base | Indo4B (23.43 GB of text) | | | 17.7M | Large | Indo4B (23.43 GB of text) | | | 17.7M | Large | Indo4B (23.43 GB of text) | ## How to use ### Load model and tokenizer ### Extract contextual representation ## Authors <b>IndoBERT</b> was trained and evaluated by Bryan Wilie\\*, Karissa Vincentio\\*, Genta Indra Winata\\*, Samuel Cahyawijaya\\*, Xiaohong Li, Zhi Yuan Lim, Sidik Soleman, Rahmad Mahendra, Pascale Fung, Syafri Bahar, Ayu Purwarianti. ## Citation If you use our work, please cite:",
+    "model_explanation_gemini": "Pretrained Indonesian BERT model for masked language modeling and next sentence prediction tasks, trained on the Indo4B dataset."
+}

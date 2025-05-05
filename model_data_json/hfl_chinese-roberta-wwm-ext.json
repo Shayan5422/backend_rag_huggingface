@@ -1,0 +1,21 @@
+{
+    "model_id": "hfl/chinese-roberta-wwm-ext",
+    "downloads": 98430,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "tf",
+        "jax",
+        "bert",
+        "fill-mask",
+        "zh",
+        "arxiv:1906.08101",
+        "arxiv:2004.13922",
+        "license:apache-2.0",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: - zh tags: - bert license: \"apache-2.0\" --- # Please use 'Bert' related functions to load this model! ## Chinese BERT with Whole Word Masking For further accelerating Chinese natural language processing, we provide **Chinese pre-trained BERT with Whole Word Masking**. **Pre-Training with Whole Word Masking for Chinese BERT** Yiming Cui, Wanxiang Che, Ting Liu, Bing Qin, Ziqing Yang, Shijin Wang, Guoping Hu This repository is developed based on： You may also interested in, - Chinese BERT series: - Chinese MacBERT: - Chinese ELECTRA: - Chinese XLNet: - Knowledge Distillation Toolkit - TextBrewer: More resources by HFL: ## Citation If you find the technical report or resource is useful, please cite the following technical report in your paper. - Primary: - Secondary:",
+    "model_explanation_gemini": "Chinese pre-trained BERT model with whole word masking for enhanced natural language processing tasks in Chinese."
+}

@@ -1,0 +1,12 @@
+{
+    "model_id": "jondurbin/unstuffer-v0.2",
+    "downloads": 129924,
+    "tags": [
+        "safetensors",
+        "roberta",
+        "license:mit",
+        "region:us"
+    ],
+    "description": "--- license: mit ---",
+    "model_explanation_gemini": "Detects and removes unnecessary filler words or phrases from text to improve clarity and conciseness."
+}

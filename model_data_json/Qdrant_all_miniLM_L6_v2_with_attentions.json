@@ -1,0 +1,18 @@
+{
+    "model_id": "Qdrant/all_miniLM_L6_v2_with_attentions",
+    "downloads": 453103,
+    "tags": [
+        "transformers",
+        "onnx",
+        "bert",
+        "feature-extraction",
+        "sentence-similarity",
+        "en",
+        "license:apache-2.0",
+        "text-embeddings-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 language: - en pipeline_tag: sentence-similarity --- ONNX port of sentence-transformers/all-MiniLM-L6-v2 adjusted to return attention weights. This model is intended to be used for BM42 searches. ### Usage Here's an example of performing inference using the model with FastEmbed.",
+    "model_explanation_gemini": "An ONNX-adapted version of all-MiniLM-L6-v2 that computes sentence similarity and returns attention weights, primarily for BM42 searches."
+}

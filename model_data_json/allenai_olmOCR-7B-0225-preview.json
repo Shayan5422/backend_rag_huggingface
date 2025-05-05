@@ -1,0 +1,21 @@
+{
+    "model_id": "allenai/olmOCR-7B-0225-preview",
+    "downloads": 431103,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "qwen2_vl",
+        "image-text-to-text",
+        "conversational",
+        "en",
+        "dataset:allenai/olmOCR-mix-0225",
+        "base_model:Qwen/Qwen2-VL-7B-Instruct",
+        "base_model:finetune:Qwen/Qwen2-VL-7B-Instruct",
+        "license:apache-2.0",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: - en license: apache-2.0 datasets: - allenai/olmOCR-mix-0225 base_model: - Qwen/Qwen2-VL-7B-Instruct library_name: transformers --- <img alt=\"olmOCR Logo\" src=\" width=\"242px\" style=\"margin-left:'auto' margin-right:'auto' display:'block'\"> # olmOCR-7B-0225-preview This is a preview release of the olmOCR model that's fine tuned from Qwen2-VL-7B-Instruct using the olmOCR-mix-0225 dataset. Quick links: - 📃 Paper - 🤗 Dataset - 🛠️ Code - 🎮 Demo The best way to use this model is via the olmOCR toolkit. The toolkit comes with an efficient inference setup via sglang that can handle millions of documents at scale. ## Usage This model expects as input a single document image, rendered such that the longest dimension is 1024 pixels. The prompt must then contain the additional metadata from the document, and the easiest way to generate this is to use the methods provided by the olmOCR toolkit. ## Manual Prompting If you want to prompt this model manually instead of using the olmOCR toolkit, please see the code below. In normal usage, the olmOCR toolkit builds the prompt by rendering the PDF page, and extracting relevant text blocks and image metadata. To duplicate that you will need to and then run the following sample code. ## License and use olmOCR is licensed under the Apache 2.0 license. olmOCR is intended for research and educational use. For more information, please see our Responsible Use Guidelines.",
+    "model_explanation_gemini": "Fine-tuned from Qwen2-VL-7B-Instruct, this model processes document images (resized to 1024px longest dimension) with metadata for OCR tasks, optimized for use with the olmOCR toolkit."
+}

@@ -1,0 +1,20 @@
+{
+    "model_id": "alefiury/wav2vec2-large-xlsr-53-gender-recognition-librispeech",
+    "downloads": 173156,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "safetensors",
+        "wav2vec2",
+        "audio-classification",
+        "generated_from_trainer",
+        "dataset:librispeech_asr",
+        "base_model:facebook/wav2vec2-xls-r-300m",
+        "base_model:finetune:facebook/wav2vec2-xls-r-300m",
+        "license:apache-2.0",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 tags: - generated_from_trainer datasets: - librispeech_asr metrics: - f1 base_model: facebook/wav2vec2-xls-r-300m model-index: - name: weights results: [] --- <!-- This model card has been generated automatically according to the information the Trainer had access to. You should probably proofread and complete it, then remove this comment. --> # wav2vec2-large-xlsr-53-gender-recognition-librispeech This model is a fine-tuned version of facebook/wav2vec2-xls-r-300m on Librispeech-clean-100 for gender recognition. It achieves the following results on the evaluation set: - Loss: 0.0061 - F1: 0.9993 ### Compute your inferences ## Training and evaluation data The Librispeech-clean-100 dataset was used to train the model, with 70% of the data used for training, 10% for validation, and 20% for testing. ### Training hyperparameters The following hyperparameters were used during training: - learning_rate: 3e-05 - train_batch_size: 4 - eval_batch_size: 4 - seed: 42 - gradient_accumulation_steps: 4 - total_train_batch_size: 16 - optimizer: Adam with betas=(0.9,0.999) and epsilon=1e-08 - lr_scheduler_type: linear - lr_scheduler_warmup_ratio: 0.1 - num_epochs: 1 - mixed_precision_training: Native AMP ### Training results | Training Loss | Epoch | Step | Validation Loss | F1 | |:-------------:|:-----:|:----:|:---------------:|:------:| | 0.002 | 1.0 | 1248 | 0.0061 | 0.9993 | ### Framework versions - Transformers 4.28.0 - Pytorch 2.0.0+cu118 - Tokenizers 0.13.3",
+    "model_explanation_gemini": "Recognizes gender from audio using the Librispeech dataset, achieving high F1 scores."
+}

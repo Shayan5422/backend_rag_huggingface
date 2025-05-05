@@ -1,0 +1,12 @@
+{
+    "model_id": "vaughankraska/resnet-18-16rank",
+    "downloads": 264526,
+    "tags": [
+        "safetensors",
+        "resnet",
+        "license:apache-2.0",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 ---",
+    "model_explanation_gemini": "ResNet-18 model with 16-rank compression for efficient image classification tasks."
+}

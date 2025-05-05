@@ -1,0 +1,18 @@
+{
+    "model_id": "cardiffnlp/twitter-xlm-roberta-base-sentiment",
+    "downloads": 2014393,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "tf",
+        "xlm-roberta",
+        "text-classification",
+        "multilingual",
+        "arxiv:2104.12250",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: multilingual widget: - text: \"🤗\" - text: \"T'estimo! ❤️\" - text: \"I love you!\" - text: \"I hate you 🤮\" - text: \"Mahal kita!\" - text: \"사랑해!\" - text: \"난 너가 싫어\" - text: \"😍😍😍\" --- # twitter-XLM-roBERTa-base for Sentiment Analysis This is a multilingual XLM-roBERTa-base model trained on ~198M tweets and finetuned for sentiment analysis. The sentiment fine-tuning was done on 8 languages (Ar, En, Fr, De, Hi, It, Sp, Pt) but it can be used for more languages (see paper for details). - Paper: XLM-T: A Multilingual Language Model Toolkit for Twitter. - Git Repo: XLM-T official repository. This model has been integrated into the TweetNLP library. ## Example Pipeline ## Full classification example Output: ### Reference",
+    "model_explanation_gemini": "Multilingual XLM-roBERTa-base model fine-tuned for sentiment analysis on tweets across eight languages."
+}

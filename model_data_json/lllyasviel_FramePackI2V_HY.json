@@ -1,0 +1,11 @@
+{
+    "model_id": "lllyasviel/FramePackI2V_HY",
+    "downloads": 337438,
+    "tags": [
+        "diffusers",
+        "safetensors",
+        "region:us"
+    ],
+    "description": "--- library_name: diffusers --- This is the FramePack for HY",
+    "model_explanation_gemini": "Packs frames for HY using diffusers."
+}

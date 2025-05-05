@@ -1,0 +1,21 @@
+{
+    "model_id": "sentence-transformers/use-cmlm-multilingual",
+    "downloads": 6312966,
+    "tags": [
+        "sentence-transformers",
+        "pytorch",
+        "tf",
+        "safetensors",
+        "bert",
+        "feature-extraction",
+        "sentence-similarity",
+        "transformers",
+        "license:apache-2.0",
+        "autotrain_compatible",
+        "text-embeddings-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 library_name: sentence-transformers tags: - sentence-transformers - feature-extraction - sentence-similarity - transformers pipeline_tag: sentence-similarity --- # use-cmlm-multilingual This is a pytorch version of the universal-sentence-encoder-cmlm/multilingual-base-br model. It can be used to map 109 languages to a shared vector space. As the model is based LaBSE, it perform quite comparable on downstream tasks. ## Usage (Sentence-Transformers) Using this model becomes easy when you have sentence-transformers installed: Then you can use the model like this: ## Full Model Architecture ## Citing & Authors Have a look at universal-sentence-encoder-cmlm/multilingual-base-br for the respective publication that describes this model.",
+    "model_explanation_gemini": "Maps text from 109 languages into a shared vector space for sentence similarity and feature extraction tasks."
+}

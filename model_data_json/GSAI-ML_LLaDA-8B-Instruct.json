@@ -1,0 +1,17 @@
+{
+    "model_id": "GSAI-ML/LLaDA-8B-Instruct",
+    "downloads": 99542,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "llada",
+        "text-generation",
+        "conversational",
+        "custom_code",
+        "license:mit",
+        "autotrain_compatible",
+        "region:us"
+    ],
+    "description": "--- license: mit library_name: transformers pipeline_tag: text-generation --- # LLaDA-8B-Instruct We introduce LLaDA, a diffusion model with an unprecedented 8B scale, trained entirely from scratch, rivaling LLaMA3 8B in performance. Project Page Code",
+    "model_explanation_gemini": "LLaDA-8B-Instruct is an 8-billion-parameter diffusion model for text generation, trained from scratch to compete with LLaMA3 8B in performance."
+}

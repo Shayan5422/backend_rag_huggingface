@@ -1,0 +1,18 @@
+{
+    "model_id": "trl-internal-testing/tiny-LlamaForCausalLM-3.2",
+    "downloads": 1565155,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "llama",
+        "text-generation",
+        "trl",
+        "conversational",
+        "autotrain_compatible",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- library_name: transformers tags: - trl --- # Tiny LlamaForCausalLM This is a minimal model built for unit tests in the TRL library.",
+    "model_explanation_gemini": "A minimal Llama causal language model designed for unit testing in the TRL library."
+}

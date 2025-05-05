@@ -1,0 +1,20 @@
+{
+    "model_id": "facebook/wav2vec2-large-xlsr-53",
+    "downloads": 98776,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "jax",
+        "wav2vec2",
+        "pretraining",
+        "speech",
+        "multilingual",
+        "dataset:common_voice",
+        "arxiv:2006.13979",
+        "license:apache-2.0",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: multilingual datasets: - common_voice tags: - speech license: apache-2.0 --- # Wav2Vec2-XLSR-53 Facebook's XLSR-Wav2Vec2 The base model pretrained on 16kHz sampled speech audio. When using the model make sure that your speech input is also sampled at 16Khz. Note that this model should be fine-tuned on a downstream task, like Automatic Speech Recognition. Check out this blog for more information. Paper Authors: Alexis Conneau, Alexei Baevski, Ronan Collobert, Abdelrahman Mohamed, Michael Auli **Abstract** This paper presents XLSR which learns cross-lingual speech representations by pretraining a single model from the raw waveform of speech in multiple languages. We build on wav2vec 2.0 which is trained by solving a contrastive task over masked latent speech representations and jointly learns a quantization of the latents shared across languages. The resulting model is fine-tuned on labeled data and experiments show that cross-lingual pretraining significantly outperforms monolingual pretraining. On the CommonVoice benchmark, XLSR shows a relative phoneme error rate reduction of 72% compared to the best known results. On BABEL, our approach improves word error rate by 16% relative compared to a comparable system. Our approach enables a single multilingual speech recognition model which is competitive to strong individual models. Analysis shows that the latent discrete speech representations are shared across languages with increased sharing for related languages. We hope to catalyze research in low-resource speech understanding by releasing XLSR-53, a large model pretrained in 53 languages. The original model can be found under # Usage See this notebook for more information on how to fine-tune the model. !model image",
+    "model_explanation_gemini": "Pretrained on multilingual speech audio for cross-lingual speech representation learning, requiring fine-tuning for tasks like automatic speech recognition."
+}

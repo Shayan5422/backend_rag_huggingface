@@ -1,0 +1,23 @@
+{
+    "model_id": "Marqo/marqo-fashionSigLIP",
+    "downloads": 516922,
+    "tags": [
+        "open_clip",
+        "onnx",
+        "safetensors",
+        "siglip",
+        "clip",
+        "transformers",
+        "e-commerce",
+        "fashion",
+        "multimodal retrieval",
+        "transformers.js",
+        "zero-shot-image-classification",
+        "custom_code",
+        "en",
+        "license:apache-2.0",
+        "region:us"
+    ],
+    "description": "--- tags: - clip - transformers - e-commerce - fashion - multimodal retrieval - siglip - transformers.js library_name: open_clip pipeline_tag: zero-shot-image-classification license: apache-2.0 language: - en metrics: - precision - recall - MRR --- # Marqo-FashionSigLIP Model Card which allows the model to be trained on not just text descriptions but also categories, style, colors, materials, keywords and fine-details to provide highly relevant search results on fashion products. The model was fine-tuned from ViT-B-16-SigLIP (webli). **Github Page**: Marqo-FashionCLIP **Blog**: Marqo Blog ## Usage ### Hugging Face The model can be loaded with AutoModel by ### OpenCLIP The model can be seamlessly used with OpenCLIP by ### Transformers.js You can also run the model in JavaScript with the Transformers.js library. First, install it from NPM using: Then, compute embeddings as follows: ## Benchmark Results Average evaluation results on 6 public multimodal fashion datasets (Atlas, DeepFashion (In-shop), DeepFashion (Multimodal), Fashion200k, KAGL, and Polyvore) are reported below: **Text-To-Image (Averaged across 6 datasets)** | Model | AvgRecall | Recall@1 | Recall@10 | MRR | |----------------------------|-------------|------------|-------------|-----------| | Marqo-FashionSigLIP | **0.231** | **0.121** | **0.340** | **0.239** | | FashionCLIP2.0 | 0.163 | 0.077 | 0.249 | 0.165 | | OpenFashionCLIP | 0.132 | 0.060 | 0.204 | 0.135 | | ViT-B-16-laion2b_s34b_b88k | 0.174 | 0.088 | 0.261 | 0.180 | | ViT-B-16-SigLIP-webli | 0.212 | 0.111 | 0.314 | 0.214 | **Category-To-Product (Averaged across 5 datasets)** | Model | AvgP | P@1 | P@10 | MRR | |----------------------------|-----------|-----------|-----------|-----------| | Marqo-FashionSigLIP | **0.737** | **0.758** | **0.716** | **0.812** | | FashionCLIP2.0 | 0.684 | 0.681 | 0.686 | 0.741 | | OpenFashionCLIP | 0.646 | 0.653 | 0.639 | 0.720 | | ViT-B-16-laion2b_s34b_b88k | 0.662 | 0.673 | 0.652 | 0.743 | | ViT-B-16-SigLIP-webli | 0.688 | 0.690 | 0.685 | 0.751 | **Sub-Category-To-Product (Averaged across 4 datasets)** | Model | AvgP | P@1 | P@10 | MRR | |----------------------------|-----------|-----------|-----------|-----------| | Marqo-FashionSigLIP | **0.725** | **0.767** | **0.683** | **0.811** | | FashionCLIP2.0 | 0.657 | 0.676 | 0.638 | 0.733 | | OpenFashionCLIP | 0.598 | 0.619 | 0.578 | 0.689 | | ViT-B-16-laion2b_s34b_b88k | 0.638 | 0.651 | 0.624 | 0.712 | | ViT-B-16-SigLIP-webli | 0.643 | 0.643 | 0.643 | 0.726 |",
+    "model_explanation_gemini": "Fine-tuned for multimodal fashion retrieval, this SigLIP-based model excels in zero-shot image classification and delivers highly relevant search results by analyzing text descriptions, categories, styles, colors, and materials."
+}

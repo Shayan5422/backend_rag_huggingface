@@ -1,0 +1,21 @@
+{
+    "model_id": "redis/langcache-embed-v1",
+    "downloads": 12235,
+    "tags": [
+        "sentence-transformers",
+        "safetensors",
+        "modernbert",
+        "sentence-similarity",
+        "loss:OnlineContrastiveLoss",
+        "arxiv:2504.02268",
+        "arxiv:1908.10084",
+        "base_model:Alibaba-NLP/gte-modernbert-base",
+        "base_model:finetune:Alibaba-NLP/gte-modernbert-base",
+        "model-index",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- tags: - sentence-transformers - sentence-similarity - loss:OnlineContrastiveLoss base_model: Alibaba-NLP/gte-modernbert-base pipeline_tag: sentence-similarity library_name: sentence-transformers metrics: - cosine_accuracy - cosine_precision - cosine_recall - cosine_f1 - cosine_ap model-index: - name: SentenceTransformer based on Alibaba-NLP/gte-modernbert-base results: - task: type: my-binary-classification name: My Binary Classification dataset: name: Quora type: unknown metrics: - type: cosine_accuracy value: 0.90 name: Cosine Accuracy - type: cosine_f1 value: 0.87 name: Cosine F1 - type: cosine_precision value: 0.84 name: Cosine Precision - type: cosine_recall value: 0.90 name: Cosine Recall - type: cosine_ap value: 0.92 name: Cosine Ap --- # Redis semantic caching embedding model based on Alibaba-NLP/gte-modernbert-base This is a sentence-transformers model finetuned from Alibaba-NLP/gte-modernbert-base on the Quora dataset. It maps sentences & paragraphs to a 768-dimensional dense vector space and can be used for semantic textual similarity for the purpose of semantic caching. ## Model Details ### Model Description - **Model Type:** Sentence Transformer - **Base model:** Alibaba-NLP/gte-modernbert-base <!-- at revision bc02f0a92d1b6dd82108036f6cb4b7b423fb7434 --> - **Maximum Sequence Length:** 8192 tokens - **Output Dimensionality:** 768 dimensions - **Similarity Function:** Cosine Similarity - **Training Dataset:** - Quora <!-- - **Language:** Unknown --> <!-- - **License:** Unknown --> ### Model Sources - **Documentation:** Sentence Transformers Documentation - **Repository:** Sentence Transformers on GitHub - **Hugging Face:** Sentence Transformers on Hugging Face ### Full Model Architecture ## Usage First install the Sentence Transformers library: Then you can load this model and run inference. #### Binary Classification | Metric | Value | |:--------------------------|:----------| | cosine_accuracy | 0.90 | | cosine_f1 | 0.87 | | cosine_precision | 0.84 | | cosine_recall | 0.90 | | **cosine_ap** | 0.92 | ### Training Dataset #### Quora * Dataset: Quora * Size: 323491 training samples * Columns: <code>question_1</code>, <code>question_2</code>, and <code>label</code> ### Evaluation Dataset #### Quora * Dataset: Quora * Size: 53486 evaluation samples * Columns: <code>question_1</code>, <code>question_2</code>, and <code>label</code> ## Citation ### BibTeX #### Redis Langcache-embed Models #### Sentence Transformers <!--",
+    "model_explanation_gemini": "Finetuned from Alibaba-NLP/gte-modernbert-base on Quora data, this model maps text to 768-dimensional vectors for semantic similarity tasks, particularly semantic caching."
+}

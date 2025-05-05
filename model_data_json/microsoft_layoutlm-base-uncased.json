@@ -1,0 +1,18 @@
+{
+    "model_id": "microsoft/layoutlm-base-uncased",
+    "downloads": 1715591,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "tf",
+        "safetensors",
+        "layoutlm",
+        "en",
+        "arxiv:1912.13318",
+        "license:mit",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: en license: mit --- # LayoutLM **Multimodal (text + layout/format + image) pre-training for document AI** Microsoft Document AI | GitHub ## Model description LayoutLM is a simple but effective pre-training method of text and layout for document image understanding and information extraction tasks, such as form understanding and receipt understanding. LayoutLM archives the SOTA results on multiple datasets. For more details, please refer to our paper: LayoutLM: Pre-training of Text and Layout for Document Image Understanding Yiheng Xu, Minghao Li, Lei Cui, Shaohan Huang, Furu Wei, Ming Zhou, KDD 2020 ## Training data We pre-train LayoutLM on IIT-CDIP Test Collection 1.0\\* dataset with two settings. * LayoutLM-Base, Uncased (11M documents, 2 epochs): 12-layer, 768-hidden, 12-heads, 113M parameters **(This Model)** * LayoutLM-Large, Uncased (11M documents, 2 epochs): 24-layer, 1024-hidden, 16-heads, 343M parameters ## Citation If you find LayoutLM useful in your research, please cite the following paper:",
+    "model_explanation_gemini": "Pre-trained for document image understanding and information extraction by combining text, layout, and image data."
+}

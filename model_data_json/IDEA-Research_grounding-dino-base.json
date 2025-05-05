@@ -1,0 +1,17 @@
+{
+    "model_id": "IDEA-Research/grounding-dino-base",
+    "downloads": 1166047,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "safetensors",
+        "grounding-dino",
+        "zero-shot-object-detection",
+        "vision",
+        "arxiv:2303.05499",
+        "license:apache-2.0",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 tags: - vision inference: false pipeline_tag: zero-shot-object-detection --- # Grounding DINO model (base variant) The Grounding DINO model was proposed in Grounding DINO: Marrying DINO with Grounded Pre-Training for Open-Set Object Detection by Shilong Liu, Zhaoyang Zeng, Tianhe Ren, Feng Li, Hao Zhang, Jie Yang, Chunyuan Li, Jianwei Yang, Hang Su, Jun Zhu, Lei Zhang. Grounding DINO extends a closed-set object detection model with a text encoder, enabling open-set object detection. The model achieves remarkable results, such as 52.5 AP on COCO zero-shot. <img src=\" alt=\"drawing\" width=\"600\"/> <small> Grounding DINO overview. Taken from the <a href=\" paper</a>. </small> ## Intended uses & limitations You can use the raw model for zero-shot object detection (the task of detecting things in an image out-of-the-box without labeled data). ### How to use Here's how to use the model for zero-shot object detection: ### BibTeX entry and citation info",
+    "model_explanation_gemini": "Detects objects in images without labeled training data by combining visual and text inputs for open-set recognition."
+}

@@ -1,0 +1,19 @@
+{
+    "model_id": "CAMeL-Lab/bert-base-arabic-camelbert-mix-sentiment",
+    "downloads": 119547,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "tf",
+        "bert",
+        "text-classification",
+        "ar",
+        "arxiv:2103.06678",
+        "license:apache-2.0",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: - ar license: apache-2.0 widget: - text: \"أنا بخير\" --- # CAMeLBERT Mix SA Model ## Model description **CAMeLBERT Mix SA Model** is a Sentiment Analysis (SA) model that was built by fine-tuning the CAMeLBERT Mix model. For the fine-tuning, we used the ASTD, ArSAS, and SemEval datasets. Our fine-tuning procedure and the hyperparameters we used can be found in our paper *\"The Interplay of Variant, Size, and Task Type in Arabic Pre-trained Language Models.\"* Our fine-tuning code can be found here. ## Intended uses You can use the CAMeLBERT Mix SA model directly as part of our CAMeL Tools SA component (*recommended*) or as part of the transformers pipeline. #### How to use To use the model with the CAMeL Tools SA component: You can also use the SA model directly with a transformers pipeline: *Note*: to download our models, you would need . Otherwise, you could download the models manually. ## Citation",
+    "model_explanation_gemini": "Fine-tuned for Arabic sentiment analysis using the CAMeLBERT Mix model on ASTD, ArSAS, and SemEval datasets."
+}

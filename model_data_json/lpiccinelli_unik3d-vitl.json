@@ -1,0 +1,15 @@
+{
+    "model_id": "lpiccinelli/unik3d-vitl",
+    "downloads": 2666944,
+    "tags": [
+        "UniK3D",
+        "pytorch",
+        "safetensors",
+        "model_hub_mixin",
+        "monocular-metric-3D-estimation",
+        "pytorch_model_hub_mixin",
+        "region:us"
+    ],
+    "description": "--- library_name: UniK3D tags: - model_hub_mixin - monocular-metric-3D-estimation - pytorch_model_hub_mixin --- This model has been pushed to the Hub using the PytorchModelHubMixin integration: - Library: - Docs: [More Information Needed]",
+    "model_explanation_gemini": "Performs monocular metric 3D estimation using a UniK3D framework with PyTorch integration."
+}

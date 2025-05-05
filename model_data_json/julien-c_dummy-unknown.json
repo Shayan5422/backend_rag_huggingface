@@ -1,0 +1,18 @@
+{
+    "model_id": "julien-c/dummy-unknown",
+    "downloads": 84245,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "tf",
+        "jax",
+        "roberta",
+        "fill-mask",
+        "ci",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- tags: - ci --- ## Dummy model used for unit testing and CI",
+    "model_explanation_gemini": "Dummy model for unit testing and CI purposes."
+}

@@ -1,0 +1,17 @@
+{
+    "model_id": "monologg/kobert",
+    "downloads": 1143640,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "jax",
+        "safetensors",
+        "bert",
+        "feature-extraction",
+        "ko",
+        "license:apache-2.0",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 language: - ko inference: false --- # KoBERT ## How to use > If you want to import KoBERT tokenizer with , you should give . ## Reference -",
+    "model_explanation_gemini": "KoBERT is a Korean language model designed for inference tasks, requiring specific tokenizer import settings."
+}

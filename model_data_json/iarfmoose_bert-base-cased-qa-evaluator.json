@@ -1,0 +1,17 @@
+{
+    "model_id": "iarfmoose/bert-base-cased-qa-evaluator",
+    "downloads": 111690,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "tf",
+        "jax",
+        "bert",
+        "text-classification",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "# BERT-base-cased-qa-evaluator This model takes a question answer pair as an input and outputs a value representing its prediction about whether the input was a valid question and answer pair or not. The model is a pretrained BERT-base-cased with a sequence classification head. ## Intended uses The QA evaluator was originally designed to be used with the t5-base-question-generator for evaluating the quality of generated questions. The input for the QA evaluator follows the format for , but using the question and answer as the two sequences. Inputs should take the following format: ## Limitations and bias The model is trained to evaluate if a question and answer are semantically related, but cannot determine whether an answer is actually true/correct or not. ## Training data The training data was made up of question-answer pairs from the following datasets: - SQuAD - RACE - CoQA - MSMARCO ## Training procedure The question and answer were concatenated 50% of the time. In the other 50% of the time a corruption operation was performed (either swapping the answer for an unrelated answer, or by copying part of the question into the answer). The model was then trained to predict whether the input sequence represented one of the original QA pairs or a corrupted input.",
+    "model_explanation_gemini": "Evaluates whether a given question-answer pair is semantically valid by predicting its validity, originally designed to assess quality of generated questions."
+}

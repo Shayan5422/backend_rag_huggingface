@@ -1,0 +1,17 @@
+{
+    "model_id": "DunnBC22/ibert-roberta-base-Abusive_Or_Threatening_Speech",
+    "downloads": 184347,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "tensorboard",
+        "ibert",
+        "text-classification",
+        "generated_from_trainer",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- tags: - generated_from_trainer metrics: - accuracy - f1 - recall - precision model-index: - name: ibert-roberta-base-Abusive_Or_Threatening_Speech results: [] --- <!-- This model card has been generated automatically according to the information the Trainer had access to. You should probably proofread and complete it, then remove this comment. --> # ibert-roberta-base-Abusive_Or_Threatening_Speech This model is a fine-tuned version of kssteven/ibert-roberta-base on the None dataset. It achieves the following results on the evaluation set: - Loss: 0.0802 - Accuracy: 0.9741 - F1: 0.7773 - Recall: 0.8610 - Precision: 0.7084 ## Model description More information needed ## Intended uses & limitations More information needed ## Training and evaluation data More information needed ## Training procedure ### Training hyperparameters The following hyperparameters were used during training: - learning_rate: 2e-05 - train_batch_size: 64 - eval_batch_size: 64 - seed: 42 - optimizer: Adam with betas=(0.9,0.999) and epsilon=1e-08 - lr_scheduler_type: linear - num_epochs: 1 ### Training results | Training Loss | Epoch | Step | Validation Loss | Accuracy | F1 | Recall | Precision | |:-------------:|:-----:|:----:|:---------------:|:--------:|:------:|:------:|:---------:| | 0.0771 | 1.0 | 1828 | 0.0802 | 0.9741 | 0.7773 | 0.8610 | 0.7084 | ### Framework versions - Transformers 4.28.1 - Pytorch 2.0.0 - Datasets 2.8.0 - Tokenizers 0.12.1",
+    "model_explanation_gemini": "Detects abusive or threatening speech with high accuracy using a fine-tuned RoBERTa-based model."
+}

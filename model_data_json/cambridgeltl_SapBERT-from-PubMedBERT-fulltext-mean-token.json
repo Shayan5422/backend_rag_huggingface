@@ -1,0 +1,17 @@
+{
+    "model_id": "cambridgeltl/SapBERT-from-PubMedBERT-fulltext-mean-token",
+    "downloads": 194526,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "jax",
+        "safetensors",
+        "bert",
+        "feature-extraction",
+        "arxiv:2010.11784",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: en tags: - biomedical - lexical-semantics datasets: - UMLS **[news]** A cross-lingual extension of SapBERT will appear in the main onference of **ACL 2021**! <br> **[news]** SapBERT will appear in the conference proceedings of **NAACL 2021**! ### SapBERT-PubMedBERT SapBERT by Liu et al. (2020). Trained with UMLS 2020AA (English only), using microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext as the base model. Please use the mean-pooling of the output as the representation. #### Extracting embeddings from SapBERT The following script converts a list of strings (entity names) into embeddings. For more details about training and eval, see SapBERT github repo. ### Citation",
+    "model_explanation_gemini": "Generates mean-pooled embeddings for biomedical entity names using PubMedBERT to capture lexical-semantic relationships, trained on UMLS English data."
+}

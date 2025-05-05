@@ -1,0 +1,16 @@
+{
+    "model_id": "laion/larger_clap_general",
+    "downloads": 380733,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "clap",
+        "feature-extraction",
+        "arxiv:2211.06687",
+        "license:apache-2.0",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 --- # Model ## TL;DR CLAP is to audio what CLIP is to image. This is an improved CLAP checkpoint, specifically trained on general audio, music and speech. ## Description CLAP (Contrastive Language-Audio Pretraining) is a neural network trained on a variety of (audio, text) pairs. It can be instructed in to predict the most relevant text snippet, given an audio, without directly optimizing for the task. The CLAP model uses a SWINTransformer to get audio features from a log-Mel spectrogram input, and a RoBERTa model to get text features. Both the text and audio features are then projected to a latent space with identical dimension. The dot product between the projected audio and text features is then used as a similar score. # Usage You can use this model for zero shot audio classification or extracting audio and/or textual features. # Uses ## Perform zero-shot audio classification ### Using ## Run the model: You can also get the audio and text embeddings using ### Run the model on CPU: ### Run the model on GPU: # Citation If you are using this model for your work, please consider citing the original paper:",
+    "model_explanation_gemini": "LAION's larger CLAP model predicts relevant text snippets from audio inputs and enables zero-shot audio classification by projecting audio and text features into a shared latent space."
+}

@@ -1,0 +1,15 @@
+{
+    "model_id": "naver/MASt3R_ViTLarge_BaseDecoder_512_catmlpdpt_metric",
+    "downloads": 112555,
+    "tags": [
+        "mast3r",
+        "safetensors",
+        "image-to-3d",
+        "pytorch_model_hub_mixin",
+        "model_hub_mixin",
+        "arxiv:2406.09756",
+        "region:us"
+    ],
+    "description": "--- tags: - image-to-3d - pytorch_model_hub_mixin - model_hub_mixin library_name: mast3r repo_url: --- ## Grounding Image Matching in 3D with MASt3R # License The code is distributed under the CC BY-NC-SA 4.0 License. See LICENSE for more information. For the checkpoints, make sure to agree to the license of all the public training datasets and base checkpoints we used, in addition to CC-BY-NC-SA 4.0. The mapfree dataset license in particular is very restrictive. For more information, check CHECKPOINTS_NOTICE. # Model info Gihub page: | Modelname | Training resolutions | Head | Encoder | Decoder | |-------------|----------------------|------|---------|---------| | MASt3R_ViTLarge_BaseDecoder_512_catmlpdpt_nonmetric | 512x384, 512x336, 512x288, 512x256, 512x160 | CatMLP+DPT | ViT-L | ViT-B | # How to use First, install mast3r. To load the model:",
+    "model_explanation_gemini": "Generates 3D representations from 2D images using a ViT-L encoder and ViT-B decoder with CatMLP+DPT head for image-to-3D tasks."
+}

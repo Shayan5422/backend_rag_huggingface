@@ -1,0 +1,14 @@
+{
+    "model_id": "sail-rvc/bruce",
+    "downloads": 12275,
+    "tags": [
+        "transformers",
+        "rvc",
+        "sail-rvc",
+        "audio-to-audio",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- pipeline_tag: audio-to-audio tags: - rvc - sail-rvc --- # bruce ## RVC Model !banner This model repo was automatically generated. Date: 2023-07-14 07:35:42 Bot Name: juuxnscrap Model Type: RVC Source: Reason: Converting into loadable format for",
+    "model_explanation_gemini": "Converts audio to audio using RVC (Retrieval-Based Voice Conversion) technology for voice transformation."
+}

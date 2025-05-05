@@ -1,0 +1,20 @@
+{
+    "model_id": "Rostlab/ProstT5",
+    "downloads": 251503,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "t5",
+        "text2text-generation",
+        "biology",
+        "translation",
+        "dataset:adrianhenkel/lucidprots_full_data",
+        "license:mit",
+        "autotrain_compatible",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: mit datasets: - adrianhenkel/lucidprots_full_data pipeline_tag: translation tags: - biology --- # Model Card for ProstT5 <!-- Provide a quick summary of what the model is/does. --> ProstT5 is a protein language model (pLM) which can translate between protein sequence and structure. !ProstT5 pre-training and inference ## Model Details ### Model Description ProstT5 (Protein structure-sequence T5) is based on ProtT5-XL-U50, a T5 model trained on encoding protein sequences using span corruption applied on billions of protein sequences. ProstT5 finetunes ProtT5-XL-U50 on translating between protein sequence and structure using 17M proteins with high-quality 3D structure predictions from the AlphaFoldDB. Protein structure is converted from 3D to 1D using the 3Di-tokens introduced by Foldseek. In a first step, ProstT5 learnt to represent the newly introduced 3Di-tokens by continuing the original span-denoising objective applied on 3Di- and amino acid- (AA) sequences. Only in a second step, ProstT5 was trained on translating between the two modalities. The direction of the translation is indicated by two special tokens (\"\\<fold2AA>\" for translating from 3Di to AAs, “\\<AA2fold>” for translating from AAs to 3Di). To avoid clashes with AA tokens, 3Di-tokens were cast to lower-case (alphabets are identical otherwise). - **Developed by:** Michael Heinzinger (GitHub @mheinzinger; Twitter @HeinzingerM) - **Model type:** Encoder-decoder (T5) - **Language(s) (NLP):** Protein sequence and structure - **License:** MIT - **Finetuned from model:** ProtT5-XL-U50 ## Uses 1. The model can be used for traditional feature extraction. For this, we recommend using only the encoder in half-precision (fp16) together with batching. Examples (currently only for original ProtT5-XL-U50 but replacing repository links and adding prefixes works): script and colab While original ProtT5-XL-U50 could only embed AA sequences, ProstT5 can now also embed 3D structures represented by 3Di tokens. 3Di tokens can either be derived from 3D structures using Foldseek or they can be predicted from AA sequences by ProstT5. 3. \"Folding\": Translation from sequence (AAs) to structure (3Di). The resulting 3Di strings can be used together with Foldseek for remote homology detection while avoiding to compute 3D structures explicitly. 4. \"Inverse Folding\": Translation from structure (3Di) to sequence (AA). ## How to Get Started with the Model Feature extraction: Translation (\"folding\", i.e., AA to 3Di): ## Training Details ### Training Data Pre-training data (3Di+AA sequences for 17M proteins) ### Training Procedure The first phase of the pre-training is continuing span-based denoising using 3Di- and AA-sequences using this script. For the second phase of pre-training (actual translation from 3Di- to AA-sequences and vice versa), we used this script. #### Training Hyperparameters - **Training regime:** we used DeepSpeed (stage-2), gradient accumulation steps (5 steps), mixed half-precision (bf16) and PyTorch2.0’s torchInductor compiler #### Speed Generating embeddings for the human proteome from the Pro(s)tT5 encoder requires around 35m (minutes) or 0.1s (seconds) per protein using batch-processing and half-precision (fp16) on a single RTX A6000 GPU with 48 GB vRAM. The translation is comparatively slow (0.6-2.5s/protein at an average length 135 and 406, respectively) due to the sequential nature of the decoding process which needs to generate left-to-right, token-by-token. We only used batch-processing with half-precision without further optimization.",
+    "model_explanation_gemini": "Translates between protein sequences and 3D structures using 3Di-tokens for structural representation."
+}

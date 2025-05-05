@@ -1,0 +1,19 @@
+{
+    "model_id": "deepseek-ai/deepseek-coder-1.3b-instruct",
+    "downloads": 118048,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "safetensors",
+        "llama",
+        "text-generation",
+        "conversational",
+        "license:other",
+        "autotrain_compatible",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: other license_name: deepseek license_link: LICENSE --- <p align=\"center\"> <img width=\"1000px\" alt=\"DeepSeek Coder\" src=\" </p> <p align=\"center\"><a href=\" | <a href=\" Chat with DeepSeek Coder]</a> | <a href=\" | <a href=\" </p> <hr> ### 1. Introduction of Deepseek Coder Deepseek Coder is composed of a series of code language models, each trained from scratch on 2T tokens, with a composition of 87% code and 13% natural language in both English and Chinese. We provide various sizes of the code model, ranging from 1B to 33B versions. Each model is pre-trained on project-level code corpus by employing a window size of 16K and a extra fill-in-the-blank task, to support project-level code completion and infilling. For coding capabilities, Deepseek Coder achieves state-of-the-art performance among open-source code models on multiple programming languages and various benchmarks. - **Massive Training Data**: Trained from scratch on 2T tokens, including 87% code and 13% linguistic data in both English and Chinese languages. - **Highly Flexible & Scalable**: Offered in model sizes of 1.3B, 5.7B, 6.7B, and 33B, enabling users to choose the setup most suitable for their requirements. - **Superior Model Performance**: State-of-the-art performance among publicly available code models on HumanEval, MultiPL-E, MBPP, DS-1000, and APPS benchmarks. - **Advanced Code Completion Capabilities**: A window size of 16K and a fill-in-the-blank task, supporting project-level code completion and infilling tasks. ### 2. Model Summary deepseek-coder-1.3b-instruct is a 1.3B parameter model initialized from deepseek-coder-1.3b-base and fine-tuned on 2B tokens of instruction data. - **Home Page:** DeepSeek - **Repository:** deepseek-ai/deepseek-coder - **Chat With DeepSeek Coder:** DeepSeek-Coder ### 3. How to Use Here give some examples of how to use our model. #### Chat Model Inference ### 4. License This code repository is licensed under the MIT License. The use of DeepSeek Coder models is subject to the Model License. DeepSeek Coder supports commercial use. See the LICENSE-MODEL for more details. ### 5. Contact If you have any questions, please raise an issue or contact us at agi_code@deepseek.com.",
+    "model_explanation_gemini": "A 1.3B parameter AI model fine-tuned for project-level code completion and infilling tasks, trained on extensive code and linguistic data to achieve state-of-the-art performance in programming assistance."
+}

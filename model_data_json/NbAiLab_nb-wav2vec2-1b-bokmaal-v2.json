@@ -1,0 +1,16 @@
+{
+    "model_id": "NbAiLab/nb-wav2vec2-1b-bokmaal-v2",
+    "downloads": 1007805,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "safetensors",
+        "wav2vec2",
+        "automatic-speech-recognition",
+        "license:apache-2.0",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 ---",
+    "model_explanation_gemini": "The model is a Norwegian Bokmål speech recognition system trained to convert spoken language into written text."
+}

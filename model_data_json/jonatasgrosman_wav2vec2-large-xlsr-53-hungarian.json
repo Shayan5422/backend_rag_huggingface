@@ -1,0 +1,23 @@
+{
+    "model_id": "jonatasgrosman/wav2vec2-large-xlsr-53-hungarian",
+    "downloads": 172395,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "jax",
+        "wav2vec2",
+        "automatic-speech-recognition",
+        "audio",
+        "speech",
+        "xlsr-fine-tuning-week",
+        "hu",
+        "dataset:common_voice",
+        "doi:10.57967/hf/3577",
+        "license:apache-2.0",
+        "model-index",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: hu datasets: - common_voice metrics: - wer - cer tags: - audio - automatic-speech-recognition - speech - xlsr-fine-tuning-week license: apache-2.0 model-index: - name: XLSR Wav2Vec2 Hungarian by Jonatas Grosman results: - task: name: Speech Recognition type: automatic-speech-recognition dataset: name: Common Voice hu type: common_voice args: hu metrics: - name: Test WER type: wer value: 31.40 - name: Test CER type: cer value: 6.20 --- # Fine-tuned XLSR-53 large model for speech recognition in Hungarian Fine-tuned facebook/wav2vec2-large-xlsr-53 on Hungarian using the train and validation splits of Common Voice 6.1 and CSS10. When using this model, make sure that your speech input is sampled at 16kHz. This model has been fine-tuned thanks to the GPU credits generously given by the OVHcloud :) The script used for training can be found here: ## Usage The model can be used directly (without a language model) as follows... Using the HuggingSound library: Writing your own inference script: | Reference | Prediction | | ------------- | ------------- | | BÜSZKÉK VAGYUNK A MAGYAR EMBEREK NAGYSZERŰ SZELLEMI ALKOTÁSAIRA. | BÜSZKÉK VAGYUNK A MAGYAR EMBEREK NAGYSZERŰ SZELLEMI ALKOTÁSAIRE | | A NEMZETSÉG TAGJAI KÖZÜL EZT TERMESZTIK A LEGSZÉLESEBB KÖRBEN ÍZLETES TERMÉSÉÉRT. | A NEMZETSÉG TAGJAI KÖZÜL ESZSZERMESZTIK A LEGSZELESEBB KÖRBEN IZLETES TERMÉSSÉÉRT | | A VÁROSBA VÁGYÓDOTT A LEGJOBBAN, ÉPPEN MERT ODA NEM JUTHATOTT EL SOHA. | A VÁROSBA VÁGYÓDOTT A LEGJOBBAN ÉPPEN MERT ODA NEM JUTHATOTT EL SOHA | | SÍRJA MÁRA MEGSEMMISÜLT. | SIMGI A MANDO MEG SEMMICSEN | | MINDEN ZENESZÁMOT DRÁGAKŐNEK NEVEZETT. | MINDEN ZENA SZÁMODRAGAKŐNEK NEVEZETT | | ÍGY MÚLT EL A DÉLELŐTT. | ÍGY MÚLT EL A DÍN ELŐTT | | REMEK POFA! | A REMEG PUFO | | SZEMET SZEMÉRT, FOGAT FOGÉRT. | SZEMET SZEMÉRT FOGADD FOGÉRT | | BIZTOSAN LAKIK ITT NÉHÁNY ATYÁMFIA. | BIZTOSAN LAKIKÉT NÉHANY ATYAMFIA | | A SOROK KÖZÖTT OLVAS. | A SOROG KÖZÖTT OLVAS | ## Evaluation The model can be evaluated as follows on the Hungarian test data of Common Voice. **Test Result**: In the table below I report the Word Error Rate (WER) and the Character Error Rate (CER) of the model. I ran the evaluation script described above on other models as well (on 2021-04-22). Note that the table below may show different results from those already reported, this may have been caused due to some specificity of the other evaluation scripts used. | Model | WER | CER | | ------------- | ------------- | ------------- | | jonatasgrosman/wav2vec2-large-xlsr-53-hungarian | **31.40%** | **6.20%** | | anton-l/wav2vec2-large-xlsr-53-hungarian | 42.39% | 9.39% | | gchhablani/wav2vec2-large-xlsr-hu | 46.42% | 10.04% | | birgermoell/wav2vec2-large-xlsr-hungarian | 46.93% | 10.31% | ## Citation If you want to cite this model you can use this:",
+    "model_explanation_gemini": "Fine-tuned for Hungarian speech recognition, converting 16kHz audio input to text with a 31.40% word error rate."
+}

@@ -1,0 +1,22 @@
+{
+    "model_id": "indonesian-nlp/wav2vec2-large-xlsr-indonesian",
+    "downloads": 100443,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "jax",
+        "wav2vec2",
+        "automatic-speech-recognition",
+        "audio",
+        "speech",
+        "xlsr-fine-tuning-week",
+        "id",
+        "dataset:common_voice",
+        "license:apache-2.0",
+        "model-index",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: id datasets: - common_voice metrics: - wer tags: - audio - automatic-speech-recognition - speech - xlsr-fine-tuning-week license: apache-2.0 model-index: - name: XLSR Wav2Vec2 Indonesian by Indonesian NLP results: - task: name: Speech Recognition type: automatic-speech-recognition dataset: name: Common Voice id type: common_voice args: id metrics: - name: Test WER type: wer value: 14.29 --- # Wav2Vec2-Large-XLSR-Indonesian This is the model for Wav2Vec2-Large-XLSR-Indonesian, a fine-tuned facebook/wav2vec2-large-xlsr-53 model on the Indonesian Common Voice dataset. When using this model, make sure that your speech input is sampled at 16kHz. ## Usage The model can be used directly (without a language model) as follows: ## Evaluation The model can be evaluated as follows on the Indonesian test data of Common Voice. **Test Result**: 14.29 % ## Training The Common Voice , , and synthetic voice datasets were used for training. The script used for training can be found here",
+    "model_explanation_gemini": "Fine-tuned for Indonesian speech recognition, this model converts 16kHz audio input into text, achieving a 14.29% word error rate on the Common Voice dataset."
+}

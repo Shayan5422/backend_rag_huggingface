@@ -1,0 +1,17 @@
+{
+    "model_id": "SimianLuo/LCM_Dreamshaper_v7",
+    "downloads": 181623,
+    "tags": [
+        "diffusers",
+        "onnx",
+        "safetensors",
+        "text-to-image",
+        "en",
+        "arxiv:2310.04378",
+        "license:mit",
+        "diffusers:LatentConsistencyModelPipeline",
+        "region:us"
+    ],
+    "description": "--- license: mit language: - en pipeline_tag: text-to-image tags: - text-to-image --- # Latent Consistency Models Official Repository of the paper: *Latent Consistency Models*. Project Page: ## Try our Hugging Face demos: . ## Generation Results: <p align=\"center\"> <img src=\"teaser.png\"> </p> By distilling classifier-free guidance into the model's input, LCM can generate high-quality images in very short inference time. We compare the inference time at the setting of 768 x 768 resolution, CFG scale w=8, batchsize=4, using a A800 GPU. <p align=\"center\"> <img src=\"speed_fid.png\"> </p> ## Usage You can try out Latency Consistency Models directly on: 1. Install the library: 2. Run the model: ## BibTeX",
+    "model_explanation_gemini": "Generates high-quality images quickly from text inputs by distilling classifier-free guidance into the model."
+}

@@ -1,0 +1,12 @@
+{
+    "model_id": "charactr/vocos-encodec-24khz",
+    "downloads": 108096,
+    "tags": [
+        "pytorch",
+        "arxiv:2306.00814",
+        "license:mit",
+        "region:us"
+    ],
+    "description": "--- license: mit --- # Vocos: Closing the gap between time-domain and Fourier-based neural vocoders for high-quality audio synthesis Audio samples | Paper [[abs]]( [[pdf]]( Vocos is a fast neural vocoder designed to synthesize audio waveforms from acoustic features. Trained using a Generative Adversarial Network (GAN) objective, Vocos can generate waveforms in a single forward pass. Unlike other typical GAN-based vocoders, Vocos does not model audio samples in the time domain. Instead, it generates spectral coefficients, facilitating rapid audio reconstruction through inverse Fourier transform. ## Installation To use Vocos only in inference mode, install it using: If you wish to train the model, install it with additional dependencies: ## Usage ### Reconstruct audio from EnCodec tokens Additionally, you need to provide a which corresponds to the embedding for bandwidth from the list: . Copy-synthesis from a file: It extracts and quantizes features with EnCodec, then reconstructs them with Vocos in a single forward pass. ## Citation If this code contributes to your research, please cite our work: ## License The code in this repository is released under the MIT license.",
+    "model_explanation_gemini": "Generates high-quality audio waveforms from acoustic features using spectral coefficients and inverse Fourier transform for rapid synthesis."
+}

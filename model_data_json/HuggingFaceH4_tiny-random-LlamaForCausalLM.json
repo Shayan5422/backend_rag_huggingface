@@ -1,0 +1,16 @@
+{
+    "model_id": "HuggingFaceH4/tiny-random-LlamaForCausalLM",
+    "downloads": 165820,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "llama",
+        "text-generation",
+        "autotrain_compatible",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- duplicated_from: HuggingFaceM4/tiny-random-LlamaForCausalLM ---",
+    "model_explanation_gemini": "Generates text sequentially for causal language modeling tasks using a tiny, randomly initialized Llama architecture."
+}

@@ -1,0 +1,24 @@
+{
+    "model_id": "sentence-transformers/msmarco-bert-base-dot-v5",
+    "downloads": 285677,
+    "tags": [
+        "sentence-transformers",
+        "pytorch",
+        "tf",
+        "onnx",
+        "safetensors",
+        "openvino",
+        "bert",
+        "feature-extraction",
+        "sentence-similarity",
+        "transformers",
+        "en",
+        "arxiv:1908.10084",
+        "autotrain_compatible",
+        "text-embeddings-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: - en library_name: sentence-transformers tags: - sentence-transformers - feature-extraction - sentence-similarity - transformers pipeline_tag: sentence-similarity --- # msmarco-bert-base-dot-v5 This is a sentence-transformers model: It maps sentences & paragraphs to a 768 dimensional dense vector space and was designed for **semantic search**. It has been trained on 500K (query, answer) pairs from the MS MARCO dataset. For an introduction to semantic search, have a look at: SBERT.net - Semantic Search ## Usage (Sentence-Transformers) Using this model becomes easy when you have sentence-transformers installed: Then you can use the model like this: ## Usage (HuggingFace Transformers) Without sentence-transformers, you can use the model like this: First, you pass your input through the transformer model, then you have to apply the correct pooling-operation on-top of the contextualized word embeddings. ## Technical Details In the following some technical details how this model must be used: | Setting | Value | | --- | :---: | | Dimensions | 768 | | Max Sequence Length | 512 | | Produces normalized embeddings | No | | Pooling-Method | Mean pooling | | Suitable score functions | dot-product (e.g. ) | ## Training See in this repository for the used training script. The model was trained with the parameters: **DataLoader**: of length 7858 with parameters: **Loss**: Parameters of the fit()-Method: ## Full Model Architecture ## Citing & Authors This model was trained by sentence-transformers. If you find this model helpful, feel free to cite our publication Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks:",
+    "model_explanation_gemini": "Maps sentences and paragraphs to 768-dimensional vectors for semantic search using dot-product similarity, trained on MS MARCO query-answer pairs."
+}

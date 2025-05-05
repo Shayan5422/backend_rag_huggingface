@@ -1,0 +1,18 @@
+{
+    "model_id": "fxmarty/really-tiny-falcon-testing",
+    "downloads": 126726,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "falcon",
+        "text-generation",
+        "custom_code",
+        "license:mit",
+        "autotrain_compatible",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: mit --- tiny = <10 MB",
+    "model_explanation_gemini": "A tiny Falcon-based model under 10 MB, licensed under MIT."
+}

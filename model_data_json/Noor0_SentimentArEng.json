@@ -1,0 +1,19 @@
+{
+    "model_id": "Noor0/SentimentArEng",
+    "downloads": 95243,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "xlm-roberta",
+        "text-classification",
+        "ar",
+        "en",
+        "base_model:cardiffnlp/twitter-xlm-roberta-base-sentiment",
+        "base_model:finetune:cardiffnlp/twitter-xlm-roberta-base-sentiment",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- base_model: cardiffnlp/twitter-xlm-roberta-base-sentiment metrics: - accuracy model-index: - name: result results: [] language: - ar - en library_name: transformers pipeline_tag: text-classification --- --- # SentimentArEng This model is a fine-tuned version of cardiffnlp/twitter-xlm-roberta-base-sentiment on the None dataset. It achieves the following results on the evaluation set: - Loss: 0.502831 - Accuracy: 0.798512 # inference with pipeline - output: - [{'label': 'negative', 'score': 0.9905518293380737}] ## Training and evaluation data - Training set: 114,885 records - evaluation data: 12,765 records ## Training procedure | Training Loss | Epoch |Validation Loss | Accuracy | |:-------------:|:-----:|:---------------:|:--------:| | 0.4511 | 2.0 |0.502831 | 0.7985 | | 0.3655 | 3.0 |0.576118 | 0.7954 | | 0.3019 | 4.0 |0.625391 | 0.7985 | | 0.2466 | 5.0 |0.835689 | 0.7979 | ### Training hyperparameters - The following hyperparameters were used during training: - learning_rate=2e-5 - num_train_epochs=20 - weight_decay=0.01 - batch_size=16, ### Framework versions - Transformers 4.35.0 - Pytorch 2.0.0 - Datasets 2.11.0 - Tokenizers 0.14.1",
+    "model_explanation_gemini": "Classifies text sentiment (negative/positive) in Arabic and English."
+}

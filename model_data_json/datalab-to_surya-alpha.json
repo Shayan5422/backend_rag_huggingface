@@ -1,0 +1,14 @@
+{
+    "model_id": "datalab-to/surya-alpha",
+    "downloads": 159913,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "surya-multimodal-foundation",
+        "license:cc-by-nc-sa-4.0",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- library_name: transformers license: cc-by-nc-sa-4.0 --- Alpha model for surya.",
+    "model_explanation_gemini": "Alpha model for surya."
+}

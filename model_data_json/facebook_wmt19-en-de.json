@@ -1,0 +1,23 @@
+{
+    "model_id": "facebook/wmt19-en-de",
+    "downloads": 98797,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "fsmt",
+        "text2text-generation",
+        "translation",
+        "wmt19",
+        "facebook",
+        "en",
+        "de",
+        "dataset:wmt19",
+        "arxiv:1907.06616",
+        "license:apache-2.0",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: - en - de tags: - translation - wmt19 - facebook license: apache-2.0 datasets: - wmt19 metrics: - bleu thumbnail: --- # FSMT ## Model description This is a ported version of fairseq wmt19 transformer for en-de. For more details, please see, Facebook FAIR's WMT19 News Translation Task Submission. The abbreviation FSMT stands for FairSeqMachineTranslation All four models are available: * wmt19-en-ru * wmt19-ru-en * wmt19-en-de * wmt19-de-en ## Intended uses & limitations #### How to use #### Limitations and bias - The original (and this ported model) doesn't seem to handle well inputs with repeated sub-phrases, content gets truncated ## Training data Pretrained weights were left identical to the original model released by fairseq. For more details, please, see the paper. ## Eval results pair | fairseq | transformers -------|---------|---------- en-de | 43.1 | 42.83 The score is slightly below the score reported by , since --num_beams 50`. ## Data Sources - training, etc. - test set ### BibTeX entry and citation info ## TODO - port model ensemble (fairseq uses 4 model checkpoints)",
+    "model_explanation_gemini": "Translates text between English and German, based on the WMT19 news translation task model."
+}

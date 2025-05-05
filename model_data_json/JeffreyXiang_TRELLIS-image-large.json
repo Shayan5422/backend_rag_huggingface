@@ -1,0 +1,14 @@
+{
+    "model_id": "JeffreyXiang/TRELLIS-image-large",
+    "downloads": 896187,
+    "tags": [
+        "trellis",
+        "image-to-3d",
+        "en",
+        "arxiv:2412.01506",
+        "license:mit",
+        "region:us"
+    ],
+    "description": "--- library_name: trellis pipeline_tag: image-to-3d license: mit language: - en --- # TRELLIS Image Large <!-- Provide a quick summary of what the model is/does. --> The image conditioned version of TRELLIS, a large 3D genetive model. It was introduced in the paper Structured 3D Latents for Scalable and Versatile 3D Generation. Project page: Code:",
+    "model_explanation_gemini": "Generates 3D models from input images using a structured latent space for scalable and versatile 3D generation."
+}

@@ -1,0 +1,13 @@
+{
+    "model_id": "echarlaix/tiny-random-latent-consistency",
+    "downloads": 176124,
+    "tags": [
+        "diffusers",
+        "safetensors",
+        "license:apache-2.0",
+        "diffusers:LatentConsistencyModelPipeline",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 ---",
+    "model_explanation_gemini": "Generates random latent representations for consistency tasks under the Apache 2.0 license."
+}

@@ -1,0 +1,21 @@
+{
+    "model_id": "almanach/camembert-base",
+    "downloads": 1643097,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "tf",
+        "safetensors",
+        "camembert",
+        "fill-mask",
+        "fr",
+        "dataset:oscar",
+        "arxiv:1911.03894",
+        "license:mit",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: fr license: mit datasets: - oscar --- # CamemBERT: a Tasty French Language Model ## Introduction CamemBERT is a state-of-the-art language model for French based on the RoBERTa model. It is now available on Hugging Face in 6 different versions with varying number of parameters, amount of pretraining data and pretraining data source domains. For further information or requests, please go to Camembert Website ## Pre-trained models | Model | #params | Arch. | Training data | |--------------------------------|--------------------------------|-------|-----------------------------------| | | 110M | Base | OSCAR (138 GB of text) | | | 335M | Large | CCNet (135 GB of text) | | | 110M | Base | CCNet (135 GB of text) | | | 110M | Base | Wikipedia (4 GB of text) | | | 110M | Base | Subsample of OSCAR (4 GB of text) | | | 110M | Base | Subsample of CCNet (4 GB of text) | ## How to use CamemBERT with HuggingFace ##### Load CamemBERT and its sub-word tokenizer : ##### Filling masks using pipeline ##### Extract contextual embedding features from Camembert output ##### Extract contextual embedding features from all Camembert layers ## Authors CamemBERT was trained and evaluated by Louis Martin\\*, Benjamin Muller\\*, Pedro Javier Ortiz Suárez\\*, Yoann Dupont, Laurent Romary, Éric Villemonte de la Clergerie, Djamé Seddah and Benoît Sagot. ## Citation If you use our work, please cite:",
+    "model_explanation_gemini": "CamemBERT is a French language model based on RoBERTa, designed for tasks like mask filling and contextual embedding extraction, pretrained on various French text datasets."
+}

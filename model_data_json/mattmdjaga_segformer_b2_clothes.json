@@ -1,0 +1,20 @@
+{
+    "model_id": "mattmdjaga/segformer_b2_clothes",
+    "downloads": 508697,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "onnx",
+        "safetensors",
+        "segformer",
+        "vision",
+        "image-segmentation",
+        "dataset:mattmdjaga/human_parsing_dataset",
+        "arxiv:2105.15203",
+        "license:mit",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: mit tags: - vision - image-segmentation widget: - src: example_title: Person - src: example_title: Person datasets: - mattmdjaga/human_parsing_dataset --- # Segformer B2 fine-tuned for clothes segmentation SegFormer model fine-tuned on ATR dataset for clothes segmentation but can also be used for human segmentation. The dataset on hugging face is called \"mattmdjaga/human_parsing_dataset\". **Training code**. Labels: 0: \"Background\", 1: \"Hat\", 2: \"Hair\", 3: \"Sunglasses\", 4: \"Upper-clothes\", 5: \"Skirt\", 6: \"Pants\", 7: \"Dress\", 8: \"Belt\", 9: \"Left-shoe\", 10: \"Right-shoe\", 11: \"Face\", 12: \"Left-leg\", 13: \"Right-leg\", 14: \"Left-arm\", 15: \"Right-arm\", 16: \"Bag\", 17: \"Scarf\" ### Evaluation | Label Index | Label Name | Category Accuracy | Category IoU | |:-------------:|:----------------:|:-----------------:|:------------:| | 0 | Background | 0.99 | 0.99 | | 1 | Hat | 0.73 | 0.68 | | 2 | Hair | 0.91 | 0.82 | | 3 | Sunglasses | 0.73 | 0.63 | | 4 | Upper-clothes | 0.87 | 0.78 | | 5 | Skirt | 0.76 | 0.65 | | 6 | Pants | 0.90 | 0.84 | | 7 | Dress | 0.74 | 0.55 | | 8 | Belt | 0.35 | 0.30 | | 9 | Left-shoe | 0.74 | 0.58 | | 10 | Right-shoe | 0.75 | 0.60 | | 11 | Face | 0.92 | 0.85 | | 12 | Left-leg | 0.90 | 0.82 | | 13 | Right-leg | 0.90 | 0.81 | | 14 | Left-arm | 0.86 | 0.74 | | 15 | Right-arm | 0.82 | 0.73 | | 16 | Bag | 0.91 | 0.84 | | 17 | Scarf | 0.63 | 0.29 | Overall Evaluation Metrics: - Evaluation Loss: 0.15 - Mean Accuracy: 0.80 - Mean IoU: 0.69 ### License The license for this model can be found here. ### BibTeX entry and citation info",
+    "model_explanation_gemini": "Segments clothing items and human body parts in images, trained on a dataset with 18 labeled categories including hats, upper-clothes, pants, and accessories."
+}

@@ -1,0 +1,27 @@
+{
+    "model_id": "cointegrated/rubert-tiny2",
+    "downloads": 545354,
+    "tags": [
+        "sentence-transformers",
+        "pytorch",
+        "safetensors",
+        "bert",
+        "pretraining",
+        "russian",
+        "fill-mask",
+        "embeddings",
+        "masked-lm",
+        "tiny",
+        "feature-extraction",
+        "sentence-similarity",
+        "transformers",
+        "ru",
+        "license:mit",
+        "autotrain_compatible",
+        "text-embeddings-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: - ru pipeline_tag: sentence-similarity tags: - russian - fill-mask - pretraining - embeddings - masked-lm - tiny - feature-extraction - sentence-similarity - sentence-transformers - transformers license: mit widget: - text: Миниатюрная модель для [MASK] разных задач. --- This is an updated version of cointegrated/rubert-tiny: a small Russian BERT-based encoder with high-quality sentence embeddings. This post in Russian gives more details. The differences from the previous version include: - a larger vocabulary: 83828 tokens instead of 29564; - larger supported sequences: 2048 instead of 512; - sentence embeddings approximate LaBSE closer than before; - meaningful segment embeddings (tuned on the NLI task) - the model is focused only on Russian. The model should be used as is to produce sentence embeddings (e.g. for KNN classification of short texts) or fine-tuned for a downstream task. Sentence embeddings can be produced as follows: Alternatively, you can use the model with :",
+    "model_explanation_gemini": "Generates high-quality Russian sentence embeddings for tasks like similarity comparison or classification and supports fine-tuning for downstream applications."
+}

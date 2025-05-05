@@ -1,0 +1,22 @@
+{
+    "model_id": "emrecan/bert-base-turkish-cased-mean-nli-stsb-tr",
+    "downloads": 1298560,
+    "tags": [
+        "sentence-transformers",
+        "pytorch",
+        "bert",
+        "feature-extraction",
+        "sentence-similarity",
+        "transformers",
+        "tr",
+        "dataset:nli_tr",
+        "dataset:emrecan/stsb-mt-turkish",
+        "license:apache-2.0",
+        "autotrain_compatible",
+        "text-embeddings-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: - tr pipeline_tag: sentence-similarity license: apache-2.0 tags: - sentence-transformers - feature-extraction - sentence-similarity - transformers datasets: - nli_tr - emrecan/stsb-mt-turkish widget: source_sentence: \"Bu çok mutlu bir kişi\" sentences: - \"Bu mutlu bir köpek\" - \"Bu sevincinden havalara uçan bir insan\" - \"Çok kar yağıyor\" --- # emrecan/bert-base-turkish-cased-mean-nli-stsb-tr This is a sentence-transformers model: It maps sentences & paragraphs to a 768 dimensional dense vector space and can be used for tasks like clustering or semantic search. The model was trained on Turkish machine translated versions of NLI and STS-b datasets, using example training scripts from sentence-transformers GitHub repository. ## Usage (Sentence-Transformers) Using this model becomes easy when you have sentence-transformers installed: Then you can use the model like this: ## Usage (HuggingFace Transformers) Without sentence-transformers, you can use the model like this: First, you pass your input through the transformer model, then you have to apply the right pooling-operation on-top of the contextualized word embeddings. ## Evaluation Results Evaluation results on test and development sets are given below: | Split | Epoch | cosine_pearson | cosine_spearman | euclidean_pearson | euclidean_spearman | manhattan_pearson | manhattan_spearman | dot_pearson | dot_spearman | |------------|-------|----------------|-----------------|-------------------|--------------------|-------------------|--------------------|-------------|--------------| | test | - | 0.834 | 0.830 | 0.820 | 0.819 | 0.819 | 0.818 | 0.799 | 0.789 | | validation | 1 | 0.850 | 0.848 | 0.831 | 0.835 | 0.83 | 0.83 | 0.80 | 0.806 | | validation | 2 | 0.857 | 0.857 | 0.844 | 0.848 | 0.844 | 0.848 | 0.813 | 0.810 | | validation | 3 | 0.860 | 0.859 | 0.846 | 0.851 | 0.846 | 0.850 | 0.825 | 0.822 | | validation | 4 | 0.859 | 0.860 | 0.846 | 0.851 | 0.846 | 0.851 | 0.825 | 0.823 | ## Training Training scripts []( and []( were used to train the model. The model was trained with the parameters: **DataLoader**: of length 360 with parameters: **Loss**: Parameters of the fit()-Method: ## Full Model Architecture ## Citing & Authors <!--- Describe where people can find more information -->",
+    "model_explanation_gemini": "Maps Turkish sentences to 768-dimensional vectors for semantic similarity tasks like clustering and search, trained on Turkish NLI and STS-b datasets."
+}

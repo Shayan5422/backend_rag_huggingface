@@ -1,0 +1,15 @@
+{
+    "model_id": "InstantX/InstantID",
+    "downloads": 116177,
+    "tags": [
+        "diffusers",
+        "safetensors",
+        "text-to-image",
+        "en",
+        "arxiv:2401.07519",
+        "license:apache-2.0",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 language: - en library_name: diffusers pipeline_tag: text-to-image --- # InstantID Model Card <div align=\"center\"> **Project Page** **|** **Paper** **|** **Code** **|** 🤗 **Gradio demo** </div> ## Introduction InstantID is a new state-of-the-art tuning-free method to achieve ID-Preserving generation with only single image, supporting various downstream tasks. <div align=\"center\"> <img src='examples/applications.png'> </div> ## Usage You can directly download the model in this repository. You also can download the model in python script: For face encoder, you need to manutally download via this URL to . Then, you can customized your own face images For more details, please follow the instructions in our GitHub repository. ## Usage Tips 1. If you're not satisfied with the similarity, try to increase the weight of \"IdentityNet Strength\" and \"Adapter Strength\". 2. If you feel that the saturation is too high, first decrease the Adapter strength. If it is still too high, then decrease the IdentityNet strength. 3. If you find that text control is not as expected, decrease Adapter strength. 4. If you find that realistic style is not good enough, go for our Github repo and use a more realistic base model. ## Demos <div align=\"center\"> <img src='examples/0.png'> </div> <div align=\"center\"> <img src='examples/1.png'> </div> ## Disclaimer This project is released under Apache License and aims to positively impact the field of AI-driven image generation. Users are granted the freedom to create images using this tool, but they are obligated to comply with local laws and utilize it responsibly. The developers will not assume any responsibility for potential misuse by users. ## Citation",
+    "model_explanation_gemini": "Generates identity-preserving images from a single input photo without requiring fine-tuning, supporting various text-to-image tasks."
+}

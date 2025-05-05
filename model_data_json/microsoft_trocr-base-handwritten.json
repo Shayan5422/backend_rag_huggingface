@@ -1,0 +1,19 @@
+{
+    "model_id": "microsoft/trocr-base-handwritten",
+    "downloads": 214170,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "safetensors",
+        "vision-encoder-decoder",
+        "image-text-to-text",
+        "trocr",
+        "image-to-text",
+        "arxiv:2109.10282",
+        "license:mit",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- tags: - trocr - image-to-text widget: - src: example_title: Note 1 - src: >- example_title: Note 2 - src: >- example_title: Note 3 license: mit --- # TrOCR (base-sized model, fine-tuned on IAM) TrOCR model fine-tuned on the IAM dataset. It was introduced in the paper TrOCR: Transformer-based Optical Character Recognition with Pre-trained Models by Li et al. and first released in this repository. Disclaimer: The team releasing TrOCR did not write a model card for this model so this model card has been written by the Hugging Face team. ## Model description The TrOCR model is an encoder-decoder model, consisting of an image Transformer as encoder, and a text Transformer as decoder. The image encoder was initialized from the weights of BEiT, while the text decoder was initialized from the weights of RoBERTa. Images are presented to the model as a sequence of fixed-size patches (resolution 16x16), which are linearly embedded. One also adds absolute position embeddings before feeding the sequence to the layers of the Transformer encoder. Next, the Transformer text decoder autoregressively generates tokens. ## Intended uses & limitations You can use the raw model for optical character recognition (OCR) on single text-line images. See the model hub to look for fine-tuned versions on a task that interests you. ### How to use Here is how to use this model in PyTorch: ### BibTeX entry and citation info",
+    "model_explanation_gemini": "Recognizes handwritten text in images using a Transformer-based encoder-decoder architecture fine-tuned on the IAM dataset."
+}

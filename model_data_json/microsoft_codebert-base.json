@@ -1,0 +1,18 @@
+{
+    "model_id": "microsoft/codebert-base",
+    "downloads": 1400744,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "tf",
+        "jax",
+        "rust",
+        "roberta",
+        "feature-extraction",
+        "arxiv:2002.08155",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "## CodeBERT-base Pretrained weights for CodeBERT: A Pre-Trained Model for Programming and Natural Languages. ### Training Data The model is trained on bi-modal data (documents & code) of CodeSearchNet ### Training Objective This model is initialized with Roberta-base and trained with MLM+RTD objective (cf. the paper). ### Usage Please see the official repository for scripts that support \"code search\" and \"code-to-document generation\". ### Reference 1. CodeBERT trained with Masked LM objective (suitable for code completion) 2. 🤗 Hugging Face's CodeBERTa (small size, 6 layers) ### Citation",
+    "model_explanation_gemini": "Pretrained for programming and natural languages using bi-modal data, supporting code search and code-to-document generation tasks."
+}

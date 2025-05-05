@@ -1,0 +1,29 @@
+{
+    "model_id": "ElKulako/cryptobert",
+    "downloads": 284473,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "roberta",
+        "text-classification",
+        "cryptocurrency",
+        "crypto",
+        "BERT",
+        "sentiment classification",
+        "NLP",
+        "bitcoin",
+        "ethereum",
+        "shib",
+        "social media",
+        "sentiment analysis",
+        "cryptocurrency sentiment analysis",
+        "en",
+        "dataset:ElKulako/stocktwits-crypto",
+        "license:mit",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- datasets: - ElKulako/stocktwits-crypto language: - en tags: - cryptocurrency - crypto - BERT - sentiment classification - NLP - bitcoin - ethereum - shib - social media - sentiment analysis - cryptocurrency sentiment analysis license: mit --- For academic reference, cite the following paper: # CryptoBERT CryptoBERT is a pre-trained NLP model to analyse the language and sentiments of cryptocurrency-related social media posts and messages. It was built by further training the vinai's bertweet-base language model on the cryptocurrency domain, using a corpus of over 3.2M unique cryptocurrency-related social media posts. (A research paper with more details will follow soon.) ## Classification Training The model was trained on the following labels: \"Bearish\" : 0, \"Neutral\": 1, \"Bullish\": 2 CryptoBERT's sentiment classification head was fine-tuned on a balanced dataset of 2M labelled StockTwits posts, sampled from ElKulako/stocktwits-crypto. CryptoBERT was trained with a max sequence length of 128. Technically, it can handle sequences of up to 514 tokens, however, going beyond 128 is not recommended. # Classification Example ## Training Corpus CryptoBERT was trained on 3.2M social media posts regarding various cryptocurrencies. Only non-duplicate posts of length above 4 words were considered. The following communities were used as sources for our corpora: (1) StockTwits - 1.875M posts about the top 100 cryptos by trading volume. Posts were collected from the 1st of November 2021 to the 16th of June 2022. ElKulako/stocktwits-crypto (2) Telegram - 664K posts from top 5 telegram groups: Binance, Bittrex, huobi global, Kucoin, OKEx. Data from 16.11.2020 to 30.01.2021. Courtesy of Anton. (3) Reddit - 172K comments from various crypto investing threads, collected from May 2021 to May 2022 (4) Twitter - 496K posts with hashtags XBT, Bitcoin or BTC. Collected for May 2018. Courtesy of Paul.",
+    "model_explanation_gemini": "Analyzes sentiment of cryptocurrency-related social media posts, classifying them as \"Bearish,\" \"Neutral,\" or \"Bullish.\""
+}

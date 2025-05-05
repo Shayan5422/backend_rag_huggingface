@@ -1,0 +1,23 @@
+{
+    "model_id": "SamiPie/debbie_llama-8b-ep3-v1-merged",
+    "downloads": 167041,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "llama",
+        "text-generation",
+        "text-generation-inference",
+        "unsloth",
+        "trl",
+        "sft",
+        "en",
+        "license:apache-2.0",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "4-bit",
+        "bitsandbytes",
+        "region:us"
+    ],
+    "description": "--- base_model: unsloth/meta-llama-3.1-8b-bnb-4bit tags: - text-generation-inference - transformers - unsloth - llama - trl - sft license: apache-2.0 language: - en --- # Uploaded model - **Developed by:** SamiPie - **License:** apache-2.0 - **Finetuned from model :** unsloth/meta-llama-3.1-8b-bnb-4bit This llama model was trained 2x faster with Unsloth and Huggingface's TRL library. <img src=\" width=\"200\"/>",
+    "model_explanation_gemini": "Finetuned from a quantized Llama 3.1-8B model using Unsloth and TRL for faster text generation."
+}

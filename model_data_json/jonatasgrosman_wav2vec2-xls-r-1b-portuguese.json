@@ -1,0 +1,22 @@
+{
+    "model_id": "jonatasgrosman/wav2vec2-xls-r-1b-portuguese",
+    "downloads": 633283,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "wav2vec2",
+        "automatic-speech-recognition",
+        "hf-asr-leaderboard",
+        "mozilla-foundation/common_voice_8_0",
+        "pt",
+        "robust-speech-event",
+        "dataset:mozilla-foundation/common_voice_8_0",
+        "doi:10.57967/hf/3575",
+        "license:apache-2.0",
+        "model-index",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: - pt license: apache-2.0 tags: - automatic-speech-recognition - hf-asr-leaderboard - mozilla-foundation/common_voice_8_0 - pt - robust-speech-event datasets: - mozilla-foundation/common_voice_8_0 model-index: - name: XLS-R Wav2Vec2 Portuguese by Jonatas Grosman results: - task: name: Automatic Speech Recognition type: automatic-speech-recognition dataset: name: Common Voice 8 type: mozilla-foundation/common_voice_8_0 args: pt metrics: - name: Test WER type: wer value: 8.7 - name: Test CER type: cer value: 2.55 - name: Test WER (+LM) type: wer value: 6.04 - name: Test CER (+LM) type: cer value: 1.98 - task: name: Automatic Speech Recognition type: automatic-speech-recognition dataset: name: Robust Speech Event - Dev Data type: speech-recognition-community-v2/dev_data args: pt metrics: - name: Dev WER type: wer value: 24.23 - name: Dev CER type: cer value: 11.3 - name: Dev WER (+LM) type: wer value: 19.41 - name: Dev CER (+LM) type: cer value: 10.19 - task: name: Automatic Speech Recognition type: automatic-speech-recognition dataset: name: Robust Speech Event - Test Data type: speech-recognition-community-v2/eval_data args: pt metrics: - name: Test WER type: wer value: 18.8 --- # Fine-tuned XLS-R 1B model for speech recognition in Portuguese Fine-tuned facebook/wav2vec2-xls-r-1b on Portuguese using the train and validation splits of Common Voice 8.0, CORAA, Multilingual TEDx, and Multilingual LibriSpeech. When using this model, make sure that your speech input is sampled at 16kHz. This model has been fine-tuned by the HuggingSound tool, and thanks to the GPU credits generously given by the OVHcloud :) ## Usage Using the HuggingSound library: Writing your own inference script: ## Evaluation Commands 1. To evaluate on with split 2. To evaluate on ## Citation If you want to cite this model you can use this:",
+    "model_explanation_gemini": "A fine-tuned Portuguese speech recognition model based on XLS-R Wav2Vec2, optimized for converting spoken Portuguese to text with high accuracy."
+}

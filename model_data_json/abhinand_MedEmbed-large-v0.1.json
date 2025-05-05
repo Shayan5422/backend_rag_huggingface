@@ -1,0 +1,25 @@
+{
+    "model_id": "abhinand/MedEmbed-large-v0.1",
+    "downloads": 183131,
+    "tags": [
+        "sentence-transformers",
+        "safetensors",
+        "bert",
+        "medembed",
+        "medical-embedding",
+        "clinical-embedding",
+        "information-retrieval",
+        "en",
+        "dataset:MedicalQARetrieval",
+        "dataset:NFCorpus",
+        "dataset:PublicHealthQA",
+        "dataset:TRECCOVID",
+        "dataset:ArguAna",
+        "base_model:BAAI/bge-large-en-v1.5",
+        "base_model:finetune:BAAI/bge-large-en-v1.5",
+        "license:apache-2.0",
+        "region:us"
+    ],
+    "description": "--- language: en tags: - medembed - medical-embedding - clinical-embedding - information-retrieval - sentence-transformers license: apache-2.0 datasets: - MedicalQARetrieval - NFCorpus - PublicHealthQA - TRECCOVID - ArguAna metrics: - nDCG - MAP - Recall - Precision - MRR base_model: - BAAI/bge-large-en-v1.5 --- # MedEmbed: Specialized Embedding Model for Medical and Clinical Information Retrieval !benchmark-scores ## Model Description MedEmbed is a family of embedding models fine-tuned specifically for medical and clinical data, designed to enhance performance in healthcare-related natural language processing (NLP) tasks, particularly information retrieval. **GitHub Repo:** **Technical Blog Post:** ## Intended Use This model is intended for use in medical and clinical contexts to improve information retrieval, question answering, and semantic search tasks. It can be integrated into healthcare systems, research tools, and medical literature databases to enhance search capabilities and information access. ## Training Data !synthetic-datagen-flow The model was trained using a simple yet effective synthetic data generation pipeline: 1. Source: Clinical notes from PubMed Central (PMC) 2. Processing: LLaMA 3.1 70B model used to generate query-response pairs 3. Augmentation: Negative sampling for challenging examples 4. Format: Triplets (query, positive response, negative response) for contrastive learning ## Performance MedEmbed consistently outperforms general-purpose embedding models across various medical NLP benchmarks: - ArguAna - MedicalQARetrieval - NFCorpus - PublicHealthQA - TRECCOVID Specific performance metrics (nDCG, MAP, Recall, Precision, MRR) are available in the full documentation. ## Limitations While highly effective for medical and clinical data, this model may not generalize well to non-medical domains. It should be used with caution in general-purpose NLP tasks. ## Ethical Considerations Users should be aware of potential biases in medical data and the ethical implications of AI in healthcare. This model should be used as a tool to assist, not replace, human expertise in medical decision-making. ## Citation If you use this model in your research, please cite: For more detailed information, visit our GitHub repository.",
+    "model_explanation_gemini": "Generates specialized embeddings for medical and clinical data to enhance information retrieval and semantic search in healthcare contexts."
+}

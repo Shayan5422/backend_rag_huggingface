@@ -1,0 +1,25 @@
+{
+    "model_id": "Felix92/doctr-torch-parseq-multilingual-v1",
+    "downloads": 251652,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "en",
+        "da",
+        "fr",
+        "it",
+        "es",
+        "de",
+        "pt",
+        "cs",
+        "pl",
+        "nl",
+        "no",
+        "fi",
+        "license:apache-2.0",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: - en - da - fr - it - es - de - pt - cs - pl - nl - 'no' - fi license: apache-2.0 --- <p align=\"center\"> <img src=\" width=\"60%\"> </p> **Optical Character Recognition made seamless & accessible to anyone, powered by TensorFlow 2 & PyTorch** ## Task: recognition ### Example usage:",
+    "model_explanation_gemini": "Performs multilingual optical character recognition (OCR) for text extraction in multiple languages including English, Danish, French, and others."
+}

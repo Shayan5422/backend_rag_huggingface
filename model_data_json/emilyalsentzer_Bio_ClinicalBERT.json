@@ -1,0 +1,20 @@
+{
+    "model_id": "emilyalsentzer/Bio_ClinicalBERT",
+    "downloads": 2249870,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "tf",
+        "jax",
+        "bert",
+        "fill-mask",
+        "en",
+        "arxiv:1904.03323",
+        "arxiv:1901.08746",
+        "license:mit",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: \"en\" tags: - fill-mask license: mit --- # ClinicalBERT - Bio + Clinical BERT Model The Publicly Available Clinical BERT Embeddings paper contains four unique clinicalBERT models: initialized with BERT-Base () or BioBERT () & trained on either all MIMIC notes or only discharge summaries. This model card describes the Bio+Clinical BERT model, which was initialized from BioBERT & trained on all MIMIC notes. ## Pretraining Data The model was trained on all notes from MIMIC III, a database containing electronic health records from ICU patients at the Beth Israel Hospital in Boston, MA. For more details on MIMIC, see here. All notes from the table were included (~880M words). ## Model Pretraining ### Note Preprocessing Each note in MIMIC was first split into sections using a rules-based section splitter (e.g. discharge summary notes were split into \"History of Present Illness\", \"Family History\", \"Brief Hospital Course\", etc. sections). Then each section was split into sentences using SciSpacy ( tokenizer). ### Pretraining Procedures The model was trained using code from Google's BERT repository on a GeForce GTX TITAN X 12 GB GPU. Model parameters were initialized with BioBERT (). ### Pretraining Hyperparameters We used a batch size of 32, a maximum sequence length of 128, and a learning rate of 5 · 10−5 for pre-training our models. The models trained on all MIMIC notes were trained for 150,000 steps. The dup factor for duplicating input data with different masks was set to 5. All other default parameters were used (specifically, masked language model probability = 0.15 and max predictions per sequence = 20). ## How to use the model Load the model via the transformers library: ## More Information Refer to the original paper, Publicly Available Clinical BERT Embeddings (NAACL Clinical NLP Workshop 2019) for additional details and performance on NLI and NER tasks. ## Questions? Post a Github issue on the clinicalBERT repo or email ealsentzer@stanford.edu with any questions.",
+    "model_explanation_gemini": "ClinicalBERT - Bio + Clinical BERT is a masked language model pretrained on MIMIC III ICU notes for biomedical and clinical NLP tasks."
+}

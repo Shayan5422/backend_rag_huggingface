@@ -1,0 +1,22 @@
+{
+    "model_id": "comodoro/wav2vec2-xls-r-300m-sk-cv8",
+    "downloads": 85074,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "wav2vec2",
+        "automatic-speech-recognition",
+        "mozilla-foundation/common_voice_8_0",
+        "robust-speech-event",
+        "xlsr-fine-tuning-week",
+        "hf-asr-leaderboard",
+        "sk",
+        "dataset:common_voice",
+        "license:apache-2.0",
+        "model-index",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: - sk license: apache-2.0 tags: - automatic-speech-recognition - mozilla-foundation/common_voice_8_0 - robust-speech-event - xlsr-fine-tuning-week - hf-asr-leaderboard datasets: - common_voice model-index: - name: Slovak comodoro Wav2Vec2 XLSR 300M CV8 results: - task: name: Automatic Speech Recognition type: automatic-speech-recognition dataset: name: Common Voice 8 type: mozilla-foundation/common_voice_8_0 args: sk metrics: - name: Test WER type: wer value: 49.6 - name: Test CER type: cer value: 13.3 - task: name: Automatic Speech Recognition type: automatic-speech-recognition dataset: name: Robust Speech Event - Dev Data type: speech-recognition-community-v2/dev_data args: sk metrics: - name: Test WER type: wer value: 81.7 - task: name: Automatic Speech Recognition type: automatic-speech-recognition dataset: name: Robust Speech Event - Test Data type: speech-recognition-community-v2/eval_data args: sk metrics: - name: Test WER type: wer value: 80.26 --- # wav2vec2-xls-r-300m-cs-cv8 This model is a fine-tuned version of facebook/wav2vec2-xls-r-300m on the common_voice 8.0 dataset. It achieves the following results on the evaluation set: - WER: 0.49575384615384616 - CER: 0.13333333333333333 ## Usage The model can be used directly (without a language model) as follows: ## Evaluation The model can be evaluated using the attached script: ## Training and evaluation data The Common Voice 8.0 and datasets were used for training ### Training hyperparameters The following hyperparameters were used during training: - learning_rate: 7e-4 - train_batch_size: 32 - eval_batch_size: 8 - seed: 42 - gradient_accumulation_steps: 20 - total_train_batch_size: 640 - optimizer: Adam with betas=(0.9,0.999) and epsilon=1e-08 - lr_scheduler_type: linear - lr_scheduler_warmup_steps: 500 - num_epochs: 50 - mixed_precision_training: Native AMP ### Framework versions - Transformers 4.16.0.dev0 - Pytorch 1.10.1+cu102 - Datasets 1.17.1.dev0 - Tokenizers 0.11.0",
+    "model_explanation_gemini": "A Slovak automatic speech recognition model fine-tuned on Common Voice 8.0 data to convert speech into text."
+}

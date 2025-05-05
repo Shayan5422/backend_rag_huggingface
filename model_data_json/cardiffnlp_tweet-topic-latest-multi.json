@@ -1,0 +1,17 @@
+{
+    "model_id": "cardiffnlp/tweet-topic-latest-multi",
+    "downloads": 318263,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "tf",
+        "roberta",
+        "text-classification",
+        "arxiv:2209.09824",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "# tweet-topic-latest-multi This is a RoBERTa-base model trained on 168.86M tweets until the end of September 2022 and finetuned for multi-label topic classification on a corpus of 11,267 tweets. The original RoBERTa-base model can be found here. This model is suitable for English. - Reference Paper: TweetTopic (COLING 2022). <b>Labels</b>: | <span style=\"font-weight:normal\">0: arts_&_culture</span> | <span style=\"font-weight:normal\">5: fashion_&_style</span> | <span style=\"font-weight:normal\">10: learning_&_educational</span> | <span style=\"font-weight:normal\">15: science_&_technology</span> | |-----------------------------|---------------------|----------------------------|--------------------------| | 1: business_&_entrepreneurs | 6: film_tv_&_video | 11: music | 16: sports | | 2: celebrity_&_pop_culture | 7: fitness_&_health | 12: news_&_social_concern | 17: travel_&_adventure | | 3: diaries_&_daily_life | 8: food_&_dining | 13: other_hobbies | 18: youth_&_student_life | | 4: family | 9: gaming | 14: relationships | | ## Full classification example Output: ### BibTeX entry and citation info Please cite the reference paper if you use this model.",
+    "model_explanation_gemini": "Classifies English tweets into multiple topic categories such as arts & culture, sports, and technology using a RoBERTa-base model trained on tweet data."
+}

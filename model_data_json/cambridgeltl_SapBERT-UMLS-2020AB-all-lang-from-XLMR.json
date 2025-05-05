@@ -1,0 +1,16 @@
+{
+    "model_id": "cambridgeltl/SapBERT-UMLS-2020AB-all-lang-from-XLMR",
+    "downloads": 403899,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "safetensors",
+        "xlm-roberta",
+        "feature-extraction",
+        "arxiv:2010.11784",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: multilingual tags: - biomedical - lexical-semantics - cross-lingual datasets: - UMLS **[news]** A cross-lingual extension of SapBERT will appear in the main onference of **ACL 2021**! <br> **[news]** SapBERT will appear in the conference proceedings of **NAACL 2021**! ### SapBERT-XLMR SapBERT (Liu et al. 2020) trained with UMLS 2020AB, using xlm-roberta-base as the base model. Please use [CLS] as the representation of the input. #### Extracting embeddings from SapBERT The following script converts a list of strings (entity names) into embeddings. For more details about training and eval, see SapBERT github repo. ### Citation",
+    "model_explanation_gemini": "Multilingual biomedical model for cross-lingual lexical semantics, trained on UMLS data to generate embeddings from entity names using XLM-RoBERTa as its base."
+}

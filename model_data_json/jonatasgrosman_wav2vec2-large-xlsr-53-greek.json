@@ -1,0 +1,23 @@
+{
+    "model_id": "jonatasgrosman/wav2vec2-large-xlsr-53-greek",
+    "downloads": 157003,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "jax",
+        "wav2vec2",
+        "automatic-speech-recognition",
+        "audio",
+        "speech",
+        "xlsr-fine-tuning-week",
+        "el",
+        "dataset:common_voice",
+        "doi:10.57967/hf/3579",
+        "license:apache-2.0",
+        "model-index",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: el datasets: - common_voice metrics: - wer - cer tags: - audio - automatic-speech-recognition - speech - xlsr-fine-tuning-week license: apache-2.0 model-index: - name: XLSR Wav2Vec2 Greek by Jonatas Grosman results: - task: name: Speech Recognition type: automatic-speech-recognition dataset: name: Common Voice el type: common_voice args: el metrics: - name: Test WER type: wer value: 11.62 - name: Test CER type: cer value: 3.36 --- # Fine-tuned XLSR-53 large model for speech recognition in Greek Fine-tuned facebook/wav2vec2-large-xlsr-53 on Greek using the train and validation splits of Common Voice 6.1 and CSS10. When using this model, make sure that your speech input is sampled at 16kHz. This model has been fine-tuned thanks to the GPU credits generously given by the OVHcloud :) The script used for training can be found here: ## Usage The model can be used directly (without a language model) as follows... Using the HuggingSound library: Writing your own inference script: | Reference | Prediction | | ------------- | ------------- | | ΤΟ ΒΑΣΙΛΌΠΟΥΛΟ, ΠΟΥ ΜΟΙΆΖΕΙ ΛΕΟΝΤΑΡΆΚΙ ΚΑΙ ΑΕΤΟΥΔΆΚΙ | ΤΟ ΒΑΣΙΛΌΠΟΥΛΟ ΠΟΥ ΜΙΑΣΕ ΛΙΟΝΤΑΡΑΚΉ ΚΑΙ ΑΪΤΟΥΔΆΚΙ | | ΣΥΝΆΜΑ ΞΕΠΡΌΒΑΛΑΝ ΑΠΌ ΜΈΣΑ ΑΠΌ ΤΑ ΔΈΝΤΡΑ, ΔΕΞΙΆ, ΑΡΜΑΤΩΜΈΝΟΙ ΚΑΒΑΛΑΡΈΟΙ. | ΣΥΝΆΜΑ ΚΑΙ ΤΡΌΒΑΛΑΝ ΑΠΌ ΜΈΣΑ ΑΠΌ ΤΑ ΔΈΝΤΡΑ ΔΕΞΙΆ ΑΡΜΑΤΩΜΈΝΟΙ ΚΑΒΑΛΑΡΈΟΙ | | ΤΑ ΣΥΣΚΕΥΑΣΜΈΝΑ ΒΙΟΛΟΓΙΚΆ ΛΑΧΑΝΙΚΆ ΔΕΝ ΠΕΡΙΈΧΟΥΝ ΣΥΝΤΗΡΗΤΙΚΆ ΚΑΙ ΟΡΜΌΝΕΣ | ΤΑ ΣΥΣΚΕΦΑΣΜΈΝΑ ΒΙΟΛΟΓΙΚΆ ΛΑΧΑΝΙΚΆ ΔΕΝ ΠΕΡΙΈΧΟΥΝ ΣΙΔΗΡΗΤΙΚΆ ΚΑΙ ΟΡΜΌΝΕΣ | | ΑΚΟΛΟΥΘΉΣΕΤΕ ΜΕ! | ΑΚΟΛΟΥΘΉΣΤΕ ΜΕ | | ΚΑΙ ΠΟΎ ΜΠΟΡΏ ΝΑ ΤΟΝ ΒΡΩ; | Ε ΠΟΎ ΜΠΟΡΏ ΝΑ ΤΙ ΕΒΡΩ | | ΝΑΙ! ΑΠΟΚΡΊΘΗΚΕ ΤΟ ΠΑΙΔΊ | ΝΑΙ ΑΠΟΚΡΊΘΗΚΕ ΤΟ ΠΑΙΔΊ | | ΤΟ ΠΑΛΆΤΙ ΜΟΥ ΤΟ ΠΡΟΜΉΘΕΥΕ. | ΤΟ ΠΑΛΆΤΙ ΜΟΥ ΤΟ ΠΡΟΜΉΘΕΥΕ | | ΉΛΘΕ ΜΉΝΥΜΑ ΑΠΌ ΤΟ ΘΕΊΟ ΒΑΣΙΛΙΆ; | ΉΛΘΑ ΜΕΊΝΕΙ ΜΕ ΑΠΌ ΤΟ ΘΕΊΟ ΒΑΣΊΛΙΑ | | ΠΑΡΑΚΆΤΩ, ΈΝΑ ΡΥΆΚΙ ΜΟΥΡΜΟΎΡΙΖΕ ΓΛΥΚΆ, ΚΥΛΏΝΤΑΣ ΤΑ ΚΡΥΣΤΑΛΛΈΝΙΑ ΝΕΡΆ ΤΟΥ ΑΝΆΜΕΣΑ ΣΤΑ ΠΥΚΝΆ ΧΑΜΌΔΕΝΤΡΑ. | ΠΑΡΑΚΆΤΩ ΈΝΑ ΡΥΆΚΙ ΜΟΥΡΜΟΎΡΙΖΕ ΓΛΥΚΆ ΚΥΛΏΝΤΑΣ ΤΑ ΚΡΥΣΤΑΛΛΈΝΙΑ ΝΕΡΆ ΤΟΥ ΑΝΆΜΕΣΑ ΣΤΑ ΠΥΚΡΆ ΧΑΜΌΔΕΝΤΡΑ | | ΠΡΆΓΜΑΤΙ, ΕΊΝΑΙ ΑΣΤΕΊΟ ΝΑ ΠΆΡΕΙ Ο ΔΙΆΒΟΛΟΣ | ΠΡΆΓΜΑΤΗ ΕΊΝΑΙ ΑΣΤΕΊΟ ΝΑ ΠΆΡΕΙ Ο ΔΙΆΒΟΛΟΣ | ## Evaluation The model can be evaluated as follows on the Greek test data of Common Voice. **Test Result**: In the table below I report the Word Error Rate (WER) and the Character Error Rate (CER) of the model. I ran the evaluation script described above on other models as well (on 2021-04-22). Note that the table below may show different results from those already reported, this may have been caused due to some specificity of the other evaluation scripts used. | Model | WER | CER | | ------------- | ------------- | ------------- | | lighteternal/wav2vec2-large-xlsr-53-greek | **10.13%** | **2.66%** | | jonatasgrosman/wav2vec2-large-xlsr-53-greek | 11.62% | 3.36% | | vasilis/wav2vec2-large-xlsr-53-greek | 19.09% | 5.88% | | PereLluis13/wav2vec2-large-xlsr-53-greek | 20.16% | 5.71% | ## Citation If you want to cite this model you can use this:",
+    "model_explanation_gemini": "Fine-tuned for Greek speech recognition, converting 16kHz audio input to text with a word error rate of 11.62% and character error rate of 3.36% on Common Voice data."
+}

@@ -1,0 +1,19 @@
+{
+    "model_id": "timm/ViT-SO400M-16-SigLIP2-384",
+    "downloads": 95531,
+    "tags": [
+        "open_clip",
+        "safetensors",
+        "siglip",
+        "siglip2",
+        "vision",
+        "zero-shot-image-classification",
+        "dataset:webli",
+        "arxiv:2502.14786",
+        "arxiv:2303.15343",
+        "license:apache-2.0",
+        "region:us"
+    ],
+    "description": "--- tags: - siglip - siglip2 - vision library_name: open_clip pipeline_tag: zero-shot-image-classification license: apache-2.0 datasets: - webli --- # Model card for ViT-SO400M-16-SigLIP2-384 ## Model Details A SigLIP 2 Vision-Lanuage model trained on WebLI. This model has been converted for use in OpenCLIP from the original JAX checkpoints in Big Vision. ## Model Details - **Model Type:** Contrastive Image-Text, Zero-Shot Image Classification. - **Original:** - **Dataset:** WebLI - **Papers:** - SigLIP 2: Multilingual Vision-Language Encoders with Improved Semantic Understanding, Localization, and Dense Features: - Sigmoid loss for language image pre-training: ## Model Usage ## Citation",
+    "model_explanation_gemini": "A SigLIP 2 vision-language model trained on WebLI for zero-shot image classification using contrastive image-text learning."
+}

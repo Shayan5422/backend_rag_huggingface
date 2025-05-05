@@ -1,0 +1,16 @@
+{
+    "model_id": "neulab/codebert-python",
+    "downloads": 1482227,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "roberta",
+        "fill-mask",
+        "arxiv:2302.05527",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "This is a model, trained for 1,000,000 steps (with ) on **Python** code from the dataset, on the masked-language-modeling task. It is intended to be used in CodeBERTScore: but can be used for any other model or task. For more information, see: ## Citation If you use this model for research, please cite:",
+    "model_explanation_gemini": "Trained on Python code for masked-language modeling, primarily intended for CodeBERTScore but adaptable to other tasks."
+}

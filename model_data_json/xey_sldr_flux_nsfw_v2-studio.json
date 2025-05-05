@@ -1,0 +1,17 @@
+{
+    "model_id": "xey/sldr_flux_nsfw_v2-studio",
+    "downloads": 96600,
+    "tags": [
+        "diffusers",
+        "text-to-image",
+        "template:diffusion-lora",
+        "lora",
+        "flux",
+        "flux dev",
+        "base_model:black-forest-labs/FLUX.1-dev",
+        "base_model:adapter:black-forest-labs/FLUX.1-dev",
+        "region:us"
+    ],
+    "description": "--- tags: - text-to-image - template:diffusion-lora - lora - diffusers - flux - flux dev base_model: black-forest-labs/FLUX.1-dev --- Source",
+    "model_explanation_gemini": "Generates NSFW images from text prompts using a LoRA adaptation of the FLUX.1-dev diffusion model."
+}

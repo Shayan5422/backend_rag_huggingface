@@ -1,0 +1,19 @@
+{
+    "model_id": "microsoft/swinv2-tiny-patch4-window16-256",
+    "downloads": 414107,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "swinv2",
+        "image-classification",
+        "vision",
+        "dataset:imagenet-1k",
+        "arxiv:2111.09883",
+        "license:apache-2.0",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 tags: - vision - image-classification datasets: - imagenet-1k widget: - src: example_title: Tiger - src: example_title: Teapot - src: example_title: Palace --- # Swin Transformer v2 (tiny-sized model) Swin Transformer v2 model pre-trained on ImageNet-1k at resolution 256x256. It was introduced in the paper Swin Transformer V2: Scaling Up Capacity and Resolution by Liu et al. and first released in this repository. Disclaimer: The team releasing Swin Transformer v2 did not write a model card for this model so this model card has been written by the Hugging Face team. ## Model description The Swin Transformer is a type of Vision Transformer. It builds hierarchical feature maps by merging image patches (shown in gray) in deeper layers and has linear computation complexity to input image size due to computation of self-attention only within each local window (shown in red). It can thus serve as a general-purpose backbone for both image classification and dense recognition tasks. In contrast, previous vision Transformers produce feature maps of a single low resolution and have quadratic computation complexity to input image size due to computation of self-attention globally. Swin Transformer v2 adds 3 main improvements: 1) a residual-post-norm method combined with cosine attention to improve training stability; 2) a log-spaced continuous position bias method to effectively transfer models pre-trained using low-resolution images to downstream tasks with high-resolution inputs; 3) a self-supervised pre-training method, SimMIM, to reduce the needs of vast labeled images. !model image Source ## Intended uses & limitations You can use the raw model for image classification. See the model hub to look for fine-tuned versions on a task that interests you. ### How to use Here is how to use this model to classify an image of the COCO 2017 dataset into one of the 1,000 ImageNet classes: For more code examples, we refer to the documentation. ### BibTeX entry and citation info",
+    "model_explanation_gemini": "Pre-trained on ImageNet-1k for image classification, this Swin Transformer v2 model efficiently processes 256x256 resolution images using hierarchical feature maps and local window self-attention."
+}

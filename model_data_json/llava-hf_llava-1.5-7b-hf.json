@@ -1,0 +1,19 @@
+{
+    "model_id": "llava-hf/llava-1.5-7b-hf",
+    "downloads": 653761,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "llava",
+        "image-text-to-text",
+        "vision",
+        "conversational",
+        "en",
+        "dataset:liuhaotian/LLaVA-Instruct-150K",
+        "license:llama2",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: - en datasets: - liuhaotian/LLaVA-Instruct-150K pipeline_tag: image-text-to-text arxiv: 2304.08485 license: llama2 tags: - vision - image-text-to-text --- # LLaVA Model Card !image/png Below is the model card of Llava model 7b, which is copied from the original Llava model card that you can find here. Check out also the Google Colab demo to run Llava on a free-tier Google Colab instance: and add the token to the location where you want to query images: ### Using : Below we used []( checkpoint. ### Using pure : Below is an example script to run generation in precision on a GPU device: ----------- From transformers>=v4.48, you can also pass image url or local path to the conversation history, and let the chat template handle the rest. Chat template will load the image for you and return inputs in which you can pass directly to ### Model optimization #### 4-bit quantization through library First make sure to install , and make sure to have access to a CUDA compatible GPU device. Simply change the snippet above with: #### Use Flash-Attention 2 to further speed-up generation First make sure to install . Refer to the original repository of Flash Attention regarding that package installation. Simply change the snippet above with: ## License Llama 2 is licensed under the LLAMA 2 Community License, Copyright (c) Meta Platforms, Inc. All Rights Reserved.",
+    "model_explanation_gemini": "Generates text responses from input images and text prompts, combining vision and language processing."
+}

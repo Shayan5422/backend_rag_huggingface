@@ -1,0 +1,24 @@
+{
+    "model_id": "pyannote/wespeaker-voxceleb-resnet34-LM",
+    "downloads": 16472763,
+    "tags": [
+        "pyannote-audio",
+        "pytorch",
+        "pyannote",
+        "pyannote-audio-model",
+        "wespeaker",
+        "audio",
+        "voice",
+        "speech",
+        "speaker",
+        "speaker-recognition",
+        "speaker-verification",
+        "speaker-identification",
+        "speaker-embedding",
+        "dataset:voxceleb",
+        "license:cc-by-4.0",
+        "region:us"
+    ],
+    "description": "--- tags: - pyannote - pyannote-audio - pyannote-audio-model - wespeaker - audio - voice - speech - speaker - speaker-recognition - speaker-verification - speaker-identification - speaker-embedding datasets: - voxceleb license: cc-by-4.0 inference: false --- Using this open-source model in production? Consider switching to pyannoteAI for better and faster options. # 🎹 Wrapper around wespeaker-voxceleb-resnet34-LM This model requires version 3.1 or higher. This is a wrapper around WeSpeaker pretrained speaker embedding model, for use in . ## Basic usage ## Advanced usage ### Running on GPU ### Extract embedding from an excerpt ### Extract embeddings using a sliding window ## License According to this page: > The pretrained model in WeNet follows the license of it's corresponding dataset. For example, the pretrained model on VoxCeleb follows Creative Commons Attribution 4.0 International License., since it is used as license of the VoxCeleb dataset, see ## Citation",
+    "model_explanation_gemini": "Generates speaker embeddings for tasks like speaker recognition, verification, and identification using a WeSpeaker pretrained model on VoxCeleb data."
+}

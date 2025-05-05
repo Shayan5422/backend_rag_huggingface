@@ -1,0 +1,22 @@
+{
+    "model_id": "openvla/openvla-7b",
+    "downloads": 1621806,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "openvla",
+        "feature-extraction",
+        "robotics",
+        "vla",
+        "image-text-to-text",
+        "multimodal",
+        "pretraining",
+        "custom_code",
+        "en",
+        "arxiv:2406.09246",
+        "license:mit",
+        "region:us"
+    ],
+    "description": "--- library_name: transformers tags: - robotics - vla - image-text-to-text - multimodal - pretraining license: mit language: - en pipeline_tag: image-text-to-text --- # OpenVLA 7B OpenVLA 7B () is an open vision-language-action model trained on 970K robot manipulation episodes from the Open X-Embodiment dataset. The model takes language instructions and camera images as input and generates robot actions. It supports controlling multiple robots out-of-the-box, and can be quickly adapted for new robot domains via (parameter-efficient) fine-tuning. All OpenVLA checkpoints, as well as our training codebase are released under an MIT License. For full details, please read our paper and see our project page. ## Model Summary - **Developed by:** The OpenVLA team consisting of researchers from Stanford, UC Berkeley, Google Deepmind, and the Toyota Research Institute. - **Model type:** Vision-language-action (language, image => robot actions) - **Language(s) (NLP):** en - **License:** MIT - **Finetuned from:** []( a VLM trained from: + **Vision Backbone**: DINOv2 ViT-L/14 and SigLIP ViT-So400M/14 + **Language Model**: Llama-2 - **Pretraining Dataset:** Open X-Embodiment -- specific component datasets can be found here. - **Repository:** - **Paper:** OpenVLA: An Open-Source Vision-Language-Action Model - **Project Page & Videos:** ## Uses OpenVLA models take a language instruction and a camera image of a robot workspace as input, and predict (normalized) robot actions consisting of 7-DoF end-effector deltas of the form (x, y, z, roll, pitch, yaw, gripper). To execute on an actual robot platform, actions need to be *un-normalized* subject to statistics computed on a per-robot, per-dataset basis. See our repository for more information. OpenVLA models can be used zero-shot to control robots for specific combinations of embodiments and domains seen in the Open-X pretraining mixture (e.g., for BridgeV2 environments with a Widow-X robot). They can also be efficiently *fine-tuned* for new tasks and robot setups given minimal demonstration data; see here. **Out-of-Scope:** OpenVLA models do not zero-shot generalize to new (unseen) robot embodiments, or setups that are not represented in the pretraining mix; in these cases, we suggest collecting a dataset of demonstrations on the desired setup, and fine-tuning OpenVLA models instead. ## Getting Started OpenVLA 7B can be used to control multiple robots for domains represented in the pretraining mixture out-of-the-box. For example, here is an example for loading for zero-shot instruction following in the [BridgeV2 environments] with a Widow-X robot: For more examples, including scripts for fine-tuning OpenVLA models on your own robot demonstration datasets, see our training repository. ## Citation **BibTeX:**",
+    "model_explanation_gemini": "OpenVLA-7B is a vision-language-action model that generates robot actions from language instructions and camera images, trained on 970K robot manipulation episodes for controlling multiple robots, with support for fine-tuning on new domains."
+}

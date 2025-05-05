@@ -1,0 +1,19 @@
+{
+    "model_id": "tuner007/pegasus_paraphrase",
+    "downloads": 198999,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "pegasus",
+        "text2text-generation",
+        "paraphrasing",
+        "seq2seq",
+        "en",
+        "license:apache-2.0",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: en license: apache-2.0 tags: - pegasus - paraphrasing - seq2seq --- ## Model description PEGASUS fine-tuned for paraphrasing ## Model in Action 🚀 #### Example: > Created by Arpit Rajauria ![Twitter icon](",
+    "model_explanation_gemini": "Fine-tunes PEGASUS for generating paraphrased versions of input text."
+}

@@ -1,0 +1,19 @@
+{
+    "model_id": "Davlan/bert-base-multilingual-cased-ner-hrl",
+    "downloads": 369492,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "tf",
+        "onnx",
+        "safetensors",
+        "bert",
+        "token-classification",
+        "license:afl-3.0",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: afl-3.0 --- Hugging Face's logo --- language: - ar - de - en - es - fr - it - lv - nl - pt - zh - multilingual --- # bert-base-multilingual-cased-ner-hrl ## Model description **bert-base-multilingual-cased-ner-hrl** is a **Named Entity Recognition** model for 10 high resourced languages (Arabic, German, English, Spanish, French, Italian, Latvian, Dutch, Portuguese and Chinese) based on a fine-tuned mBERT base model. It has been trained to recognize three types of entities: location (LOC), organizations (ORG), and person (PER). Specifically, this model is a *bert-base-multilingual-cased* model that was fine-tuned on an aggregation of 10 high-resourced languages ## Intended uses & limitations #### How to use You can use this model with Transformers *pipeline* for NER. #### Limitations and bias This model is limited by its training dataset of entity-annotated news articles from a specific span of time. This may not generalize well for all use cases in different domains. ## Training data The training data for the 10 languages are from: Language|Dataset -|- Arabic | ANERcorp German | conll 2003 English | conll 2003 Spanish | conll 2002 French | Europeana Newspapers Italian | Italian I-CAB Latvian | Latvian NER Dutch | conll 2002 Portuguese |Paramopama + Second Harem Chinese | MSRA The training dataset distinguishes between the beginning and continuation of an entity so that if there are back-to-back entities of the same type, the model can output where the second entity begins. As in the dataset, each token will be classified as one of the following classes: Abbreviation|Description -|- O|Outside of a named entity B-PER |Beginning of a person’s name right after another person’s name I-PER |Person’s name B-ORG |Beginning of an organisation right after another organisation I-ORG |Organisation B-LOC |Beginning of a location right after another location I-LOC |Location ## Training procedure This model was trained on NVIDIA V100 GPU with recommended hyperparameters from HuggingFace code.",
+    "model_explanation_gemini": "Fine-tuned multilingual BERT model for named entity recognition in 10 languages, identifying locations, organizations, and persons in text."
+}

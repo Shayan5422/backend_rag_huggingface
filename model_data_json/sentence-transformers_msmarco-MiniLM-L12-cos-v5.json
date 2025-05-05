@@ -1,0 +1,25 @@
+{
+    "model_id": "sentence-transformers/msmarco-MiniLM-L12-cos-v5",
+    "downloads": 101403,
+    "tags": [
+        "sentence-transformers",
+        "pytorch",
+        "tf",
+        "jax",
+        "onnx",
+        "safetensors",
+        "openvino",
+        "bert",
+        "feature-extraction",
+        "sentence-similarity",
+        "transformers",
+        "en",
+        "arxiv:1908.10084",
+        "autotrain_compatible",
+        "text-embeddings-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: - en library_name: sentence-transformers tags: - sentence-transformers - feature-extraction - sentence-similarity - transformers pipeline_tag: sentence-similarity --- # msmarco-MiniLM-L12-cos-v5 This is a sentence-transformers model: It maps sentences & paragraphs to a 768 dimensional dense vector space and was designed for **semantic search**. It has been trained on 500k (query, answer) pairs from the MS MARCO Passages dataset. For an introduction to semantic search, have a look at: SBERT.net - Semantic Search ## Usage (Sentence-Transformers) Using this model becomes easy when you have sentence-transformers installed: Then you can use the model like this: ## Usage (HuggingFace Transformers) Without sentence-transformers, you can use the model like this: First, you pass your input through the transformer model, then you have to apply the correct pooling-operation on-top of the contextualized word embeddings. ## Technical Details In the following some technical details how this model must be used: | Setting | Value | | --- | :---: | | Dimensions | 768 | | Produces normalized embeddings | Yes | | Pooling-Method | Mean pooling | | Suitable score functions | dot-product (), cosine-similarity (), or euclidean distance | Note: When loaded with , this model produces normalized embeddings with length 1. In that case, dot-product and cosine-similarity are equivalent. dot-product is preferred as it is faster. Euclidean distance is proportional to dot-product and can also be used. ## Citing & Authors This model was trained by sentence-transformers. If you find this model helpful, feel free to cite our publication Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks:",
+    "model_explanation_gemini": "Maps sentences and paragraphs to 768-dimensional vectors for semantic search, trained on MS MARCO query-answer pairs."
+}

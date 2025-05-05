@@ -1,0 +1,23 @@
+{
+    "model_id": "jonatasgrosman/wav2vec2-large-xlsr-53-persian",
+    "downloads": 305945,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "jax",
+        "wav2vec2",
+        "automatic-speech-recognition",
+        "audio",
+        "speech",
+        "xlsr-fine-tuning-week",
+        "fa",
+        "dataset:common_voice",
+        "doi:10.57967/hf/3576",
+        "license:apache-2.0",
+        "model-index",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: fa datasets: - common_voice metrics: - wer - cer tags: - audio - automatic-speech-recognition - speech - xlsr-fine-tuning-week license: apache-2.0 model-index: - name: XLSR Wav2Vec2 Persian by Jonatas Grosman results: - task: name: Speech Recognition type: automatic-speech-recognition dataset: name: Common Voice fa type: common_voice args: fa metrics: - name: Test WER type: wer value: 30.12 - name: Test CER type: cer value: 7.37 --- # Fine-tuned XLSR-53 large model for speech recognition in Persian Fine-tuned facebook/wav2vec2-large-xlsr-53 on Persian using the train and validation splits of Common Voice 6.1. When using this model, make sure that your speech input is sampled at 16kHz. This model has been fine-tuned thanks to the GPU credits generously given by the OVHcloud :) The script used for training can be found here: ## Usage The model can be used directly (without a language model) as follows... Using the HuggingSound library: Writing your own inference script: | Reference | Prediction | | ------------- | ------------- | | از مهمونداری کنار بکشم | از مهمانداری کنار بکشم | | برو از مهرداد بپرس. | برو از ماقدعاد به پرس | | خب ، تو چیكار می كنی؟ | خوب تو چیکار می کنی | | مسقط پایتخت عمان در عربی به معنای محل سقوط است | مسقط پایتخت عمان در عربی به بعنای محل سقوط است | | آه، نه اصلاُ! | اهنه اصلا | | توانست | توانست | | قصیده فن شعر میگوید ای دوستان | قصیده فن شعر میگوید ایدوستون | | دو استایل متفاوت دارین | دوبوست داریل و متفاوت بری | | دو روز قبل از کریسمس ؟ | اون مفتود پش پشش | | ساعت های کاری چیست؟ | این توری که موشیکل خب | ## Evaluation The model can be evaluated as follows on the Persian test data of Common Voice. **Test Result**: In the table below I report the Word Error Rate (WER) and the Character Error Rate (CER) of the model. I ran the evaluation script described above on other models as well (on 2021-04-22). Note that the table below may show different results from those already reported, this may have been caused due to some specificity of the other evaluation scripts used. | Model | WER | CER | | ------------- | ------------- | ------------- | | jonatasgrosman/wav2vec2-large-xlsr-53-persian | **30.12%** | **7.37%** | | m3hrdadfi/wav2vec2-large-xlsr-persian-v2 | 33.85% | 8.79% | | m3hrdadfi/wav2vec2-large-xlsr-persian | 34.37% | 8.98% | ## Citation If you want to cite this model you can use this:",
+    "model_explanation_gemini": "Fine-tuned for Persian speech recognition, achieving 30.12% WER and 7.37% CER on Common Voice data."
+}

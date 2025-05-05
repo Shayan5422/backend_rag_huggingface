@@ -1,0 +1,25 @@
+{
+    "model_id": "opensearch-project/opensearch-neural-sparse-encoding-doc-v2-distill",
+    "downloads": 1697608,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "safetensors",
+        "distilbert",
+        "fill-mask",
+        "learned sparse",
+        "opensearch",
+        "retrieval",
+        "passage-retrieval",
+        "document-expansion",
+        "bag-of-words",
+        "en",
+        "arxiv:2411.04403",
+        "license:apache-2.0",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: en license: apache-2.0 tags: - learned sparse - opensearch - transformers - retrieval - passage-retrieval - document-expansion - bag-of-words --- # opensearch-neural-sparse-encoding-doc-v2-distill ## Select the model The model should be selected considering search relevance, model inference and retrieval efficiency(FLOPS). We benchmark models' **zero-shot performance** on a subset of BEIR benchmark: TrecCovid,NFCorpus,NQ,HotpotQA,FiQA,ArguAna,Touche,DBPedia,SCIDOCS,FEVER,Climate FEVER,SciFact,Quora. Overall, the v2 series of models have better search relevance, efficiency and inference speed than the v1 series. The specific advantages and disadvantages may vary across different datasets. | Model | Inference-free for Retrieval | Model Parameters | AVG NDCG@10 | AVG FLOPS | |-------|------------------------------|------------------|-------------|-----------| | opensearch-neural-sparse-encoding-v1 | | 133M | 0.524 | 11.4 | | opensearch-neural-sparse-encoding-v2-distill | | 67M | 0.528 | 8.3 | | opensearch-neural-sparse-encoding-doc-v1 | ✔️ | 133M | 0.490 | 2.3 | | opensearch-neural-sparse-encoding-doc-v2-distill | ✔️ | 67M | 0.504 | 1.8 | | opensearch-neural-sparse-encoding-doc-v2-mini | ✔️ | 23M | 0.497 | 1.7 | ## Overview - **Paper**: Towards Competitive Search Relevance For Inference-Free Learned Sparse Retrievers - **Fine-tuning sample**: opensearch-sparse-model-tuning-sample This is a learned sparse retrieval model. It encodes the documents to 30522 dimensional **sparse vectors**. For queries, it just use a tokenizer and a weight look-up table to generate sparse vectors. The non-zero dimension index means the corresponding token in the vocabulary, and the weight means the importance of the token. And the similarity score is the inner product of query/document sparse vectors. The training datasets includes MS MARCO, eli5_question_answer, squad_pairs, WikiAnswers, yahoo_answers_title_question, gooaq_pairs, stackexchange_duplicate_questions_body_body, wikihow, S2ORC_title_abstract, stackexchange_duplicate_questions_title-body_title-body, yahoo_answers_question_answer, searchQA_top5_snippets, stackexchange_duplicate_questions_title_title, yahoo_answers_title_answer. OpenSearch neural sparse feature supports learned sparse retrieval with lucene inverted index. Link: The indexing and search can be performed with OpenSearch high-level API. ## Usage (HuggingFace) This model is supposed to run inside OpenSearch cluster. But you can also use it outside the cluster, with HuggingFace models API. The above code sample shows an example of neural sparse search. Although there is no overlap token in original query and document, but this model performs a good match. ## Detailed Search Relevance <div style=\"overflow-x: auto;\"> | Model | Average | Trec Covid | NFCorpus | NQ | HotpotQA | FiQA | ArguAna | Touche | DBPedia | SCIDOCS | FEVER | Climate FEVER | SciFact | Quora | |-------|---------|------------|----------|----|----------|------|---------|--------|---------|---------|-------|---------------|---------|-------| | opensearch-neural-sparse-encoding-v1 | 0.524 | 0.771 | 0.360 | 0.553 | 0.697 | 0.376 | 0.508 | 0.278 | 0.447 | 0.164 | 0.821 | 0.263 | 0.723 | 0.856 | | opensearch-neural-sparse-encoding-v2-distill | 0.528 | 0.775 | 0.347 | 0.561 | 0.685 | 0.374 | 0.551 | 0.278 | 0.435 | 0.173 | 0.849 | 0.249 | 0.722 | 0.863 | | opensearch-neural-sparse-encoding-doc-v1 | 0.490 | 0.707 | 0.352 | 0.521 | 0.677 | 0.344 | 0.461 | 0.294 | 0.412 | 0.154 | 0.743 | 0.202 | 0.716 | 0.788 | | opensearch-neural-sparse-encoding-doc-v2-distill | 0.504 | 0.690 | 0.343 | 0.528 | 0.675 | 0.357 | 0.496 | 0.287 | 0.418 | 0.166 | 0.818 | 0.224 | 0.715 | 0.841 | | opensearch-neural-sparse-encoding-doc-v2-mini | 0.497 | 0.709 | 0.336 | 0.510 | 0.666 | 0.338 | 0.480 | 0.285 | 0.407 | 0.164 | 0.812 | 0.216 | 0.699 | 0.837 | </div> ## License This project is licensed under the Apache v2.0 License. ## Copyright Copyright OpenSearch Contributors. See NOTICE for details.",
+    "model_explanation_gemini": "Generates sparse vector representations of documents for efficient retrieval using token importance weights without requiring query inference."
+}

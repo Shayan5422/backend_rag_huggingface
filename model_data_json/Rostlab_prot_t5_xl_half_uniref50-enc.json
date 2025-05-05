@@ -1,0 +1,16 @@
+{
+    "model_id": "Rostlab/prot_t5_xl_half_uniref50-enc",
+    "downloads": 409336,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "t5",
+        "protein language model",
+        "dataset:UniRef50",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- tags: - protein language model datasets: - UniRef50 --- # Encoder only ProtT5-XL-UniRef50, half-precision model An encoder-only, half-precision version of the ProtT5-XL-UniRef50 model. The original model and it's pretraining were introduced in this paper and first released in this repository. This model is trained on uppercase amino acids: it only works with capital letter amino acids. ## Model description ProtT5-XL-UniRef50 is based on the model and was pretrained on a large corpus of protein sequences in a self-supervised fashion. This means it was pretrained on the raw protein sequences only, with no humans labelling them in any way (which is why it can use lots of publicly available data) with an automatic process to generate inputs and labels from those protein sequences. One important difference between this T5 model and the original T5 version is the denoising objective. The original T5-3B model was pretrained using a span denoising objective, while this model was pretrained with a Bart-like MLM denoising objective. The masking probability is consistent with the original T5 training by randomly masking 15% of the amino acids in the input. This model only contains the encoder portion of the original ProtT5-XL-UniRef50 model using half precision (float16). As such, this model can efficiently be used to create protein/ amino acid representations. When used for training downstream networks/ feature extraction, these embeddings produced the same performance (established empirically by comparing on several downstream tasks). ## Intended uses & limitations This version of the original ProtT5-XL-UniRef50 is mostly meant for conveniently creating amino-acid or protein embeddings with a low GPU-memory footprint without any measurable performance-decrease in our experiments. This model is fully usable on 8 GB of video RAM. ### How to use An extensive, interactive example on how to use this model for common tasks can be found on Google Colab Here is how to use this model to extract the features of a given protein sequence in PyTorch: **NOTE**: Please make sure to explicitly set the model to () otherwise, the generated embeddings will be full precision. **NOTE**: Currently (06/2022) half-precision models cannot be used on CPU. If you want to use the encoder only version on CPU, you need to cast it to its full-precision version (). ### BibTeX entry and citation info",
+    "model_explanation_gemini": "Generates half-precision protein sequence embeddings efficiently with low GPU memory usage while maintaining performance, focusing on uppercase amino acids."
+}

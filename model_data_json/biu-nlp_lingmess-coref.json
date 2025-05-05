@@ -1,0 +1,19 @@
+{
+    "model_id": "biu-nlp/lingmess-coref",
+    "downloads": 550422,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "longformer",
+        "coreference-resolution",
+        "en",
+        "dataset:ontonotes",
+        "arxiv:2205.12644",
+        "license:mit",
+        "model-index",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: - en tags: - coreference-resolution license: mit datasets: - ontonotes metrics: - CoNLL task_categories: - coreference-resolution model-index: - name: biu-nlp/lingmess-coref results: - task: type: coreference-resolution name: coreference-resolution dataset: name: ontonotes type: coreference metrics: - name: Avg. F1 type: CoNLL value: 81.4 --- ## LingMess: Linguistically Informed Multi Expert Scorers for Coreference Resolution LingMess is a linguistically motivated categorization of mention-pairs into 6 types of coreference decisions and learn a dedicated trainable scoring function for each category. This significantly improves the accuracy of the pairwise scorer as well as of the overall coreference performance on the English Ontonotes coreference corpus. Please check the official repository for more details and updates. #### Training on OntoNotes We present the test results on OntoNotes 5.0 dataset. | Model | Avg. F1 | |---------------------------------|---------| | SpanBERT-large + e2e | 79.6 | | Longformer-large + s2e | 80.3 | | **Longformer-large + LingMess** | 81.4 | ### Citation If you find LingMess useful for your work, please cite the following paper:",
+    "model_explanation_gemini": "LingMess improves coreference resolution accuracy by categorizing mention-pairs into 6 types and learning dedicated scoring functions for each, achieving 81.4 Avg. F1 on OntoNotes."
+}

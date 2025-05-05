@@ -1,0 +1,21 @@
+{
+    "model_id": "ProsusAI/finbert",
+    "downloads": 1571808,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "tf",
+        "jax",
+        "bert",
+        "text-classification",
+        "financial-sentiment-analysis",
+        "sentiment-analysis",
+        "en",
+        "arxiv:1908.10063",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: \"en\" tags: - financial-sentiment-analysis - sentiment-analysis widget: - text: \"Stocks rallied and the British pound gained.\" --- FinBERT is a pre-trained NLP model to analyze sentiment of financial text. It is built by further training the BERT language model in the finance domain, using a large financial corpus and thereby fine-tuning it for financial sentiment classification. Financial PhraseBank by Malo et al. (2014) is used for fine-tuning. For more details, please see the paper FinBERT: Financial Sentiment Analysis with Pre-trained Language Models and our related blog post on Medium. The model will give softmax outputs for three labels: positive, negative or neutral. --- About Prosus Prosus is a global consumer internet group and one of the largest technology investors in the world. Operating and investing globally in markets with long-term growth potential, Prosus builds leading consumer internet companies that empower people and enrich communities. For more information, please visit www.prosus.com. Contact information Please contact Dogu Araci dogu.araci[at]prosus[dot]com and Zulkuf Genc zulkuf.genc[at]prosus[dot]com about any FinBERT related issues and questions.",
+    "model_explanation_gemini": "Analyzes financial text sentiment, classifying it as positive, negative, or neutral using a BERT model fine-tuned on financial data."
+}

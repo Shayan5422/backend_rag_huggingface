@@ -1,0 +1,17 @@
+{
+    "model_id": "timm/inception_resnet_v2.tf_in1k",
+    "downloads": 219986,
+    "tags": [
+        "timm",
+        "pytorch",
+        "safetensors",
+        "image-classification",
+        "transformers",
+        "dataset:imagenet-1k",
+        "arxiv:1602.07261",
+        "license:apache-2.0",
+        "region:us"
+    ],
+    "description": "--- tags: - image-classification - timm - transformers library_name: timm license: apache-2.0 datasets: - imagenet-1k --- # Model card for inception_resnet_v2.tf_in1k A Inception-ResNet-v2 image classification model. Trained on ImageNet-1k paper authors. Ported from Tensorflow via Cadene's pretrained-models.pytorch. ## Model Details - **Model Type:** Image classification / feature backbone - **Model Stats:** - Params (M): 55.8 - GMACs: 13.2 - Activations (M): 25.1 - Image size: 299 x 299 - **Papers:** - - **Original:** - - - **Dataset:** ImageNet-1k ## Model Usage ### Image Classification ### Feature Map Extraction ### Image Embeddings ## Model Comparison Explore the dataset and runtime metrics of this model in timm model results. ## Citation",
+    "model_explanation_gemini": "Classifies images into categories using the Inception-ResNet-v2 architecture trained on ImageNet-1k."
+}

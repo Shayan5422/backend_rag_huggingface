@@ -1,0 +1,22 @@
+{
+    "model_id": "Qwen/Qwen2-Audio-7B-Instruct",
+    "downloads": 101518,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "qwen2_audio",
+        "text2text-generation",
+        "chat",
+        "audio",
+        "audio-text-to-text",
+        "en",
+        "arxiv:2407.10759",
+        "arxiv:2311.07919",
+        "license:apache-2.0",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 language: - en tags: - chat - audio - audio-text-to-text --- # Qwen2-Audio-7B-Instruct <a href=\" target=\"_blank\" style=\"margin: 2px;\"> <img alt=\"Chat\" src=\" style=\"display: inline-block; vertical-align: middle;\"/> </a> ## Introduction Qwen2-Audio is the new series of Qwen large audio-language models. Qwen2-Audio is capable of accepting various audio signal inputs and performing audio analysis or direct textual responses with regard to speech instructions. We introduce two distinct audio interaction modes: * voice chat: users can freely engage in voice interactions with Qwen2-Audio without text input; * audio analysis: users could provide audio and text instructions for analysis during the interaction; We release Qwen2-Audio-7B and Qwen2-Audio-7B-Instruct, which are pretrained model and chat model respectively. For more details, please refer to our Blog, GitHub, and Report. <br> ## Requirements The code of Qwen2-Audio has been in the latest Hugging face transformers and we advise you to build from source with command , or you might encounter the following error: ## Quickstart In the following, we demonstrate how to use for the inference, supporting both voice chat and audio analysis modes. Note that we have used the ChatML format for dialog, in this demo we show how to leverage for this purpose. ### Voice Chat Inference In the voice chat mode, users can freely engage in voice interactions with Qwen2-Audio without text input: ### Audio Analysis Inference In the audio analysis, users could provide both audio and text instructions for analysis: ### Batch Inference We also support batch inference: ## Citation If you find our work helpful, feel free to give us a cite.",
+    "model_explanation_gemini": "Qwen2-Audio-7B-Instruct is a chat model that processes audio inputs to perform voice interactions or analyze audio with text instructions, supporting both voice chat and audio analysis modes."
+}

@@ -1,0 +1,21 @@
+{
+    "model_id": "Qwen/Qwen1.5-0.5B-Chat",
+    "downloads": 429230,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "qwen2",
+        "text-generation",
+        "chat",
+        "conversational",
+        "en",
+        "arxiv:2309.16609",
+        "license:other",
+        "autotrain_compatible",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: other license_name: tongyi-qianwen-research license_link: >- language: - en pipeline_tag: text-generation tags: - chat --- # Qwen1.5-0.5B-Chat ## Introduction Qwen1.5 is the beta version of Qwen2, a transformer-based decoder-only language model pretrained on a large amount of data. In comparison with the previous released Qwen, the improvements include: * 8 model sizes, including 0.5B, 1.8B, 4B, 7B, 14B, 32B and 72B dense models, and an MoE model of 14B with 2.7B activated; * Significant performance improvement in human preference for chat models; * Multilingual support of both base and chat models; * Stable support of 32K context length for models of all sizes * No need of . For more details, please refer to our blog post and GitHub repo. <br> ## Model Details Qwen1.5 is a language model series including decoder language models of different model sizes. For each size, we release the base language model and the aligned chat model. It is based on the Transformer architecture with SwiGLU activation, attention QKV bias, group query attention, mixture of sliding window attention and full attention, etc. Additionally, we have an improved tokenizer adaptive to multiple natural languages and codes. For the beta version, temporarily we did not include GQA (except for 32B) and the mixture of SWA and full attention. ## Training details We pretrained the models with a large amount of data, and we post-trained the models with both supervised finetuning and direct preference optimization. ## Requirements The code of Qwen1.5 has been in the latest Hugging face transformers and we advise you to install , or you might encounter the following error: ## Quickstart Here provides a code snippet with to show you how to load the tokenizer and model and how to generate contents. For quantized models, we advise you to use the GPTQ, AWQ, and GGUF correspondents, namely , , , and . ## Tips * If you encounter code switching or other bad cases, we advise you to use our provided hyper-parameters in . ## Citation If you find our work helpful, feel free to give us a cite.",
+    "model_explanation_gemini": "Qwen1.5-0.5B-Chat is a 0.5 billion-parameter decoder-only transformer-based multilingual chat model optimized for human preference, supporting 32K context length and improved performance over previous versions."
+}

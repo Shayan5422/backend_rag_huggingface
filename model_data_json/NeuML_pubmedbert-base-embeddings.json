@@ -1,0 +1,20 @@
+{
+    "model_id": "NeuML/pubmedbert-base-embeddings",
+    "downloads": 217644,
+    "tags": [
+        "sentence-transformers",
+        "pytorch",
+        "bert",
+        "feature-extraction",
+        "sentence-similarity",
+        "transformers",
+        "en",
+        "license:apache-2.0",
+        "autotrain_compatible",
+        "text-embeddings-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- pipeline_tag: sentence-similarity tags: - sentence-transformers - feature-extraction - sentence-similarity - transformers language: en license: apache-2.0 --- # PubMedBERT Embeddings This is a PubMedBERT-base model fined-tuned using sentence-transformers. It maps sentences & paragraphs to a 768 dimensional dense vector space and can be used for tasks like clustering or semantic search. The training dataset was generated using a random sample of PubMed title-abstract pairs along with similar title pairs. PubMedBERT Embeddings produces higher quality embeddings than generalized models for medical literature. Further fine-tuning for a medical subdomain will result in even better performance. ## Usage (txtai) This model can be used to build embeddings databases with txtai for semantic search and/or as a knowledge source for retrieval augmented generation (RAG). ## Usage (Sentence-Transformers) Alternatively, the model can be loaded with sentence-transformers. ## Usage (Hugging Face Transformers) The model can also be used directly with Transformers. ## Evaluation Results Performance of this model compared to the top base models on the MTEB leaderboard is shown below. A popular smaller model was also evaluated along with the most downloaded PubMed similarity model on the Hugging Face Hub. The following datasets were used to evaluate model performance. - PubMed QA - Subset: pqa_labeled, Split: train, Pair: (question, long_answer) - PubMed Subset - Split: test, Pair: (title, text) - PubMed Summary - Subset: pubmed, Split: validation, Pair: (article, abstract) Evaluation results are shown below. The Pearson correlation coefficient is used as the evaluation metric. | Model | PubMed QA | PubMed Subset | PubMed Summary | Average | | ----------------------------------------------------------------------------- | --------- | ------------- | -------------- | --------- | | all-MiniLM-L6-v2 | 90.40 | 95.86 | 94.07 | 93.44 | | bge-base-en-v1.5 | 91.02 | 95.60 | 94.49 | 93.70 | | gte-base | 92.97 | 96.83 | 96.24 | 95.35 | | **pubmedbert-base-embeddings** | **93.27** | **97.07** | **96.58** | **95.64** | | S-PubMedBert-MS-MARCO | 90.86 | 93.33 | 93.54 | 92.58 | ## Training The model was trained with the parameters: **DataLoader**: of length 20191 with parameters: **Loss**: with parameters: Parameters of the fit() method: ## Full Model Architecture ## More Information Read more about this model and how it was built in this article.",
+    "model_explanation_gemini": "Generates 768-dimensional embeddings for medical texts to enhance semantic search and clustering tasks in biomedical literature."
+}

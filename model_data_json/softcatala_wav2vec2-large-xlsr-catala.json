@@ -1,0 +1,23 @@
+{
+    "model_id": "softcatala/wav2vec2-large-xlsr-catala",
+    "downloads": 93946,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "jax",
+        "wav2vec2",
+        "automatic-speech-recognition",
+        "audio",
+        "speech",
+        "xlsr-fine-tuning-week",
+        "ca",
+        "dataset:common_voice",
+        "dataset:parlament_parla",
+        "license:apache-2.0",
+        "model-index",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: ca datasets: - common_voice - parlament_parla metrics: - wer tags: - audio - automatic-speech-recognition - speech - xlsr-fine-tuning-week license: apache-2.0 model-index: - name: Catalan XLSR Wav2Vec2 Large results: - task: name: Speech Recognition type: automatic-speech-recognition datasets: - name: Common Voice ca type: common_voice args: ca - name: ParlamentParla url: metrics: - name: Test WER type: wer value: 6.92 - name: Google Crowsourced Corpus WER type: wer value: 12.99 - name: Audiobook “La llegenda de Sant Jordi” WER type: wer value: 13.23 --- # Wav2Vec2-Large-XLSR-Català Fine-tuned facebook/wav2vec2-large-xlsr-53 on Catalan language using the Common Voice and ParlamentParla datasets. **Attention:** The split train/dev/test used does not fully map with the CommonVoice 6.1 dataset. A custom split was used combining both the CommonVoice and ParlamentParla dataset and can be found here. Evaluating on the CV test dataset will produce a biased WER as 1144 audio files of that dataset were used in training/evaluation of this model. WER was calculated using this test.csv which was not seen by the model during training/evaluation. You can find training and evaluation scripts in the github repository ccoreilly/wav2vec2-catala When using this model, make sure that your speech input is sampled at 16kHz. ## Results Word error rate was evaluated on the following datasets unseen by the model: | Dataset | WER | | ------- | --- | | Test split CV+ParlamentParla) | 6.92% | | Google Crowsourced Corpus | 12.99% | | Audiobook “La llegenda de Sant Jordi” | 13.23% | ## Usage The model can be used directly (without a language model) as follows:",
+    "model_explanation_gemini": "Fine-tuned for automatic speech recognition in Catalan, achieving low word error rates on datasets like Common Voice and ParlamentParla."
+}

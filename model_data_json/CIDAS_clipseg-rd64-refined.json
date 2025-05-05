@@ -1,0 +1,17 @@
+{
+    "model_id": "CIDAS/clipseg-rd64-refined",
+    "downloads": 11179865,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "safetensors",
+        "clipseg",
+        "vision",
+        "image-segmentation",
+        "arxiv:2112.10003",
+        "license:apache-2.0",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 tags: - vision - image-segmentation inference: false --- # CLIPSeg model CLIPSeg model with reduce dimension 64, refined (using a more complex convolution). It was introduced in the paper Image Segmentation Using Text and Image Prompts by Lüddecke et al. and first released in this repository. # Intended use cases This model is intended for zero-shot and one-shot image segmentation. # Usage Refer to the documentation.",
+    "model_explanation_gemini": "Performs zero-shot and one-shot image segmentation using text and image prompts with a refined CLIPSeg architecture."
+}

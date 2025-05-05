@@ -1,0 +1,14 @@
+{
+    "model_id": "redstonehero/animesh_prunedv21",
+    "downloads": 112749,
+    "tags": [
+        "diffusers",
+        "license:creativeml-openrail-m",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "diffusers:StableDiffusionPipeline",
+        "region:us"
+    ],
+    "description": "--- license: creativeml-openrail-m library_name: diffusers ---",
+    "model_explanation_gemini": "Generates anime-style images using diffusion techniques under the CreativeML OpenRAIL-M license."
+}

@@ -1,0 +1,24 @@
+{
+    "model_id": "jinaai/jina-clip-v1",
+    "downloads": 108965,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "onnx",
+        "safetensors",
+        "jina_clip",
+        "feature-extraction",
+        "sentence-similarity",
+        "mteb",
+        "clip",
+        "vision",
+        "transformers.js",
+        "custom_code",
+        "en",
+        "arxiv:2405.20204",
+        "license:apache-2.0",
+        "region:eu"
+    ],
+    "description": "--- tags: - feature-extraction - sentence-similarity - mteb - clip - vision - transformers.js language: en inference: false license: apache-2.0 library_name: transformers --- <br><br> <p align=\"center\"> <img src=\" alt=\"Jina AI: Your Search Foundation, Supercharged!\" width=\"150px\"> </p> <p align=\"center\"> <b>The embedding set trained by <a href=\" AI</b></a>.</b> </p> <p align=\"center\"> <b>Jina CLIP: your CLIP model is also your text retriever!</b> </p> ## Intended Usage & Model Info is a state-of-the-art English **multimodal (text-image) embedding model**. Traditional text embedding models, such as jina-embeddings-v2-base-en, excel in text-to-text retrieval but incapable of cross-modal tasks. Models like openai/clip-vit-base-patch32 effectively align image and text embeddings but are not optimized for text-to-text retrieval due to their training methodologies and context limitations. bridges this gap by offering robust performance in both domains. Its text component matches the retrieval efficiency of , while its overall architecture sets a new benchmark for cross-modal retrieval. This dual capability makes it an excellent tool for multimodal retrieval-augmented generation (MuRAG) applications, enabling seamless text-to-text and text-to-image searches within a single model. ## Data & Parameters Check out our paper ## Usage 1. The easiest way to starting using jina-clip-v1-en is to use Jina AI's Embeddings API. 2. Alternatively, you can use Jina CLIP directly via transformers/sentence-transformers package. or sentence-transformers: 3. JavaScript developers can use Jina CLIP via the Transformers.js library. Note that to use this model, you need to install Transformers.js v3 from source using . ## Performance ### Text-Image Retrieval | Name | Flickr Image Retr. R@1 | Flickr Image Retr. R@5 | Flickr Text Retr. R@1 | Flickr Text Retr. R@5 | |------------------|-------------------------|-------------------------|-----------------------|-----------------------| | ViT-B-32 | 0.597 | 0.8398 | 0.781 | 0.938 | | ViT-B-16 | 0.6216 | 0.8572 | 0.822 | 0.966 | | jina-clip | 0.6748 | 0.8902 | 0.811 | 0.965 | | Name | MSCOCO Image Retr. R@1 | MSCOCO Image Retr. R@5 | MSCOCO Text Retr. R@1 | MSCOCO Text Retr. R@5 | |------------------|-------------------------|-------------------------|-----------------------|-----------------------| | ViT-B-32 | 0.342 | 0.6001 | 0.5234 | 0.7634 | | ViT-B-16 | 0.3309 | 0.5842 | 0.5242 | 0.767 | | jina-clip | 0.4111 | 0.6644 | 0.5544 | 0.7904 | ### Text-Text Retrieval | Name | STS12 | STS15 | STS17 | STS13 | STS14 | STS16 | STS22 | STSBenchmark | SummEval | |-----------------------|--------|--------|--------|--------|--------|--------|--------|--------------|----------| | jina-embeddings-v2 | 0.7427 | 0.8755 | 0.8888 | 0.833 | 0.7917 | 0.836 | 0.6346 | 0.8404 | 0.3056 | | jina-clip | 0.7352 | 0.8746 | 0.8976 | 0.8323 | 0.7868 | 0.8377 | 0.6583 | 0.8493 | 0.3048 | | Name | ArguAna | FiQA2018 | NFCorpus | Quora | SCIDOCS | SciFact | TRECCOVID | |--------------------|---------|----------|----------|-------|---------|---------|-----------| | jina-embeddings-v2 | 0.4418 | 0.4158 | 0.3245 | 0.882 | 0.1986 | 0.6668 | 0.6591 | | jina-clip | 0.4933 | 0.3827 | 0.3352 | 0.8789| 0.2024 | 0.6734 | 0.7161 | ## Contact Join our Discord community and chat with other community members about ideas. ## Citation If you find useful in your research, please cite the following paper: ## FAQ ### I encounter this problem, what should I do? There was a bug in Transformers library between 4.40.x to 4.41.1. You can update transformers to >4.41.2 or <=4.40.0 ### Given one query, how can I merge its text-text and text-image cosine similarity? Our emperical study shows that text-text cosine similarity is normally larger than text-image cosine similarity! If you want to merge two scores, we recommended 2 ways: 1. weighted average of text-text sim and text-image sim: 2. apply z-score normalization before merging scores:",
+    "model_explanation_gemini": "Jina CLIP is a multimodal embedding model excelling in both text-to-text and text-to-image retrieval tasks, enabling seamless cross-modal searches within a single model."
+}

@@ -1,0 +1,19 @@
+{
+    "model_id": "dariolopez/roberta-base-bne-finetuned-msmarco-qa-es-mnrl-mn",
+    "downloads": 274718,
+    "tags": [
+        "sentence-transformers",
+        "pytorch",
+        "roberta",
+        "sentence-similarity",
+        "es",
+        "dataset:IIC/ms_marco_es",
+        "license:apache-2.0",
+        "autotrain_compatible",
+        "text-embeddings-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 language: - es library_name: sentence-transformers pipeline_tag: sentence-similarity datasets: - IIC/ms_marco_es --- # Model Description This is a sentence-transformers model: It maps sentences & paragraphs to a 768 dimensional dense vector space and can be used for tasks like clustering or semantic search. # How to use Using this model becomes easy when you have sentence-transformers installed: Then you can use the model like this: # Training The trained model is a fine-tuned version of PlanTL-GOB-ES/roberta-base-bne focused on question/answer using MS-MARCO dataset translated into Spanish (query - positive - negative - negative - negative - negative) dataset to train. ## Features * Base Model * Config used to train * Dataset: IIC/ms_marco_es (query - positive - negative - negative - negative - negative) * Loss: MultipleNegativesRankingLoss ## Config ## Source code to train # Considerations for Using the Model The model is designed for use in Spanish language, specially focused on Question/Answer. ## Max input length By default, input text longer than 512 word pieces is truncated. # Additional Information ## Licesing This work is licensed under a Apache License, Version 2.0",
+    "model_explanation_gemini": "A Spanish-language sentence-transformers model fine-tuned for question/answer tasks, mapping text to 768-dimensional vectors for semantic search and clustering using the MS-MARCO dataset."
+}

@@ -1,0 +1,25 @@
+{
+    "model_id": "bigcode/starcoder2-3b",
+    "downloads": 210235,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "starcoder2",
+        "text-generation",
+        "code",
+        "dataset:bigcode/the-stack-v2-train",
+        "arxiv:2305.13245",
+        "arxiv:2205.14135",
+        "arxiv:2004.05150",
+        "arxiv:2207.14255",
+        "arxiv:2402.19173",
+        "license:bigcode-openrail-m",
+        "model-index",
+        "autotrain_compatible",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- pipeline_tag: text-generation inference: true widget: - text: 'def print_hello_world():' example_title: Hello world group: Python datasets: - bigcode/the-stack-v2-train license: bigcode-openrail-m library_name: transformers tags: - code model-index: - name: starcoder2-3b results: - task: type: text-generation dataset: name: CruxEval-I type: cruxeval-i metrics: - type: pass@1 value: 32.7 - task: type: text-generation dataset: name: DS-1000 type: ds-1000 metrics: - type: pass@1 value: 25.0 - task: type: text-generation dataset: name: GSM8K (PAL) type: gsm8k-pal metrics: - type: accuracy value: 27.7 - task: type: text-generation dataset: name: HumanEval+ type: humanevalplus metrics: - type: pass@1 value: 27.4 - task: type: text-generation dataset: name: HumanEval type: humaneval metrics: - type: pass@1 value: 31.7 - task: type: text-generation dataset: name: RepoBench-v1.1 type: repobench-v1.1 metrics: - type: edit-smiliarity value: 71.19 --- # StarCoder2 <center> <img src=\" alt=\"SC2\" width=\"900\" height=\"600\"> </center> ## Table of Contents 1. Model Summary 2. Use 3. Limitations 4. Training 5. License 6. Citation ## Model Summary StarCoder2-3B model is a 3B parameter model trained on 17 programming languages from The Stack v2, with opt-out requests excluded. The model uses Grouped Query Attention, a context window of 16,384 tokens with a sliding window attention of 4,096 tokens, and was trained using the Fill-in-the-Middle objective on 3+ trillion tokens. - **Project Website:** bigcode-project.org - **Paper:** Link - **Point of Contact:** contact@bigcode-project.org - **Languages:** 17 Programming languages ## Use ### Intended use The model was trained on GitHub code as well as additional selected data sources such as Arxiv and Wikipedia. As such it is _not_ an instruction model and commands like \"Write a function that computes the square root.\" do not work well. ### Generation Here are some examples to get started with the model. You can find a script for fine-tuning in StarCoder2's GitHub repository. First, make sure to install from source: #### Running the model on CPU/GPU/multi GPU * _Using full precision_ * _Using _ #### Quantized Versions through * _Using 8-bit precision (int8)_ ### Attribution & Other Requirements The pretraining dataset of the model was filtered for permissive licenses and code with no license only. Nevertheless, the model can generate source code verbatim from the dataset. The code's license might require attribution and/or other specific requirements that must be respected. We provide a search index that lets you search through the pretraining data to identify where the generated code came from, and apply the proper attribution to your code. # Limitations The model has been trained on source code from 600+ programming languages. The predominant language in source is English although other languages are also present. As such the model is capable to generate code snippets provided some context but the generated code is not guaranteed to work as intended. It can be inefficient, contain bugs or exploits. See the paper for an in-depth discussion of the model limitations. # Training ## Model - **Architecture:** Transformer decoder with grouped-query and sliding window attention and Fill-in-the-Middle objective - **Pretraining steps:** 1.2 million - **Pretraining tokens:** 3+ trillion - **Precision:** bfloat16 ## Hardware - **GPUs:** 160 A100 ## Software - **Framework:** TODO - **Neural networks:** PyTorch # License The model is licensed under the BigCode OpenRAIL-M v1 license agreement. You can find the full agreement here. # Citation",
+    "model_explanation_gemini": "Generates and autocompletes code in 17 programming languages, trained on GitHub and other sources with a focus on fill-in-the-middle tasks."
+}

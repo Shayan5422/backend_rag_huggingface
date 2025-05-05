@@ -1,0 +1,21 @@
+{
+    "model_id": "blanchefort/rubert-base-cased-sentiment-rusentiment",
+    "downloads": 158320,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "tf",
+        "jax",
+        "safetensors",
+        "bert",
+        "text-classification",
+        "sentiment",
+        "ru",
+        "dataset:RuSentiment",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: - ru tags: - sentiment - text-classification datasets: - RuSentiment --- # RuBERT for Sentiment Analysis This is a DeepPavlov/rubert-base-cased-conversational model trained on RuSentiment. ## Labels 0: NEUTRAL 1: POSITIVE 2: NEGATIVE ## How to use ## Dataset used for model training **RuSentiment** > A. Rogers A. Romanov A. Rumshisky S. Volkova M. Gronas A. Gribov RuSentiment: An Enriched Sentiment Analysis Dataset for Social Media in Russian. Proceedings of COLING 2018.",
+    "model_explanation_gemini": "Classifies Russian text into neutral, positive, or negative sentiment categories using a pretrained RuBERT model trained on the RuSentiment dataset."
+}

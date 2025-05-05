@@ -1,0 +1,23 @@
+{
+    "model_id": "facebook/wav2vec2-base-960h",
+    "downloads": 1650492,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "tf",
+        "safetensors",
+        "wav2vec2",
+        "automatic-speech-recognition",
+        "audio",
+        "hf-asr-leaderboard",
+        "en",
+        "dataset:librispeech_asr",
+        "arxiv:2006.11477",
+        "license:apache-2.0",
+        "model-index",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: en datasets: - librispeech_asr tags: - audio - automatic-speech-recognition - hf-asr-leaderboard license: apache-2.0 widget: - example_title: Librispeech sample 1 src: - example_title: Librispeech sample 2 src: model-index: - name: wav2vec2-base-960h results: - task: name: Automatic Speech Recognition type: automatic-speech-recognition dataset: name: LibriSpeech (clean) type: librispeech_asr config: clean split: test args: language: en metrics: - name: Test WER type: wer value: 3.4 - task: name: Automatic Speech Recognition type: automatic-speech-recognition dataset: name: LibriSpeech (other) type: librispeech_asr config: other split: test args: language: en metrics: - name: Test WER type: wer value: 8.6 --- # Wav2Vec2-Base-960h Facebook's Wav2Vec2 The base model pretrained and fine-tuned on 960 hours of Librispeech on 16kHz sampled speech audio. When using the model make sure that your speech input is also sampled at 16Khz. Paper Authors: Alexei Baevski, Henry Zhou, Abdelrahman Mohamed, Michael Auli **Abstract** We show for the first time that learning powerful representations from speech audio alone followed by fine-tuning on transcribed speech can outperform the best semi-supervised methods while being conceptually simpler. wav2vec 2.0 masks the speech input in the latent space and solves a contrastive task defined over a quantization of the latent representations which are jointly learned. Experiments using all labeled data of Librispeech achieve 1.8/3.3 WER on the clean/other test sets. When lowering the amount of labeled data to one hour, wav2vec 2.0 outperforms the previous state of the art on the 100 hour subset while using 100 times less labeled data. Using just ten minutes of labeled data and pre-training on 53k hours of unlabeled data still achieves 4.8/8.2 WER. This demonstrates the feasibility of speech recognition with limited amounts of labeled data. The original model can be found under # Usage To transcribe audio files the model can be used as a standalone acoustic model as follows: ## Evaluation This code snippet shows how to evaluate **facebook/wav2vec2-base-960h** on LibriSpeech's \"clean\" and \"other\" test data. *Result (WER)*: | \"clean\" | \"other\" | |---|---| | 3.4 | 8.6 |",
+    "model_explanation_gemini": "facebook_wav2vec2-base-960h is a speech recognition model trained on 960 hours of audio to transcribe 16kHz speech into text, achieving low word error rates on benchmark datasets."
+}

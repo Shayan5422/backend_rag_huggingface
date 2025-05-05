@@ -1,0 +1,27 @@
+{
+    "model_id": "cambridgeltl/SapBERT-from-PubMedBERT-fulltext",
+    "downloads": 1709979,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "tf",
+        "jax",
+        "safetensors",
+        "bert",
+        "feature-extraction",
+        "biomedical",
+        "lexical semantics",
+        "bionlp",
+        "biology",
+        "science",
+        "embedding",
+        "entity linking",
+        "en",
+        "arxiv:2010.11784",
+        "license:apache-2.0",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 language: - en tags: - biomedical - lexical semantics - bionlp - biology - science - embedding - entity linking --- --- datasets: - UMLS **[news]** A cross-lingual extension of SapBERT will appear in the main onference of **ACL 2021**! <br> **[news]** SapBERT will appear in the conference proceedings of **NAACL 2021**! ### SapBERT-PubMedBERT SapBERT by Liu et al. (2020). Trained with UMLS 2020AA (English only), using microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext as the base model. ### Expected input and output The input should be a string of biomedical entity names, e.g., \"covid infection\" or \"Hydroxychloroquine\". The [CLS] embedding of the last layer is regarded as the output. #### Extracting embeddings from SapBERT The following script converts a list of strings (entity names) into embeddings. For more details about training and eval, see SapBERT github repo. ### Citation",
+    "model_explanation_gemini": "Generates embeddings for biomedical entity names using PubMedBERT to support tasks like entity linking and lexical semantics in the biomedical domain."
+}

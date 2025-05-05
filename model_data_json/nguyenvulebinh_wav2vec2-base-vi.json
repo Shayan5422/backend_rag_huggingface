@@ -1,0 +1,18 @@
+{
+    "model_id": "nguyenvulebinh/wav2vec2-base-vi",
+    "downloads": 501718,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "wav2vec2",
+        "pretraining",
+        "speech",
+        "vi",
+        "dataset:youtube-vi-13k-hours",
+        "license:cc-by-nc-4.0",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: vi datasets: - youtube-vi-13k-hours tags: - speech license: cc-by-nc-4.0 --- # Vietnamese Self-Supervised Learning Wav2Vec2 model ## Model We use wav2vec2 architecture for doing Self-Supervised learning <img src=\" width=75% height=75%> ## Data Our self-supervised model is pre-trained on a massive audio set of 13k hours of Vietnamese youtube audio, which includes: - Clean audio - Noise audio - Conversation - Multi-gender and dialects ## Download We have already upload our pre-trained model to the Huggingface. The base model trained 35 epochs and the large model trained 20 epochs in about 30 days using TPU V3-8. - Based version ~ 95M params - Large version ~ 317M params ## Usage Since our model has the same architecture as the English wav2vec2 version, you can use this notebook for more information on how to fine-tune the model. ## Finetuned version ### VLSP 2020 ASR dataset Benchmark WER result on VLSP T1 testset: | | base model | large model | |---|---|---| |without LM| 8.66 | 6.90 | |with 5-grams LM| 6.53 | 5.32 | Usage ## Acknowledgment - We would like to thank the Google TPU Research Cloud (TRC) program and Soonson Kwon (Google ML Ecosystem programs Lead) for their support. - Special thanks to my colleagues at VietAI and VAIS for their advice. ## Contact nguyenvulebinh@gmail.com / binh@vietai.org ![Follow](",
+    "model_explanation_gemini": "A Vietnamese self-supervised Wav2Vec2 model pre-trained on 13k hours of diverse YouTube audio for speech recognition tasks."
+}

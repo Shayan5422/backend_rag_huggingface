@@ -1,0 +1,21 @@
+{
+    "model_id": "cahya/NusaBert-ner-v1.3",
+    "downloads": 934613,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "generated_from_trainer",
+        "token-classification",
+        "id",
+        "dataset:grit-id/id_nergrit_corpus",
+        "base_model:cahya/NusaBert-v1.3",
+        "base_model:finetune:cahya/NusaBert-v1.3",
+        "doi:10.57967/hf/5158",
+        "license:mit",
+        "model-index",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- library_name: transformers base_model: cahya/NusaBert-v1.3 tags: - generated_from_trainer datasets: - grit-id/id_nergrit_corpus metrics: - precision - recall - f1 - accuracy model-index: - name: nusabert_nergrit_1.3 results: - task: name: Token Classification type: token-classification dataset: name: grit-id/id_nergrit_corpus ner type: grit-id/id_nergrit_corpus config: ner split: validation args: ner metrics: - name: Precision type: precision value: 0.8010483135824977 - name: Recall type: recall value: 0.8338275412169375 - name: F1 type: f1 value: 0.8171093159760562 - name: Accuracy type: accuracy value: 0.9476653696498054 pipeline_tag: token-classification license: mit language: - id --- <!-- This model card has been generated automatically according to the information the Trainer had access to. You should probably proofread and complete it, then remove this comment. --> # NusaBert-ner-v1.3 This model is a fine-tuned version of cahya/NusaBert-v1.3 on the grit-id/id_nergrit_corpus ner dataset. It supports a context length of 8192, the same as the model *cahya/NusaBert-v1.3* which was pre-trained from scratch using ModernBERT architecture. It achieves the following results on the evaluation set: - Loss: 0.2174 - Precision: 0.8010 - Recall: 0.8338 - F1: 0.8171 - Accuracy: 0.9477 ## Model description The dataset contains 19 following entities ## Intended uses & limitations More information needed ## Training and evaluation data More information needed ## Training procedure ### Training hyperparameters The following hyperparameters were used during training: - learning_rate: 5e-05 - train_batch_size: 32 - eval_batch_size: 32 - seed: 42 - distributed_type: multi-GPU - num_devices: 2 - total_train_batch_size: 64 - total_eval_batch_size: 64 - optimizer: Use adamw_torch with betas=(0.9,0.999) and epsilon=1e-08 and optimizer_args=No additional optimizer arguments - lr_scheduler_type: linear - num_epochs: 3.0 ### Training results ### Framework versions - Transformers 4.49.0 - Pytorch 2.5.1+cu124 - Datasets 2.19.2 - Tokenizers 0.21.0 ## Usage",
+    "model_explanation_gemini": "Performs named entity recognition (NER) on Indonesian text, fine-tuned from NusaBert-v1.3 using the grit-id/id_nergrit_corpus dataset."
+}

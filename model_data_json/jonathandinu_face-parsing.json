@@ -1,0 +1,22 @@
+{
+    "model_id": "jonathandinu/face-parsing",
+    "downloads": 319779,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "onnx",
+        "safetensors",
+        "segformer",
+        "vision",
+        "image-segmentation",
+        "nvidia/mit-b5",
+        "transformers.js",
+        "en",
+        "dataset:celebamaskhq",
+        "arxiv:2105.15203",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: en library_name: transformers tags: - vision - image-segmentation - nvidia/mit-b5 - transformers.js - onnx datasets: - celebamaskhq --- # Face Parsing !example image and output Semantic segmentation model fine-tuned from nvidia/mit-b5 with CelebAMask-HQ for face parsing. For additional options, see the Transformers Segformer docs. > ONNX model for web inference contributed by Xenova. ## Usage in Python Exhaustive list of labels can be extracted from config.json. | id | label | note | | :-: | :--------- | :---------------- | | 0 | background | | | 1 | skin | | | 2 | nose | | | 3 | eye_g | eyeglasses | | 4 | l_eye | left eye | | 5 | r_eye | right eye | | 6 | l_brow | left eyebrow | | 7 | r_brow | right eyebrow | | 8 | l_ear | left ear | | 9 | r_ear | right ear | | 10 | mouth | area between lips | | 11 | u_lip | upper lip | | 12 | l_lip | lower lip | | 13 | hair | | | 14 | hat | | | 15 | ear_r | earring | | 16 | neck_l | necklace | | 17 | neck | | | 18 | cloth | clothing | ## Usage in the browser (Transformers.js) ### p5.js Since p5.js uses an animation loop abstraction, we need to take care loading the model and making predictions. full p5.js example ### Model Description - **Developed by:** Jonathan Dinu - **Model type:** Transformer-based semantic segmentation image model - **License:** non-commercial research and educational purposes - **Resources for more information:** Transformers docs on Segformer and/or the original research paper. ## Limitations and Bias ### Bias While the capabilities of computer vision models are impressive, they can also reinforce or exacerbate social biases. The CelebAMask-HQ dataset used for fine-tuning is large but not necessarily perfectly diverse or representative. Also, they are images of.... just celebrities.",
+    "model_explanation_gemini": "Semantic segmentation model fine-tuned for face parsing to label facial components like eyes, lips, and hair in images."
+}

@@ -1,0 +1,18 @@
+{
+    "model_id": "GAIR/ReasonEval-7B",
+    "downloads": 212867,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "mistral",
+        "text-classification",
+        "en",
+        "arxiv:2404.05692",
+        "license:apache-2.0",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 language: - en pipeline_tag: text-classification --- # **ReasonEval-7B Model Card** ## Model Description is a 7B parameter decoder-only language model fine-tuned from []( Given a mathematical problem and the solution, assesses the problem-solving process in a step-by-step format from the following perspectives: - **Validity**: The step contains no mistakes in calculation and logic. - **Redundancy**: The step lacks utility in solving the problem but is still valid. With ReasonEval, you can - 📏 quantify the quality of reasoning steps free of human or close-source models. - 🤖 find the potential invalid or redundant steps in the solutions even with the correct results. - 🛠️ select high-quality training data for downstream tasks (e.g., fine-tuning). ## Model Details * **Model type**: 's architecture is identical to []( except that the classification head for next-token prediction is replaced with a classification head for outputting the possibilities of each class of reasong steps. * **Language(s)**: English * **Paper**: Evaluating Mathematical Reasoning Beyond Accuracy * **Github**: * **Finetuned from model**: * **Fine-tuning Data**: PRM800K For detailed instructions on how to use the ReasonEval-7B model, visit our GitHub repository at ## How to Cite",
+    "model_explanation_gemini": "Evaluates mathematical problem-solving steps for validity and redundancy to assess reasoning quality without human input."
+}

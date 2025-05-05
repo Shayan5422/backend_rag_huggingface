@@ -1,0 +1,16 @@
+{
+    "model_id": "vikp/surya_det3",
+    "downloads": 335202,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "efficientvit",
+        "base_model:vikp/surya_det3",
+        "base_model:finetune:vikp/surya_det3",
+        "license:cc-by-nc-sa-4.0",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- base_model: vikp/line_detector_3 model-index: - name: line_detector_3 results: [] license: cc-by-nc-sa-4.0 --- Text detection model for surya",
+    "model_explanation_gemini": "Detects text lines in documents for the 'surya' application."
+}

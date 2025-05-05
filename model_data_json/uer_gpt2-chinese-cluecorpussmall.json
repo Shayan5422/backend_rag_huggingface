@@ -1,0 +1,22 @@
+{
+    "model_id": "uer/gpt2-chinese-cluecorpussmall",
+    "downloads": 37130,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "tf",
+        "jax",
+        "gpt2",
+        "text-generation",
+        "zh",
+        "dataset:CLUECorpusSmall",
+        "arxiv:1909.05658",
+        "arxiv:2212.06385",
+        "autotrain_compatible",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: zh datasets: CLUECorpusSmall widget: - text: \"米饭是一种用稻米与水煮成的食物\" --- # Chinese GPT2 Models ## Model description The set of GPT2 models, except for GPT2-xlarge model, are pre-trained by UER-py, which is introduced in this paper. The GPT2-xlarge model is pre-trained by TencentPretrain introduced in this paper, which inherits UER-py to support models with parameters above one billion, and extends it to a multimodal pre-training framework. Besides, the other models could also be pre-trained by TencentPretrain. The model is used to generate Chinese texts. You can download the set of Chinese GPT2 models either from the UER-py Modelzoo page, or via HuggingFace from the links below: | | Link | | ----------------- | :----------------------------: | | **GPT2-distil** | [**L=6/H=768**][distil] | | **GPT2** | [**L=12/H=768**][base] | | **GPT2-medium** | [**L=24/H=1024**][medium] | | **GPT2-large** | [**L=36/H=1280**][large] | | **GPT2-xlarge** | [**L=48/H=1600**][xlarge] | Note that the 6-layer model is called GPT2-distil model because it follows the configuration of distilgpt2, and the pre-training does not involve the supervision of larger models. ## How to use You can use the model directly with a pipeline for text generation (take the case of GPT2-distil): ## Training data CLUECorpusSmall is used as training data. ## Training procedure The GPT2-xlarge model is pre-trained by TencentPretrain, and the others are pre-trained by UER-py on Tencent Cloud. We pre-train 1,000,000 steps with a sequence length of 128 and then pre-train 250,000 additional steps with a sequence length of 1024. For the models pre-trained by UER-py, take the case of GPT2-distil Stage1: Stage2: Finally, we convert the pre-trained model into Huggingface's format: For GPT2-xlarge model, we use TencetPretrain. Stage1: Before stage2, we extract fp32 consolidated weights from a zero 2 and 3 DeepSpeed checkpoints: Stage2: Then, we extract fp32 consolidated weights from a zero 2 and 3 DeepSpeed checkpoints: Finally, we convert the pre-trained model into Huggingface's format: ### BibTeX entry and citation info [distil]: [base]: [medium]: [large]: [xlarge]:",
+    "model_explanation_gemini": "Generates Chinese text based on pre-training with the CLUECorpusSmall dataset."
+}

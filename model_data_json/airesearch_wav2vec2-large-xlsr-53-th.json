@@ -1,0 +1,24 @@
+{
+    "model_id": "airesearch/wav2vec2-large-xlsr-53-th",
+    "downloads": 107573,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "wav2vec2",
+        "automatic-speech-recognition",
+        "audio",
+        "hf-asr-leaderboard",
+        "robust-speech-event",
+        "speech",
+        "xlsr-fine-tuning",
+        "th",
+        "dataset:common_voice",
+        "doi:10.57967/hf/0404",
+        "license:cc-by-sa-4.0",
+        "model-index",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: th datasets: - common_voice tags: - audio - automatic-speech-recognition - hf-asr-leaderboard - robust-speech-event - speech - xlsr-fine-tuning license: cc-by-sa-4.0 model-index: - name: XLS-R-53 - Thai results: - task: name: Automatic Speech Recognition type: automatic-speech-recognition dataset: name: Common Voice 7 type: mozilla-foundation/common_voice_7_0 args: th metrics: - name: Test WER type: wer value: 0.9524 - name: Test SER type: ser value: 1.2346 - name: Test CER type: cer value: 0.1623 - task: name: Automatic Speech Recognition type: automatic-speech-recognition dataset: name: Robust Speech Event - Dev Data type: speech-recognition-community-v2/dev_data args: sv metrics: - name: Test WER type: wer value: null - name: Test SER type: ser value: null - name: Test CER type: cer value: null --- # Finetuning on Thai Common Voice 7.0 Read more on our blog We finetune wav2vec2-large-xlsr-53 based on Fine-tuning Wav2Vec2 for English ASR using Thai examples of Common Voice Corpus 7.0. The notebooks and scripts can be found in vistec-ai/wav2vec2-large-xlsr-53-th. The pretrained model and processor can be found at airesearch/wav2vec2-large-xlsr-53-th. ## Add , (PyThaiNLP) and deepcut tokenizers to from robust-speech-event ### Eval results on Common Voice 7 \"test\": | | WER PyThaiNLP 2.3.1 | WER deepcut | SER | CER | |---------------------------------|---------------------|-------------|---------|---------| | Only Tokenization | 0.9524% | 2.5316% | 1.2346% | 0.1623% | | Cleaning rules and Tokenization | TBD | TBD | TBD | TBD | ## Usage ## Datasets Common Voice Corpus 7.0]( contains 133 validated hours of Thai (255 total hours) at 5GB. We pre-tokenize with . We preprocess the dataset using cleaning rules described in by @tann9949. We then deduplicate and split as described in ekapolc/Thai_commonvoice_split in order to 1) avoid data leakage due to random splits after cleaning in Common Voice Corpus 7.0 and 2) preserve the majority of the data for the training set. The dataset loading script is . You can use this scripts together with , and to have the same splits as we do. The resulting dataset is as follows: ## Training We fintuned using the following configuration on a single V100 GPU and chose the checkpoint with the lowest validation loss. The finetuning script is ## Evaluation We benchmark on the test set using WER with words tokenized by PyThaiNLP 2.3.1 and deepcut, and CER. We also measure performance when spell correction using TNC ngrams is applied. Evaluation codes can be found in . Benchmark is performed on split. | | WER PyThaiNLP 2.3.1 | WER deepcut | CER | |--------------------------------|---------------------|----------------|----------------| | Kaldi from scratch | 23.04 | | 7.57 | | Ours without spell correction | 13.634024 | **8.152052** | **2.813019** | | Ours with spell correction | 17.996397 | 14.167975 | 5.225761 | | Google Web Speech API※ | 13.711234 | 10.860058 | 7.357340 | | Microsoft Bing Speech API※ | **12.578819** | 9.620991 | 5.016620 | | Amazon Transcribe※ | 21.86334 | 14.487553 | 7.077562 | | NECTEC AI for Thai Partii API※ | 20.105887 | 15.515631 | 9.551027 | ※ APIs are not finetuned with Common Voice 7.0 data ## LICENSE cc-by-sa 4.0 ## Ackowledgements * model training and validation notebooks/scripts @cstorm125 * dataset cleaning scripts @tann9949 * dataset splits @ekapolc and @14mss * running the training @mrpeerat * spell correction @wannaphong",
+    "model_explanation_gemini": "Finetuned for Thai automatic speech recognition, achieving low word and character error rates on the Common Voice 7.0 dataset."
+}

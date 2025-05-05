@@ -1,0 +1,12 @@
+{
+    "model_id": "laion/CLIP-ViT-B-32-roberta-base-laion2B-s12B-b32k",
+    "downloads": 152942,
+    "tags": [
+        "open_clip",
+        "arxiv:1910.04867",
+        "license:mit",
+        "region:us"
+    ],
+    "description": "--- license: mit widget: - src: candidate_labels: playing music, playing sports example_title: Cat & Dog --- # Model Card for CLIP ViT-B/32 roberta base - LAION-2B # Table of Contents 1. Model Details 2. Uses 3. Training Details 4. Evaluation 5. Acknowledgements 6. Citation 7. How To Get Started With the Model # Model Details ## Model Description A CLIP ViT-B/32 roberta base model trained with the LAION-2B English subset of LAION-5B ( using OpenCLIP ( Model training done by Romain Beaumont on the stability.ai cluster. # Uses ## Direct Use Zero-shot image classification, image and text retrieval, among others. ## Downstream Use Image classification and other image task fine-tuning, linear probe image classification, image generation guiding and conditioning, among others. # Training Details ## Training Data This model was trained with the 2 Billion sample English subset of LAION-5B ( ## Training Procedure Training with batch size 32k for 12B sample of laion2B-en, see Model is B/32 on visual side, roberta base initialized with pretrained weights on text side. # Evaluation Evaluation done with code in the LAION CLIP Benchmark suite. ## Testing Data, Factors & Metrics ### Testing Data The testing is performed with VTAB+ (A combination of VTAB ( w/ additional robustness datasets) for classification and COCO and Flickr for retrieval. ## Results The model achieves * imagenet 1k 61.7% (vs 62.9% for baseline) * mscoco 63% (vs 60.8% for baseline) * flickr30k 86.7% (vs 85.4% for baseline) !metrics # Acknowledgements Acknowledging stability.ai for the compute used to train this model. # Citation **BibTeX:** In addition to forthcoming LAION-5B ( paper, please cite: OpenAI CLIP paper OpenCLIP software # How To Get Started With the Model",
+    "model_explanation_gemini": "Performs zero-shot image classification and text-image retrieval by matching visual and textual representations using a CLIP ViT-B/32 and roberta base architecture trained on LAION-2B data."
+}

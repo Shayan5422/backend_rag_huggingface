@@ -1,0 +1,21 @@
+{
+    "model_id": "Salesforce/moirai-1.0-R-small",
+    "downloads": 109470,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "time series",
+        "forecasting",
+        "pretrained models",
+        "foundation models",
+        "time series foundation models",
+        "time-series",
+        "time-series-forecasting",
+        "arxiv:2402.02592",
+        "license:cc-by-nc-4.0",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: cc-by-nc-4.0 pipeline_tag: time-series-forecasting tags: - time series - forecasting - pretrained models - foundation models - time series foundation models - time-series --- # Moirai-1.0-R-Small Moirai, the Masked Encoder-based Universal Time Series Forecasting Transformer is a Large Time Series Model pre-trained on LOTSA data. For more details on the Moirai architecture, training, and results, please refer to the paper. <p align=\"center\"> <img src=\"figures/architecture.png\" width=\"100%\"> <br /> <span> Fig. 1: Overall architecture of Moirai. Visualized is a 3-variate time series, where variates 0 and 1 are target variables (i.e. to be forecasted, and variate 2 is a dynamic covariate (values in forecast horizon known). Based on a patch size of 64, each variate is patchified into 3 tokens. The patch embeddings along with sequence and variate id are fed into the Transformer. The shaded patches represent the forecast horizon to be forecasted, whose corresponding output representations are mapped into the mixture distribution parameters. </span> </p> ## Usage To perform inference with Moirai, install the uni2ts library from our GitHub repo. 1. Clone repository: 2) Create virtual environment: 3) Build from source: 4) Create a file: A simple example to get started: ## The Moirai Family | # Model | # Parameters | | :---: | :---: | | Moirai-1.0-R-Small | 14m | | Moirai-1.0-R-Base | 91m | | Moirai-1.0-R-Large | 311m | ## Citation If you're using Uni2TS in your research or applications, please cite it using this BibTeX: ## Ethical Considerations This release is for research purposes only in support of an academic paper. Our models, datasets, and code are not specifically designed or evaluated for all downstream purposes. We strongly recommend users evaluate and address potential concerns related to accuracy, safety, and fairness before deploying this model. We encourage users to consider the common limitations of AI, comply with applicable laws, and leverage best practices when selecting use cases, particularly for high-risk scenarios where errors or misuse could significantly impact people’s lives, rights, or safety. For further guidance on use cases, refer to our AUP and AI AUP.",
+    "model_explanation_gemini": "Salesforce_moirai-1.0-R-small is a pretrained transformer model for universal time series forecasting, designed to predict future values in multivariate time series data."
+}

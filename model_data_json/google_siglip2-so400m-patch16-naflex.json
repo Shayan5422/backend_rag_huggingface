@@ -1,0 +1,19 @@
+{
+    "model_id": "google/siglip2-so400m-patch16-naflex",
+    "downloads": 157686,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "siglip2",
+        "zero-shot-image-classification",
+        "vision",
+        "arxiv:2502.14786",
+        "arxiv:2303.15343",
+        "arxiv:2209.06794",
+        "license:apache-2.0",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 tags: - vision widget: - src: >- candidate_labels: bee in the sky, bee on the flower example_title: Bee library_name: transformers pipeline_tag: zero-shot-image-classification --- # SigLIP 2 So400m SigLIP 2 extends the pretraining objective of SigLIP with prior, independently developed techniques into a unified recipe, for improved semantic understanding, localization, and dense features. ## Intended uses You can use the raw model for tasks like zero-shot image classification and image-text retrieval, or as a vision encoder for VLMs (and other vision tasks). Here is how to use this model to perform zero-shot image classification: You can encode an image using the Vision Tower like so: For more code examples, we refer to the siglip2 documentation. ## Training procedure SigLIP 2 adds some clever training objectives on top of SigLIP: 1. Decoder loss 2. Global-local and masked prediction loss 3. Aspect ratio and resolution adaptibility ### Training data SigLIP 2 is pre-trained on the WebLI dataset (Chen et al., 2023). ### Compute The model was trained on up to 2048 TPU-v5e chips. ## Evaluation results Evaluation of SigLIP 2 is shown below (taken from the paper). !Evaluation Table ### BibTeX entry and citation info",
+    "model_explanation_gemini": "Performs zero-shot image classification and image-text retrieval by extending SigLIP's pretraining with enhanced semantic understanding and dense features."
+}

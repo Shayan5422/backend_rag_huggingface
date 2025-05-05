@@ -1,0 +1,18 @@
+{
+    "model_id": "shi-labs/oneformer_coco_swin_large",
+    "downloads": 167413,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "oneformer",
+        "vision",
+        "image-segmentation",
+        "dataset:ydshieh/coco_dataset_script",
+        "arxiv:2211.06220",
+        "license:mit",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: mit tags: - vision - image-segmentation datasets: - ydshieh/coco_dataset_script widget: - src: example_title: Person - src: example_title: Airplane - src: example_title: Corgi --- # OneFormer OneFormer model trained on the COCO dataset (large-sized version, Swin backbone). It was introduced in the paper OneFormer: One Transformer to Rule Universal Image Segmentation by Jain et al. and first released in this repository. !model image ## Model description OneFormer is the first multi-task universal image segmentation framework. It needs to be trained only once with a single universal architecture, a single model, and on a single dataset, to outperform existing specialized models across semantic, instance, and panoptic segmentation tasks. OneFormer uses a task token to condition the model on the task in focus, making the architecture task-guided for training, and task-dynamic for inference, all with a single model. !model image ## Intended uses & limitations You can use this particular checkpoint for semantic, instance and panoptic segmentation. See the model hub to look for other fine-tuned versions on a different dataset. ### How to use Here is how to use this model: For more examples, please refer to the documentation. ### Citation",
+    "model_explanation_gemini": "Performs universal image segmentation (semantic, instance, and panoptic) using a single task-conditioned model trained on COCO with a Swin backbone."
+}

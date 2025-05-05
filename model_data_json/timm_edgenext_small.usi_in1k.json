@@ -1,0 +1,18 @@
+{
+    "model_id": "timm/edgenext_small.usi_in1k",
+    "downloads": 632668,
+    "tags": [
+        "timm",
+        "pytorch",
+        "safetensors",
+        "image-classification",
+        "transformers",
+        "dataset:imagenet-1k",
+        "arxiv:2206.10589",
+        "arxiv:2204.03475",
+        "license:mit",
+        "region:us"
+    ],
+    "description": "--- tags: - image-classification - timm - transformers library_name: timm license: mit datasets: - imagenet-1k --- # Model card for edgenext_small.usi_in1k An EdgeNeXt image classification model. Trained on ImageNet-1k by paper authors using distillation ( as per ). ## Model Details - **Model Type:** Image classification / feature backbone - **Model Stats:** - Params (M): 5.6 - GMACs: 1.3 - Activations (M): 9.1 - Image size: train = 256 x 256, test = 320 x 320 - **Papers:** - EdgeNeXt: Efficiently Amalgamated CNN-Transformer Architecture for Mobile Vision Applications: - Solving ImageNet: a Unified Scheme for Training any Backbone to Top Results: - **Dataset:** ImageNet-1k - **Original:** ## Model Usage ### Image Classification ### Feature Map Extraction ### Image Embeddings ## Citation",
+    "model_explanation_gemini": "An EdgeNeXt model for image classification and feature extraction, trained on ImageNet-1k using distillation."
+}

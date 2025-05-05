@@ -1,0 +1,12 @@
+{
+    "model_id": "TheDrummer/Fallen-Gemma3-27B-v1",
+    "downloads": 84592,
+    "tags": [
+        "safetensors",
+        "gemma3",
+        "license:other",
+        "region:us"
+    ],
+    "description": "--- license: other --- # Join our Discord! ## Nearly 5000 members of helpful, LLM enthusiasts! A hub for players and makers alike! --- BeaverAI proudly presents... # Fallen Gemma3 27B v1 👺 !image/gif ## Special Thanks - Thank you to each and everyone who donated and subscribed in Patreon and Ko-Fi to make our venture a little bit easier. - I'm also recently unemployed. I am a Software Developer with 8 years of experience in Web, API, AI, and adapting to new tech and requirements. If you're hiring, feel free to reach out to me however. ## Usage - Use Gemma Chat Template ## Description Fallen Gemma3 27B v1 is an evil tune of Gemma 3 27B but it is not a complete decensor. Evil tunes knock out the positivity and may enjoy torturing you and humanity. Vision still works and it has something to say about the crap you feed it. ## Links - Original: - GGUF: - iMatrix (recommended):",
+    "model_explanation_gemini": "Fallen Gemma3 27B v1 is an altered version of Gemma 3 27B designed to produce darker, less positive outputs while retaining vision capabilities."
+}

@@ -1,0 +1,14 @@
+{
+    "model_id": "GPTCache/paraphrase-albert-small-v2",
+    "downloads": 260656,
+    "tags": [
+        "transformers",
+        "albert",
+        "feature-extraction",
+        "license:mit",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: mit ---",
+    "model_explanation_gemini": "Generates paraphrased text variations using the ALBERT-small-v2 architecture for tasks like semantic caching."
+}

@@ -1,0 +1,15 @@
+{
+    "model_id": "lucadiliello/BLEURT-20-D12",
+    "downloads": 906612,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "bleurt",
+        "text-classification",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "This model is based on a custom Transformer model that can be installed with: Now load the model and make predictions with: Take a look at this repository for the definition of , and in PyTorch.",
+    "model_explanation_gemini": "Custom Transformer model for making predictions, requiring installation and loading as specified in the linked repository."
+}

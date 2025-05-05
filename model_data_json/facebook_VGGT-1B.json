@@ -1,0 +1,16 @@
+{
+    "model_id": "facebook/VGGT-1B",
+    "downloads": 200937,
+    "tags": [
+        "safetensors",
+        "model_hub_mixin",
+        "pytorch_model_hub_mixin",
+        "image-to-3d",
+        "en",
+        "arxiv:2503.11651",
+        "license:cc-by-nc-4.0",
+        "region:us"
+    ],
+    "description": "--- tags: - model_hub_mixin - pytorch_model_hub_mixin license: cc-by-nc-4.0 language: - en pipeline_tag: image-to-3d --- <div align=\"center\"> <h1>VGGT: Visual Geometry Grounded Transformer</h1> <a href=\" target=\"_blank\" rel=\"noopener noreferrer\"> <img src=\" alt=\"Paper PDF\"> </a> <a href=\" src=\" alt=\"arXiv\"></a> <a href=\" src=\" alt=\"Project Page\"></a> <a href=' src=' **Meta AI Research**; **University of Oxford, VGG** Jianyuan Wang, Minghao Chen, Nikita Karaev, Andrea Vedaldi, Christian Rupprecht, David Novotny </div> ## Overview Visual Geometry Grounded Transformer (VGGT, CVPR 2025) is a feed-forward neural network that directly infers all key 3D attributes of a scene, including extrinsic and intrinsic camera parameters, point maps, depth maps, and 3D point tracks, **from one, a few, or hundreds of its views, within seconds**. ## Quick Start Please refer to our Github Repo ## Citation If you find our repository useful, please consider giving it a star ⭐ and citing our paper in your work:",
+    "model_explanation_gemini": "Infers 3D scene attributes like camera parameters, depth maps, and point tracks from single or multiple views quickly."
+}

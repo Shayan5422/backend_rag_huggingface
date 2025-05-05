@@ -1,0 +1,16 @@
+{
+    "model_id": "hantian/layoutreader",
+    "downloads": 246107,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "safetensors",
+        "layoutlmv3",
+        "token-classification",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- library_name: transformers --- # LayoutReader A reading order prediction model. Turn bboxes extracted from PDF or detected by OCR into readable order. Please refer to Github for more details.",
+    "model_explanation_gemini": "Predicts reading order for text bounding boxes extracted from PDFs or OCR outputs."
+}

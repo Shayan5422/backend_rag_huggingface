@@ -1,0 +1,19 @@
+{
+    "model_id": "huggyllama/llama-7b",
+    "downloads": 100810,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "safetensors",
+        "llama",
+        "text-generation",
+        "conversational",
+        "license:other",
+        "autotrain_compatible",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: other --- This contains the weights for the LLaMA-7b model. This model is under a non-commercial license (see the LICENSE file). You should only use this repository if you have been granted access to the model by filling out this form but either lost your copy of the weights or got some trouble converting them to the Transformers format.",
+    "model_explanation_gemini": "Provides the weights for the LLaMA-7b model under a non-commercial license, intended for users who lost their copy or encountered conversion issues."
+}

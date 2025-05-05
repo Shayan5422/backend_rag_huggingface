@@ -1,0 +1,31 @@
+{
+    "model_id": "deepvk/USER-bge-m3",
+    "downloads": 342953,
+    "tags": [
+        "sentence-transformers",
+        "safetensors",
+        "xlm-roberta",
+        "sentence-similarity",
+        "feature-extraction",
+        "ru",
+        "dataset:deepvk/ru-HNP",
+        "dataset:deepvk/ru-WANLI",
+        "dataset:Shitao/bge-m3-data",
+        "dataset:RussianNLP/russian_super_glue",
+        "dataset:reciTAL/mlsum",
+        "dataset:Milana/russian_keywords",
+        "dataset:IlyaGusev/gazeta",
+        "dataset:d0rj/gsm8k-ru",
+        "dataset:bragovo/dsum_ru",
+        "dataset:CarlBrendt/Summ_Dialog_News",
+        "arxiv:2311.13534",
+        "arxiv:2309.12871",
+        "license:apache-2.0",
+        "autotrain_compatible",
+        "text-embeddings-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: - ru library_name: sentence-transformers tags: - sentence-transformers - sentence-similarity - feature-extraction widget: [] pipeline_tag: sentence-similarity license: apache-2.0 datasets: - deepvk/ru-HNP - deepvk/ru-WANLI - Shitao/bge-m3-data - RussianNLP/russian_super_glue - reciTAL/mlsum - Milana/russian_keywords - IlyaGusev/gazeta - d0rj/gsm8k-ru - bragovo/dsum_ru - CarlBrendt/Summ_Dialog_News --- # USER-bge-m3 **U**niversal **S**entence **E**ncoder for **R**ussian (USER) is a sentence-transformer model for extracting embeddings exclusively for Russian language. It maps sentences & paragraphs to a 1024 dimensional dense vector space and can be used for tasks like clustering or semantic search. This model is initialized from []( which is shrinked version of []( model and trained to work mainly with the Russian language. Its quality on other languages was not evaluated. ## Usage Using this model becomes easy when you have []( installed: Then you can use the model like this: However, you can use model directly with []( Also, you can use native FlagEmbedding library for evaluation. Usage is described in model card. # Training Details We follow the []( model training algorithm, with several changes as we use different backbone. **Initialization:** []( – shrinked version of []( to support only Russian and English tokens. **Fine-tuning:** Supervised fine-tuning two different models based on data symmetry and then merging via []( 1. Since we split the data, we could additionally apply the AnglE loss to the symmetric model, which enhances performance on symmetric tasks. 2. Finally, we added the original model to the two obtained models to prevent catastrophic forgetting, tuning the weights for the merger using to produce the final model, **USER-bge-m3**. ### Dataset During model development, we additional collect 2 datasets: []( and []( | Symmetric Dataset | Size | Asymmetric Dataset | Size | |-------------------|-------|--------------------|------| | **AllNLI** | 282 644 | **MIRACL** | 10 000 | | MedNLI | 3 699 | MLDR | 1 864 | | RCB | 392 | Lenta | 185 972 | | Terra | 1 359 | Mlsum | 51 112 | | Tapaco | 91 240 | Mr-TyDi | 536 600 | | **deepvk/ru-WANLI** | 35 455 | Panorama | 11 024 | | **deepvk/ru-HNP** | 500 000 | PravoIsrael | 26 364 | | | | Xlsum | 124 486 | | | | Fialka-v1 | 130 000 | | | | RussianKeywords | 16 461 | | | | Gazeta | 121 928 | | | | Gsm8k-ru | 7 470 | | | | DSumRu | 27 191 | | | | SummDialogNews | 75 700 | **Total positive pairs:** 2,240,961 **Total negative pairs:** 792,644 (negative pairs from AIINLI, MIRACL, deepvk/ru-WANLI, deepvk/ru-HNP) For all labeled datasets, we only use its training set for fine-tuning. For datasets Gazeta, Mlsum, Xlsum: pairs (title/text) and (title/summary) are combined and used as asymmetric data. is an translated to Russian combination of SNLI, MNLI and ANLI. ## Experiments We compare our mode with the basic []( on the []( benchmark. In addition, we evaluate model on the russian subset of []( on Classification, Reranking, Multilabel Classification, STS, Retrieval, and PairClassification tasks. We use validation scripts from the official repositories for each of the tasks. Results on encodechka: | Model | Mean S | Mean S+W | STS | PI | NLI | SA | TI | IA | IC | ICX | NE1 | NE2 | |-------------|--------|----------|------|------|------|------|------|------|------|------|------|------| | []( | 0.787 | 0.696 | 0.86 | 0.75 | 0.51 | 0.82 | 0.97 | 0.79 | 0.81 | 0.78 | 0.24 | 0.42 | | | **0.799** | **0.709** | **0.87** | **0.76** | **0.58** | 0.82 | 0.97 | 0.79 | 0.81 | 0.78 | **0.28** | **0.43** | Results on MTEB: | Type | []( | | |---------------------------|--------|-------------| | Average (30 datasets) | 0.689 | **0.706** | | Classification Average (12 datasets) | 0.571 | **0.594** | | Reranking Average (2 datasets) | **0.698** | 0.688 | | MultilabelClassification (2 datasets) | 0.343 | **0.359** | | STS Average (4 datasets) | 0.735 | **0.753** | | Retrieval Average (6 datasets) | **0.945** | 0.934 | | PairClassification Average (4 datasets) | 0.784 | **0.833** | ## Limitations We did not thoroughly evaluate the model's ability for sparse and multi-vec encoding. ## Citations",
+    "model_explanation_gemini": "Generates 1024-dimensional sentence embeddings for Russian text to enable semantic search and clustering tasks."
+}

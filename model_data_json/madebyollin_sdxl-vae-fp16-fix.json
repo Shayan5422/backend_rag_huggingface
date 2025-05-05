@@ -1,0 +1,14 @@
+{
+    "model_id": "madebyollin/sdxl-vae-fp16-fix",
+    "downloads": 356218,
+    "tags": [
+        "diffusers",
+        "safetensors",
+        "stable-diffusion",
+        "stable-diffusion-diffusers",
+        "license:mit",
+        "region:us"
+    ],
+    "description": "--- license: mit tags: - stable-diffusion - stable-diffusion-diffusers inference: false --- # SDXL-VAE-FP16-Fix SDXL-VAE-FP16-Fix is the SDXL VAE*, but modified to run in fp16 precision without generating NaNs. | VAE | Decoding in / precision | Decoding in precision | | --------------------- | -------------------------------------------- | ------------------------------- | | SDXL-VAE | ✅ | ⚠️ | | SDXL-VAE-FP16-Fix | ✅ | ✅ | ## 🧨 Diffusers Usage Just load this checkpoint via : , you can now remove it (Disclaimer - I haven't tested this, just aggregating various instructions I've seen elsewhere :P PRs to improve these instructions are welcomed!) ## Details SDXL-VAE generates NaNs in fp16 because the internal activation values are too big: SDXL-VAE-FP16-Fix was created by finetuning the SDXL-VAE to: 1. keep the final output the same, but 2. make the internal activation values smaller, by 3. scaling down weights and biases within the network There are slight discrepancies between the output of SDXL-VAE-FP16-Fix and SDXL-VAE, but the decoded images should be close enough for most purposes. --- \\* is specifically based on SDXL-VAE (0.9), but it works with SDXL 1.0 too",
+    "model_explanation_gemini": "Modifies the SDXL VAE to enable stable fp16 precision decoding without generating NaNs by scaling internal weights and biases while maintaining similar output quality."
+}

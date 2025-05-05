@@ -1,0 +1,24 @@
+{
+    "model_id": "xbgoose/hubert-large-speech-emotion-recognition-russian-dusha-finetuned",
+    "downloads": 106105,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "safetensors",
+        "hubert",
+        "audio-classification",
+        "SER",
+        "speech",
+        "audio",
+        "russian",
+        "ru",
+        "dataset:xbgoose/dusha",
+        "base_model:facebook/hubert-large-ls960-ft",
+        "base_model:finetune:facebook/hubert-large-ls960-ft",
+        "license:apache-2.0",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: - ru tags: - SER - speech - audio - russian license: apache-2.0 pipeline_tag: audio-classification base_model: facebook/hubert-large-ls960-ft datasets: - xbgoose/dusha --- # HuBERT fine-tuned on DUSHA dataset for speech emotion recognition in russian language The pre-trained model is this one - facebook/hubert-large-ls960-ft The DUSHA dataset used can be found here # Fine-tuning Fine-tuned in Google Colab using Pro account with A100 GPU Freezed all layers exept projector, classifier and all 24 HubertEncoderLayerStableLayerNorm layers Used half of the train dataset # Training parameters - 2 epochs - train batch size = 8 - eval batch size = 8 - gradient accumulation steps = 4 - learning rate = 5e-5 without warm up and decay # Metrics Achieved - accuracy = 0.86 - balanced = 0.76 - macro f1 score = 0.81 on test set, improving accucary and f1 score compared to dataset baseline # Usage",
+    "model_explanation_gemini": "Recognizes emotions in Russian speech by fine-tuning HuBERT on the DUSHA dataset for audio classification."
+}

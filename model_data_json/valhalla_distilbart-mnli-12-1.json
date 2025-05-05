@@ -1,0 +1,20 @@
+{
+    "model_id": "valhalla/distilbart-mnli-12-1",
+    "downloads": 188149,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "jax",
+        "bart",
+        "text-classification",
+        "distilbart",
+        "distilbart-mnli",
+        "zero-shot-classification",
+        "dataset:mnli",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- datasets: - mnli tags: - distilbart - distilbart-mnli pipeline_tag: zero-shot-classification --- # DistilBart-MNLI distilbart-mnli is the distilled version of bart-large-mnli created using the **No Teacher Distillation** technique proposed for BART summarisation by Huggingface, here. We just copy alternating layers from and finetune more on the same data. | | matched acc | mismatched acc | | ------------------------------------------------------------------------------------ | ----------- | -------------- | | bart-large-mnli (baseline, 12-12) | 89.9 | 90.01 | | distilbart-mnli-12-1 | 87.08 | 87.5 | | distilbart-mnli-12-3 | 88.1 | 88.19 | | distilbart-mnli-12-6 | 89.19 | 89.01 | | distilbart-mnli-12-9 | 89.56 | 89.52 | This is a very simple and effective technique, as we can see the performance drop is very little. Detailed performace trade-offs will be posted in this sheet. ## Fine-tuning If you want to train these models yourself, clone the distillbart-mnli repo and follow the steps below Clone and install transformers from source Download MNLI data Create student model Start fine-tuning You can find the logs of these trained models in this wandb project.",
+    "model_explanation_gemini": "Performs zero-shot classification by predicting text labels without task-specific training, distilled from BART-large-MNLI with minimal performance drop."
+}

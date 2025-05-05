@@ -1,0 +1,21 @@
+{
+    "model_id": "microsoft/deberta-base-mnli",
+    "downloads": 90216,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "rust",
+        "deberta",
+        "text-classification",
+        "deberta-v1",
+        "deberta-mnli",
+        "en",
+        "arxiv:2006.03654",
+        "license:mit",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: en tags: - deberta-v1 - deberta-mnli tasks: mnli thumbnail: license: mit widget: - text: \"[CLS] I love you. [SEP] I like you. [SEP]\" --- ## DeBERTa: Decoding-enhanced BERT with Disentangled Attention DeBERTa improves the BERT and RoBERTa models using disentangled attention and enhanced mask decoder. It outperforms BERT and RoBERTa on majority of NLU tasks with 80GB training data. Please check the official repository for more details and updates. This model is the base DeBERTa model fine-tuned with MNLI task #### Fine-tuning on NLU tasks We present the dev results on SQuAD 1.1/2.0 and MNLI tasks. | Model | SQuAD 1.1 | SQuAD 2.0 | MNLI-m | |-------------------|-----------|-----------|--------| | RoBERTa-base | 91.5/84.6 | 83.7/80.5 | 87.6 | | XLNet-Large | -/- | -/80.2 | 86.8 | | **DeBERTa-base** | 93.1/87.2 | 86.2/83.1 | 88.8 | ### Citation If you find DeBERTa useful for your work, please cite the following paper:",
+    "model_explanation_gemini": "microsoft_deberta-base-mnli is a DeBERTa-base model fine-tuned for natural language inference (MNLI), outperforming BERT and RoBERTa on NLU tasks."
+}

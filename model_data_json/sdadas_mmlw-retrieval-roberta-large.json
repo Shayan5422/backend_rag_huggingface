@@ -1,0 +1,23 @@
+{
+    "model_id": "sdadas/mmlw-retrieval-roberta-large",
+    "downloads": 192694,
+    "tags": [
+        "sentence-transformers",
+        "pytorch",
+        "safetensors",
+        "roberta",
+        "feature-extraction",
+        "sentence-similarity",
+        "transformers",
+        "information-retrieval",
+        "pl",
+        "arxiv:2402.13350",
+        "license:apache-2.0",
+        "autotrain_compatible",
+        "text-embeddings-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- pipeline_tag: sentence-similarity tags: - sentence-transformers - feature-extraction - sentence-similarity - transformers - information-retrieval language: pl license: apache-2.0 widget: - source_sentence: \"zapytanie: Jak dożyć 100 lat?\" sentences: - \"Trzeba zdrowo się odżywiać i uprawiać sport.\" - \"Trzeba pić alkohol, imprezować i jeździć szybkimi autami.\" - \"Gdy trwała kampania politycy zapewniali, że rozprawią się z zakazem niedzielnego handlu.\" --- <h1 align=\"center\">MMLW-retrieval-roberta-large</h1> MMLW (muszę mieć lepszą wiadomość) are neural text encoders for Polish. This model is optimized for information retrieval tasks. It can transform queries and passages to 1024 dimensional vectors. The model was developed using a two-step procedure: - In the first step, it was initialized with Polish RoBERTa checkpoint, and then trained with multilingual knowledge distillation method on a diverse corpus of 60 million Polish-English text pairs. We utilised English FlagEmbeddings (BGE) as teacher models for distillation. - The second step involved fine-tuning the obtained models with contrastrive loss on Polish MS MARCO training split. In order to improve the efficiency of contrastive training, we used large batch sizes - 1152 for small, 768 for base, and 288 for large models. Fine-tuning was conducted on a cluster of 12 A100 GPUs. ⚠️ **2023-12-26:** We have updated the model to a new version with improved results. You can still download the previous version using the **v1** tag: ⚠️ ## Usage (Sentence-Transformers) ⚠️ Our dense retrievers require the use of specific prefixes and suffixes when encoding texts. For this model, each query should be preceded by the prefix **\"zapytanie: \"** ⚠️ You can use the model like this with sentence-transformers: ## Evaluation Results The model achieves **NDCG@10** of **58.46** on the Polish Information Retrieval Benchmark. See PIRB Leaderboard for detailed results. ## Acknowledgements This model was trained with the A100 GPU cluster support delivered by the Gdansk University of Technology within the TASK center initiative. ## Citation",
+    "model_explanation_gemini": "Optimized for Polish information retrieval, this model encodes queries and passages into 1024-dimensional vectors using a RoBERTa-based architecture trained via multilingual knowledge distillation and contrastive fine-tuning."
+}

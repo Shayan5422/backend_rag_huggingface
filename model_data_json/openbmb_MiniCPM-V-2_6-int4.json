@@ -1,0 +1,27 @@
+{
+    "model_id": "openbmb/MiniCPM-V-2_6-int4",
+    "downloads": 118527,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "minicpmv",
+        "feature-extraction",
+        "minicpm-v",
+        "vision",
+        "ocr",
+        "multi-image",
+        "video",
+        "custom_code",
+        "image-text-to-text",
+        "conversational",
+        "multilingual",
+        "dataset:openbmb/RLAIF-V-Dataset",
+        "base_model:openbmb/MiniCPM-V-2_6",
+        "base_model:quantized:openbmb/MiniCPM-V-2_6",
+        "4-bit",
+        "bitsandbytes",
+        "region:us"
+    ],
+    "description": "--- pipeline_tag: image-text-to-text datasets: - openbmb/RLAIF-V-Dataset library_name: transformers language: - multilingual tags: - minicpm-v - vision - ocr - multi-image - video - custom_code base_model: - openbmb/MiniCPM-V-2_6 --- ## News <!-- omit in toc --> * [2025.01.14] 🔥🔥 We open source **MiniCPM-o 2.6**, with significant performance improvement over **MiniCPM-V 2.6**, and support real-time speech-to-speech conversation and multimodal live streaming. Try it now. ## MiniCPM-V 2.6 int4 This is the int4 quantized version of MiniCPM-V 2.6. Running with int4 version would use lower GPU memory (about 7GB). ## Usage Inference using Huggingface transformers on NVIDIA GPUs. Requirements tested on python 3.10：",
+    "model_explanation_gemini": "Performs image-text-to-text tasks including vision, OCR, multi-image, and video processing with multilingual support, optimized for lower GPU memory usage in its int4 quantized version."
+}

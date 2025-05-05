@@ -1,0 +1,23 @@
+{
+    "model_id": "petals-team/StableBeluga2",
+    "downloads": 1182532,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "llama",
+        "text-generation",
+        "en",
+        "dataset:conceptofmind/cot_submix_original",
+        "dataset:conceptofmind/flan2021_submix_original",
+        "dataset:conceptofmind/t0_submix_original",
+        "dataset:conceptofmind/niv2_submix_original",
+        "arxiv:2307.09288",
+        "arxiv:2306.02707",
+        "autotrain_compatible",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- datasets: - conceptofmind/cot_submix_original - conceptofmind/flan2021_submix_original - conceptofmind/t0_submix_original - conceptofmind/niv2_submix_original language: - en pipeline_tag: text-generation --- # Stable Beluga 2 ## Changes in this fork This repository contains the model from the stabilityai/StableBeluga2 repository with the following changes: 1. **Storing weights in instead of .** This leads to 2x smaller files and a small quality loss, which is not significant compared to the loss caused by NF4 quantization used in Petals by default. 1. **Storing weights in small shards.** Each transformer block is stored in its own shard (1.71 GB each). The input and output embeddings and adjacent layernorms are in a separate shard (1.05 GB) too. This way, Petals clients and servers don't have to download any excess data besides the layers they actually use. 1. **Using Safetensors instead of Pickle.** This allows faster loading with smaller RAM requirements. We provide the original README below. Please refer there for model details and licensing information. ## Model Description is a Llama2 70B model finetuned on an Orca style Dataset ## Usage Start chatting with using the following code snippet: Stable Beluga 2 should be used with this prompt format: ## Other Beluga Models StableBeluga 1 - Delta StableBeluga 13B StableBeluga 7B ## Model Details * **Developed by**: Stability AI * **Model type**: Stable Beluga 2 is an auto-regressive language model fine-tuned on Llama2 70B. * **Language(s)**: English * **Library**: HuggingFace Transformers * **License**: Fine-tuned checkpoints () is licensed under the STABLE BELUGA NON-COMMERCIAL COMMUNITY LICENSE AGREEMENT * **Contact**: For questions and comments about the model, please email ### Training Dataset is trained on our internal Orca-style dataset ### Training Procedure Models are learned via supervised fine-tuning on the aforementioned datasets, trained in mixed-precision (BF16), and optimized with AdamW. We outline the following hyperparameters: | Dataset | Batch Size | Learning Rate |Learning Rate Decay| Warm-up | Weight Decay | Betas | |-------------------|------------|---------------|-------------------|---------|--------------|-------------| | Orca pt1 packed | 256 | 3e-5 | Cosine to 3e-6 | 100 | 1e-6 | (0.9, 0.95) | | Orca pt2 unpacked | 512 | 3e-5 | Cosine to 3e-6 | 100 | 1e-6 | (0.9, 0.95) | ## Ethical Considerations and Limitations Beluga is a new technology that carries risks with use. Testing conducted to date has been in English, and has not covered, nor could it cover all scenarios. For these reasons, as with all LLMs, Beluga's potential outputs cannot be predicted in advance, and the model may in some instances produce inaccurate, biased or other objectionable responses to user prompts. Therefore, before deploying any applications of Beluga, developers should perform safety testing and tuning tailored to their specific applications of the model. ## How to cite ## Citations",
+    "model_explanation_gemini": "A 70B Llama2-based auto-regressive language model fine-tuned on an Orca-style dataset for text generation in English."
+}

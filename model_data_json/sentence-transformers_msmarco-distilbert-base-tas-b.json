@@ -1,0 +1,25 @@
+{
+    "model_id": "sentence-transformers/msmarco-distilbert-base-tas-b",
+    "downloads": 321011,
+    "tags": [
+        "sentence-transformers",
+        "pytorch",
+        "tf",
+        "onnx",
+        "safetensors",
+        "openvino",
+        "distilbert",
+        "feature-extraction",
+        "sentence-similarity",
+        "transformers",
+        "en",
+        "dataset:ms_marco",
+        "license:apache-2.0",
+        "autotrain_compatible",
+        "text-embeddings-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: en license: apache-2.0 library_name: sentence-transformers tags: - sentence-transformers - feature-extraction - sentence-similarity - transformers datasets: - ms_marco pipeline_tag: sentence-similarity --- # sentence-transformers/msmarco-distilbert-base-tas-b This is a port of the DistilBert TAS-B Model to sentence-transformers model: It maps sentences & paragraphs to a 768 dimensional dense vector space and is optimized for the task of semantic search. ## Usage (Sentence-Transformers) Using this model becomes easy when you have sentence-transformers installed: Then you can use the model like this: ## Usage (HuggingFace Transformers) Without sentence-transformers, you can use the model like this: First, you pass your input through the transformer model, then you have to apply the right pooling-operation on-top of the contextualized word embeddings. ## Full Model Architecture ## Citing & Authors Have a look at: DistilBert TAS-B Model",
+    "model_explanation_gemini": "Maps sentences and paragraphs to 768-dimensional vectors for optimized semantic search."
+}

@@ -1,0 +1,21 @@
+{
+    "model_id": "facebook/wav2vec2-large-es-voxpopuli",
+    "downloads": 108724,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "jax",
+        "wav2vec2",
+        "pretraining",
+        "audio",
+        "automatic-speech-recognition",
+        "voxpopuli",
+        "es",
+        "arxiv:2101.00390",
+        "license:cc-by-nc-4.0",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: es tags: - audio - automatic-speech-recognition - voxpopuli license: cc-by-nc-4.0 --- # Wav2Vec2-Large-VoxPopuli Facebook's Wav2Vec2 large model pretrained on the es unlabeled subset of VoxPopuli corpus. **Paper**: *VoxPopuli: A Large-Scale Multilingual Speech Corpus for Representation Learning, Semi-Supervised Learning and Interpretation* **Authors**: *Changhan Wang, Morgane Riviere, Ann Lee, Anne Wu, Chaitanya Talnikar, Daniel Haziza, Mary Williamson, Juan Pino, Emmanuel Dupoux* from *Facebook AI* See the official website for more information, here # Fine-Tuning Please refer to this blog on how to fine-tune this model on a specific language. Note that you should replace with this checkpoint for fine-tuning.",
+    "model_explanation_gemini": "Facebook's Wav2Vec2 large model pretrained on Spanish audio from the VoxPopuli corpus for automatic speech recognition tasks."
+}

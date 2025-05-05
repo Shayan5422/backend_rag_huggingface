@@ -1,0 +1,16 @@
+{
+    "model_id": "city96/FLUX.1-dev-gguf",
+    "downloads": 136642,
+    "tags": [
+        "gguf",
+        "text-to-image",
+        "image-generation",
+        "flux",
+        "base_model:black-forest-labs/FLUX.1-dev",
+        "base_model:quantized:black-forest-labs/FLUX.1-dev",
+        "license:other",
+        "region:us"
+    ],
+    "description": "--- base_model: black-forest-labs/FLUX.1-dev library_name: gguf license: other license_name: flux-1-dev-non-commercial-license license_link: LICENSE.md quantized_by: city96 tags: - text-to-image - image-generation - flux --- This is a direct GGUF conversion of black-forest-labs/FLUX.1-dev As this is a quantized model not a finetune, all the same restrictions/original license terms still apply. The model files can be used with the ComfyUI-GGUF custom node. Place model files in - see the GitHub readme for further install instructions. Please refer to this chart for a basic overview of quantization types.",
+    "model_explanation_gemini": "Generates images from text inputs using GGUF quantization for compatibility with ComfyUI-GGUF."
+}

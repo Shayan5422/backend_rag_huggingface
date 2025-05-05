@@ -1,0 +1,20 @@
+{
+    "model_id": "ai-forever/sbert_large_nlu_ru",
+    "downloads": 361658,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "safetensors",
+        "bert",
+        "feature-extraction",
+        "PyTorch",
+        "Transformers",
+        "ru",
+        "license:mit",
+        "text-embeddings-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: - ru tags: - PyTorch - Transformers license: mit --- # BERT large model (uncased) for Sentence Embeddings in Russian language. The model is described in this article For better quality, use mean token embeddings. ## Usage (HuggingFace Models Repository) You can use the model directly from the model repository to compute sentence embeddings: # Authors + SberDevices Team. + Aleksandr Abramov: HF profile, Github, Kaggle Competitions Master; + Denis Antykhov: Github; + Ibragim Badertdinov: Github",
+    "model_explanation_gemini": "Generates sentence embeddings in Russian using a large uncased BERT model, optimized for natural language understanding tasks."
+}

@@ -1,0 +1,16 @@
+{
+    "model_id": "deepseek-ai/deepseek-vl-1.3b-chat",
+    "downloads": 100963,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "multi_modality",
+        "image-text-to-text",
+        "arxiv:2403.05525",
+        "license:other",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: other license_name: deepseek license_link: LICENSE pipeline_tag: image-text-to-text --- ## 1. Introduction Introducing DeepSeek-VL, an open-source Vision-Language (VL) Model designed for real-world vision and language understanding applications. DeepSeek-VL possesses general multimodal understanding capabilities, capable of processing logical diagrams, web pages, formula recognition, scientific literature, natural images, and embodied intelligence in complex scenarios. DeepSeek-VL: Towards Real-World Vision-Language Understanding **Github Repository** Haoyu Lu*, Wen Liu*, Bo Zhang**, Bingxuan Wang, Kai Dong, Bo Liu, Jingxiang Sun, Tongzheng Ren, Zhuoshu Li, Hao Yang, Yaofeng Sun, Chengqi Deng, Hanwei Xu, Zhenda Xie, Chong Ruan (*Equal Contribution, **Project Lead) supports commercial use. ## 5. Citation ## 6. Contact If you have any questions, please raise an issue or contact us at service@deepseek.com.",
+    "model_explanation_gemini": "DeepSeek-VL is an open-source vision-language model for real-world multimodal understanding tasks like processing diagrams, web pages, formula recognition, and natural images."
+}

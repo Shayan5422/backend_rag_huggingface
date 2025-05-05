@@ -1,0 +1,17 @@
+{
+    "model_id": "trl-internal-testing/tiny-T5ForConditionalGeneration",
+    "downloads": 331531,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "t5",
+        "text2text-generation",
+        "trl",
+        "autotrain_compatible",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- library_name: transformers tags: - trl --- # Tiny T5ForConditionalGeneration This is a minimal model built for unit tests in the TRL library.",
+    "model_explanation_gemini": "A minimal T5 model designed for unit testing in the TRL library."
+}

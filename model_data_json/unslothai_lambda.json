@@ -1,0 +1,15 @@
+{
+    "model_id": "unslothai/lambda",
+    "downloads": 459725,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "llama",
+        "feature-extraction",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- {} --- We log statistics to see if any envs are breaking",
+    "model_explanation_gemini": "Logs statistics to monitor for environment failures."
+}

@@ -1,0 +1,19 @@
+{
+    "model_id": "finiteautomata/beto-sentiment-analysis",
+    "downloads": 311829,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "jax",
+        "bert",
+        "text-classification",
+        "sentiment-analysis",
+        "es",
+        "arxiv:2106.09462",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: - es tags: - sentiment-analysis --- # Sentiment Analysis in Spanish ## beto-sentiment-analysis **NOTE: this model will be removed soon -- use pysentimiento/robertuito-sentiment-analysis instead** Repository: Model trained with TASS 2020 corpus (around ~5k tweets) of several dialects of Spanish. Base model is BETO, a BERT model trained in Spanish. Uses , , labels. ## License is an open-source library for non-commercial use and scientific research purposes only. Please be aware that models are trained with third-party datasets and are subject to their respective licenses. 1. TASS Dataset license 2. [SEMEval 2017 Dataset license]() ## Citation If you use this model in your work, please cite the following papers: Enjoy! 🤗",
+    "model_explanation_gemini": "Classifies sentiment in Spanish tweets using BETO (a Spanish BERT model) with labels for positive, negative, and neutral sentiments."
+}

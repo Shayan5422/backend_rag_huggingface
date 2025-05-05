@@ -1,0 +1,17 @@
+{
+    "model_id": "LiheYoung/depth-anything-small-hf",
+    "downloads": 102423,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "depth_anything",
+        "depth-estimation",
+        "vision",
+        "arxiv:2401.10891",
+        "license:apache-2.0",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 tags: - vision pipeline_tag: depth-estimation widget: - inference: false --- # Depth Anything (small-sized model, Transformers version) Depth Anything model. It was introduced in the paper Depth Anything: Unleashing the Power of Large-Scale Unlabeled Data by Lihe Yang et al. and first released in this repository. Online demo is also provided. Disclaimer: The team releasing Depth Anything did not write a model card for this model so this model card has been written by the Hugging Face team. ## Model description Depth Anything leverages the DPT architecture with a DINOv2 backbone. The model is trained on ~62 million images, obtaining state-of-the-art results for both relative and absolute depth estimation. <img src=\" alt=\"drawing\" width=\"600\"/> <small> Depth Anything overview. Taken from the <a href=\" paper</a>.</small> ## Intended uses & limitations You can use the raw model for tasks like zero-shot depth estimation. See the model hub to look for other versions on a task that interests you. ### How to use Here is how to use this model to perform zero-shot depth estimation: Alternatively, one can use the classes themselves: For more code examples, we refer to the documentation. ### BibTeX entry and citation info",
+    "model_explanation_gemini": "Estimates depth in images using a DPT architecture with a DINOv2 backbone, trained on large-scale data for state-of-the-art relative and absolute depth prediction."
+}

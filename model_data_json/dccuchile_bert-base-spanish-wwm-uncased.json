@@ -1,0 +1,26 @@
+{
+    "model_id": "dccuchile/bert-base-spanish-wwm-uncased",
+    "downloads": 236920,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "tf",
+        "jax",
+        "bert",
+        "fill-mask",
+        "masked-lm",
+        "es",
+        "arxiv:1904.09077",
+        "arxiv:1906.01502",
+        "arxiv:1812.10464",
+        "arxiv:1901.07291",
+        "arxiv:1904.02099",
+        "arxiv:1906.01569",
+        "arxiv:1908.11828",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: - es tags: - masked-lm --- # BETO: Spanish BERT BETO is a BERT model trained on a big Spanish corpus. BETO is of size similar to a BERT-Base and was trained with the Whole Word Masking technique. Below you find Tensorflow and Pytorch checkpoints for the uncased and cased versions, as well as some results for Spanish benchmarks comparing BETO with Multilingual BERT as well as other (not BERT-based) models. ## Download | | | | | |-|:--------:|:-----:|:----:| |BETO uncased|tensorflow_weights | pytorch_weights | vocab, config | |BETO cased| tensorflow_weights | pytorch_weights | vocab, config | All models use a vocabulary of about 31k BPE subwords constructed using SentencePiece and were trained for 2M steps. ## Benchmarks The following table shows some BETO results in the Spanish version of every task. We compare BETO (cased and uncased) with the Best Multilingual BERT results that we found in the literature (as of October 2019). The table also shows some alternative methods for the same tasks (not necessarily BERT-based methods). References for all methods can be found here. |Task | BETO-cased | BETO-uncased | Best Multilingual BERT | Other results | |-------|--------------:|--------------:|--------------------------:|-------------------------------:| |POS | **98.97** | 98.44 | 97.10 [2] | 98.91 [6], 96.71 [3] | |NER-C | **88.43** | 82.67 | 87.38 [2] | 87.18 [3] | |MLDoc | 95.60 | **96.12** | 95.70 [2] | 88.75 [4] | |PAWS-X | 89.05 | 89.55 | 90.70 [8] | |XNLI | **82.01** | 80.15 | 78.50 [2] | 80.80 [5], 77.80 [1], 73.15 [4]| ## Example of use For further details on how to use BETO you can visit the 🤗Huggingface Transformers library, starting by the Quickstart section. BETO models can be accessed simply as []( and []( by using the Transformers library. An example on how to download and use the models in this page can be found in this colab notebook. (We will soon add a more detailed step-by-step tutorial in Spanish for newcommers 😉) ## Acknowledgments We thank Adereso for kindly providing support for traininig BETO-uncased, and the Millennium Institute for Foundational Research on Data that provided support for training BETO-cased. Also thanks to Google for helping us with the TensorFlow Research Cloud program. ## Citation Spanish Pre-Trained BERT Model and Evaluation Data To cite this resource in a publication please use the following: ## License Disclaimer The license CC BY 4.0 best describes our intentions for our work. However we are not sure that all the datasets used to train BETO have licenses compatible with CC BY 4.0 (specially for commercial use). Please use at your own discretion and verify that the licenses of the original text resources match your needs. ## References * [1] Original Multilingual BERT * [2] Multilingual BERT on \"Beto, Bentz, Becas: The Surprising Cross-Lingual Effectiveness of BERT\" * [3] Multilingual BERT on \"How Multilingual is Multilingual BERT?\" * [4] LASER * [5] XLM (MLM+TLM) * [6] UDPipe on \"75 Languages, 1 Model: Parsing Universal Dependencies Universally\" * [7] Multilingual BERT on \"Sequence Tagging with Contextual and Non-Contextual Subword Representations: A Multilingual Evaluation\" * [8] Multilingual BERT on \"PAWS-X: A Cross-lingual Adversarial Dataset for Paraphrase Identification\"",
+    "model_explanation_gemini": "BETO is a Spanish BERT-base model trained with Whole Word Masking for masked language modeling and natural language processing tasks in Spanish."
+}

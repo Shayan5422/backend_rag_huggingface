@@ -1,0 +1,19 @@
+{
+    "model_id": "finiteautomata/bertweet-base-sentiment-analysis",
+    "downloads": 298073,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "tf",
+        "roberta",
+        "text-classification",
+        "sentiment-analysis",
+        "en",
+        "arxiv:2106.09462",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: - en tags: - sentiment-analysis --- # Sentiment Analysis in English ## bertweet-sentiment-analysis Repository: Model trained with SemEval 2017 corpus (around ~40k tweets). Base model is BERTweet, a RoBERTa model trained on English tweets. Uses , , labels. ## License is an open-source library for non-commercial use and scientific research purposes only. Please be aware that models are trained with third-party datasets and are subject to their respective licenses. 1. TASS Dataset license 2. [SEMEval 2017 Dataset license]() ## Citation If you use in your work, please cite this paper Enjoy! 🤗",
+    "model_explanation_gemini": "Performs sentiment analysis on English tweets using a BERTweet-based model trained on SemEval 2017 data, classifying text into positive, negative, or neutral labels."
+}

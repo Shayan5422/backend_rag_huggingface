@@ -1,0 +1,19 @@
+{
+    "model_id": "dima806/fairface_age_image_detection",
+    "downloads": 71641052,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "vit",
+        "image-classification",
+        "dataset:nateraw/fairface",
+        "base_model:google/vit-base-patch16-224-in21k",
+        "base_model:finetune:google/vit-base-patch16-224-in21k",
+        "license:apache-2.0",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 metrics: - accuracy - f1 base_model: - google/vit-base-patch16-224-in21k pipeline_tag: image-classification library_name: transformers datasets: - nateraw/fairface --- Detects age group with about 59% accuracy based on an image. See for details. !image/png",
+    "model_explanation_gemini": "Detects age groups in images with approximately 59% accuracy."
+}

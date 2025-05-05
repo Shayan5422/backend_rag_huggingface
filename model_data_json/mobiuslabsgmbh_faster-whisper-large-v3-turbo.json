@@ -1,0 +1,10 @@
+{
+    "model_id": "mobiuslabsgmbh/faster-whisper-large-v3-turbo",
+    "downloads": 217459,
+    "tags": [
+        "license:mit",
+        "region:us"
+    ],
+    "description": "--- license: mit --- # Whisper large-v3 turbo model for CTranslate2 This repository contains the conversion of openai/whisper-large-v3-turbo to the CTranslate2 model format. This model can be used in CTranslate2 or projects based on CTranslate2 models such as faster-whisper. It is called automatically for Mobius Labs fork of faster-whisper. ## Example Note that the model weights are saved in FP16. This type can be changed when the model is loaded using the compute_type option in CTranslate2. ## Conversion details The openAI model was converted with the following command: ### More Information For more information about the original model, see its model card.",
+    "model_explanation_gemini": "Converts OpenAI's Whisper large-v3-turbo to CTranslate2 format for efficient speech recognition in faster-whisper projects."
+}

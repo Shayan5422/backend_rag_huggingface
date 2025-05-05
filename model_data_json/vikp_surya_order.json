@@ -1,0 +1,14 @@
+{
+    "model_id": "vikp/surya_order",
+    "downloads": 103716,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "vision-encoder-decoder",
+        "license:cc-by-nc-sa-4.0",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: cc-by-nc-sa-4.0 --- Reading order model for surya.",
+    "model_explanation_gemini": "Determines reading order for text in documents."
+}

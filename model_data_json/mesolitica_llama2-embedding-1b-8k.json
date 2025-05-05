@@ -1,0 +1,17 @@
+{
+    "model_id": "mesolitica/llama2-embedding-1b-8k",
+    "downloads": 129620,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "llama",
+        "feature-extraction",
+        "custom_code",
+        "ms",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: - ms --- # 1B 32768 context length Llama2 on Malaysian text embedding task Trained on truncated 8k context length, but infer able to scale up to 32k context length. README at WandB, ## how-to",
+    "model_explanation_gemini": "Generates embeddings for Malaysian text with a 1B-parameter Llama2 model trained on 8k context but scalable to 32k for inference."
+}

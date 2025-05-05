@@ -1,0 +1,18 @@
+{
+    "model_id": "timm/vit_base_patch16_224.augreg_in21k",
+    "downloads": 309896,
+    "tags": [
+        "timm",
+        "pytorch",
+        "safetensors",
+        "image-classification",
+        "transformers",
+        "dataset:imagenet-21k",
+        "arxiv:2106.10270",
+        "arxiv:2010.11929",
+        "license:apache-2.0",
+        "region:us"
+    ],
+    "description": "--- tags: - image-classification - timm - transformers library_name: timm license: apache-2.0 datasets: - imagenet-21k --- # Model card for vit_base_patch16_224.augreg_in21k A Vision Transformer (ViT) image classification model. Trained on ImageNet-21k (with additional augmentation and regularization) in JAX by paper authors, ported to PyTorch by Ross Wightman. ## Model Details - **Model Type:** Image classification / feature backbone - **Model Stats:** - Params (M): 102.6 - GMACs: 16.9 - Activations (M): 16.5 - Image size: 224 x 224 - **Papers:** - How to train your ViT? Data, Augmentation, and Regularization in Vision Transformers: - An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale: - **Dataset:** ImageNet-21k - **Original:** ## Model Usage ### Image Classification ### Image Embeddings ## Model Comparison Explore the dataset and runtime metrics of this model in timm model results. ## Citation",
+    "model_explanation_gemini": "A Vision Transformer (ViT) model trained on ImageNet-21k for image classification and feature extraction, using 224x224 input images with augmentation and regularization."
+}

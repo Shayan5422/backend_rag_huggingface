@@ -1,0 +1,15 @@
+{
+    "model_id": "flair/ner-french",
+    "downloads": 313648,
+    "tags": [
+        "flair",
+        "pytorch",
+        "token-classification",
+        "sequence-tagger-model",
+        "fr",
+        "dataset:conll2003",
+        "region:us"
+    ],
+    "description": "--- tags: - flair - token-classification - sequence-tagger-model language: fr datasets: - conll2003 widget: - text: \"George Washington est allé à Washington\" --- ## French NER in Flair (default model) This is the standard 4-class NER model for French that ships with Flair. F1-Score: **90,61** (WikiNER) Predicts 4 tags: | **tag** | **meaning** | |---------------------------------|-----------| | PER | person name | | LOC | location name | | ORG | organization name | | MISC | other name | Based on Flair embeddings and LSTM-CRF. --- ### Demo: How to use in Flair Requires: **Flair** () This yields the following output: So, the entities \"*George Washington*\" (labeled as a **person**) and \"*Washington*\" (labeled as a **location**) are found in the sentence \"*George Washington est allé à Washington*\". --- ### Training: Script to train this model The following Flair script was used to train this model: --- ### Cite Please cite the following paper when using this model. --- ### Issues? The Flair issue tracker is available here.",
+    "model_explanation_gemini": "Identifies and classifies named entities in French text into four categories (person, location, organization, and other names) using Flair embeddings and LSTM-CRF."
+}

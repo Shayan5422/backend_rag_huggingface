@@ -1,0 +1,17 @@
+{
+    "model_id": "timm/tf_efficientnetv2_b0.in1k",
+    "downloads": 320673,
+    "tags": [
+        "timm",
+        "pytorch",
+        "safetensors",
+        "image-classification",
+        "transformers",
+        "dataset:imagenet-1k",
+        "arxiv:2104.00298",
+        "license:apache-2.0",
+        "region:us"
+    ],
+    "description": "--- tags: - image-classification - timm - transformers library_name: timm license: apache-2.0 datasets: - imagenet-1k --- # Model card for tf_efficientnetv2_b0.in1k A EfficientNet-v2 image classification model. Trained on ImageNet-1k in Tensorflow by paper authors, ported to PyTorch by Ross Wightman. ## Model Details - **Model Type:** Image classification / feature backbone - **Model Stats:** - Params (M): 7.1 - GMACs: 0.5 - Activations (M): 3.5 - Image size: train = 192 x 192, test = 224 x 224 - **Papers:** - EfficientNetV2: Smaller Models and Faster Training: - **Dataset:** ImageNet-1k - **Original:** ## Model Usage ### Image Classification ### Feature Map Extraction ### Image Embeddings ## Model Comparison Explore the dataset and runtime metrics of this model in timm model results. ## Citation",
+    "model_explanation_gemini": "Classifies images using EfficientNet-v2 architecture, trained on ImageNet-1k for tasks like image classification or feature extraction."
+}

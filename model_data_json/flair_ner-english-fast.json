@@ -1,0 +1,15 @@
+{
+    "model_id": "flair/ner-english-fast",
+    "downloads": 916475,
+    "tags": [
+        "flair",
+        "pytorch",
+        "token-classification",
+        "sequence-tagger-model",
+        "en",
+        "dataset:conll2003",
+        "region:us"
+    ],
+    "description": "--- tags: - flair - token-classification - sequence-tagger-model language: en datasets: - conll2003 widget: - text: \"George Washington went to Washington\" --- ## English NER in Flair (fast model) This is the fast 4-class NER model for English that ships with Flair. F1-Score: **92,92** (corrected CoNLL-03) Predicts 4 tags: | **tag** | **meaning** | |---------------------------------|-----------| | PER | person name | | LOC | location name | | ORG | organization name | | MISC | other name | Based on Flair embeddings and LSTM-CRF. --- ### Demo: How to use in Flair Requires: **Flair** () This yields the following output: So, the entities \"*George Washington*\" (labeled as a **person**) and \"*Washington*\" (labeled as a **location**) are found in the sentence \"*George Washington went to Washington*\". --- ### Training: Script to train this model The following Flair script was used to train this model: --- ### Cite Please cite the following paper when using this model. --- ### Issues? The Flair issue tracker is available here.",
+    "model_explanation_gemini": "Identifies and classifies named entities in English text into four categories (person, location, organization, or other) using Flair embeddings and LSTM-CRF."
+}

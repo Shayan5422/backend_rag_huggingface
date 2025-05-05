@@ -1,0 +1,24 @@
+{
+    "model_id": "Gensyn/Qwen2.5-0.5B-Instruct",
+    "downloads": 2977185,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "qwen2",
+        "text-generation",
+        "chat",
+        "rl-swarm",
+        "gensyn",
+        "conversational",
+        "en",
+        "base_model:Qwen/Qwen2.5-0.5B",
+        "base_model:finetune:Qwen/Qwen2.5-0.5B",
+        "license:apache-2.0",
+        "autotrain_compatible",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 license_link: language: - en pipeline_tag: text-generation base_model: Qwen/Qwen2.5-0.5B tags: - chat - rl-swarm - gensyn library_name: transformers --- # Qwen2.5-0.5B-Instruct ## Introduction This model is intended for use in the Gensyn RL Swarm, to finetune locally using peer-to-peer reinforcement learning post-training. Once finetuned, the model can be used as normal in any workflow, for details on how to do this please refer to the original model documentation. For more details on the original model, please refer to the original repository here. This repo contains an **unmodified version** of the instruction-tuned 0.5B Qwen2.5 model, which has the following features: - Type: Causal Language Models - Training Stage: Pretraining & Post-training - Architecture: transformers with RoPE, SwiGLU, RMSNorm, Attention QKV bias and tied word embeddings - Number of Parameters: 0.49B - Number of Paramaters (Non-Embedding): 0.36B - Number of Layers: 24 - Number of Attention Heads (GQA): 14 for Q and 2 for KV - Context Length: Full 32,768 tokens and generation 8192 tokens ## Requirements This model is intended for use in the Gensyn RL Swarm system, for details on model requirements when using outside of a swarm, refer to the original Qwen repo here. ## Quickstart To deploy this model into a swarm and/or participate in the Gensyn Testnet, follow the instructions in the RL Swarm repository, read about the testnet, read the RL Swarm overview, and/or read the RL Swarm technical report.",
+    "model_explanation_gemini": "A 0.5B parameter instruction-tuned causal language model designed for peer-to-peer reinforcement learning finetuning in the Gensyn RL Swarm, capable of text generation with a 32K token context."
+}

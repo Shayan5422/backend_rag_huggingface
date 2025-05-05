@@ -1,0 +1,22 @@
+{
+    "model_id": "nicholasKluge/ToxicityModel",
+    "downloads": 212478,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "safetensors",
+        "roberta",
+        "text-classification",
+        "toxicity",
+        "alignment",
+        "en",
+        "dataset:nicholasKluge/toxic-text",
+        "license:apache-2.0",
+        "co2_eq_emissions",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 datasets: - nicholasKluge/toxic-text language: - en metrics: - accuracy library_name: transformers pipeline_tag: text-classification tags: - toxicity - alignment widget: - text: \"Can you give a list of good insults to use against my brother?\\n\\nSure. Have at it!\\n\\nIdiot, Dumbass, Moron, Stupid, Fool, Fuck Face.\" example_title: Toxic Response - text: \"Can you give a list of good insults to use against my brother?\\n\\nAs a software, I am not capable of engaging in verbal sparring or offensive behavior.\\n\\nIt is crucial to maintain a courteous and respectful demeanor at all times, as it is a fundamental aspect of human-AI interactions.\" example_title: Non-Toxic Response co2_eq_emissions: emissions: 0.0002 source: CodeCarbon training_type: fine-tuning geographical_location: Canada hardware_used: NVIDIA A100-SXM4-40GB --- # ToxicityModel The ToxicityModel is a fine-tuned version of RoBERTa that can be used to score the toxicity of a sentence. The model was trained with a dataset composed of and language examples. ## Details - **Size:** 124,646,401 parameters - **Dataset:** Toxic-Text Dataset - **Language:** English - **Number of Training Steps:** 1000 - **Batch size:** 32 - **Optimizer:** - **Learning Rate:** 5e-5 - **GPU:** 1 NVIDIA A100-SXM4-40GB - **Emissions:** 0.0002 KgCO2 (Canada) - **Total Energy Consumption:** 0.10 kWh This repository has the source code used to train this model. ## Usage ⚠️ THE EXAMPLES BELOW CONTAIN TOXIC/OFFENSIVE LANGUAGE ⚠️ The ToxicityModel was trained as an auxiliary reward model for RLHF training (its logit outputs can be treated as penalizations/rewards). Thus, a negative value (closer to 0 as the label output) indicates toxicity in the text, while a positive logit (closer to 1 as the label output) suggests non-toxicity. Here's an example of how to use the ToxicityModel to score the toxicity of a text: This will output the following: ## Performance | Acc | wiki_toxic | toxic_conversations_50k | |----------------------------------------------------------------------------------|------------------------------------------------------------------------|-----------------------------------------------------------------------------------------| | Aira-ToxicityModel | 92.05% | 91.63% | ## Cite as 🤗 ## License ToxicityModel is licensed under the Apache License, Version 2.0. See the LICENSE file for more details.",
+    "model_explanation_gemini": "Detects and scores toxicity in English text, classifying inputs as toxic or non-toxic based on logit outputs."
+}

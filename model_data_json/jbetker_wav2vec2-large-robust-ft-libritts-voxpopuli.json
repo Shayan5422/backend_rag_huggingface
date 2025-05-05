@@ -1,0 +1,14 @@
+{
+    "model_id": "jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli",
+    "downloads": 332892,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "wav2vec2",
+        "automatic-speech-recognition",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "This checkpoint is a wav2vec2-large model that is useful for generating transcriptions with punctuation. It is intended for use in building transcriptions for TTS models, where punctuation is very important for prosody. This model was created by fine-tuning the checkpoint on the libritts and voxpopuli datasets with a new vocabulary that includes punctuation. The model gets a respectable WER of 4.45% on the librispeech validation set. The baseline, , got 4.3%. Since the model was fine-tuned on clean audio, it is not well-suited for noisy audio like CommonVoice (though I may upload a checkpoint for that soon too). It still does pretty good, though. The vocabulary is uploaded to the model hub as well . Check out my speech transcription script repo, ocotillo for usage examples:",
+    "model_explanation_gemini": "Generates transcriptions with punctuation from clean audio, primarily for improving prosody in text-to-speech models."
+}

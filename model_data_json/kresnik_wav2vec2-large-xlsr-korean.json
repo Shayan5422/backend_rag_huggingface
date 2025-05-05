@@ -1,0 +1,21 @@
+{
+    "model_id": "kresnik/wav2vec2-large-xlsr-korean",
+    "downloads": 665768,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "safetensors",
+        "wav2vec2",
+        "automatic-speech-recognition",
+        "speech",
+        "audio",
+        "ko",
+        "dataset:kresnik/zeroth_korean",
+        "license:apache-2.0",
+        "model-index",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: ko datasets: - kresnik/zeroth_korean tags: - speech - audio - automatic-speech-recognition license: apache-2.0 model-index: - name: 'Wav2Vec2 XLSR Korean' results: - task: name: Automatic Speech Recognition type: automatic-speech-recognition dataset: name: Zeroth Korean type: kresnik/zeroth_korean args: clean metrics: - name: Test WER type: wer value: 4.74 - name: Test CER type: cer value: 1.78 --- ## Evaluation on Zeroth-Korean ASR corpus Google colab notebook(Korean) ### Expected WER: 4.74% ### Expected CER: 1.78%",
+    "model_explanation_gemini": "Converts Korean speech to text using automatic speech recognition, achieving 4.74% WER and 1.78% CER on the Zeroth Korean dataset."
+}

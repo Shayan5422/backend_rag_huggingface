@@ -1,0 +1,20 @@
+{
+    "model_id": "Helsinki-NLP/opus-mt-pl-en",
+    "downloads": 90974,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "tf",
+        "marian",
+        "text2text-generation",
+        "translation",
+        "pl",
+        "en",
+        "license:apache-2.0",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- tags: - translation license: apache-2.0 --- ### opus-mt-pl-en * source languages: pl * target languages: en * OPUS readme: pl-en * dataset: opus * model: transformer-align * pre-processing: normalization + SentencePiece * download original weights: opus-2019-12-18.zip * test set translations: opus-2019-12-18.test.txt * test set scores: opus-2019-12-18.eval.txt ## Benchmarks | testset | BLEU | chr-F | |-----------------------|-------|-------| | Tatoeba.pl.en | 54.9 | 0.701 |",
+    "model_explanation_gemini": "Translates text from Polish (pl) to English (en) using a transformer-based model trained on OPUS datasets."
+}

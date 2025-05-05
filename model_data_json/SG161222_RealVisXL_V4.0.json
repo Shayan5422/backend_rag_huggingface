@@ -1,0 +1,15 @@
+{
+    "model_id": "SG161222/RealVisXL_V4.0",
+    "downloads": 284108,
+    "tags": [
+        "diffusers",
+        "safetensors",
+        "license:openrail++",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "diffusers:StableDiffusionXLPipeline",
+        "region:us"
+    ],
+    "description": "--- license: openrail++ --- <strong>Check my exclusive models on Mage: </strong><a href=\" rel=\"noopener noreferrer nofollow\"><strong>ParagonXL</strong></a><strong> / </strong><a href=\" rel=\"noopener noreferrer nofollow\"><strong>NovaXL</strong></a><strong> / </strong><a href=\" rel=\"noopener noreferrer nofollow\"><strong>NovaXL Lightning</strong></a><strong> / </strong><a href=\" rel=\"noopener noreferrer nofollow\"><strong>NovaXL V2</strong></a><strong> / </strong><a href=\" rel=\"noopener noreferrer nofollow\"><strong>NovaXL Pony</strong></a><strong> / </strong><a href=\" rel=\"noopener noreferrer nofollow\"><strong>NovaXL Pony Lightning</strong></a><strong> / </strong><a href=\" rel=\"noopener noreferrer nofollow\"><strong>RealDreamXL</strong></a><strong> / </strong><a href=\" rel=\"noopener noreferrer nofollow\"><strong>RealDreamXL Lightning</strong></a></p> <b>This model is available on <a href=\" (main sponsor)</b><br> <b>You can support me directly on Boosty - <b>It's important! Read it!</b><br> The model is still in the training phase. This is not the final version and may contain artifacts and perform poorly in some cases.<br> The model is aimed at photorealism. Can produce sfw and nsfw images of decent quality.<br> CivitAI Page: <b>Recommended Negative Prompt:</b><br> (face asymmetry, eyes asymmetry, deformed eyes, open mouth)<br> <b>or another negative prompt</b><br> <b>Recommended Generation Parameters:</b><br> Sampling Steps: 25+<br> Sampling Method: DPM++ 2M Karras<br> <b>Recommended Hires Fix Parameters:</b><br> Hires steps: 10+<br> Upscaler: 4x-UltraSharp upscaler / or another<br> Denoising strength: 0.1 - 0.5<br> Upscale by: 1.1-2.0<br>",
+    "model_explanation_gemini": "Generates photorealistic images, including both SFW and NSFW content, with potential artifacts due to ongoing training."
+}

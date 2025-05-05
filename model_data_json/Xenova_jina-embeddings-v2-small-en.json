@@ -1,0 +1,17 @@
+{
+    "model_id": "Xenova/jina-embeddings-v2-small-en",
+    "downloads": 125208,
+    "tags": [
+        "transformers.js",
+        "onnx",
+        "bert",
+        "fill-mask",
+        "feature-extraction",
+        "custom_code",
+        "base_model:jinaai/jina-embeddings-v2-small-en",
+        "base_model:quantized:jinaai/jina-embeddings-v2-small-en",
+        "region:us"
+    ],
+    "description": "--- base_model: jinaai/jina-embeddings-v2-small-en library_name: transformers.js pipeline_tag: feature-extraction --- with ONNX weights to be compatible with Transformers.js. ## Usage with 🤗 Transformers.js If you haven't already, you can install the Transformers.js JavaScript library from NPM using: You can then use the model as follows: --- Note: Having a separate repo for ONNX weights is intended to be a temporary solution until WebML gains more traction. If you would like to make your models web-ready, we recommend converting to ONNX using 🤗 Optimum and structuring your repo like this one (with ONNX weights located in a subfolder named ).",
+    "model_explanation_gemini": "Converts text into numerical embeddings for feature extraction, optimized for web use with ONNX weights compatible with Transformers.js."
+}

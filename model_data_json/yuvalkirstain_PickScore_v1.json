@@ -1,0 +1,16 @@
+{
+    "model_id": "yuvalkirstain/PickScore_v1",
+    "downloads": 1005370,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "safetensors",
+        "clip",
+        "zero-shot-image-classification",
+        "arxiv:2305.01569",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "# Model Card for PickScore v1 This model is a scoring function for images generated from text. It takes as input a prompt and a generated image and outputs a score. It can be used as a general scoring function, and for tasks such as human preference prediction, model evaluation, image ranking, and more. See our paper Pick-a-Pic: An Open Dataset of User Preferences for Text-to-Image Generation for more details. ## Model Details ### Model Description This model was finetuned from CLIP-H using the Pick-a-Pic dataset. ### Model Sources [optional] <!-- Provide the basic links for the model. --> - **Repository:** See the PickScore repo - **Paper:** Pick-a-Pic: An Open Dataset of User Preferences for Text-to-Image Generation. - **Demo [optional]:** Huggingface Spaces demo for PickScore ## How to Get Started with the Model Use the code below to get started with the model. ## Training Details ### Training Data This model was trained on the Pick-a-Pic dataset. ### Training Procedure TODO - add paper. ## Citation [optional] If you find this work useful, please cite: **APA:** [More Information Needed]",
+    "model_explanation_gemini": "Scores generated images based on their alignment with input prompts for tasks like preference prediction, model evaluation, and image ranking."
+}

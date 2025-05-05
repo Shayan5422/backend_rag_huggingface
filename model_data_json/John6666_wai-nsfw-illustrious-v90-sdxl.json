@@ -1,0 +1,26 @@
+{
+    "model_id": "John6666/wai-nsfw-illustrious-v90-sdxl",
+    "downloads": 87756,
+    "tags": [
+        "diffusers",
+        "safetensors",
+        "text-to-image",
+        "stable-diffusion",
+        "stable-diffusion-xl",
+        "not-for-all-audiences",
+        "anime",
+        "hentai",
+        "girls",
+        "illustrious",
+        "en",
+        "base_model:OnomaAIResearch/Illustrious-xl-early-release-v0",
+        "base_model:finetune:OnomaAIResearch/Illustrious-xl-early-release-v0",
+        "license:other",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "diffusers:StableDiffusionXLPipeline",
+        "region:us"
+    ],
+    "description": "--- license: other license_name: faipl-1.0-sd license_link: language: - en library_name: diffusers pipeline_tag: text-to-image tags: - text-to-image - stable-diffusion - stable-diffusion-xl - not-for-all-audiences - anime - hentai - girls - illustrious base_model: OnomaAIResearch/Illustrious-xl-early-release-v0 --- Original model is here. This model created by WAI0731.",
+    "model_explanation_gemini": "Generates anime-style NSFW images from text prompts using Stable Diffusion XL."
+}

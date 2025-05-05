@@ -1,0 +1,18 @@
+{
+    "model_id": "timm/beitv2_base_patch16_224.in1k_ft_in22k",
+    "downloads": 200342,
+    "tags": [
+        "timm",
+        "pytorch",
+        "safetensors",
+        "image-classification",
+        "transformers",
+        "dataset:imagenet-22k",
+        "arxiv:2208.06366",
+        "arxiv:2010.11929",
+        "license:apache-2.0",
+        "region:us"
+    ],
+    "description": "--- tags: - image-classification - timm - transformers library_name: timm license: apache-2.0 datasets: - imagenet-22k --- # Model card for beitv2_base_patch16_224.in1k_ft_in22k A BEiT-v2 image classification model. Trained on ImageNet-1k with self-supervised masked image modelling (MIM) using a VQ-KD encoder as a visual tokenizer (via OpenAI CLIP B/16 teacher). Fine-tuned on ImageNet-22k. ## Model Details - **Model Type:** Image classification / feature backbone - **Model Stats:** - Params (M): 102.6 - GMACs: 17.6 - Activations (M): 23.9 - Image size: 224 x 224 - **Papers:** - BEiT v2: Masked Image Modeling with Vector-Quantized Visual Tokenizers: - An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale: - **Dataset:** ImageNet-22k - **Original:** ## Model Usage ### Image Classification ### Image Embeddings ## Model Comparison Explore the dataset and runtime metrics of this model in timm model results. ## Citation",
+    "model_explanation_gemini": "An image classification model trained with self-supervised learning on ImageNet-1k and fine-tuned on ImageNet-22k, using masked image modeling and a CLIP-based visual tokenizer."
+}

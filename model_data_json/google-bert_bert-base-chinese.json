@@ -1,0 +1,20 @@
+{
+    "model_id": "google-bert/bert-base-chinese",
+    "downloads": 3229600,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "tf",
+        "jax",
+        "safetensors",
+        "bert",
+        "fill-mask",
+        "zh",
+        "arxiv:1810.04805",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: zh --- # Bert-base-chinese ## Table of Contents - Model Details - Uses - Risks, Limitations and Biases - Training - Evaluation - How to Get Started With the Model ## Model Details ### Model Description This model has been pre-trained for Chinese, training and random input masking has been applied independently to word pieces (as in the original BERT paper). - **Developed by:** HuggingFace team - **Model Type:** Fill-Mask - **Language(s):** Chinese - **License:** [More Information needed] - **Parent Model:** See the BERT base uncased model for more information about the BERT base model. ### Model Sources - **Paper:** BERT ## Uses #### Direct Use This model can be used for masked language modeling ## Risks, Limitations and Biases **CONTENT WARNING: Readers should be aware this section contains content that is disturbing, offensive, and can propagate historical and current stereotypes.** Significant research has explored bias and fairness issues with language models (see, e.g., Sheng et al. (2021) and Bender et al. (2021)). ## Training #### Training Procedure * **type_vocab_size:** 2 * **vocab_size:** 21128 * **num_hidden_layers:** 12 #### Training Data [More Information Needed] ## Evaluation #### Results [More Information Needed] ## How to Get Started With the Model",
+    "model_explanation_gemini": "A Chinese BERT-based model pre-trained for masked language modeling tasks."
+}

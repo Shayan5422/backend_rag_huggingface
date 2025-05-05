@@ -1,0 +1,15 @@
+{
+    "model_id": "flair/ner-english-ontonotes",
+    "downloads": 166091,
+    "tags": [
+        "flair",
+        "pytorch",
+        "token-classification",
+        "sequence-tagger-model",
+        "en",
+        "dataset:ontonotes",
+        "region:us"
+    ],
+    "description": "--- tags: - flair - token-classification - sequence-tagger-model language: en datasets: - ontonotes widget: - text: \"On September 1st George Washington won 1 dollar.\" --- ## English NER in Flair (Ontonotes default model) This is the 18-class NER model for English that ships with Flair. F1-Score: **89.27** (Ontonotes) Predicts 18 tags: | **tag** | **meaning** | |---------------------------------|-----------| | CARDINAL | cardinal value | | DATE | date value | | EVENT | event name | | FAC | building name | | GPE | geo-political entity | | LANGUAGE | language name | | LAW | law name | | LOC | location name | | MONEY | money name | | NORP | affiliation | | ORDINAL | ordinal value | | ORG | organization name | | PERCENT | percent value | | PERSON | person name | | PRODUCT | product name | | QUANTITY | quantity value | | TIME | time value | | WORK_OF_ART | name of work of art | Based on Flair embeddings and LSTM-CRF. --- ### Demo: How to use in Flair Requires: **Flair** () This yields the following output: So, the entities \"*September 1st*\" (labeled as a **date**), \"*George Washington*\" (labeled as a **person**) and \"*1 dollar*\" (labeled as a **money**) are found in the sentence \"*On September 1st George Washington won 1 dollar*\". --- ### Training: Script to train this model The following Flair script was used to train this model: --- ### Cite Please cite the following paper when using this model. --- ### Issues? The Flair issue tracker is available here.",
+    "model_explanation_gemini": "Identifies and classifies 18 types of named entities in English text using Flair embeddings and LSTM-CRF, achieving an F1-score of 89.27 on Ontonotes data."
+}

@@ -1,0 +1,14 @@
+{
+    "model_id": "vikp/surya_rec2",
+    "downloads": 231358,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "vision-encoder-decoder",
+        "license:cc-by-nc-sa-4.0",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- library_name: transformers license: cc-by-nc-sa-4.0 --- OCR model for surya",
+    "model_explanation_gemini": "Performs OCR (optical character recognition) for the Surya script."
+}

@@ -1,0 +1,7 @@
+Flask==2.3.3
+Flask-Cors==4.0.0
+sentence-transformers==2.2.2
+faiss-cpu==1.7.4 # Use faiss-gpu if you have CUDA installed and configured
+numpy==1.24.3
+tqdm==4.66.1
+huggingface_hub==0.11.1 # Pinning version for compatibility with sentence-transformers 2.2.2 

@@ -1,0 +1,15 @@
+{
+    "model_id": "unslothai/vram-16",
+    "downloads": 1208325,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "llama",
+        "feature-extraction",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- library_name: transformers tags: [] ---",
+    "model_explanation_gemini": "The model's description does not provide any information about its functionality, purpose, or task."
+}

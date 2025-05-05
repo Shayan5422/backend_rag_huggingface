@@ -1,0 +1,23 @@
+{
+    "model_id": "llava-hf/llava-onevision-qwen2-0.5b-ov-hf",
+    "downloads": 367907,
+    "tags": [
+        "transformers",
+        "onnx",
+        "safetensors",
+        "llava_onevision",
+        "image-text-to-text",
+        "vision",
+        "transformers.js",
+        "conversational",
+        "en",
+        "zh",
+        "dataset:lmms-lab/LLaVA-OneVision-Data",
+        "arxiv:2408.03326",
+        "license:apache-2.0",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: - en - zh license: apache-2.0 tags: - vision - image-text-to-text - transformers.js datasets: - lmms-lab/LLaVA-OneVision-Data pipeline_tag: image-text-to-text arxiv: 2408.03326 library_name: transformers --- # LLaVA-Onevision Model Card !image/png Check out also the Google Colab demo to run Llava on a free-tier Google Colab instance: ![Open In Colab]( Below is the model card of 0.5B LLaVA-Onevision model which is copied from the original LLaVA-Onevision model card that you can find here. ## Model details **Model type:** LLaVA-Onevision is an open-source multimodal LLM trained by fine-tuning Qwen2 on GPT-generated multimodal instruction-following data. LLaVA-OneVision is the first single model that can simultaneously push the performance boundaries of open LMMs in three important computer vision scenarios: single-image, multi-image, and video scenarios. Importantly, the design of LLaVA-OneVision allows strong transfer learning across different modalities/scenarios, yielding new emerging capabilities. In particular, strong video understanding and cross-scenario capabilities are demonstrated through task transfer from images to videos. **Model date:** LLaVA-Onevision-0.5-ov was added in August 2024. **Paper or resources for more information:** - **Architecture:** SO400M + Qwen2 - **Pretraining Stage:** LCS-558K, 1 epoch, projector - **Mid Stage:** A mixture of 4.7M high-quality synthetic data, 1 epoch, full model - **Final-Image Stage:** A mixture of 3.6M single-image data, 1 epoch, full model - **OneVision Stage:** A mixture of 1.6M single-image/multi-image/video data, 1 epoch, full model - **Precision:** bfloat16 ## How to use the model First, make sure to have installed from branch or . The model supports multi-image and multi-prompt generation. Meaning that you can pass multiple images in your prompt. Make sure also to follow the correct prompt template by applying chat template: ### Using : Below we used []( checkpoint. ### Using pure : Below is an example script to run generation in precision on a GPU device: ----------- From transformers>=v4.48, you can also pass image/video url or local path to the conversation history, and let the chat template handle the rest. Chat template will load the image for you and return inputs in which you can pass directly to ### Model optimization #### 4-bit quantization through library First make sure to install , and make sure to have access to a CUDA compatible GPU device. Simply change the snippet above with: #### Use Flash-Attention 2 to further speed-up generation First make sure to install . Refer to the original repository of Flash Attention regarding that package installation. Simply change the snippet above with: ### Usage w/ Transformers.js If you haven't already, you can install the Transformers.js JavaScript library from NPM using: **Example:** Multi-round conversations w/ PKV caching # Citation",
+    "model_explanation_gemini": "Multimodal LLM for image, multi-image, and video understanding, generating text responses from visual inputs through instruction-following tasks."
+}

@@ -1,0 +1,23 @@
+{
+    "model_id": "Lykon/AAM_XL_AnimeMix",
+    "downloads": 166902,
+    "tags": [
+        "diffusers",
+        "safetensors",
+        "stable-diffusion",
+        "stable-diffusion-diffusers",
+        "stable-diffusion-xl",
+        "text-to-image",
+        "art",
+        "artistic",
+        "anime",
+        "en",
+        "license:other",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "diffusers:StableDiffusionXLPipeline",
+        "region:us"
+    ],
+    "description": "--- language: - en license: other tags: - stable-diffusion - stable-diffusion-diffusers - stable-diffusion-xl - text-to-image - art - artistic - diffusers - anime --- # AAM XL AnimeMix is a Stable Diffusion model that has been fine-tuned on stabilityai/stable-diffusion-xl-base-1.0. Please consider supporting me: - on Patreon - or buy me a coffee **License**: Fair AI Public License 1.0-SD ## Diffusers For more general information on how to run text-to-image models with 🧨 Diffusers, see the docs. 1. Installation 2. Run",
+    "model_explanation_gemini": "Generates anime-style images from text prompts using a fine-tuned Stable Diffusion XL model."
+}

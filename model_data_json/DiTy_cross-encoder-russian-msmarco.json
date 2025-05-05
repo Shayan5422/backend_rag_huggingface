@@ -1,0 +1,24 @@
+{
+    "model_id": "DiTy/cross-encoder-russian-msmarco",
+    "downloads": 92381,
+    "tags": [
+        "sentence-transformers",
+        "safetensors",
+        "bert",
+        "text-classification",
+        "transformers",
+        "rubert",
+        "cross-encoder",
+        "reranker",
+        "msmarco",
+        "text-ranking",
+        "ru",
+        "dataset:unicamp-dl/mmarco",
+        "base_model:DeepPavlov/rubert-base-cased",
+        "base_model:finetune:DeepPavlov/rubert-base-cased",
+        "license:mit",
+        "region:us"
+    ],
+    "description": "--- language: - ru library_name: sentence-transformers tags: - sentence-transformers - text-classification - transformers - rubert - cross-encoder - reranker - msmarco datasets: - unicamp-dl/mmarco base_model: DeepPavlov/rubert-base-cased widget: - text: как часто нужно ходить к стоматологу? [SEP] Дядя Женя работает врачем стоматологом. example_title: Example 1 - text: как часто нужно ходить к стоматологу? [SEP] Минимальный обязательный срок посещения зубного врача – раз в год, но специалисты рекомендуют делать это чаще – раз в полгода, а ещё лучше – раз в квартал. При таком сроке легко отследить любые начинающиеся проблемы и исправить их сразу же. example_title: Example 2 license: mit pipeline_tag: text-ranking --- # DiTy/cross-encoder-russian-msmarco This is a sentence-transformers model based on a pre-trained DeepPavlov/rubert-base-cased and finetuned with MS-MARCO Russian passage ranking dataset. The model can be used for Information Retrieval in the Russian language: Given a query, encode the query will all possible passages (e.g. retrieved with ElasticSearch). Then sort the passages in a decreasing order. See SBERT.net Retrieve & Re-rank for more details. <!--- Describe your model here --> ## Usage (Sentence-Transformers) Using this model becomes easy when you have sentence-transformers installed: Then you can use the model like this: ## Usage (HuggingFace Transformers) Without sentence-transformers, you can use the model like this: First, you pass your input through the transformer model, then you need to get the logits from the model.",
+    "model_explanation_gemini": "Ranks Russian-language passages by relevance to a given query for information retrieval tasks."
+}

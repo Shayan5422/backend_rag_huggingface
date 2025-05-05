@@ -1,0 +1,22 @@
+{
+    "model_id": "oliverguhr/german-sentiment-bert",
+    "downloads": 355798,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "tf",
+        "jax",
+        "onnx",
+        "safetensors",
+        "bert",
+        "text-classification",
+        "sentiment",
+        "de",
+        "license:mit",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: - de tags: - sentiment - bert license: mit widget: - text: \"Das ist gar nicht mal so schlecht\" metrics: - f1 --- # German Sentiment Classification with Bert This model was trained for sentiment classification of German language texts. To achieve the best results all model inputs needs to be preprocessed with the same procedure, that was applied during the training. To simplify the usage of the model, we provide a Python package that bundles the code need for the preprocessing and inferencing. The model uses the Googles Bert architecture and was trained on 1.834 million German-language samples. The training data contains texts from various domains like Twitter, Facebook and movie, app and hotel reviews. You can find more information about the dataset and the training process in the paper. ## Using the Python package To get started install the package from pypi: The code above will output following list: ### Output class probabilities ## Model and Data If you are interested in code and data that was used to train this model please have a look at this repository and our paper. Here is a table of the F1 scores that this model achieves on different datasets. Since we trained this model with a newer version of the transformer library, the results are slightly better than reported in the paper. | Dataset | F1 micro Score | | :----------------------------------------------------------- | -------------: | | holidaycheck | 0.9568 | | scare | 0.9418 | | filmstarts | 0.9021 | | germeval | 0.7536 | | PotTS | 0.6780 | | emotions | 0.9649 | | sb10k | 0.7376 | | Leipzig Wikipedia Corpus 2016 | 0.9967 | | all | 0.9639 | ## Cite For feedback and questions contact me view mail or Twitter @oliverguhr. Please cite us if you found this useful:",
+    "model_explanation_gemini": "Classifies sentiment in German text using BERT architecture, trained on diverse datasets including social media and reviews."
+}

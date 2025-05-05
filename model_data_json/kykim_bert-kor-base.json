@@ -1,0 +1,18 @@
+{
+    "model_id": "kykim/bert-kor-base",
+    "downloads": 96982,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "tf",
+        "jax",
+        "bert",
+        "fill-mask",
+        "ko",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: ko --- # Bert base model for Korean * 70GB Korean text dataset and 42000 lower-cased subwords are used * Check the model performance and other language models for Korean in github",
+    "model_explanation_gemini": "Korean BERT base model trained on 70GB of Korean text with 42,000 lower-cased subwords for Korean language tasks."
+}

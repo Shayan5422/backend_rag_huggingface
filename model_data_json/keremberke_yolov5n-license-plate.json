@@ -1,0 +1,17 @@
+{
+    "model_id": "keremberke/yolov5n-license-plate",
+    "downloads": 100489,
+    "tags": [
+        "yolov5",
+        "tensorboard",
+        "yolo",
+        "vision",
+        "object-detection",
+        "pytorch",
+        "dataset:keremberke/license-plate-object-detection",
+        "model-index",
+        "region:us"
+    ],
+    "description": "--- tags: - yolov5 - yolo - vision - object-detection - pytorch library_name: yolov5 library_version: 7.0.6 inference: false datasets: - keremberke/license-plate-object-detection model-index: - name: keremberke/yolov5n-license-plate results: - task: type: object-detection dataset: type: keremberke/license-plate-object-detection name: keremberke/license-plate-object-detection split: validation metrics: - type: precision # since mAP@0.5 is not available on hf.co/metrics value: 0.9783431294995892 # min: 0.0 - max: 1.0 name: mAP@0.5 --- <div align=\"center\"> <img width=\"640\" alt=\"keremberke/yolov5n-license-plate\" src=\" </div> ### How to use - Install yolov5: - Load model and perform prediction: - Finetune the model on your custom dataset: **More models available at: awesome-yolov5-models**",
+    "model_explanation_gemini": "Detects license plates in images using YOLOv5 object detection."
+}

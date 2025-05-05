@@ -1,0 +1,14 @@
+{
+    "model_id": "facebook/contriever",
+    "downloads": 213710,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "bert",
+        "arxiv:2112.09118",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "This model has been trained without supervision following the approach described in Towards Unsupervised Dense Information Retrieval with Contrastive Learning. The associated GitHub repository is available here ## Usage (HuggingFace Transformers) Using the model directly available in HuggingFace transformers requires to add a mean pooling operation to obtain a sentence embedding.",
+    "model_explanation_gemini": "Generates unsupervised dense sentence embeddings for information retrieval using contrastive learning, requiring mean pooling for embedding extraction."
+}

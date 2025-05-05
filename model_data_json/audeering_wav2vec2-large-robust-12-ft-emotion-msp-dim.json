@@ -1,0 +1,22 @@
+{
+    "model_id": "audeering/wav2vec2-large-robust-12-ft-emotion-msp-dim",
+    "downloads": 357398,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "safetensors",
+        "wav2vec2",
+        "speech",
+        "audio",
+        "audio-classification",
+        "emotion-recognition",
+        "en",
+        "dataset:msp-podcast",
+        "arxiv:2203.07378",
+        "license:cc-by-nc-sa-4.0",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: en datasets: - msp-podcast inference: true tags: - speech - audio - wav2vec2 - audio-classification - emotion-recognition license: cc-by-nc-sa-4.0 pipeline_tag: audio-classification --- # Model for Dimensional Speech Emotion Recognition based on Wav2vec 2.0 Please note that this model is for research purpose only. A commercial license for a model that has been trained on much more data can be acquired with audEERING. The model expects a raw audio signal as input, and outputs predictions for arousal, dominance and valence in a range of approximately 0...1. In addition, it provides the pooled states of the last transformer layer. The model was created by fine-tuning Wav2Vec2-Large-Robust on MSP-Podcast (v1.7). The model was pruned from 24 to 12 transformer layers before fine-tuning. An ONNX export of the model is available from doi:10.5281/zenodo.6221127. Further details are given in the associated paper and tutorial. # Usage",
+    "model_explanation_gemini": "Recognizes emotions in speech by predicting arousal, dominance, and valence levels from raw audio signals using a pruned Wav2Vec2-Large-Robust model fine-tuned on MSP-Podcast data."
+}

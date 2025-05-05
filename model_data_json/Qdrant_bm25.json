@@ -1,0 +1,14 @@
+{
+    "model_id": "Qdrant/bm25",
+    "downloads": 184025,
+    "tags": [
+        "transformers",
+        "sentence-similarity",
+        "en",
+        "license:apache-2.0",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 language: - en pipeline_tag: sentence-similarity --- Repository with files to perform BM25 searches with FastEmbed. BM25 (Best Matching 25) is a ranking function used by search engines to estimate the relevance of documents to a given search query. ### Usage > Note: This model is supposed to be used with Qdrant. Vectors have to be configured with Modifier.IDF. Here's an example of BM25 with FastEmbed. ```",
+    "model_explanation_gemini": "Performs BM25 searches to estimate document relevance for a given query, designed for use with Qdrant and FastEmbed."
+}

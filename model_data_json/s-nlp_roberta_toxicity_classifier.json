@@ -1,0 +1,22 @@
+{
+    "model_id": "s-nlp/roberta_toxicity_classifier",
+    "downloads": 84364,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "roberta",
+        "text-classification",
+        "toxic comments classification",
+        "en",
+        "dataset:google/jigsaw_toxicity_pred",
+        "arxiv:1907.11692",
+        "base_model:FacebookAI/roberta-large",
+        "base_model:finetune:FacebookAI/roberta-large",
+        "license:openrail++",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: - en tags: - toxic comments classification licenses: - cc-by-nc-sa license: openrail++ base_model: - FacebookAI/roberta-large datasets: - google/jigsaw_toxicity_pred --- ## Toxicity Classification Model This model is trained for toxicity classification task. The dataset used for training is the merge of the English parts of the three datasets by **Jigsaw** (Jigsaw 2018, Jigsaw 2019, Jigsaw 2020), containing around 2 million examples. We split it into two parts and fine-tune a RoBERTa model (RoBERTa: A Robustly Optimized BERT Pretraining Approach) on it. The classifiers perform closely on the test set of the first Jigsaw competition, reaching the **AUC-ROC** of 0.98 and **F1-score** of 0.76. ## How to use ## Citation To acknowledge our work, please, use the corresponding citation: ## Licensing Information This model is licensed under the OpenRAIL++ License, which supports the development of various technologies—both industrial and academic—that serve the public good.",
+    "model_explanation_gemini": "Classifies text as toxic or non-toxic using a RoBERTa model fine-tuned on Jigsaw datasets with high AUC-ROC and F1 performance."
+}

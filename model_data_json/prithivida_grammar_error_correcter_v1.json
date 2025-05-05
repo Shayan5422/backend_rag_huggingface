@@ -1,0 +1,16 @@
+{
+    "model_id": "prithivida/grammar_error_correcter_v1",
+    "downloads": 95189,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "t5",
+        "text2text-generation",
+        "autotrain_compatible",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "**This model is part of the Gramformer library** please refer to",
+    "model_explanation_gemini": "Part of the Gramformer library for grammar error correction."
+}

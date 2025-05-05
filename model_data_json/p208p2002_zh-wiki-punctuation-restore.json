@@ -1,0 +1,19 @@
+{
+    "model_id": "p208p2002/zh-wiki-punctuation-restore",
+    "downloads": 103472,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "safetensors",
+        "bert",
+        "token-classification",
+        "ner",
+        "punctuation",
+        "zh",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- tags: - ner - punctuation language: - zh --- # zh-wiki-punctuation-restore More Detail: 共計支援6種標點符號: ， 、 。 ？ ！ ； ## Install ## Usage",
+    "model_explanation_gemini": "Restores six Chinese punctuation marks (， 、 。 ？ ！ ；) in text."
+}

@@ -1,0 +1,27 @@
+{
+    "model_id": "jonatasgrosman/wav2vec2-large-xlsr-53-dutch",
+    "downloads": 2492032,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "jax",
+        "wav2vec2",
+        "automatic-speech-recognition",
+        "audio",
+        "hf-asr-leaderboard",
+        "mozilla-foundation/common_voice_6_0",
+        "nl",
+        "robust-speech-event",
+        "speech",
+        "xlsr-fine-tuning-week",
+        "dataset:common_voice",
+        "dataset:mozilla-foundation/common_voice_6_0",
+        "doi:10.57967/hf/0203",
+        "license:apache-2.0",
+        "model-index",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: nl license: apache-2.0 datasets: - common_voice - mozilla-foundation/common_voice_6_0 metrics: - wer - cer tags: - audio - automatic-speech-recognition - hf-asr-leaderboard - mozilla-foundation/common_voice_6_0 - nl - robust-speech-event - speech - xlsr-fine-tuning-week model-index: - name: XLSR Wav2Vec2 Dutch by Jonatas Grosman results: - task: name: Automatic Speech Recognition type: automatic-speech-recognition dataset: name: Common Voice nl type: common_voice args: nl metrics: - name: Test WER type: wer value: 15.72 - name: Test CER type: cer value: 5.35 - name: Test WER (+LM) type: wer value: 12.84 - name: Test CER (+LM) type: cer value: 4.64 - task: name: Automatic Speech Recognition type: automatic-speech-recognition dataset: name: Robust Speech Event - Dev Data type: speech-recognition-community-v2/dev_data args: nl metrics: - name: Dev WER type: wer value: 35.79 - name: Dev CER type: cer value: 17.67 - name: Dev WER (+LM) type: wer value: 31.54 - name: Dev CER (+LM) type: cer value: 16.37 --- # Fine-tuned XLSR-53 large model for speech recognition in Dutch Fine-tuned facebook/wav2vec2-large-xlsr-53 on Dutch using the train and validation splits of Common Voice 6.1 and CSS10. When using this model, make sure that your speech input is sampled at 16kHz. This model has been fine-tuned thanks to the GPU credits generously given by the OVHcloud :) The script used for training can be found here: ## Usage The model can be used directly (without a language model) as follows... Using the HuggingSound library: Writing your own inference script: | Reference | Prediction | | ------------- | ------------- | | DE ABORIGINALS ZIJN DE OORSPRONKELIJKE BEWONERS VAN AUSTRALIË. | DE ABBORIGENALS ZIJN DE OORSPRONKELIJKE BEWONERS VAN AUSTRALIË | | MIJN TOETSENBORD ZIT VOL STOF. | MIJN TOETSENBORD ZIT VOL STOF | | ZE HAD DE BANK BESCHADIGD MET HAAR SKATEBOARD. | ZE HAD DE BANK BESCHADIGD MET HAAR SCHEETBOORD | | WAAR LAAT JIJ JE ONDERHOUD DOEN? | WAAR LAAT JIJ HET ONDERHOUD DOEN | | NA HET LEZEN VAN VELE BEOORDELINGEN HAD ZE EINDELIJK HAAR OOG LATEN VALLEN OP EEN LAPTOP MET EEN QWERTY TOETSENBORD. | NA HET LEZEN VAN VELE BEOORDELINGEN HAD ZE EINDELIJK HAAR OOG LATEN VALLEN OP EEN LAPTOP MET EEN QUERTITOETSEMBORD | | DE TAMPONS ZIJN OP. | DE TAPONT ZIJN OP | | MARIJKE KENT OLIVIER NU AL MEER DAN TWEE JAAR. | MAARRIJKEN KENT OLIEVIER NU AL MEER DAN TWEE JAAR | | HET VOEREN VAN BROOD AAN EENDEN IS EIGENLIJK ONGEZOND VOOR DE BEESTEN. | HET VOEREN VAN BEUROT AAN EINDEN IS EIGENLIJK ONGEZOND VOOR DE BEESTEN | | PARKET MOET JE STOFZUIGEN, TEGELS MOET JE DWEILEN. | PARKET MOET JE STOF ZUIGEN MAAR TEGELS MOET JE DWEILEN | | IN ONZE BUURT KENT IEDEREEN ELKAAR. | IN ONZE BUURT KENT IEDEREEN ELKAAR | ## Evaluation 1. To evaluate on with split 2. To evaluate on ## Citation If you want to cite this model you can use this:",
+    "model_explanation_gemini": "Fine-tuned for Dutch speech recognition, converting 16kHz audio inputs to text with improved accuracy using the XLSR-53 large model."
+}

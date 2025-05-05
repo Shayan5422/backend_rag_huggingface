@@ -1,0 +1,25 @@
+{
+    "model_id": "allenai/Molmo-7B-D-0924",
+    "downloads": 305452,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "molmo",
+        "text-generation",
+        "multimodal",
+        "olmo",
+        "pixmo",
+        "image-text-to-text",
+        "conversational",
+        "custom_code",
+        "en",
+        "arxiv:2409.17146",
+        "base_model:Qwen/Qwen2-7B",
+        "base_model:finetune:Qwen/Qwen2-7B",
+        "license:apache-2.0",
+        "autotrain_compatible",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 language: - en base_model: - openai/clip-vit-large-patch14-336 - Qwen/Qwen2-7B pipeline_tag: image-text-to-text tags: - multimodal - olmo - molmo - pixmo library_name: transformers --- <img src=\"molmo_logo.png\" alt=\"Logo for the Molmo Project\" style=\"width: auto; height: 50px;\"> # Molmo 7B-D Molmo is a family of open vision-language models developed by the Allen Institute for AI. Molmo models are trained on PixMo, a dataset of 1 million, highly-curated image-text pairs. It has state-of-the-art performance among multimodal models with a similar size while being fully open-source. You can find all models in the Molmo family here. **Learn more** about the Molmo family in our announcement blog post or the paper. Molmo 7B-D is based on Qwen2-7B and uses OpenAI CLIP as vision backbone. It performs comfortably between GPT-4V and GPT-4o on both academic benchmarks and human evaluation. It powers the **Molmo demo at** **molmo.allenai.org**. This checkpoint is a **preview** of the Molmo release. All artifacts used in creating Molmo (PixMo dataset, training code, evaluations, intermediate checkpoints) will be made available at a later date, furthering our commitment to open-source AI development and reproducibility. **Sign up here** to be the first to know when artifacts are released. Quick links: - 💬 Demo - 📂 All Models - 📃 Paper - 🎥 Blog with Videos ## Quick Start To run Molmo, first install dependencies: Then, follow these steps: To make inference more efficient, run with autocast: We did most of our evaluation in this setting (autocast on, but float32 weights) To even further reduce the memory requirements, the model can be run with bfloat16 weights: Note that we have observed that this can change the output of the model compared to running with float32 weights. ## Evaluations | Model | Average Score on 11 Academic Benchmarks | Human Preference Elo Rating | |-----------------------------|-----------------------------------------|-----------------------------| | Molmo 72B | 81.2 | 1077 | | **Molmo 7B-D (this model)** | **77.3** | **1056** | | Molmo 7B-O | 74.6 | 1051 | | MolmoE 1B | 68.6 | 1032 | | GPT-4o | 78.5 | 1079 | | GPT-4V | 71.1 | 1041 | | Gemini 1.5 Pro | 78.3 | 1074 | | Gemini 1.5 Flash | 75.1 | 1054 | | Claude 3.5 Sonnet | 76.7 | 1069 | | Claude 3 Opus | 66.4 | 971 | | Claude 3 Haiku | 65.3 | 999 | | Qwen VL2 72B | 79.4 | 1037 | | Qwen VL2 7B | 73.7 | 1025 | | Intern VL2 LLAMA 76B | 77.1 | 1018 | | Intern VL2 8B | 69.4 | 953 | | Pixtral 12B | 69.5 | 1016 | | Phi3.5-Vision 4B | 59.7 | 982 | | PaliGemma 3B | 50.0 | 937 | | LLAVA OneVision 72B | 76.6 | 1051 | | LLAVA OneVision 7B | 72.0 | 1024 | | Cambrian-1 34B | 66.8 | 953 | | Cambrian-1 8B | 63.4 | 952 | | xGen - MM - Interleave 4B | 59.5 | 979 | | LLAVA-1.5 13B | 43.9 | 960 | | LLAVA-1.5 7B | 40.7 | 951 | *Benchmarks: AI2D test, ChartQA test, VQA v2.0 test, DocQA test, InfographicVQA test, TextVQA val, RealWorldQA, MMMU val, MathVista testmini, CountBenchQA, Flickr Count (we collected this new dataset that is significantly harder than CountBenchQA).* ## FAQs ### I'm getting an error a broadcast error when processing images! Your image might not be in RGB format. You can convert it using the following code snippet: ### Molmo doesn't work great with transparent images! We received reports that Molmo models might struggle with transparent images. For the time being, we recommend adding a white or dark background to your images before passing them to the model. The code snippet below shows how to do this using the Python Imaging Library (PIL): ## License and Use This model is licensed under Apache 2.0. It is intended for research and educational use. For more information, please see our Responsible Use Guidelines.",
+    "model_explanation_gemini": "A multimodal vision-language model for image-text tasks, combining Qwen2-7B and CLIP for state-of-the-art performance in open-source models."
+}

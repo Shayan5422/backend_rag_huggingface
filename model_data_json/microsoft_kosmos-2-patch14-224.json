@@ -1,0 +1,18 @@
+{
+    "model_id": "microsoft/kosmos-2-patch14-224",
+    "downloads": 163280,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "safetensors",
+        "kosmos-2",
+        "image-text-to-text",
+        "image-captioning",
+        "image-to-text",
+        "license:mit",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- pipeline_tag: image-to-text tags: - image-captioning languages: - en license: mit --- # Kosmos-2: Grounding Multimodal Large Language Models to the World <a href=\" target=\"_blank\"><figure><img src=\" width=\"384\"><figcaption><b>[An image of a snowman warming himself by a fire.]</b></figcaption></figure></a> This Hub repository contains a HuggingFace's implementation of the original Kosmos-2 model from Microsoft. ## How to Get Started with the Model Use the code below to get started with the model. ## Tasks This model is capable of performing different tasks through changing the prompts. First, let's define a function to run a prompt. <details> <summary> Click to expand </summary> </details> Here are the tasks could perform: <details> <summary> Click to expand </summary> ### Multimodal Grounding #### • Phrase Grounding #### • Referring Expression Comprehension ### Multimodal Referring #### • Referring expression generation ### Perception-Language Tasks #### • Grounded VQA #### • Grounded VQA with multimodal referring via bounding boxes ### Grounded Image captioning #### • Brief #### • Detailed </details> ## Draw the bounding bboxes of the entities on the image Once you have the , you can use the following helper function to draw their bounding bboxes on the image: <details> <summary> Click to expand </summary> </details> Here is the annotated image: <a href=\" target=\"_blank\"><img src=\" width=\"500\"></a> ## BibTex and citation info",
+    "model_explanation_gemini": "Generates text descriptions from images and grounds them in visual context with tasks like phrase grounding, referring expression comprehension, and grounded image captioning."
+}

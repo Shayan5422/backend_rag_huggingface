@@ -1,0 +1,18 @@
+{
+    "model_id": "theainerd/Wav2Vec2-large-xlsr-hindi",
+    "downloads": 1406802,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "safetensors",
+        "wav2vec2",
+        "automatic-speech-recognition",
+        "hi",
+        "base_model:facebook/wav2vec2-large-xlsr-53",
+        "base_model:finetune:facebook/wav2vec2-large-xlsr-53",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: - hi metrics: - wer base_model: - facebook/wav2vec2-large-xlsr-53 pipeline_tag: automatic-speech-recognition --- # Wav2Vec2-Large-XLSR-53-hindi Fine-tuned facebook/wav2vec2-large-xlsr-53 hindi using the Multilingual and code-switching ASR challenges for low resource Indian languages. When using this model, make sure that your speech input is sampled at 16kHz. ## Usage The model can be used directly (without a language model) as follows: ## Evaluation The model can be evaluated as follows on the hindi test data of Common Voice. **Test Result**: 72.62 % ## Training The script used for training can be found Hindi ASR Fine Tuning Wav2Vec2",
+    "model_explanation_gemini": "Fine-tuned for Hindi automatic speech recognition, achieving 72.62% accuracy on Common Voice test data, based on Facebook's wav2vec2-large-xlsr-53 model."
+}

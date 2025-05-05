@@ -1,0 +1,20 @@
+{
+    "model_id": "facebook/wav2vec2-xlsr-53-espeak-cv-ft",
+    "downloads": 272175,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "wav2vec2",
+        "automatic-speech-recognition",
+        "speech",
+        "audio",
+        "phoneme-recognition",
+        "dataset:common_voice",
+        "arxiv:2109.11680",
+        "license:apache-2.0",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: multi-lingual datasets: - common_voice tags: - speech - audio - automatic-speech-recognition - phoneme-recognition widget: - example_title: Librispeech sample 1 src: - example_title: Librispeech sample 2 src: license: apache-2.0 --- # Wav2Vec2-Large-XLSR-53 finetuned on multi-lingual Common Voice This checkpoint leverages the pretrained checkpoint wav2vec2-large-xlsr-53 and is fine-tuned on CommonVoice to recognize phonetic labels in multiple languages. When using the model make sure that your speech input is sampled at 16kHz. Note that the model outputs a string of phonetic labels. A dictionary mapping phonetic labels to words has to be used to map the phonetic output labels to output words. Paper: Simple and Effective Zero-shot Cross-lingual Phoneme Recognition Authors: Qiantong Xu, Alexei Baevski, Michael Auli **Abstract** Recent progress in self-training, self-supervised pretraining and unsupervised learning enabled well performing speech recognition systems without any labeled data. However, in many cases there is labeled data available for related languages which is not utilized by these methods. This paper extends previous work on zero-shot cross-lingual transfer learning by fine-tuning a multilingually pretrained wav2vec 2.0 model to transcribe unseen languages. This is done by mapping phonemes of the training languages to the target language using articulatory features. Experiments show that this simple method significantly outperforms prior work which introduced task-specific architectures and used only part of a monolingually pretrained model. The original model can be found under # Usage To transcribe audio files the model can be used as a standalone acoustic model as follows:",
+    "model_explanation_gemini": "Finetuned on Common Voice to recognize phonetic labels in multiple languages from 16kHz speech inputs, requiring a dictionary to map phonetic outputs to words."
+}

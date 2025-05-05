@@ -1,0 +1,18 @@
+{
+    "model_id": "deepseek-ai/deepseek-llm-7b-chat",
+    "downloads": 114300,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "llama",
+        "text-generation",
+        "conversational",
+        "license:other",
+        "autotrain_compatible",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: other license_name: deepseek license_link: LICENSE --- <p align=\"center\"> <img width=\"500px\" alt=\"DeepSeek Chat\" src=\" </p> <p align=\"center\"><a href=\" | <a href=\" Chat with DeepSeek LLM]</a> | <a href=\" | <a href=\" </p> <hr> ### 1. Introduction of Deepseek LLM Introducing DeepSeek LLM, an advanced language model comprising 7 billion parameters. It has been trained from scratch on a vast dataset of 2 trillion tokens in both English and Chinese. In order to foster research, we have made DeepSeek LLM 7B/67B Base and DeepSeek LLM 7B/67B Chat open source for the research community. ### 2. Model Summary is a 7B parameter model initialized from and fine-tuned on extra instruction data. - **Home Page:** DeepSeek - **Repository:** deepseek-ai/deepseek-LLM - **Chat With DeepSeek LLM:** DeepSeek-LLM ### 3. How to Use Here give some examples of how to use our model. #### Chat Completion Avoiding the use of the provided function , you can also interact with our model following the sample template. Note that should be replaced by your input. **Note:** By default (), our tokenizer automatically adds a () before the input text. Additionally, since the system prompt is not compatible with this version of our models, we DO NOT RECOMMEND including the system prompt in your input. ### 4. License This code repository is licensed under the MIT License. The use of DeepSeek LLM models is subject to the Model License. DeepSeek LLM supports commercial use. See the LICENSE-MODEL for more details. ### 5. Contact If you have any questions, please raise an issue or contact us at service@deepseek.com.",
+    "model_explanation_gemini": "Deepseek-ai's DeepSeek-LLM-7B-Chat is a 7B-parameter multilingual (English and Chinese) chat model fine-tuned for conversational tasks, supporting commercial use."
+}

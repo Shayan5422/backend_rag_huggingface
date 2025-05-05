@@ -1,0 +1,19 @@
+{
+    "model_id": "hustvl/yolos-small",
+    "downloads": 181887,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "safetensors",
+        "yolos",
+        "object-detection",
+        "vision",
+        "dataset:coco",
+        "arxiv:2106.00666",
+        "license:apache-2.0",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 tags: - object-detection - vision datasets: - coco widget: - src: example_title: Savanna - src: example_title: Football Match - src: example_title: Airport --- # YOLOS (small-sized) model YOLOS model fine-tuned on COCO 2017 object detection (118k annotated images). It was introduced in the paper You Only Look at One Sequence: Rethinking Transformer in Vision through Object Detection by Fang et al. and first released in this repository. Disclaimer: The team releasing YOLOS did not write a model card for this model so this model card has been written by the Hugging Face team. ## Model description YOLOS is a Vision Transformer (ViT) trained using the DETR loss. Despite its simplicity, a base-sized YOLOS model is able to achieve 42 AP on COCO validation 2017 (similar to DETR and more complex frameworks such as Faster R-CNN). The model is trained using a \"bipartite matching loss\": one compares the predicted classes + bounding boxes of each of the N = 100 object queries to the ground truth annotations, padded up to the same length N (so if an image only contains 4 objects, 96 annotations will just have a \"no object\" as class and \"no bounding box\" as bounding box). The Hungarian matching algorithm is used to create an optimal one-to-one mapping between each of the N queries and each of the N annotations. Next, standard cross-entropy (for the classes) and a linear combination of the L1 and generalized IoU loss (for the bounding boxes) are used to optimize the parameters of the model. ## Intended uses & limitations You can use the raw model for object detection. See the model hub to look for all available YOLOS models. ### How to use Here is how to use this model: Currently, both the feature extractor and model support PyTorch. ## Training data The YOLOS model was pre-trained on ImageNet-1k and fine-tuned on COCO 2017 object detection, a dataset consisting of 118k/5k annotated images for training/validation respectively. ### Training The model was pre-trained for 200 epochs on ImageNet-1k and fine-tuned for 150 epochs on COCO. ## Evaluation results This model achieves an AP (average precision) of **36.1** on COCO 2017 validation. For more details regarding evaluation results, we refer to table 1 of the original paper. ### BibTeX entry and citation info",
+    "model_explanation_gemini": "Detects objects in images using a Vision Transformer trained on COCO dataset with a bipartite matching loss for bounding box and class prediction."
+}

@@ -1,0 +1,32 @@
+{
+    "model_id": "MaziyarPanahi/Mixtral-8x22B-v0.1-GGUF",
+    "downloads": 229903,
+    "tags": [
+        "transformers",
+        "gguf",
+        "mixtral",
+        "text-generation",
+        "quantized",
+        "2-bit",
+        "3-bit",
+        "4-bit",
+        "5-bit",
+        "6-bit",
+        "8-bit",
+        "16-bit",
+        "GGUF",
+        "moe",
+        "fr",
+        "en",
+        "es",
+        "it",
+        "de",
+        "base_model:v2ray/Mixtral-8x22B-v0.1",
+        "base_model:quantized:v2ray/Mixtral-8x22B-v0.1",
+        "license:apache-2.0",
+        "autotrain_compatible",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 base_model: v2ray/Mixtral-8x22B-v0.1 inference: false model_creator: MaziyarPanahi model_name: Mixtral-8x22B-v0.1-GGUF pipeline_tag: text-generation quantized_by: MaziyarPanahi tags: - quantized - 2-bit - 3-bit - 4-bit - 5-bit - 6-bit - 8-bit - 16-bit - GGUF - mixtral - moe language: - fr - en - es - it - de --- <img src=\"./mixtral-8x22b.jpeg\" width=\"600\" /> # Mixtral-8x22B-v0.1-GGUF On April 10th, @MistralAI released a model named \"Mixtral 8x22B,\" an 176B MoE via magnet link (torrent): - 141B MoE with ~35B active - Context length of 65k tokens - The base model can be fine-tuned - Requires ~260GB VRAM in fp16, 73GB in int4 - Licensed under Apache 2.0, according to their Discord - Available on @huggingface (community) - Utilizes a tokenizer similar to previous models The GGUF and quantized models here are based on v2ray/Mixtral-8x22B-v0.1 model ## How to download You can download only the quants you need instead of cloning the entire repository as follows: ## Load sharded model will detect the number of files and will load additional tensors from the rest of files. The output from quantized model: Since this appears to be a base model, it will keep on generating. ## Credit - MistralAI for opening the weights - v2ray for downloading, converting, and sharing it with the community Mixtral-8x22B-v0.1 - philschmid for the photo he shared on his Twitter ▄▄▄░░ ▄▄▄▄▄█████████░░░░ ▄▄▄▄▄▄████████████████████░░░░░ █████████████████████████████░░░░░ ▄▄▄▄▄▄█████░░░ █████████████████████████████░░░░░ ▄▄▄▄▄██████████████████░░░░░░ ██████████████████████████████░░░░░ ▄█████████████████████████████░░░░░░░░██████████████████████████████░░░░░ ███████████████████████████████░░░░░░░██████████████████████████████░░░░░ ███████████████████████████████░░░░░░░██████████████████████████████░░░░░ ███████████████████████████████░░░░░░███████████████████████████████░░░░░ ████████████████████████████████░░░░░███████████████████████████████░░░░░ ████████████████████████████████░░░░████████████████████████████████░░░░░ █████████████████████████████████░░░████████████████████████████████░░░░░ █████████████████████████████████░░░████████████░███████████████████░░░░░ ██████████████████████████████████░█████████████░███████████████████░░░░░ ███████████████████░██████████████▄█████████████░███████████████████░░░░░ ███████████████████░███████████████████████████░░███████████████████░░░░░ ███████████████████░░██████████████████████████░░███████████████████░░░░░ ███████████████████░░█████████████████████████░░░███████████████████░░░░░ ███████████████████░░░████████████████████████░░░███████████████████░░░░░ ███████████████████░░░████████████████████████░░░███████████████████░░░░░ ███████████████████░░░░██████████████████████░░░░███████████████████░░░░░ ███████████████████░░░░██████████████████████░░░░███████████████████░░░░░ ███████████████████░░░░░█████████████████████░░░░███████████████████░░░░░ ███████████████████░░░░░████████████████████░░░░░███████████████████░░░░░ ███████████████████░░░░░░███████████████████░░░░░███████████████████░░░░░ ███████████████████░░░░░░██████████████████░░░░░░███████████████████░░░░░ ███████████████████░░░░░░░█████████████████░░░░░░███████████████████░░░░░ ███████████████████░░░░░░░█████████████████░░░░░░███████████████████░░░░░ ███████████████████░░░░░░░░███████████████░░░░░░░██████████░░░░░░░░░░░░░░ ███████████████████░░░░░░░░███████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ ███████████████████░░░░░░░░███████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ ███████████████████░░░░░░░░░██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ ███████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ ██████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ ░░░░░░░ ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ ░░░ ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ ░░░░░░░░░░░░░░░░░░ ░░░░░░░░░░░░░░░░░░░░░░░░░░░░ ░░░░░░░░░░░░░░░░░ ░░░░░",
+    "model_explanation_gemini": "A quantized version of the Mixtral-8x22B-v0.1 model optimized for efficient text generation in multiple languages."
+}

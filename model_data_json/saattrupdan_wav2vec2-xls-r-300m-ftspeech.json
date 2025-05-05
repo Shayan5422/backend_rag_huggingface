@@ -1,0 +1,21 @@
+{
+    "model_id": "saattrupdan/wav2vec2-xls-r-300m-ftspeech",
+    "downloads": 960458,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "safetensors",
+        "wav2vec2",
+        "automatic-speech-recognition",
+        "da",
+        "dataset:ftspeech",
+        "base_model:facebook/wav2vec2-xls-r-300m",
+        "base_model:finetune:facebook/wav2vec2-xls-r-300m",
+        "license:other",
+        "model-index",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: - da license: other datasets: - ftspeech metrics: - wer tasks: - automatic-speech-recognition base_model: facebook/wav2vec2-xls-r-300m model-index: - name: wav2vec2-xls-r-300m-ftspeech results: - task: type: automatic-speech-recognition dataset: name: Danish Common Voice 8.0 type: mozilla-foundation/common_voice_8_0 args: da metrics: - type: wer value: 17.91 - task: type: automatic-speech-recognition dataset: name: Alvenir ASR test dataset type: Alvenir/alvenir_asr_da_eval metrics: - type: wer value: 13.84 --- # XLS-R-300m-FTSpeech ## Model description This model is a fine-tuned version of facebook/wav2vec2-xls-r-300m on the FTSpeech dataset, being a dataset of 1,800 hours of transcribed speeches from the Danish parliament. ## Performance The model achieves the following WER scores (lower is better): | **Dataset** | **WER without LM** | **WER with 5-gram LM** | | :---: | ---: | ---: | | Danish part of Common Voice 8.0 | 20.48 | 17.91 | | Alvenir test set | 15.46 | 13.84 | ## License The use of this model needs to adhere to this license from the Danish Parliament.",
+    "model_explanation_gemini": "A fine-tuned Danish speech recognition model trained on parliamentary speeches, achieving low word error rates on datasets like Common Voice and Alvenir."
+}

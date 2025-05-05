@@ -1,0 +1,19 @@
+{
+    "model_id": "THUDM/glm-4-9b-chat",
+    "downloads": 145133,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "chatglm",
+        "glm",
+        "thudm",
+        "custom_code",
+        "zh",
+        "en",
+        "arxiv:2406.12793",
+        "license:other",
+        "region:us"
+    ],
+    "description": "--- license: other license_name: glm-4 license_link: language: - zh - en tags: - glm - chatglm - thudm inference: false --- # GLM-4-9B-Chat Read this in English. **2024/11/25**, 我们建议使用从 开始，使用 glm-4-9b-chat-hf 以减少后续 transformers 升级导致的兼容性问题。 **2024/08/12, 本仓库代码已更新并使用 , 请及时更新依赖。** **2024/07/24，我们发布了与长文本相关的最新技术解读，关注 这里 查看我们在训练 GLM-4-9B 开源模型中关于长文本技术的技术报告** ## 模型介绍 GLM-4-9B 是智谱 AI 推出的最新一代预训练模型 GLM-4 系列中的开源版本。 在语义、数学、推理、代码和知识等多方面的数据集测评中，GLM-4-9B 及其人类偏好对齐的版本 GLM-4-9B-Chat 均表现出较高的性能。 除了能进行多轮对话，GLM-4-9B-Chat 还具备网页浏览、代码执行、自定义工具调用（Function Call）和长文本推理（支持最大 128K 上下文）等高级功能。 本代模型增加了多语言支持，支持包括日语，韩语，德语在内的 26 种语言。我们还推出了支持 1M 上下文长度（约 200 万中文字符）的模型。 ## 评测结果 我们在一些经典任务上对 GLM-4-9B-Chat 模型进行了评测,并得到了如下的结果: | Model | AlignBench-v2 | MT-Bench | IFEval | MMLU | C-Eval | GSM8K | MATH | HumanEval | NCB | |:--------------------|:-------------:|:--------:|:------:|:----:|:------:|:-----:|:----:|:---------:|:----:| | Llama-3-8B-Instruct | 5.12 | 8.00 | 68.58 | 68.4 | 51.3 | 79.6 | 30.0 | 62.2 | 24.7 | | ChatGLM3-6B | 3.97 | 5.50 | 28.1 | 66.4 | 69.0 | 72.3 | 25.7 | 58.5 | 11.3 | | GLM-4-9B-Chat | 6.61 | 8.35 | 69.0 | 72.4 | 75.6 | 79.6 | 50.6 | 71.8 | 32.2 | ### 长文本 在 1M 的上下文长度下进行大海捞针实验，结果如下： !needle 在 LongBench-Chat 上对长文本能力进行了进一步评测，结果如下: !leaderboard ### 多语言能力 在六个多语言数据集上对 GLM-4-9B-Chat 和 Llama-3-8B-Instruct 进行了测试，测试结果及数据集对应选取语言如下表 | Dataset | Llama-3-8B-Instruct | GLM-4-9B-Chat | Languages |:------------|:-------------------:|:-------------:|:----------------------------------------------------------------------------------------------:| | M-MMLU | 49.6 | 56.6 | all | FLORES | 25.0 | 28.8 | ru, es, de, fr, it, pt, pl, ja, nl, ar, tr, cs, vi, fa, hu, el, ro, sv, uk, fi, ko, da, bg, no | MGSM | 54.0 | 65.3 | zh, en, bn, de, es, fr, ja, ru, sw, te, th | XWinograd | 61.7 | 73.1 | zh, en, fr, jp, ru, pt | XStoryCloze | 84.7 | 90.7 | zh, en, ar, es, eu, hi, id, my, ru, sw, te | XCOPA | 73.3 | 80.1 | zh, et, ht, id, it, qu, sw, ta, th, tr, vi ### 工具调用能力 我们在 Berkeley Function Calling Leaderboard 上进行了测试并得到了以下结果： | Model | Overall Acc. | AST Summary | Exec Summary | Relevance | |:-----------------------|:------------:|:-----------:|:------------:|:---------:| | Llama-3-8B-Instruct | 58.88 | 59.25 | 70.01 | 45.83 | | gpt-4-turbo-2024-04-09 | 81.24 | 82.14 | 78.61 | 88.75 | | ChatGLM3-6B | 57.88 | 62.18 | 69.78 | 5.42 | | GLM-4-9B-Chat | 81.00 | 80.26 | 84.40 | 87.92 | **本仓库是 GLM-4-9B-Chat 的模型仓库，支持上下文长度。** ## 运行模型 **更多推理代码和依赖信息，请访问我们的 github。** **请严格按照依赖安装，否则无法正常运行。** ### 使用 transformers 后端进行推理: 使用 vLLM后端进行推理: ## 协议 GLM-4 模型的权重的使用则需要遵循 LICENSE。 ## 引用 如果你觉得我们的工作有帮助的话，请考虑引用下列论文。",
+    "model_explanation_gemini": "GLM-4-9B-Chat is a multilingual conversational AI model excelling in multi-turn dialogue, tool calling, long-context reasoning (up to 128K tokens), and tasks like coding, math, and knowledge retrieval across 26 languages."
+}

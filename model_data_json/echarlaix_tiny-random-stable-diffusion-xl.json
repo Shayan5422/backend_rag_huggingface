@@ -1,0 +1,14 @@
+{
+    "model_id": "echarlaix/tiny-random-stable-diffusion-xl",
+    "downloads": 250493,
+    "tags": [
+        "diffusers",
+        "license:apache-2.0",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "diffusers:StableDiffusionXLPipeline",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 ---",
+    "model_explanation_gemini": "Generates random, tiny outputs for stable diffusion XL tasks under the Apache 2.0 license."
+}

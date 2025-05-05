@@ -1,0 +1,21 @@
+{
+    "model_id": "Helsinki-NLP/opus-mt-ar-en",
+    "downloads": 586561,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "tf",
+        "rust",
+        "marian",
+        "text2text-generation",
+        "translation",
+        "ar",
+        "en",
+        "license:apache-2.0",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- tags: - translation license: apache-2.0 --- ### opus-mt-ar-en * source languages: ar * target languages: en * OPUS readme: ar-en * dataset: opus * model: transformer-align * pre-processing: normalization + SentencePiece * download original weights: opus-2019-12-18.zip * test set translations: opus-2019-12-18.test.txt * test set scores: opus-2019-12-18.eval.txt ## Benchmarks | testset | BLEU | chr-F | |-----------------------|-------|-------| | Tatoeba.ar.en | 49.4 | 0.661 |",
+    "model_explanation_gemini": "Translates text from Arabic (ar) to English (en) using a transformer-based model trained on OPUS datasets."
+}

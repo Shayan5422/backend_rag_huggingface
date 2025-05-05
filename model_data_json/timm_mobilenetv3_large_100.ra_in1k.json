@@ -1,0 +1,18 @@
+{
+    "model_id": "timm/mobilenetv3_large_100.ra_in1k",
+    "downloads": 721676,
+    "tags": [
+        "timm",
+        "pytorch",
+        "safetensors",
+        "image-classification",
+        "transformers",
+        "dataset:imagenet-1k",
+        "arxiv:2110.00476",
+        "arxiv:1905.02244",
+        "license:apache-2.0",
+        "region:us"
+    ],
+    "description": "--- tags: - image-classification - timm - transformers library_name: timm license: apache-2.0 datasets: - imagenet-1k --- # Model card for mobilenetv3_large_100.ra_in1k A MobileNet-v3 image classification model. Trained on ImageNet-1k in using recipe template described below. Recipe details: * RandAugment recipe. Inspired by and evolved from EfficientNet RandAugment recipes. Published as recipe in ResNet Strikes Back. * RMSProp (TF 1.0 behaviour) optimizer, EMA weight averaging * Step (exponential decay w/ staircase) LR schedule with warmup ## Model Details - **Model Type:** Image classification / feature backbone - **Model Stats:** - Params (M): 5.5 - GMACs: 0.2 - Activations (M): 4.4 - Image size: 224 x 224 - **Papers:** - Searching for MobileNetV3: - ResNet strikes back: An improved training procedure in timm: - **Dataset:** ImageNet-1k - **Original:** ## Model Usage ### Image Classification ### Feature Map Extraction ### Image Embeddings ## Model Comparison Explore the dataset and runtime metrics of this model in timm model results. ## Citation",
+    "model_explanation_gemini": "MobileNet-v3 model for image classification trained on ImageNet-1k using RandAugment, optimized for efficiency with 5.5M parameters and 224x224 input size."
+}

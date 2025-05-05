@@ -1,0 +1,18 @@
+{
+    "model_id": "trl-internal-testing/tiny-MistralForCausalLM-0.2",
+    "downloads": 130987,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "mistral",
+        "text-generation",
+        "trl",
+        "conversational",
+        "autotrain_compatible",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- library_name: transformers tags: - trl --- # Tiny MistralForCausalLM This is a minimal model built for unit tests in the TRL library.",
+    "model_explanation_gemini": "A minimal model designed for unit testing in the TRL library."
+}

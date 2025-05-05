@@ -1,0 +1,23 @@
+{
+    "model_id": "jonatasgrosman/wav2vec2-large-xlsr-53-chinese-zh-cn",
+    "downloads": 4425174,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "jax",
+        "wav2vec2",
+        "automatic-speech-recognition",
+        "audio",
+        "speech",
+        "xlsr-fine-tuning-week",
+        "zh",
+        "dataset:common_voice",
+        "doi:10.57967/hf/3570",
+        "license:apache-2.0",
+        "model-index",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: zh datasets: - common_voice metrics: - wer - cer tags: - audio - automatic-speech-recognition - speech - xlsr-fine-tuning-week license: apache-2.0 model-index: - name: XLSR Wav2Vec2 Chinese (zh-CN) by Jonatas Grosman results: - task: name: Speech Recognition type: automatic-speech-recognition dataset: name: Common Voice zh-CN type: common_voice args: zh-CN metrics: - name: Test WER type: wer value: 82.37 - name: Test CER type: cer value: 19.03 --- # Fine-tuned XLSR-53 large model for speech recognition in Chinese Fine-tuned facebook/wav2vec2-large-xlsr-53 on Chinese using the train and validation splits of Common Voice 6.1, CSS10 and ST-CMDS. When using this model, make sure that your speech input is sampled at 16kHz. This model has been fine-tuned thanks to the GPU credits generously given by the OVHcloud :) The script used for training can be found here: ## Usage The model can be used directly (without a language model) as follows... Using the HuggingSound library: Writing your own inference script: | Reference | Prediction | | ------------- | ------------- | | 宋朝末年年间定居粉岭围。 | 宋朝末年年间定居分定为 | | 渐渐行动不便 | 建境行动不片 | | 二十一年去世。 | 二十一年去世 | | 他们自称恰哈拉。 | 他们自称家哈<unk> | | 局部干涩的例子包括有口干、眼睛干燥、及阴道干燥。 | 菊物干寺的例子包括有口肝眼睛干照以及阴到干<unk> | | 嘉靖三十八年，登进士第三甲第二名。 | 嘉靖三十八年登进士第三甲第二名 | | 这一名称一直沿用至今。 | 这一名称一直沿用是心 | | 同时乔凡尼还得到包税合同和许多明矾矿的经营权。 | 同时桥凡妮还得到包税合同和许多民繁矿的经营权 | | 为了惩罚西扎城和塞尔柱的结盟，盟军在抵达后将外城烧毁。 | 为了曾罚西扎城和塞尔素的节盟盟军在抵达后将外曾烧毁 | | 河内盛产黄色无鱼鳞的鳍射鱼。 | 合类生场环色无鱼林的骑射鱼 | ## Evaluation The model can be evaluated as follows on the Chinese (zh-CN) test data of Common Voice. **Test Result**: In the table below I report the Word Error Rate (WER) and the Character Error Rate (CER) of the model. I ran the evaluation script described above on other models as well (on 2021-05-13). Note that the table below may show different results from those already reported, this may have been caused due to some specificity of the other evaluation scripts used. | Model | WER | CER | | ------------- | ------------- | ------------- | | jonatasgrosman/wav2vec2-large-xlsr-53-chinese-zh-cn | **82.37%** | **19.03%** | | ydshieh/wav2vec2-large-xlsr-53-chinese-zh-cn-gpt | 84.01% | 20.95% | ## Citation If you want to cite this model you can use this:",
+    "model_explanation_gemini": "Fine-tuned for Chinese speech recognition, converting 16kHz audio to text with word and character error rates of 82.37% and 19.03% respectively."
+}

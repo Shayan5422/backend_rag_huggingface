@@ -1,0 +1,11 @@
+{
+    "model_id": "Revai/pyannote-wespeaker-voxceleb-resnet34-LM",
+    "downloads": 201251,
+    "tags": [
+        "pytorch",
+        "license:cc-by-nc-4.0",
+        "region:us"
+    ],
+    "description": "--- license: cc-by-nc-4.0 ---",
+    "model_explanation_gemini": "Performs speaker recognition by identifying and verifying speakers in audio using a ResNet34 architecture trained on VoxCeleb data."
+}

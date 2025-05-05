@@ -1,0 +1,20 @@
+{
+    "model_id": "jhgan/ko-sbert-sts",
+    "downloads": 168883,
+    "tags": [
+        "sentence-transformers",
+        "pytorch",
+        "tf",
+        "bert",
+        "feature-extraction",
+        "sentence-similarity",
+        "transformers",
+        "arxiv:2004.03289",
+        "autotrain_compatible",
+        "text-embeddings-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- pipeline_tag: sentence-similarity tags: - sentence-transformers - feature-extraction - sentence-similarity - transformers --- # ko-sbert-sts This is a sentence-transformers model: It maps sentences & paragraphs to a 768 dimensional dense vector space and can be used for tasks like clustering or semantic search. <!--- Describe your model here --> ## Usage (Sentence-Transformers) Using this model becomes easy when you have sentence-transformers installed: Then you can use the model like this: ## Usage (HuggingFace Transformers) Without sentence-transformers, you can use the model like this: First, you pass your input through the transformer model, then you have to apply the right pooling-operation on-top of the contextualized word embeddings. ## Evaluation Results <!--- Describe how your model was evaluated --> KorSTS 학습 데이터셋으로 학습한 후 KorSTS 평가 데이터셋으로 평가한 결과입니다. - Cosine Pearson: 81.55 - Cosine Spearman: 81.23 - Euclidean Pearson: 79.94 - Euclidean Spearman: 79.79 - Manhattan Pearson: 79.90 - Manhattan Spearman: 79.75 - Dot Pearson: 76.02 - Dot Spearman: 75.31 ## Training The model was trained with the parameters: **DataLoader**: of length 719 with parameters: **Loss**: Parameters of the fit()-Method: ## Full Model Architecture ## Citing & Authors <!--- Describe where people can find more information --> - Ham, J., Choe, Y. J., Park, K., Choi, I., & Soh, H. (2020). Kornli and korsts: New benchmark datasets for korean natural language understanding. arXiv preprint arXiv:2004.03289 - Reimers, Nils and Iryna Gurevych. “Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks.” ArXiv abs/1908.10084 (2019) - Reimers, Nils and Iryna Gurevych. “Making Monolingual Sentence Embeddings Multilingual Using Knowledge Distillation.” EMNLP (2020)",
+    "model_explanation_gemini": "Maps Korean sentences and paragraphs to 768-dimensional vectors for tasks like clustering and semantic search, optimized for sentence similarity."
+}

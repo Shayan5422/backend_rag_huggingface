@@ -1,0 +1,17 @@
+{
+    "model_id": "Qdrant/bge-small-en-v1.5-onnx-Q",
+    "downloads": 334843,
+    "tags": [
+        "transformers",
+        "onnx",
+        "bert",
+        "feature-extraction",
+        "sentence-similarity",
+        "license:apache-2.0",
+        "text-embeddings-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 pipeline_tag: sentence-similarity --- Quantized ONNX port of BAAI/bge-small-en-v1.5 for text classification and similarity searches. ### Usage Here's an example of performing inference using the model with FastEmbed.",
+    "model_explanation_gemini": "Quantized ONNX port of BAAI/bge-small-en-v1.5 for text classification and similarity searches."
+}

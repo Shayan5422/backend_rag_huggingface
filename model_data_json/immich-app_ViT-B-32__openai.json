@@ -1,0 +1,14 @@
+{
+    "model_id": "immich-app/ViT-B-32__openai",
+    "downloads": 122888,
+    "tags": [
+        "transformers",
+        "onnx",
+        "immich",
+        "clip",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- tags: - immich - clip --- # Model Description This repo contains ONNX exports for the associated CLIP model by OpenCLIP. See the OpenCLIP repo for more info. This repo is specifically intended for use with Immich, a self-hosted photo library.",
+    "model_explanation_gemini": "Exports CLIP model to ONNX format for use with Immich's self-hosted photo library."
+}

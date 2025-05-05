@@ -1,0 +1,21 @@
+{
+    "model_id": "prajjwal1/bert-tiny",
+    "downloads": 1067610,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "BERT",
+        "MNLI",
+        "NLI",
+        "transformer",
+        "pre-training",
+        "en",
+        "arxiv:1908.08962",
+        "arxiv:2110.01518",
+        "license:mit",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: - en license: - mit tags: - BERT - MNLI - NLI - transformer - pre-training --- The following model is a Pytorch pre-trained model obtained from converting Tensorflow checkpoint found in the official Google BERT repository. This is one of the smaller pre-trained BERT variants, together with bert-mini bert-small and bert-medium. They were introduced in the study (arxiv), and ported to HF for the study (arXiv). These models are supposed to be trained on a downstream task. If you use the model, please consider citing both the papers: Config of this model: - (L=2, H=128) Model Link Other models to check out: - (L=4, H=256) Model Link - (L=4, H=512) Model Link - (L=8, H=512) Model Link Original Implementation and more info can be found in this Github repository. Twitter: @prajjwal_1",
+    "model_explanation_gemini": "A small pre-trained BERT variant designed for fine-tuning on downstream natural language processing tasks like MNLI or NLI."
+}

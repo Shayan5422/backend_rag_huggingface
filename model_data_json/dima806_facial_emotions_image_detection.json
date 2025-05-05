@@ -1,0 +1,19 @@
+{
+    "model_id": "dima806/facial_emotions_image_detection",
+    "downloads": 204486,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "safetensors",
+        "vit",
+        "image-classification",
+        "base_model:google/vit-base-patch16-224-in21k",
+        "base_model:finetune:google/vit-base-patch16-224-in21k",
+        "license:apache-2.0",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 metrics: - accuracy - f1 base_model: - google/vit-base-patch16-224-in21k --- Returns facial emotion with about 91% accuracy based on facial human image. See for more details. !image/png",
+    "model_explanation_gemini": "Detects facial emotions in human images with approximately 91% accuracy."
+}
