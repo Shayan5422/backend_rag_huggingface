@@ -12,7 +12,7 @@ import json
 INDEX_FILE = "index.faiss"
 MAP_FILE = "index_to_metadata.pkl"
 EMBEDDING_MODEL = 'all-MiniLM-L6-v2'
-MODEL_DATA_DIR = os.path.join(os.path.dirname(__file__), '../model_data_json')
+MODEL_DATA_DIR = os.path.join(os.path.dirname(__file__), '/model_data_json')
 # ---
 
 app = Flask(__name__)
