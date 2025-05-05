@@ -1,0 +1,20 @@
+{
+    "model_id": "cointegrated/rubert-tiny-sentiment-balanced",
+    "downloads": 75361,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "safetensors",
+        "bert",
+        "text-classification",
+        "russian",
+        "classification",
+        "sentiment",
+        "multiclass",
+        "ru",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: [\"ru\"] tags: - russian - classification - sentiment - multiclass widget: - text: \"Какая гадость эта ваша заливная рыба!\" --- This is the cointegrated/rubert-tiny model fine-tuned for classification of sentiment for short Russian texts. The problem is formulated as multiclass classification: vs vs . ## Usage The function below estimates the sentiment of the given text: ## Training We trained the model on the datasets collected by Smetanin. We have converted all training data into a 3-class format and have up- and downsampled the training data to balance both the sources and the classes. The training code is available as a Colab notebook. The metrics on the balanced test set are the following: | Source | Macro F1 | | ----------- | ----------- | | SentiRuEval2016_banks | 0.83 | | SentiRuEval2016_tele | 0.74 | | kaggle_news | 0.66 | | linis | 0.50 | | mokoron | 0.98 | | rureviews | 0.72 | | rusentiment | 0.67 |"
+}

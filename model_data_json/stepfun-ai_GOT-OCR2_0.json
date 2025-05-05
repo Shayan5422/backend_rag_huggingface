@@ -1,0 +1,20 @@
+{
+    "model_id": "stepfun-ai/GOT-OCR2_0",
+    "downloads": 80978,
+    "tags": [
+        "safetensors",
+        "GOT",
+        "got",
+        "vision-language",
+        "ocr2.0",
+        "custom_code",
+        "image-text-to-text",
+        "multilingual",
+        "arxiv:2409.01704",
+        "arxiv:2405.14295",
+        "arxiv:2312.06109",
+        "license:apache-2.0",
+        "region:us"
+    ],
+    "description": "--- pipeline_tag: image-text-to-text language: - multilingual tags: - got - vision-language - ocr2.0 - custom_code license: apache-2.0 --- <h1>General OCR Theory: Towards OCR-2.0 via a Unified End-to-end Model </h1> 🔋Online Demo | 🌟GitHub | 📜Paper</a> Haoran Wei*, Chenglong Liu*, Jinyue Chen, Jia Wang, Lingyu Kong, Yanming Xu, Zheng Ge, Liang Zhao, Jianjian Sun, Yuang Peng, Chunrui Han, Xiangyu Zhang !image/jpeg ## Usage Inference using Huggingface transformers on NVIDIA GPUs. Requirements tested on python 3.10： More details about 'ocr_type', 'ocr_box', 'ocr_color', and 'render' can be found at our GitHub. Our training codes are available at our GitHub. ## More Multimodal Projects 👏 Welcome to explore more multimodal projects of our team: Vary | Fox | OneChart ## Citation If you find our work helpful, please consider citing our papers 📝 and liking this project ❤️！"
+}

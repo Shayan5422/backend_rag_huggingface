@@ -1,0 +1,21 @@
+{
+    "model_id": "h2oai/h2ogpt-4096-llama2-7b-chat",
+    "downloads": 76657,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "safetensors",
+        "llama",
+        "text-generation",
+        "facebook",
+        "meta",
+        "llama-2",
+        "h2ogpt",
+        "en",
+        "license:llama2",
+        "autotrain_compatible",
+        "text-generation-inference",
+        "region:us"
+    ],
+    "description": "--- inference: false language: - en license: llama2 model_type: llama pipeline_tag: text-generation tags: - facebook - meta - pytorch - llama - llama-2 - h2ogpt --- h2oGPT clone of Meta's Llama 2 7B Chat. Try it live on our h2oGPT demo with side-by-side LLM comparisons and private document chat! See how it compares to other models on our LLM Leaderboard! See more at H2O.ai ## Model Architecture"
+}

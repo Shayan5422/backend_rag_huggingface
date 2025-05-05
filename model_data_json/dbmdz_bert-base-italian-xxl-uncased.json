@@ -1,0 +1,20 @@
+{
+    "model_id": "dbmdz/bert-base-italian-xxl-uncased",
+    "downloads": 80990,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "tf",
+        "jax",
+        "safetensors",
+        "bert",
+        "fill-mask",
+        "it",
+        "dataset:wikipedia",
+        "license:mit",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: it license: mit datasets: - wikipedia --- # 🤗 + 📚 dbmdz BERT and ELECTRA models In this repository the MDZ Digital Library team (dbmdz) at the Bavarian State Library open sources Italian BERT and ELECTRA models 🎉 # Italian BERT The source data for the Italian BERT model consists of a recent Wikipedia dump and various texts from the OPUS corpora collection. The final training corpus has a size of 13GB and 2,050,057,573 tokens. For sentence splitting, we use NLTK (faster compared to spacy). Our cased and uncased models are training with an initial sequence length of 512 subwords for ~2-3M steps. For the XXL Italian models, we use the same training data from OPUS and extend it with data from the Italian part of the OSCAR corpus. Thus, the final training corpus has a size of 81GB and 13,138,379,147 tokens. Note: Unfortunately, a wrong vocab size was used when training the XXL models. This explains the mismatch of the \"real\" vocab size of 31102, compared to the vocab size specified in . However, the model is working and all evaluations were done under those circumstances. See this issue for more information. The Italian ELECTRA model was trained on the \"XXL\" corpus for 1M steps in total using a batch size of 128. We pretty much following the ELECTRA training procedure as used for BERTurk. ## Model weights Currently only PyTorch-Transformers compatible weights are available. If you need access to TensorFlow checkpoints, please raise an issue! | Model | Downloads | ---------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | | []( • []( • []( | | []( • []( • []( | | []( • []( • []( | | []( • []( • []( | | []( • []( • []( | | []( • []( • []( ## Results For results on downstream tasks like NER or PoS tagging, please refer to this repository. ## Usage With Transformers >= 2.3 our Italian BERT models can be loaded like: To load the (recommended) Italian XXL BERT models, just use: To load the Italian XXL ELECTRA model (discriminator), just use: # Huggingface model hub All models are available on the Huggingface model hub. # Contact (Bugs, Feedback, Contribution and more) For questions about our BERT/ELECTRA models just open an issue here 🤗 # Acknowledgments Research supported with Cloud TPUs from Google's TensorFlow Research Cloud (TFRC). Thanks for providing access to the TFRC ❤️ Thanks to the generous support from the Hugging Face team, it is possible to download both cased and uncased models from their S3 storage 🤗"
+}

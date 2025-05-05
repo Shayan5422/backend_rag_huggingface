@@ -1,0 +1,21 @@
+{
+    "model_id": "ku-nlp/deberta-v2-tiny-japanese",
+    "downloads": 80838,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "safetensors",
+        "deberta-v2",
+        "fill-mask",
+        "deberta",
+        "ja",
+        "dataset:wikipedia",
+        "dataset:cc100",
+        "dataset:oscar",
+        "license:cc-by-sa-4.0",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: ja license: cc-by-sa-4.0 library_name: transformers tags: - deberta - deberta-v2 - fill-mask datasets: - wikipedia - cc100 - oscar metrics: - accuracy mask_token: \"[MASK]\" widget: - text: \"京都 大学 で 自然 言語 処理 を [MASK] する 。\" --- # Model Card for Japanese DeBERTa V2 tiny ## Model description This is a Japanese DeBERTa V2 tiny model pre-trained on Japanese Wikipedia, the Japanese portion of CC-100, and the Japanese portion of OSCAR. ## How to use You can use this model for masked language modeling as follows: You can also fine-tune this model on downstream tasks. ## Tokenization The input text should be segmented into words by Juman++ in advance. Juman++ 2.0.0-rc3 was used for pre-training. Each word is tokenized into subwords by sentencepiece. ## Training data We used the following corpora for pre-training: - Japanese Wikipedia (as of 20221020, 3.2GB, 27M sentences, 1.3M documents) - Japanese portion of CC-100 (85GB, 619M sentences, 66M documents) - Japanese portion of OSCAR (54GB, 326M sentences, 25M documents) Note that we filtered out documents annotated with \"header\", \"footer\", or \"noisy\" tags in OSCAR. Also note that Japanese Wikipedia was duplicated 10 times to make the total size of the corpus comparable to that of CC-100 and OSCAR. As a result, the total size of the training data is 171GB. ## Training procedure We first segmented texts in the corpora into words using Juman++. Then, we built a sentencepiece model with 32000 tokens including words (JumanDIC) and subwords induced by the unigram language model of sentencepiece. We tokenized the segmented corpora into subwords using the sentencepiece model and trained the Japanese DeBERTa model using transformers library. The training took 33 hours using 8 NVIDIA A100-SXM4-40GB GPUs. The following hyperparameters were used during pre-training: - learning_rate: 1e-3 - per_device_train_batch_size: 128 - distributed_type: multi-GPU - num_devices: 8 - gradient_accumulation_steps: 6 - total_train_batch_size: 6,144 - max_seq_length: 512 - optimizer: Adam with betas=(0.9,0.999) and epsilon=1e-06 - lr_scheduler_type: linear schedule with warmup - training_steps: 100,000 - warmup_steps: 10,000 The accuracy of the trained model on the masked language modeling task was 0.593. The evaluation set consists of 5,000 randomly sampled documents from each of the training corpora. ## Acknowledgments This work was supported by Joint Usage/Research Center for Interdisciplinary Large-scale Information Infrastructures (JHPCN) through General Collaboration Project no. jh221004, \"Developing a Platform for Constructing and Sharing of Large-Scale Japanese Language Models\". For training models, we used the mdx: a platform for the data-driven future."
+}

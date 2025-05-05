@@ -1,0 +1,14 @@
+{
+    "model_id": "unslothai/azure",
+    "downloads": 79899,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "llama",
+        "feature-extraction",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- {} --- We log statistics to see if any envs are breaking"
+}

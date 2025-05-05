@@ -1,0 +1,17 @@
+{
+    "model_id": "timm/tf_efficientnetv2_s.in21k_ft_in1k",
+    "downloads": 76011,
+    "tags": [
+        "timm",
+        "pytorch",
+        "safetensors",
+        "image-classification",
+        "transformers",
+        "dataset:imagenet-1k",
+        "dataset:imagenet-21k",
+        "arxiv:2104.00298",
+        "license:apache-2.0",
+        "region:us"
+    ],
+    "description": "--- tags: - image-classification - timm - transformers library_name: timm license: apache-2.0 datasets: - imagenet-1k - imagenet-21k --- # Model card for tf_efficientnetv2_s.in21k_ft_in1k A EfficientNet-v2 image classification model. Trained on ImageNet-21k and fine-tuned on ImageNet-1k in Tensorflow by paper authors, ported to PyTorch by Ross Wightman. ## Model Details - **Model Type:** Image classification / feature backbone - **Model Stats:** - Params (M): 21.5 - GMACs: 5.4 - Activations (M): 22.7 - Image size: train = 300 x 300, test = 384 x 384 - **Papers:** - EfficientNetV2: Smaller Models and Faster Training: - **Dataset:** ImageNet-1k - **Pretrain Dataset:** ImageNet-21k - **Original:** ## Model Usage ### Image Classification ### Feature Map Extraction ### Image Embeddings ## Model Comparison Explore the dataset and runtime metrics of this model in timm model results. ## Citation"
+}

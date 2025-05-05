@@ -1,0 +1,17 @@
+{
+    "model_id": "llm-book/bert-base-japanese-v3-ner-wikipedia-dataset",
+    "downloads": 78162,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "bert",
+        "token-classification",
+        "ja",
+        "dataset:llm-book/ner-wikipedia-dataset",
+        "license:apache-2.0",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: - ja license: apache-2.0 library_name: transformers datasets: - llm-book/ner-wikipedia-dataset pipeline_tag: token-classification metrics: - seqeval - precision - recall - f1 --- # llm-book/bert-base-japanese-v3-ner-wikipedia-dataset 「大規模言語モデル入門」の第6章で紹介している固有表現認識のモデルです。 cl-tohoku/bert-base-japanese-v3をllm-book/ner-wikipedia-datasetでファインチューニングして構築されています。 ## 関連リンク * GitHubリポジトリ * Colabノートブック * データセット * 大規模言語モデル入門（Amazon.co.jp） * 大規模言語モデル入門（gihyo.jp） ## 使い方 ## ライセンス Apache License 2.0"
+}

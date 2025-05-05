@@ -1,0 +1,15 @@
+{
+    "model_id": "fxmarty/pix2struct-tiny-random",
+    "downloads": 76445,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "pix2struct",
+        "image-text-to-text",
+        "image-to-text",
+        "license:mit",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: mit pipeline_tag: image-to-text ---"
+}

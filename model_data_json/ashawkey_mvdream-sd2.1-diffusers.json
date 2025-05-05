@@ -1,0 +1,13 @@
+{
+    "model_id": "ashawkey/mvdream-sd2.1-diffusers",
+    "downloads": 78372,
+    "tags": [
+        "diffusers",
+        "safetensors",
+        "arxiv:2308.16512",
+        "license:openrail",
+        "diffusers:MVDreamPipeline",
+        "region:us"
+    ],
+    "description": "--- license: openrail --- # MVDream-diffusers Model Card This is a port of into diffusers. For usage, please check: ## Citation ## Misuse, Malicious Use, and Out-of-Scope Use The model should not be used to intentionally create or disseminate images that create hostile or alienating environments for people. This includes generating images that people would foreseeably find disturbing, distressing, or offensive; or content that propagates historical or current stereotypes."
+}

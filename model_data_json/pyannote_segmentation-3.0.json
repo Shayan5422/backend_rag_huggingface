@@ -1,0 +1,23 @@
+{
+    "model_id": "pyannote/segmentation-3.0",
+    "downloads": 11569174,
+    "tags": [
+        "pyannote-audio",
+        "pytorch",
+        "pyannote",
+        "pyannote-audio-model",
+        "audio",
+        "voice",
+        "speech",
+        "speaker",
+        "speaker-diarization",
+        "speaker-change-detection",
+        "speaker-segmentation",
+        "voice-activity-detection",
+        "overlapped-speech-detection",
+        "resegmentation",
+        "license:mit",
+        "region:us"
+    ],
+    "description": "--- tags: - pyannote - pyannote-audio - pyannote-audio-model - audio - voice - speech - speaker - speaker-diarization - speaker-change-detection - speaker-segmentation - voice-activity-detection - overlapped-speech-detection - resegmentation license: mit inference: false extra_gated_prompt: \"The collected information will help acquire a better knowledge of pyannote.audio userbase and help its maintainers improve it further. Though this model uses MIT license and will always remain open-source, we will occasionnally email you about premium models and paid services around pyannote.\" extra_gated_fields: Company/university: text Website: text --- Using this open-source model in production? Consider switching to pyannoteAI for better and faster options. # 🎹 \"Powerset\" speaker segmentation This model ingests 10 seconds of mono audio sampled at 16kHz and outputs speaker diarization as a (num_frames, num_classes) matrix where the 7 classes are _non-speech_, _speaker #1_, _speaker #2_, _speaker #3_, _speakers #1 and #2_, _speakers #1 and #3_, and _speakers #2 and #3_. !Example output The various concepts behind this model are described in details in this paper. It has been trained by Séverin Baroudi with pyannote.audio using the combination of the training sets of AISHELL, AliMeeting, AMI, AVA-AVD, DIHARD, Ego4D, MSDWild, REPERE, and VoxConverse. This companion repository by Alexis Plaquet also provides instructions on how to train or finetune such a model on your own data. ## Requirements 1. Install []( with 2. Accept []( user conditions 3. Create access token at []( ## Usage ### Speaker diarization This model cannot be used to perform speaker diarization of full recordings on its own (it only processes 10s chunks). See pyannote/speaker-diarization-3.0 pipeline that uses an additional speaker embedding model to perform full recording speaker diarization. ### Voice activity detection ### Overlapped speech detection ## Citations"
+}

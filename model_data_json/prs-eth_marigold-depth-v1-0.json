@@ -1,0 +1,20 @@
+{
+    "model_id": "prs-eth/marigold-depth-v1-0",
+    "downloads": 75450,
+    "tags": [
+        "diffusers",
+        "safetensors",
+        "depth estimation",
+        "image analysis",
+        "computer vision",
+        "in-the-wild",
+        "zero-shot",
+        "depth-estimation",
+        "en",
+        "arxiv:2312.02145",
+        "license:apache-2.0",
+        "diffusers:MarigoldDepthPipeline",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 language: - en pipeline_tag: depth-estimation new_version: prs-eth/marigold-depth-v1-1 pinned: true tags: - depth estimation - image analysis - computer vision - in-the-wild - zero-shot --- <h1 align=\"center\">Marigold Depth v1-0 Model Card</h1> <p align=\"center\"> <a title=\"Image Depth\" href=\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"display: inline-block;\"> <img src=\" alt=\"Image Depth\"> </a> <a title=\"diffusers\" href=\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"display: inline-block;\"> <img src=\" alt=\"diffusers\"> </a> <a title=\"Github\" href=\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"display: inline-block;\"> <img src=\" alt=\"Github\"> </a> <a title=\"Website\" href=\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"display: inline-block;\"> <img src=\" alt=\"Website\"> </a> <a title=\"arXiv\" href=\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"display: inline-block;\"> <img src=\" alt=\"arXiv\"> </a> <a title=\"Social\" href=\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"display: inline-block;\"> <img src=\" alt=\"Social\"> </a> <a title=\"License\" href=\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"display: inline-block;\"> <img src=\" alt=\"License\"> </a> </p> <h2 align=\"center\"> <a href=\" Marigold Depth v1-1 Model</a> </h2> This is a model card for the model for monocular depth estimation from a single image. The model is fine-tuned from the model as described in our CVPR'2024 paper titled \"Repurposing Diffusion-Based Image Generators for Monocular Depth Estimation\". - Play with the interactive Hugging Face Spaces demo: check out how the model works with example images or upload your own. - Use it with diffusers to compute the results with a few lines of code. - Get to the bottom of things with our official codebase. ## Model Details - **Developed by:** Bingxin Ke, Anton Obukhov, Shengyu Huang, Nando Metzger, Rodrigo Caye Daudt, Konrad Schindler. - **Model type:** Generative latent diffusion-based affine-invariant monocular depth estimation from a single image. - **Language:** English. - **License:** Apache License License Version 2.0. - **Model Description:** This model can be used to generate an estimated depth map of an input image. - **Resolution**: Even though any resolution can be processed, the model inherits the base diffusion model's effective resolution of roughly **768** pixels. This means that for optimal predictions, any larger input image should be resized to make the longer side 768 pixels before feeding it into the model. - **Steps and scheduler**: This model was designed for usage with the **DDIM** scheduler and between **10 and 50** denoising steps. It is possible to obtain good predictions with just **one** step by overriding the setting in the scheduler configuration file or by adding after the pipeline is loaded in the code before the first usage. For compatibility reasons we kept this model identical to the paper setting and provided a newer v1-1 model with optimal settings for all possible step configurations. - **Outputs**: - **Affine-invariant depth map**: The predicted values are between 0 and 1, interpolating between the near and far planes of the model's choice. - **Uncertainty map**: Produced only when multiple predictions are ensembled with ensemble size larger than 2. - **Resources for more information:** Project Website, Paper, Code. - **Cite as:**"
+}

@@ -1,0 +1,22 @@
+{
+    "model_id": "cross-encoder/nli-deberta-v3-base",
+    "downloads": 78924,
+    "tags": [
+        "sentence-transformers",
+        "pytorch",
+        "onnx",
+        "safetensors",
+        "deberta-v2",
+        "text-classification",
+        "transformers",
+        "zero-shot-classification",
+        "en",
+        "dataset:nyu-mll/multi_nli",
+        "dataset:stanfordnlp/snli",
+        "base_model:microsoft/deberta-v3-base",
+        "base_model:quantized:microsoft/deberta-v3-base",
+        "license:apache-2.0",
+        "region:us"
+    ],
+    "description": "--- language: en pipeline_tag: zero-shot-classification tags: - transformers datasets: - nyu-mll/multi_nli - stanfordnlp/snli metrics: - accuracy license: apache-2.0 base_model: - microsoft/deberta-v3-base library_name: sentence-transformers --- # Cross-Encoder for Natural Language Inference This model was trained using SentenceTransformers Cross-Encoder class. This model is based on microsoft/deberta-v3-base ## Training Data The model was trained on the SNLI and MultiNLI datasets. For a given sentence pair, it will output three scores corresponding to the labels: contradiction, entailment, neutral. ## Performance - Accuracy on SNLI-test dataset: 92.38 - Accuracy on MNLI mismatched set: 90.04 For futher evaluation results, see SBERT.net - Pretrained Cross-Encoder. ## Usage Pre-trained models can be used like this: ## Usage with Transformers AutoModel You can use the model also directly with Transformers library (without SentenceTransformers library): ## Zero-Shot Classification This model can also be used for zero-shot-classification:"
+}

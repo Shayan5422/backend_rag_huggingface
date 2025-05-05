@@ -1,0 +1,24 @@
+{
+    "model_id": "pyannote/speaker-diarization-3.1",
+    "downloads": 10614517,
+    "tags": [
+        "pyannote-audio",
+        "pyannote",
+        "pyannote-audio-pipeline",
+        "audio",
+        "voice",
+        "speech",
+        "speaker",
+        "speaker-diarization",
+        "speaker-change-detection",
+        "voice-activity-detection",
+        "overlapped-speech-detection",
+        "automatic-speech-recognition",
+        "arxiv:2111.14448",
+        "arxiv:2012.01477",
+        "license:mit",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- tags: - pyannote - pyannote-audio - pyannote-audio-pipeline - audio - voice - speech - speaker - speaker-diarization - speaker-change-detection - voice-activity-detection - overlapped-speech-detection - automatic-speech-recognition license: mit extra_gated_prompt: \"The collected information will help acquire a better knowledge of pyannote.audio userbase and help its maintainers improve it further. Though this pipeline uses MIT license and will always remain open-source, we will occasionnally email you about premium pipelines and paid services around pyannote.\" extra_gated_fields: Company/university: text Website: text --- Using this open-source model in production? Consider switching to pyannoteAI for better and faster options. # 🎹 Speaker diarization 3.1 This pipeline is the same as []( except it removes the problematic use of . Both speaker segmentation and embedding now run in pure PyTorch. This should ease deployment and possibly speed up inference. It requires pyannote.audio version 3.1 or higher. It ingests mono audio sampled at 16kHz and outputs speaker diarization as an []( instance: - stereo or multi-channel audio files are automatically downmixed to mono by averaging the channels. - audio files sampled at a different rate are resampled to 16kHz automatically upon loading. ## Requirements 1. Install []( with 2. Accept []( user conditions 3. Accept []( user conditions 4. Create access token at []( ## Usage ### Processing on GPU pipelines run on CPU by default. You can send them to GPU with the following lines: ### Processing from memory Pre-loading audio files in memory may result in faster processing: ### Monitoring progress Hooks are available to monitor the progress of the pipeline: ### Controlling the number of speakers In case the number of speakers is known in advance, one can use the option: One can also provide lower and/or upper bounds on the number of speakers using and options: ## Benchmark This pipeline has been benchmarked on a large collection of datasets. Processing is fully automatic: - no manual voice activity detection (as is sometimes the case in the literature) - no manual number of speakers (though it is possible to provide it to the pipeline) - no fine-tuning of the internal models nor tuning of the pipeline hyper-parameters to each dataset ... with the least forgiving diarization error rate (DER) setup (named _\"Full\"_ in this paper): - no forgiveness collar - evaluation of overlapped speech | Benchmark | DER% | FA% | Miss% | Conf% | Expected output | File-level evaluation | | ------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- | --------------------------- | ---------------------------------- | ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | | AISHELL-4 | 12.2 | 3.8 | 4.4 | 4.0 | RTTM | eval | | AliMeeting (_channel 1_) | 24.4 | 4.4 | 10.0 | 10.0 | RTTM | eval | | AMI (_headset mix,_ _only_words_) | 18.8 | 3.6 | 9.5 | 5.7 | RTTM | eval | | AMI (_array1, channel 1,_ _only_words)_ | 22.4 | 3.8 | 11.2 | 7.5 | RTTM | eval | | AVA-AVD | 50.0 | 10.8 | 15.7 | 23.4 | RTTM | eval | | DIHARD 3 (_Full_) | 21.7 | 6.2 | 8.1 | 7.3 | RTTM | eval | | MSDWild | 25.3 | 5.8 | 8.0 | 11.5 | RTTM | eval | | REPERE (_phase 2_) | 7.8 | 1.8 | 2.6 | 3.5 | RTTM | eval | | VoxConverse (_v0.3_) | 11.3 | 4.1 | 3.4 | 3.8 | RTTM | eval | ## Citations"
+}

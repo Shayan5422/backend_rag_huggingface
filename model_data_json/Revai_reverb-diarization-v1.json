@@ -1,0 +1,14 @@
+{
+    "model_id": "Revai/reverb-diarization-v1",
+    "downloads": 175090,
+    "tags": [
+        "pyannote-audio",
+        "pytorch",
+        "reverb",
+        "automatic-speech-recognition",
+        "arxiv:2410.03930",
+        "license:other",
+        "region:us"
+    ],
+    "description": "--- license: other library_name: pyannote-audio tags: - reverb pipeline_tag: automatic-speech-recognition --- Details on the model, it's performance, and more available on Arxiv. For more information on how to run this diarization model see Reverb diarization V1 provides a 16.5% relative improvement in WDER (Word Diarization Error Rate) compared to the baseline pyannote3.0 model, evaluated on over 1,250,000 tokens across five different test suites. | Test suite | WDER | |---------| --------| |earnings21 | 0.047 | |rev16 | 0.077| # Usage # Cite this Model If you use this model please use the following citation: # License See LICENSE for details."
+}

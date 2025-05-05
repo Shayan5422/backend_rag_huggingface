@@ -1,0 +1,24 @@
+{
+    "model_id": "RedHatAI/Mistral-Small-24B-Instruct-2501-FP8-dynamic",
+    "downloads": 81938,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "mistral",
+        "text-generation",
+        "mistral-small",
+        "fp8",
+        "vllm",
+        "conversational",
+        "en",
+        "base_model:mistralai/Mistral-Small-24B-Instruct-2501",
+        "base_model:quantized:mistralai/Mistral-Small-24B-Instruct-2501",
+        "license:apache-2.0",
+        "autotrain_compatible",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "compressed-tensors",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 language: - en tags: - mistral - mistral-small - fp8 - vllm base_model: mistralai/Mistral-Small-24B-Instruct-2501 library_name: transformers --- # Mistral-Small-24B-Instruct-2501-FP8-Dynamic ## Model Overview - **Model Architecture:** Mistral-Small-24B-Instruct-2501 - **Input:** Text - **Output:** Text - **Model Optimizations:** - **Weight quantization:** FP8 - **Activation quantization:** FP8 - **Release Date:** 3/1/2025 - **Version:** 1.0 - **Model Developers:** Neural Magic Quantized version of Mistral-Small-24B-Instruct-2501. It achieves an average score of 78.88 on the OpenLLM benchmark (version 1), whereas the unquantized model achieves 79.45. ### Model Optimizations This model was obtained by quantizing the weights and activations to FP8 data type, ready for inference with vLLM. This optimization reduces the number of bits per parameter from 16 to 8, reducing the disk size and GPU memory requirements by approximately 50%. Only the weights and activations of the linear operators within transformers blocks are quantized. ## Deployment ### Use with vLLM This model can be deployed efficiently using the vLLM backend, as shown in the example below. vLLM also supports OpenAI-compatible serving. See the documentation for more details. ## Creation This model was created with llm-compressor by running the code snippet below. ## Evaluation The model was evaluated on OpenLLM Leaderboard V1 and V2, using the following commands: OpenLLM Leaderboard V1: OpenLLM Leaderboard V2: ### Accuracy #### OpenLLM Leaderboard V1 evaluation scores | Metric | mistralai/Mistral-Small-24B-Instruct-2501 | nm-testing/Mistral-Small-24B-Instruct-2501-FP8-dynamic | |-----------------------------------------|:---------------------------------:|:-------------------------------------------:| | ARC-Challenge (Acc-Norm, 25-shot) | 72.18 | 71.76 | | GSM8K (Strict-Match, 5-shot) | 90.14 | 89.01 | | HellaSwag (Acc-Norm, 10-shot) | 85.05 | 84.65 | | MMLU (Acc, 5-shot) | 80.69 | 80.55 | | TruthfulQA (MC2, 0-shot) | 65.55 | 64.85 | | Winogrande (Acc, 5-shot) | 83.11 | 82.48 | | **Average Score** | **79.45** | **78.88** | | **Recovery (%)** | **100.00** | **99.28** | #### OpenLLM Leaderboard V2 evaluation scores | Metric | mistralai/Mistral-Small-24B-Instruct-2501 | nm-testing/Mistral-Small-24B-Instruct-2501-FP8-dynamic | |---------------------------------------------------------|:---------------------------------:|:-------------------------------------------:| | IFEval (Inst-and-Prompt Level Strict Acc, 0-shot) | 73.27 | 73.53 | | BBH (Acc-Norm, 3-shot) | 45.18 | 44.39 | | MMLU-Pro (Acc, 5-shot) | 38.83 | 37.28 | | **Average Score** | **52.42** | **51.73** | | **Recovery (%)** | **100.00** | **98.68** | | Math-Hard (Exact-Match, 4-shot) | 6.35 | 2.99 | | GPQA (Acc-Norm, 0-shot) | 8.29 | 6.97 | | MUSR (Acc-Norm, 0-shot) | 7.84 | 8.04 | Results on Math-Hard, GPQA, and MUSR are not considred for accuracy recovery calculation because the unquantized model has close to random prediction accuracy (6.35, 8.29, 7.84) which doesn't provide a reliable baseline for recovery calculation."
+}

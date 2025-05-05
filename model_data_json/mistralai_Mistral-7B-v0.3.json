@@ -1,0 +1,16 @@
+{
+    "model_id": "mistralai/Mistral-7B-v0.3",
+    "downloads": 462267,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "mistral",
+        "text-generation",
+        "license:apache-2.0",
+        "autotrain_compatible",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 extra_gated_description: If you want to learn more about how we process your personal data, please read our <a href=\" Policy</a>. --- # Model Card for Mistral-7B-v0.3 The Mistral-7B-v0.3 Large Language Model (LLM) is a Mistral-7B-v0.2 with extended vocabulary. Mistral-7B-v0.3 has the following changes compared to Mistral-7B-v0.2 - Extended vocabulary to 32768 ## Installation It is recommended to use with mistral-inference. For HF transformers code snippets, please keep scrolling. ## Download ### Demo After installing , a CLI command should be available in your environment. Should give something along the following lines: ## Generate with If you want to use Hugging Face to generate text, you can do something like this. ## Limitations The Mistral 7B Instruct model is a quick demonstration that the base model can be easily fine-tuned to achieve compelling performance. It does not have any moderation mechanisms. We're looking forward to engaging with the community on ways to make the model finely respect guardrails, allowing for deployment in environments requiring moderated outputs. ## The Mistral AI Team Albert Jiang, Alexandre Sablayrolles, Alexis Tacnet, Antoine Roux, Arthur Mensch, Audrey Herblin-Stoop, Baptiste Bout, Baudouin de Monicault, Blanche Savary, Bam4d, Caroline Feldman, Devendra Singh Chaplot, Diego de las Casas, Eleonore Arcelin, Emma Bou Hanna, Etienne Metzger, Gianna Lengyel, Guillaume Bour, Guillaume Lample, Harizo Rajaona, Jean-Malo Delignon, Jia Li, Justus Murke, Louis Martin, Louis Ternon, Lucile Saulnier, Lélio Renard Lavaud, Margaret Jennings, Marie Pellat, Marie Torelli, Marie-Anne Lachaux, Nicolas Schuhl, Patrick von Platen, Pierre Stock, Sandeep Subramanian, Sophia Yang, Szymon Antoniak, Teven Le Scao, Thibaut Lavril, Timothée Lacroix, Théophile Gervet, Thomas Wang, Valera Nemychnikova, William El Sayed, William Marshall"
+}

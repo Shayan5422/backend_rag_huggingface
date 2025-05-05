@@ -1,0 +1,17 @@
+{
+    "model_id": "shi-labs/oneformer_cityscapes_dinat_large",
+    "downloads": 75688,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "oneformer",
+        "vision",
+        "image-segmentation",
+        "dataset:huggan/cityscapes",
+        "arxiv:2211.06220",
+        "license:mit",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: mit tags: - vision - image-segmentation datasets: - huggan/cityscapes widget: - src: example_title: Cityscapes --- # OneFormer OneFormer model trained on the Cityscapes dataset (large-sized version, Dinat backbone). It was introduced in the paper OneFormer: One Transformer to Rule Universal Image Segmentation by Jain et al. and first released in this repository. !model image ## Model description OneFormer is the first multi-task universal image segmentation framework. It needs to be trained only once with a single universal architecture, a single model, and on a single dataset, to outperform existing specialized models across semantic, instance, and panoptic segmentation tasks. OneFormer uses a task token to condition the model on the task in focus, making the architecture task-guided for training, and task-dynamic for inference, all with a single model. !model image ## Intended uses & limitations You can use this particular checkpoint for semantic, instance and panoptic segmentation. See the model hub to look for other fine-tuned versions on a different dataset. ### How to use Here is how to use this model: For more examples, please refer to the documentation. ### Citation"
+}

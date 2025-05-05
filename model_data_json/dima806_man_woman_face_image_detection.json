@@ -1,0 +1,18 @@
+{
+    "model_id": "dima806/man_woman_face_image_detection",
+    "downloads": 74322,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "safetensors",
+        "vit",
+        "image-classification",
+        "base_model:google/vit-base-patch16-224-in21k",
+        "base_model:finetune:google/vit-base-patch16-224-in21k",
+        "license:apache-2.0",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 metrics: - accuracy - f1 base_model: - google/vit-base-patch16-224-in21k --- Returns with about 98.7% accuracy whether the face belongs to man or woman based on face image. See for more details. !image/png"
+}

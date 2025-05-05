@@ -1,0 +1,26 @@
+{
+    "model_id": "dangvantuan/vietnamese-document-embedding",
+    "downloads": 75605,
+    "tags": [
+        "sentence-transformers",
+        "safetensors",
+        "Vietnamese",
+        "feature-extraction",
+        "sentence-similarity",
+        "transformers",
+        "phobert",
+        "vietnamese",
+        "sentence-embedding",
+        "custom_code",
+        "vi",
+        "arxiv:1908.10084",
+        "arxiv:2407.19669",
+        "arxiv:2308.03281",
+        "arxiv:2402.14776",
+        "license:apache-2.0",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- library_name: sentence-transformers pipeline_tag: sentence-similarity tags: - sentence-transformers - feature-extraction - sentence-similarity - transformers - phobert - vietnamese - sentence-embedding license: apache-2.0 language: - vi metrics: - pearsonr - spearmanr --- ## Model Description: **vietnamese-document-embedding** is the Document Embedding Model for Vietnamese language with context length up to 8096 tokens. This model is a specialized long text-embedding trained specifically for the Vietnamese language, which is built upon gte-multilingual and trained using the Multi-Negative Ranking Loss, Matryoshka2dLoss and SimilarityLoss. ## Full Model Architecture ## Training and Fine-tuning process The model underwent a rigorous four-stage training and fine-tuning process, each tailored to enhance its ability to generate precise and contextually relevant sentence embeddings for the Vietnamese language. Below is an outline of these stages: #### Stage 1: Training NLI on dataset XNLI: - Dataset: XNLI-vn - Method: Training using Multi-Negative Ranking Loss and Matryoshka2dLoss. This stage focused on improving the model's ability to discern and rank nuanced differences in sentence semantics. ### Stage 2: Fine-tuning for Semantic Textual Similarity on STS Benchmark - Dataset: STSB-vn - Method: Fine-tuning specifically for the semantic textual similarity benchmark using Siamese BERT-Networks configured with the 'sentence-transformers' library. This stage honed the model's precision in capturing semantic similarity across various types of Vietnamese texts. ## Usage: Using this model becomes easy when you have sentence-transformers installed: Then you can use the model like this: ## Evaluation The model can be evaluated as follows on the Vienamese data of stsb. ### Metric for all dataset of Semantic Textual Similarity on STS Benchmark **Spearman score** | Model | [STSB] | [STS12]| [STS13] | [STS14] | [STS15] | [STS16] | [SICK] | Mean | |-----------------------------------------------------------|---------|----------|----------|----------|----------|----------|---------|--------| | dangvantuan/vietnamese-embedding |84.84| 79.04| 85.30| 81.38| 87.06| 79.95| 79.58| 82.45| | dangvantuan/vietnamese-embedding-LongContext |85.25| 75.77| 83.82| 81.69| 88.48| 81.5| 78.2| 82.10| ## Citation @article{reimers2019sentence, title={Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks}, author={Nils Reimers, Iryna Gurevych}, journal={ year={2019} } @article{zhang2024mgte, title={mGTE: Generalized Long-Context Text Representation and Reranking Models for Multilingual Text Retrieval}, author={Zhang, Xin and Zhang, Yanzhao and Long, Dingkun and Xie, Wen and Dai, Ziqi and Tang, Jialong and Lin, Huan and Yang, Baosong and Xie, Pengjun and Huang, Fei and others}, journal={arXiv preprint arXiv:2407.19669}, year={2024} } @article{li2023towards, title={Towards general text embeddings with multi-stage contrastive learning}, author={Li, Zehan and Zhang, Xin and Zhang, Yanzhao and Long, Dingkun and Xie, Pengjun and Zhang, Meishan}, journal={arXiv preprint arXiv:2308.03281}, year={2023} } @article{li20242d, title={2d matryoshka sentence embeddings}, author={Li, Xianming and Li, Zongxi and Li, Jing and Xie, Haoran and Li, Qing}, journal={arXiv preprint arXiv:2402.14776}, year={2024} }"
+}

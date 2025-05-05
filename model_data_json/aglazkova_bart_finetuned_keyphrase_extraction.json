@@ -1,0 +1,21 @@
+{
+    "model_id": "aglazkova/bart_finetuned_keyphrase_extraction",
+    "downloads": 83042,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "bart",
+        "text2text-generation",
+        "en",
+        "dataset:midas/krapivin",
+        "dataset:midas/inspec",
+        "dataset:midas/kptimes",
+        "dataset:midas/duc2001",
+        "arxiv:1910.13461",
+        "arxiv:2312.10700",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- datasets: - midas/krapivin - midas/inspec - midas/kptimes - midas/duc2001 language: - en widget: - text: \"Relevance has traditionally been linked with feature subset selection, but formalization of this link has not been attempted. In this paper, we propose two axioms for feature subset selection sufficiency axiom and necessity axiombased on which this link is formalized: The expected feature subset is the one which maximizes relevance. Finding the expected feature subset turns out to be NP-hard. We then devise a heuristic algorithm to find the expected subset which has a polynomial time complexity. The experimental results show that the algorithm finds good enough subset of features which, when presented to C4.5, results in better prediction accuracy.\" - text: \"In this paper, we investigate cross-domain limitations of keyphrase generation using the models for abstractive text summarization. We present an evaluation of BART fine-tuned for keyphrase generation across three types of texts, namely scientific texts from computer science and biomedical domains and news texts. We explore the role of transfer learning between different domains to improve the model performance on small text corpora.\" --- # BART fine-tuned for keyphrase generation <!-- Provide a quick summary of what the model is/does. --> This is the <a href=\" (<a href = \" et al.. 2019</a>) model finetuned for the keyphrase generation task (<a href=\" & Morozov, 2023</a>) on the fragments of the following corpora: * Krapivin (<a href = \" et al., 2009</a>) * Inspec (<a href = \" 2003</a>) * KPTimes (<a href = \" 2019</a>) * DUC-2001 (<a href = \" 2008</a>) * PubMed (<a href = \" 2008</a>) * NamedKeys (<a href = \" & Ho, 2019</a>). #### Training Hyperparameters The following hyperparameters were used during training: * learning_rate: 4e-5 * train_batch_size: 8 * optimizer: AdamW with betas=(0.9,0.999) and epsilon=1e-08 * num_epochs: 6 **BibTeX:**"
+}

@@ -5,15 +5,33 @@ from flask_cors import CORS
 import numpy as np
 import json
 import traceback
+import logging # Added for background task logging
+import threading # Added for background task
+import time # Added for background task
+import schedule # Added for background task
+
+# --- Import the daily update function --- 
+try:
+    from daily_update import main as run_daily_update
+    # Set up logging for the daily_update module if it uses logging
+    # logging.getLogger('daily_update').setLevel(logging.INFO) # Example
+except ImportError:
+    logging.error("Failed to import daily_update.py. The daily update task will not run.")
+    run_daily_update = None # Define as None if import fails
+# ---
 
 app = Flask(__name__) # Create app object FIRST
+
+# Configure Flask app logging (optional but recommended)
+# app.logger.setLevel(logging.INFO)
+
 # Allow requests from the Vercel frontend and localhost for development
 CORS(app, origins=["http://127.0.0.1:3000", "http://localhost:3000", "https://rag-huggingface.vercel.app"], supports_credentials=True)
 
 # --- Configuration ---
 INDEX_FILE = "index.faiss"
 MAP_FILE = "index_to_metadata.pkl"
-EMBEDDING_MODEL = 'all-MiniLM-L6-v2'
+EMBEDDING_MODEL = 'all-mpnet-base-v2'
 # Corrected path joining for model_data_json - relative to app.py location
 MODEL_DATA_DIR = os.path.join(os.path.dirname(__file__), 'model_data_json')
 # ---
@@ -93,6 +111,70 @@ def load_resources():
 # This should be executed only once by Gunicorn when it imports 'app:app'
 load_resources()
 # ---
+
+# --- Background Update Task --- 
+
+UPDATE_INTERVAL_HOURS = 24 # Check every 24 hours
+UPDATE_TIME = "02:00" # Time to run the update (24-hour format)
+
+def run_update_task():
+    """Wrapper function to run the daily update and handle errors."""
+    if run_daily_update is None:
+        logging.warning("run_daily_update function not available (import failed). Skipping task.")
+        return
+
+    logging.info(f"Background task: Starting daily update check (scheduled for {UPDATE_TIME})...")
+    try:
+        # Make sure the DEEPSEEK_API_KEY is set before running
+        if not os.getenv("DEEPSEEK_API_KEY"):
+            logging.error("Background task: DEEPSEEK_API_KEY not set. Daily update cannot run.")
+            return # Don't run if key is missing
+
+        run_daily_update() # Call the main function from daily_update.py
+        logging.info("Background task: Daily update process finished.")
+    except Exception as e:
+        logging.error(f"Background task: Error during daily update execution: {e}")
+        logging.error(traceback.format_exc())
+
+def background_scheduler():
+    """Runs the scheduler loop in a background thread."""
+    logging.info(f"Background scheduler started. Will run update task daily around {UPDATE_TIME}.")
+    
+    if run_daily_update is None:
+        logging.error("Background scheduler: daily_update.py could not be imported. Scheduler will not run tasks.")
+        return # Stop the thread if the core function isn't available
+
+    # Schedule the job
+    # schedule.every(UPDATE_INTERVAL_HOURS).hours.do(run_update_task) # Alternative: run every X hours
+    schedule.every().day.at(UPDATE_TIME).do(run_update_task)
+    logging.info(f"Scheduled daily update task for {UPDATE_TIME}.")
+
+    # Run once immediately on startup? (Optional)
+    # logging.info("Running initial update task on startup...")
+    # run_update_task()
+    # logging.info("Initial update task finished.")
+
+    while True:
+        schedule.run_pending()
+        time.sleep(60) # Check every 60 seconds if a task is due
+
+# Start the background scheduler thread only if this is the main process
+# This check helps prevent duplicate schedulers when using workers (like Gunicorn)
+# Note: This might not be perfectly reliable with all WSGI servers/configs.
+# Consider using a more robust method for ensuring single execution if needed (e.g., file lock, external process manager)
+if os.environ.get("WERKZEUG_RUN_MAIN") == "true" or os.environ.get("FLASK_ENV") != "development":
+    # Start only in main Werkzeug process OR if not in Flask development mode (like production with Gunicorn)
+    # Check if the function is available before starting thread
+    if run_daily_update is not None:
+        scheduler_thread = threading.Thread(target=background_scheduler, daemon=True)
+        scheduler_thread.start()
+        logging.info("Background scheduler thread started.")
+    else:
+        logging.warning("Background scheduler thread NOT started because daily_update.py failed to import.")
+else:
+    logging.info("Skipping background scheduler start in Werkzeug reloader process.")
+
+# --- End Background Update Task ---
 
 @app.route('/search', methods=['POST'])
 def search():

@@ -1,0 +1,21 @@
+{
+    "model_id": "gokaygokay/Florence-2-SD3-Captioner",
+    "downloads": 76570,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "florence2",
+        "text-generation",
+        "art",
+        "image-text-to-text",
+        "custom_code",
+        "en",
+        "dataset:google/docci",
+        "dataset:google/imageinwords",
+        "dataset:ProGamerGov/synthetic-dataset-1m-dalle3-high-quality-captions",
+        "license:apache-2.0",
+        "autotrain_compatible",
+        "region:us"
+    ],
+    "description": "--- license: apache-2.0 datasets: - google/docci - google/imageinwords - ProGamerGov/synthetic-dataset-1m-dalle3-high-quality-captions language: - en library_name: transformers pipeline_tag: image-text-to-text tags: - art ---"
+}

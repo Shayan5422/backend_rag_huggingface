@@ -1,0 +1,18 @@
+{
+    "model_id": "allegro/herbert-base-cased",
+    "downloads": 78442,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "tf",
+        "jax",
+        "bert",
+        "feature-extraction",
+        "herbert",
+        "pl",
+        "license:cc-by-4.0",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: pl tags: - herbert license: cc-by-4.0 --- # HerBERT **HerBERT** is a BERT-based Language Model trained on Polish corpora using Masked Language Modelling (MLM) and Sentence Structural Objective (SSO) with dynamic masking of whole words. For more details, please refer to: HerBERT: Efficiently Pretrained Transformer-based Language Model for Polish. Model training and experiments were conducted with transformers in version 2.9. ## Corpus HerBERT was trained on six different corpora available for Polish language: | Corpus | Tokens | Documents | | :------ | ------: | ------: | | CCNet Middle | 3243M | 7.9M | | CCNet Head | 2641M | 7.0M | | National Corpus of Polish| 1357M | 3.9M | | Open Subtitles | 1056M | 1.1M | Wikipedia | 260M | 1.4M | | Wolne Lektury | 41M | 5.5k | ## Tokenizer The training dataset was tokenized into subwords using a character level byte-pair encoding (``. ## Usage Example code: ## License CC BY 4.0 ## Citation If you use this model, please cite the following paper: ## Authors The model was trained by **Machine Learning Research Team at Allegro** and **Linguistic Engineering Group at Institute of Computer Science, Polish Academy of Sciences**. You can contact us at: <a href=\"mailto:klejbenchmark@allegro.pl\">klejbenchmark@allegro.pl</a>"
+}

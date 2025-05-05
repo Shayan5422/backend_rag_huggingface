@@ -11,7 +11,7 @@ from tqdm import tqdm
 MODEL_DATA_DIR = "model_data_json"  # Path to downloaded JSON data
 INDEX_FILE = "index.faiss"
 MAP_FILE = "index_to_metadata.pkl" # Changed filename to reflect content
-EMBEDDING_MODEL = 'all-MiniLM-L6-v2'  # Efficient and good quality model
+EMBEDDING_MODEL = 'all-mpnet-base-v2'  # Efficient and good quality model
 ENCODE_BATCH_SIZE = 32  # Process descriptions in smaller batches
 # Tags to exclude from indexing text
 COMMON_EXCLUDED_TAGS = {'transformers'} # Add other common tags if needed

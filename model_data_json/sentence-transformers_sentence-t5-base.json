@@ -1,0 +1,20 @@
+{
+    "model_id": "sentence-transformers/sentence-t5-base",
+    "downloads": 83144,
+    "tags": [
+        "sentence-transformers",
+        "pytorch",
+        "rust",
+        "safetensors",
+        "t5",
+        "feature-extraction",
+        "sentence-similarity",
+        "en",
+        "arxiv:2108.08877",
+        "license:apache-2.0",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: en license: apache-2.0 library_name: sentence-transformers tags: - sentence-transformers - feature-extraction - sentence-similarity pipeline_tag: sentence-similarity --- # sentence-transformers/sentence-t5-base This is a sentence-transformers model: It maps sentences & paragraphs to a 768 dimensional dense vector space. The model works well for sentence similarity tasks, but doesn't perform that well for semantic search tasks. This model was converted from the Tensorflow model st5-base-1 to PyTorch. When using this model, have a look at the publication: Sentence-T5: Scalable sentence encoders from pre-trained text-to-text models. The tfhub model and this PyTorch model can produce slightly different embeddings, however, when run on the same benchmarks, they produce identical results. The model uses only the encoder from a T5-base model. The weights are stored in FP16. ## Usage (Sentence-Transformers) Using this model becomes easy when you have sentence-transformers installed: Then you can use the model like this: The model requires sentence-transformers version 2.2.0 or newer. ## Citing & Authors If you find this model helpful, please cite the respective publication: Sentence-T5: Scalable sentence encoders from pre-trained text-to-text models"
+}

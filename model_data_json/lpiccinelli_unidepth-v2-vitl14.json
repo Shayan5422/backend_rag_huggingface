@@ -1,0 +1,14 @@
+{
+    "model_id": "lpiccinelli/unidepth-v2-vitl14",
+    "downloads": 78452,
+    "tags": [
+        "UniDepth",
+        "pytorch",
+        "safetensors",
+        "model_hub_mixin",
+        "monocular-metric-depth-estimation",
+        "pytorch_model_hub_mixin",
+        "region:us"
+    ],
+    "description": "--- library_name: UniDepth tags: - model_hub_mixin - monocular-metric-depth-estimation - pytorch_model_hub_mixin --- This model has been pushed to the Hub using the PytorchModelHubMixin integration: - Library: - Docs: [More Information Needed]"
+}

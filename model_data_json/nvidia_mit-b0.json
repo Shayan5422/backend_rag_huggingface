@@ -1,0 +1,19 @@
+{
+    "model_id": "nvidia/mit-b0",
+    "downloads": 77331,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "tf",
+        "segformer",
+        "image-classification",
+        "vision",
+        "dataset:imagenet_1k",
+        "arxiv:2105.15203",
+        "license:other",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- license: other tags: - vision datasets: - imagenet_1k widget: - src: example_title: House - src: example_title: Castle --- # SegFormer (b0-sized) encoder pre-trained-only SegFormer encoder fine-tuned on Imagenet-1k. It was introduced in the paper SegFormer: Simple and Efficient Design for Semantic Segmentation with Transformers by Xie et al. and first released in this repository. Disclaimer: The team releasing SegFormer did not write a model card for this model so this model card has been written by the Hugging Face team. ## Model description SegFormer consists of a hierarchical Transformer encoder and a lightweight all-MLP decode head to achieve great results on semantic segmentation benchmarks such as ADE20K and Cityscapes. The hierarchical Transformer is first pre-trained on ImageNet-1k, after which a decode head is added and fine-tuned altogether on a downstream dataset. This repository only contains the pre-trained hierarchical Transformer, hence it can be used for fine-tuning purposes. ## Intended uses & limitations You can use the model for fine-tuning of semantic segmentation. See the model hub to look for fine-tuned versions on a task that interests you. ### How to use Here is how to use this model to classify an image of the COCO 2017 dataset into one of the 1,000 ImageNet classes: For more code examples, we refer to the documentation. ### License The license for this model can be found here. ### BibTeX entry and citation info"
+}

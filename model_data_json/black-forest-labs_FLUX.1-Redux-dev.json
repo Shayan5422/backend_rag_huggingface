@@ -1,0 +1,16 @@
+{
+    "model_id": "black-forest-labs/FLUX.1-Redux-dev",
+    "downloads": 204436,
+    "tags": [
+        "diffusers",
+        "safetensors",
+        "image-generation",
+        "flux",
+        "diffusion-single-file",
+        "en",
+        "license:other",
+        "diffusers:FluxPriorReduxPipeline",
+        "region:us"
+    ],
+    "description": "--- language: - en license: other license_name: flux-1-dev-non-commercial-license license_link: LICENSE.md extra_gated_prompt: By clicking \"Agree\", you agree to the FluxDev Non-Commercial License Agreement and acknowledge the Acceptable Use Policy. tags: - image-generation - flux - diffusion-single-file --- !image/png FLUX.1 Redux [dev] is an adapter for all FLUX.1 base models for image variation generation. Given an input image, FLUX.1 Redux can reproduce the image with slight variation, allowing to refine a given image. It naturally integrates into more complex workflows unlocking image restyling. Restyling via text is also available through our API by providing an image plus a language prompt. For more information, please read our blog post. # Usage We provide a reference implementation of , as well as sampling code, in a dedicated github repository. ## API Endpoints is available in our API bfl.ml. In addition to the adapter, the API endpoint allows users to modify an image given a textual description. The feature is supported in our latest model FLUX1.1 [pro] Ultra, allowing for combining input images and text prompts to create high-quality 4-megapixel outputs with flexible aspect ratios. !image/png ## Diffusers To use with the 🧨 diffusers python library, first install or upgrade diffusers Then you can use along with to generate images from images. To learn more check out the diffusers documentation --- # Limitations - This model is not intended or able to provide factual information. - As a statistical model this checkpoint might amplify existing societal biases. - The model may fail to generate output that matches the prompts. - Outputs are heavily influenced by the input image. # Out-of-Scope Use The model and its derivatives may not be used - In any way that violates any applicable national, federal, state, local or international law or regulation. - For the purpose of exploiting, harming or attempting to exploit or harm minors in any way; including but not limited to the solicitation, creation, acquisition, or dissemination of child exploitative content. - To generate or disseminate verifiably false information and/or content with the purpose of harming others. - To generate or disseminate personal identifiable information that can be used to harm an individual. - To harass, abuse, threaten, stalk, or bully individuals or groups of individuals. - To create non-consensual nudity or illegal pornographic content. - For fully automated decision making that adversely impacts an individual's legal rights or otherwise creates or modifies a binding, enforceable obligation. - Generating or facilitating large-scale disinformation campaigns. # License This model falls under the Non-Commercial License."
+}

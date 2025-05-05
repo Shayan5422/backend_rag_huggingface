@@ -1,0 +1,17 @@
+{
+    "model_id": "qanastek/51-languages-classifier",
+    "downloads": 83055,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "Transformers",
+        "text-classification",
+        "multi-class-classification",
+        "dataset:qanastek/MASSIVE",
+        "arxiv:1911.02116",
+        "license:cc-by-4.0",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- tags: - Transformers - text-classification - multi-class-classification languages: - af-ZA - am-ET - ar-SA - az-AZ - bn-BD - cy-GB - da-DK - de-DE - el-GR - en-US - es-ES - fa-IR - fi-FI - fr-FR - he-IL - hi-IN - hu-HU - hy-AM - id-ID - is-IS - it-IT - ja-JP - jv-ID - ka-GE - km-KH - kn-IN - ko-KR - lv-LV - ml-IN - mn-MN - ms-MY - my-MM - nb-NO - nl-NL - pl-PL - pt-PT - ro-RO - ru-RU - sl-SL - sq-AL - sv-SE - sw-KE - ta-IN - te-IN - th-TH - tl-PH - tr-TR - ur-PK - vi-VN - zh-CN - zh-TW multilinguality: - af-ZA - am-ET - ar-SA - az-AZ - bn-BD - cy-GB - da-DK - de-DE - el-GR - en-US - es-ES - fa-IR - fi-FI - fr-FR - he-IL - hi-IN - hu-HU - hy-AM - id-ID - is-IS - it-IT - ja-JP - jv-ID - ka-GE - km-KH - kn-IN - ko-KR - lv-LV - ml-IN - mn-MN - ms-MY - my-MM - nb-NO - nl-NL - pl-PL - pt-PT - ro-RO - ru-RU - sl-SL - sq-AL - sv-SE - sw-KE - ta-IN - te-IN - th-TH - tl-PH - tr-TR - ur-PK - vi-VN - zh-CN - zh-TW datasets: - qanastek/MASSIVE widget: - text: \"wake me up at five am this week\" - text: \"je veux écouter la chanson de jacques brel encore une fois\" - text: \"quiero escuchar la canción de arijit singh una vez más\" - text: \"olly onde é que á um parque por perto onde eu possa correr\" - text: \"פרק הבא בפודקאסט בבקשה\" - text: \"亚马逊股价\" - text: \"найди билет на поезд в санкт-петербург\" license: cc-by-4.0 --- **People Involved** * LABRAK Yanis (1) **Affiliations** 1. LIA, NLP team, Avignon University, Avignon, France. ## Model XLM-Roberta : Paper : Unsupervised Cross-lingual Representation Learning at Scale ## Demo: How to use in HuggingFace Transformers Pipeline Requires transformers: Outputs: ## Training data MASSIVE is a parallel dataset of > 1M utterances across 51 languages with annotations for the Natural Language Understanding tasks of intent prediction and slot annotation. Utterances span 60 intents and include 55 slot types. MASSIVE was created by localizing the SLURP dataset, composed of general Intelligent Voice Assistant single-shot interactions. ### Languages Thee model is capable of distinguish 51 languages : - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ## Evaluation results Keywords : language identification ; language identification ; multilingual ; classification"
+}

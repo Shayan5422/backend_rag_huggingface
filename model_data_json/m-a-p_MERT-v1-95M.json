@@ -1,0 +1,17 @@
+{
+    "model_id": "m-a-p/MERT-v1-95M",
+    "downloads": 74062,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "mert_model",
+        "feature-extraction",
+        "music",
+        "audio-classification",
+        "custom_code",
+        "arxiv:2306.00107",
+        "license:cc-by-nc-4.0",
+        "region:us"
+    ],
+    "description": "--- license: cc-by-nc-4.0 inference: false tags: - music pipeline_tag: audio-classification --- # Introduction to our series work The development log of our Music Audio Pre-training (m-a-p) model family: - 02/06/2023: arxiv pre-print and training codes released. - 17/03/2023: we release two advanced music understanding models, MERT-v1-95M and MERT-v1-330M , trained with new paradigm and dataset. They outperform the previous models and can better generalize to more tasks. - 14/03/2023: we retrained the MERT-v0 model with open-source-only music dataset MERT-v0-public - 29/12/2022: a music understanding model MERT-v0 trained with **MLM** paradigm, which performs better at downstream tasks. - 29/10/2022: a pre-trained MIR model music2vec trained with **BYOL** paradigm. Here is a table for quick model pick-up: | Name | Pre-train Paradigm | Training Data (hour) | Pre-train Context (second) | Model Size | Transformer Layer-Dimension | Feature Rate | Sample Rate | Release Date | | ------------------------------------------------------------ | ------------------ | -------------------- | ---------------------------- | ---------- | --------------------------- | ------------ | ----------- | ------------ | | MERT-v1-330M | MLM | 160K | 5 | 330M | 24-1024 | 75 Hz | 24K Hz | 17/03/2023 | | MERT-v1-95M | MLM | 20K | 5 | 95M | 12-768 | 75 Hz | 24K Hz | 17/03/2023 | | MERT-v0-public | MLM | 900 | 5 | 95M | 12-768 | 50 Hz | 16K Hz | 14/03/2023 | | MERT-v0 | MLM | 1000 | 5 | 95 M | 12-768 | 50 Hz | 16K Hz | 29/12/2022 | | music2vec-v1 | BYOL | 1000 | 30 | 95 M | 12-768 | 50 Hz | 16K Hz | 30/10/2022 | ## Explanation The m-a-p models share the similar model architecture and the most distinguished difference is the paradigm in used pre-training. Other than that, there are several nuance technical configuration needs to know before using: - **Model Size**: the number of parameters that would be loaded to memory. Please select the appropriate size fitting your hardware. - **Transformer Layer-Dimension**: The number of transformer layers and the corresponding feature dimensions can be outputted from our model. This is marked out because features extracted by **different layers could have various performance depending on tasks**. - **Feature Rate**: Given a 1-second audio input, the number of features output by the model. - **Sample Rate**: The frequency of audio that the model is trained with. # Introduction to MERT-v1 Compared to MERT-v0, we introduce multiple new things in the MERT-v1 pre-training: - Change the pseudo labels to 8 codebooks from encodec, which potentially has higher quality and empower our model to support music generation. - MLM prediction with in-batch noise mixture. - Train with higher audio frequency (24K Hz). - Train with more audio data (up to 160 thousands of hours). - More available model sizes 95M and 330M. More details will be written in our coming-soon paper. # Model Usage # Citation"
+}

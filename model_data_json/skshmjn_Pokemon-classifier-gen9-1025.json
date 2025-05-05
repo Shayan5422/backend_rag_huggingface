@@ -1,0 +1,22 @@
+{
+    "model_id": "skshmjn/Pokemon-classifier-gen9-1025",
+    "downloads": 78944,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "vit",
+        "image-classification",
+        "vision",
+        "pokemon",
+        "pytorch",
+        "en",
+        "dataset:custom",
+        "base_model:google/vit-base-patch16-224-in21k",
+        "base_model:finetune:google/vit-base-patch16-224-in21k",
+        "license:apache-2.0",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- language: en tags: - vision - image-classification - pokemon - pytorch - transformers license: apache-2.0 datasets: - custom pipeline_tag: image-classification model_name: Pokemon Classifier Gen9 model_id: skshmjn/Pokemon-classifier-gen9-1025 library_name: transformers framework: PyTorch widget: - src: test.jpg metrics: - accuracy base_model: - google/vit-base-patch16-224-in21k --- # Model Card for Pokemon Classifier Gen9 ## Model Overview This is a fine-tuned ViT (Vision Transformer) model for Pokémon image classification. The model is trained to classify upto Gen9 (1025) Pokémon images. ## Intended Use This model is designed for image classification tasks, specifically for identifying Pokémon characters. It can be used for: - Pokémon-themed apps - Educational projects - Pokémon identification in images **Note**: The model is not designed for general-purpose image classification. ## How to Use Here's how you can load and use the model with the Hugging Face library: ```python from transformers import ViTForImageClassification, ViTImageProcessor from PIL import Image import torch # Define the device device = \"cuda\" if torch.cuda.is_available() else \"cpu\" # Load the model and image processor model_id = \"skshmjn/Pokemon-classifier-gen9-1025\" model = ViTForImageClassification.from_pretrained(model_id).to(device) image_processor = ViTImageProcessor.from_pretrained(model_id) # Load and process an image img = Image.open('test.jpg').convert(\"RGB\") inputs = image_processor(images=img, return_tensors='pt').to(device) # Make predictions outputs = model(**inputs) predicted_id = outputs.logits.argmax(-1).item() predicted_pokemon = model.config.id2label[predicted_id] # Print predicted class print(f\"Predicted Pokémon Pokédex number: {predicted_id+1}\") print(f\"Predicted Pokémon: {predicted_pokemon}\")"
+}

@@ -1,0 +1,13 @@
+{
+    "model_id": "datalab-to/surya_layout0",
+    "downloads": 81100,
+    "tags": [
+        "transformers",
+        "safetensors",
+        "vision-encoder-decoder",
+        "license:cc-by-nc-sa-4.0",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- library_name: transformers license: cc-by-nc-sa-4.0 --- Layout model for surya"
+}

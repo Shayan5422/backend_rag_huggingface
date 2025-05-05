@@ -1,0 +1,21 @@
+{
+    "model_id": "pyannote/overlapped-speech-detection",
+    "downloads": 176956,
+    "tags": [
+        "pyannote-audio",
+        "pyannote",
+        "pyannote-audio-pipeline",
+        "audio",
+        "voice",
+        "speech",
+        "speaker",
+        "overlapped-speech-detection",
+        "automatic-speech-recognition",
+        "dataset:ami",
+        "dataset:dihard",
+        "dataset:voxconverse",
+        "license:mit",
+        "region:us"
+    ],
+    "description": "--- tags: - pyannote - pyannote-audio - pyannote-audio-pipeline - audio - voice - speech - speaker - overlapped-speech-detection - automatic-speech-recognition datasets: - ami - dihard - voxconverse license: mit extra_gated_prompt: \"The collected information will help acquire a better knowledge of pyannote.audio userbase and help its maintainers apply for grants to improve it further. If you are an academic researcher, please cite the relevant papers in your own publications using the model. If you work for a company, please consider contributing back to pyannote.audio development (e.g. through unrestricted gifts). We also provide scientific consulting services around speaker diarization and machine listening.\" extra_gated_fields: Company/university: text Website: text I plan to use this model for (task, type of audio data, etc): text --- Using this open-source model in production? Consider switching to pyannoteAI for better and faster options. # 🎹 Overlapped speech detection Relies on pyannote.audio 2.1: see installation instructions. ## Support For commercial enquiries and scientific consulting, please contact me. For technical questions and bug reports, please check pyannote.audio Github repository. ## Citation"
+}

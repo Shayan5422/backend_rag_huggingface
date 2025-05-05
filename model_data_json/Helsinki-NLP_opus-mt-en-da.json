@@ -1,0 +1,19 @@
+{
+    "model_id": "Helsinki-NLP/opus-mt-en-da",
+    "downloads": 81331,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "tf",
+        "marian",
+        "text2text-generation",
+        "translation",
+        "en",
+        "da",
+        "license:apache-2.0",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "--- tags: - translation license: apache-2.0 --- ### opus-mt-en-da * source languages: en * target languages: da * OPUS readme: en-da * dataset: opus * model: transformer-align * pre-processing: normalization + SentencePiece * download original weights: opus-2019-12-18.zip * test set translations: opus-2019-12-18.test.txt * test set scores: opus-2019-12-18.eval.txt ## Benchmarks | testset | BLEU | chr-F | |-----------------------|-------|-------| | Tatoeba.en.da | 60.4 | 0.745 |"
+}

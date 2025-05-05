@@ -1,0 +1,16 @@
+{
+    "model_id": "vblagoje/bert-english-uncased-finetuned-pos",
+    "downloads": 77652,
+    "tags": [
+        "transformers",
+        "pytorch",
+        "jax",
+        "safetensors",
+        "bert",
+        "token-classification",
+        "autotrain_compatible",
+        "endpoints_compatible",
+        "region:us"
+    ],
+    "description": "## Part-of-Speech (PoS) Tags Below are the Part-of-Speech (PoS) tags used in the model: | **Tag** | **Meaning** | **Examples** | |-----------|------------------------------------------------------|--------------------------------| | ADP | Adposition (prepositions or postpositions) | in, on, by | | ADJ | Adjective | significant, global | | ADV | Adverb | quickly, often | | AUX | Auxiliary verb | is, was | | CCONJ | Coordinating conjunction | and, but | | DET | Determiner | the, a | | INTJ | Interjection | oh, wow | | NOUN | Noun | man, city | | NUM | Number | one, 2022 | | PART | Particle | 's, to | | PRON | Pronoun | he, which | | PROPN | Proper noun | Neil Armstrong, Paris | | PUNCT | Punctuation mark | ,, . | | SCONJ | Subordinating conjunction | because, although | | SYM | Symbol | $, % | | VERB | Verb | run, is | | X | Other (generally words that do not fit into other categories) | [not defined] |"
+}
